@@ -1,5 +1,5 @@
 ---
-title: "Welcome."
+title: "Welcome"
 ---
 
 ## This page is under construction.
@@ -8,5 +8,14 @@ More to come soon. Hopefully.
 ```{r echo=FALSE, eval=FALSE}
     includes:
       in_header: cover.html
+```
+
+```{r}
+# test
+mean(c(1,2,3))
+```
+
+```{r echo=FALSE, eval=FALSE}
+rmarkdown::render_site(encoding = "UTF-8")
 ```
 
