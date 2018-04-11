@@ -4,9 +4,6 @@ navbar:
   type: inverse
   title: shannon
   right:
-  - text: Home
-    icon: glyphicon glyphicon-home
-    href: index.html
   - text: About
     icon: ion-person
     href: about.html
