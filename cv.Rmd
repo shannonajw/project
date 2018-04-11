@@ -2,8 +2,5 @@
 title: "CV"
 ---
 
-<a href="https://www.dropbox.com/s/xk8xqbmdv7gujp6/CV_Academic_LetterSize.pdf?dl=0" class="download" title="Download CV as PDF">Download CV</a>			
+<a href="https://www.dropbox.com/s/xk8xqbmdv7gujp6/CV_Academic_LetterSize.pdf?raw=1" class="download" title="Download CV as PDF">Download CV</a>			
 
-## Header
-
-Say more about your CV here.

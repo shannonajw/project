@@ -1,7 +1,8 @@
-name: Shannon
+name: Shannon's Website
 output_dir: '.'
 navbar:
-  title: Shannon Ang
+  type: inverse
+  title: shannon
   right:
   - text: Home
     icon: glyphicon glyphicon-home
@@ -20,7 +21,7 @@ navbar:
     href: https://scholar.google.com.sg/citations?user=Hi_N55UAAAAJ&hl=en
 output:
   html_document:
-    theme: simplex
+    theme: yeti
     highlight: textmate
     lib_dir: site_libs
     self_contained: no
