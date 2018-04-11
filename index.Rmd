@@ -10,11 +10,6 @@ More to come soon. Hopefully.
       in_header: cover.html
 ```
 
-```{r}
-# test
-mean(c(1,2,3))
-```
-
 ```{r echo=FALSE, eval=FALSE}
 rmarkdown::render_site(encoding = "UTF-8")
 ```
