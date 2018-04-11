@@ -1,9 +1,14 @@
 ---
 title: "About me"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ## This page is under construction.
 More to come soon. Hopefully.
 
+## Bio
 
-
+## Research
