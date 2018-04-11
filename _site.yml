@@ -5,13 +5,10 @@ navbar:
   type: inverse
   left:
   - text: Home
-    icon: fa-home
     href: index.html
   - text: About
-    icon: fa-user
     href: about.html
   - text: CV
-    icon: fa-file-pdf-o
     href: cv.html
   right:
   - text: Email
