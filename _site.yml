@@ -2,20 +2,21 @@ name: Shannon
 output_dir: '.'
 navbar:
   title: Shannon Ang
-  type: inverse
-  left:
+  right:
   - text: Home
+    icon: glyphicon glyphicon-home
     href: index.html
   - text: About
+    icon: ion-person
     href: about.html
   - text: CV
+    icon: fa-file
     href: cv.html
-  right:
   - text: Email
-    icon: fa-envelope-o
-    href: mailto:shannonajw@gmail.com
-  - text: Google Scholar
-    icon: fa-graduation-cap
+    icon: ion-ios-email-outline
+    href: mailto:shanang@umich.edu
+  - text: Scholar
+    icon: fa-google
     href: https://scholar.google.com.sg/citations?user=Hi_N55UAAAAJ&hl=en
 output:
   html_document:
