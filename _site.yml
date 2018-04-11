@@ -1,29 +1,29 @@
-name: "Shannon"                                # CHANGE HERE 
-output_dir: "."
+name: Shannon
+output_dir: '.'
 navbar:
-  title: "YOURNAME"                             # CHANGE HERE 
+  title: Shannon Ang
   type: inverse
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
-    - text: "About"
-      icon: fa-user 
-      href: about.html
-    - text: "CV"
-      icon: fa-file-pdf-o
-      href: cv.html
-    - text: "Blog"
-      icon: fa-rss
-      href: https://YOURGITHUB.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: About
+    icon: fa-user
+    href: about.html
+  - text: CV
+    icon: fa-file-pdf-o
+    href: cv.html
   right:
-    - text: "Contact me"
-      icon: fa-envelope-o
-      href: mailto:YOUREMAIL                    # CHANGE HERE 
-    - text: "GitHub"
-      icon: fa-github
-      href: https://github.com/YOURGITHUB       # CHANGE HERE 
+  - text: Email
+    icon: fa-envelope-o
+    href: mailto:shannonajw@gmail.com
+  - text: Google Scholar
+    icon: fa-graduation-cap
+    href: https://scholar.google.com.sg/citations?user=Hi_N55UAAAAJ&hl=en
 output:
   html_document:
-    theme: cosmo
+    theme: simplex
     highlight: textmate
+    lib_dir: site_libs
+    self_contained: no
+
