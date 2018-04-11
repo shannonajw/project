@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-## This page is under construction.
+This page is under construction.
 More to come soon. Hopefully.
 
 ## Bio
