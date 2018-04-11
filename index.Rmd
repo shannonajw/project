@@ -1,9 +1,14 @@
 ---
 title: "Welcome to my website!"
 output:
-  html_document:
-    includes:
-      in_header: cover.html
+  html_document: default
+
 ---
 
 You're up and running!
+
+```{r echo=FALSE, eval=FALSE}
+    includes:
+      in_header: cover.html
+```
+
