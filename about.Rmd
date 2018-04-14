@@ -1,14 +1,47 @@
 ---
-title: "About me"
-output:
-  html_document:
-    toc: true
-    toc_float: true
+title: ""
 ---
+<style>
+  p {line-height: 1.5em;}
+</style>
 
-This page is under construction.
-More to come soon. Hopefully.
+</br>
 
-## Bio
+```{r out.width=300, echo=F, fig.align='center'}
+knitr::include_graphics("photo.png")
+```
 
-## Research
+# <span style="color:#436396">About Shannon</span>
+I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults in Singapore, a rapidly aging city-state in Southeast Asia. Findings from these studies have been published in notable academic journals such as *Social Science and Medicine*, *Journals of Gerontology Series B: Psychological and Social Sciences*, *Journal of Aging and Health*, and *Aging and Mental Health*, amongst others. I am actively seeking opportunities to engage in collaborative research projects. 
+
+</br></br>
+
+# <span style="color:#436396">Media</span>
+My work has been featured in both Singapore and foreign media. I am happy to take queries about issues pertaining to my areas of study.
+
+- [This article](http://www.straitstimes.com/singapore/support-the-elderly-socially-but-let-them-control-their-lives) in The Straits Times (5 March 2016) was based on [this study](10.1016/j.socscimed.2016.02.019) published in *Social Science and Medicine*, which found that providing older adults with excessive social support may lead to a reduction in personal mastery.
+
+- [This article](http://www.straitstimes.com/singapore/rather-than-a-helping-hand-offer-caregivers-a-listening-ear) in The Straits Times (3 July 2017) was based on [this study](doi:10.1080/13607863.2017.1317329) published in *Aging and Mental Health* that highlighted how working caregivers benefit more from expressive social support, rather than instrumental social support.
+
+</br></br>
+
+# <span style="color:#436396">Publications</span>
+
+### Research Articles
+- **Ang, Shannon**. Forthcoming. “Social participation and health over the adult life course: Does the association strengthen with age?” *Social Science and Medicine*.
+
+- **Ang, Shannon**. Forthcoming. “How social participation benefits the chronically ill: Self-management as a mediating pathway” *Journal of Aging and Health*. Advance online publication. doi:10.1177/0898264318761909
+
+- Verbrugge, Lois and **Shannon Ang**. Forthcoming. “Family Reciprocity of Older Singaporeans” *European Journal of Ageing*. Advance online publication. doi:10.1007/s10433-017-0452-1
+
+- **Ang, Shannon** and Rahul Malhotra. 2018. “Expressive social support buffers the impact of care-related work interruptions on depressive symptoms among working family caregivers of older adults” *Aging and Mental Health*. 22(6):755-763. doi:10.1080/13607863.2017.1317329
+
+- **Ang, Shannon**. Forthcoming. “Social participation and mortality among older adults in Singapore: Does ethnicity explain gender differences?” *Journals of Gerontology Series B: Psychological and Social Sciences. Advance online publication*. doi:10.1093/geronb/gbw078
+
+- Malhotra, Rahul, **Shannon Ang**, John Carson Allen, Ngiap Chuan Tan, Truls Ostbye, Yasuhiko Saito, Angelique Chan. 2016. “Normative values of hand grip strength for elderly Singaporeans aged 60 to 89 years: A cross-sectional study” *Journal of the American Medical Directors Association*.  17(9):864.e1-864.e7. doi:10.1016/j.jamda.2016.06.013
+
+- **Ang, Shannon** and Rahul Malhotra. 2016. “Association of Received Social Support with Depressive Symptoms among Older Males and Females in Singapore: Is Personal Mastery an Inconsistent Mediator?” *Social Science and Medicine*. 153:165-173. doi:10.1016/j.socscimed.2016.02.019
+</br></br>
+
+### Invited Contributions
+- Malhotra, Rahul and **Shannon Ang**. 2016. “Social Support for Older Adults – A Bane or a Boon for their Health?” *Annals of the Academy of Medicine, Singapore*. 45(5):172-3. PMID: 27383715

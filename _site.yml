@@ -1,8 +1,8 @@
 name: Shannon's Website
 output_dir: '.'
 navbar:
-  type: inverse
   title: shannon ang
+  type: default
   right:
   - text: About
     icon: ion-person

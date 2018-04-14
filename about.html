@@ -11,7 +11,7 @@
 
 
 
-<title>About me</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -168,104 +165,9 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
 
 
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -317,23 +219,53 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">About me</h1>
 
 </div>
 
 
-<p>This page is under construction. More to come soon. Hopefully.</p>
-<div id="bio" class="section level2">
-<h2>Bio</h2>
+<style>
+  p {line-height: 1.5em;}
+</style>
+<p></br></p>
+<p><img src="photo.png" width="300" style="display: block; margin: auto;" /></p>
+<div id="about-shannon" class="section level1">
+<h1><span style="color:#436396">About Shannon</span></h1>
+<p>I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults in Singapore, a rapidly aging city-state in Southeast Asia. Findings from these studies have been published in notable academic journals such as <em>Social Science and Medicine</em>, <em>Journals of Gerontology Series B: Psychological and Social Sciences</em>, <em>Journal of Aging and Health</em>, and <em>Aging and Mental Health</em>, amongst others. I am actively seeking opportunities to engage in collaborative research projects.</p>
+<p></br></br></p>
 </div>
-<div id="research" class="section level2">
-<h2>Research</h2>
+<div id="media" class="section level1">
+<h1><span style="color:#436396">Media</span></h1>
+<p>My work has been featured in both Singapore and foreign media. I am happy to take queries about issues pertaining to my areas of study.</p>
+<ul>
+<li><p><a href="http://www.straitstimes.com/singapore/support-the-elderly-socially-but-let-them-control-their-lives">This article</a> in The Straits Times (5 March 2016) was based on <a href="10.1016/j.socscimed.2016.02.019">this study</a> published in <em>Social Science and Medicine</em>, which found that providing older adults with excessive social support may lead to a reduction in personal mastery.</p></li>
+<li><p><a href="http://www.straitstimes.com/singapore/rather-than-a-helping-hand-offer-caregivers-a-listening-ear">This article</a> in The Straits Times (3 July 2017) was based on <a href="doi:10.1080/13607863.2017.1317329">this study</a> published in <em>Aging and Mental Health</em> that highlighted how working caregivers benefit more from expressive social support, rather than instrumental social support.</p></li>
+</ul>
+<p></br></br></p>
+</div>
+<div id="publications" class="section level1">
+<h1><span style="color:#436396">Publications</span></h1>
+<div id="research-articles" class="section level3">
+<h3>Research Articles</h3>
+<ul>
+<li><p><strong>Ang, Shannon</strong>. Forthcoming. “Social participation and health over the adult life course: Does the association strengthen with age?” <em>Social Science and Medicine</em>.</p></li>
+<li><p><strong>Ang, Shannon</strong>. Forthcoming. “How social participation benefits the chronically ill: Self-management as a mediating pathway” <em>Journal of Aging and Health</em>. Advance online publication. <a href="doi:10.1177/0898264318761909" class="uri">doi:10.1177/0898264318761909</a></p></li>
+<li><p>Verbrugge, Lois and <strong>Shannon Ang</strong>. Forthcoming. “Family Reciprocity of Older Singaporeans” <em>European Journal of Ageing</em>. Advance online publication. <a href="doi:10.1007/s10433-017-0452-1" class="uri">doi:10.1007/s10433-017-0452-1</a></p></li>
+<li><p><strong>Ang, Shannon</strong> and Rahul Malhotra. 2018. “Expressive social support buffers the impact of care-related work interruptions on depressive symptoms among working family caregivers of older adults” <em>Aging and Mental Health</em>. 22(6):755-763. <a href="doi:10.1080/13607863.2017.1317329" class="uri">doi:10.1080/13607863.2017.1317329</a></p></li>
+<li><p><strong>Ang, Shannon</strong>. Forthcoming. “Social participation and mortality among older adults in Singapore: Does ethnicity explain gender differences?” <em>Journals of Gerontology Series B: Psychological and Social Sciences. Advance online publication</em>. <a href="doi:10.1093/geronb/gbw078" class="uri">doi:10.1093/geronb/gbw078</a></p></li>
+<li><p>Malhotra, Rahul, <strong>Shannon Ang</strong>, John Carson Allen, Ngiap Chuan Tan, Truls Ostbye, Yasuhiko Saito, Angelique Chan. 2016. “Normative values of hand grip strength for elderly Singaporeans aged 60 to 89 years: A cross-sectional study” <em>Journal of the American Medical Directors Association</em>. 17(9):864.e1-864.e7. <a href="doi:10.1016/j.jamda.2016.06.013" class="uri">doi:10.1016/j.jamda.2016.06.013</a></p></li>
+<li><p><strong>Ang, Shannon</strong> and Rahul Malhotra. 2016. “Association of Received Social Support with Depressive Symptoms among Older Males and Females in Singapore: Is Personal Mastery an Inconsistent Mediator?” <em>Social Science and Medicine</em>. 153:165-173. <a href="doi:10.1016/j.socscimed.2016.02.019" class="uri">doi:10.1016/j.socscimed.2016.02.019</a> </br></br></p></li>
+</ul>
+</div>
+<div id="invited-contributions" class="section level3">
+<h3>Invited Contributions</h3>
+<ul>
+<li>Malhotra, Rahul and <strong>Shannon Ang</strong>. 2016. “Social Support for Older Adults – A Bane or a Boon for their Health?” <em>Annals of the Academy of Medicine, Singapore</em>. 45(5):172-3. PMID: 27383715</li>
+</ul>
+</div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
