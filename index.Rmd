@@ -1,5 +1,5 @@
 ---
-title: "| "
+title: "I study the social world"
 description: 'Shannon Ang'
 output:
   html_document:    
@@ -7,8 +7,7 @@ output:
         in_header: cover.html
 ---
 
-## <span style="color:#436396">I study the social world</span> 
-#### Especially older people's worlds.
+#### <span style="color:#436396">Especially older people's worlds.</span> 
 
 </br>
 <p>
