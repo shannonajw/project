@@ -1,5 +1,5 @@
 ---
-title: "I study the social world"
+title: "I study the social world" 
 description: 'Shannon Ang'
 output:
   html_document:    
