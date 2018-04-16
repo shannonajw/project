@@ -7,7 +7,7 @@ output:
         in_header: cover.html
 ---
 
-#### <span style="color:#436396">Especially older people's worlds.</span> 
+#### <span style="color:#436396">Especially older people and their health outcomes.</span> 
 
 </br>
 <p>
