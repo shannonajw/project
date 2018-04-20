@@ -1,6 +1,10 @@
 ---
 title: "| "
 description: 'About Shannon'
+output:
+  html_document:    
+      includes:
+        in_header: analytics.html
 ---
 <style>
   p {line-height: 1.5em;}

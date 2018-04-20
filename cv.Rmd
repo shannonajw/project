@@ -1,5 +1,9 @@
 ---
 title: "CV"
+output:
+  html_document:    
+      includes:
+        in_header: analytics.html
 ---
 
 <a href="https://www.dropbox.com/s/xk8xqbmdv7gujp6/CV_Academic_LetterSize.pdf?raw=1" class="download" title="Download CV as PDF">Download CV</a>			

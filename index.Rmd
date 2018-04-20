@@ -19,7 +19,6 @@ Ann Arbor, MI 48109-1382 <br/>
 shanang@umich.edu
 </p>
 
-
 ```{r echo=FALSE, eval=FALSE}
 rmarkdown::render_site(encoding = "UTF-8")
 ```
