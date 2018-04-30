@@ -1,6 +1,6 @@
 ---
-title: "| "
-description: 'About Shannon'
+title: "Research"
+description: 'My Research'
 output:
   html_document:    
       includes:
@@ -10,16 +10,7 @@ output:
   p {line-height: 1.5em;}
 </style>
 
-</br>
-
-```{r out.width=300, echo=F, fig.align='center'}
-knitr::include_graphics("photo.png")
-```
-
-# <span style="color:#436396">About Shannon</span>
-I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults in Singapore, a rapidly aging city-state in Southeast Asia. Findings from these studies have been published in notable academic journals such as *Social Science and Medicine*, *Journals of Gerontology Series B: Psychological and Social Sciences*, *Journal of Aging and Health*, and *Aging and Mental Health*, amongst others. I am actively seeking opportunities to engage in collaborative research projects. 
-
-</br></br>
+<br/>
 
 # <span style="color:#436396">Publications</span>
 

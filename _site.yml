@@ -4,9 +4,9 @@ navbar:
   title: shannon ang
   type: inverse
   right:
-  - text: About
+  - text: Research
     icon: ion-person
-    href: about.html
+    href: research.html
   - text: CV
     icon: fa-file
     href: cv.html
