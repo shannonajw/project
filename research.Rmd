@@ -25,7 +25,7 @@ output:
 
 - **Ang, Shannon** and Rahul Malhotra. 2018. “Expressive social support buffers the impact of care-related work interruptions on caregivers’ depressive symptoms” *Aging and Mental Health*. 22(6):755-763. [doi:10.1080/13607863.2017.1317329](https://doi.org/10.1080/13607863.2017.1317329)
 
-- **Ang, Shannon**. Forthcoming. “Social participation and mortality among older adults in Singapore: Does ethnicity explain gender differences?” *Journals of Gerontology Series B: Psychological and Social Sciences. Advance online publication*. [doi:10.1093/geronb/gbw078](https://doi.org/10.1093/geronb/gbw078)
+- **Ang, Shannon**. Forthcoming. “Social participation and mortality among older adults in Singapore: Does ethnicity explain gender differences?” *Journals of Gerontology Series B: Psychological and Social Sciences.* Advance online publication. [doi:10.1093/geronb/gbw078](https://doi.org/10.1093/geronb/gbw078)
 
 - Malhotra, Rahul, **Shannon Ang**, John Carson Allen, Ngiap Chuan Tan, Truls Ostbye, Yasuhiko Saito, Angelique Chan. 2016. “Normative values of hand grip strength for elderly Singaporeans aged 60 to 89 years: A cross-sectional study” *Journal of the American Medical Directors Association*.  17(9):864.e1-864.e7. [doi:10.1016/j.jamda.2016.06.013](https://doi.org/10.1016/j.jamda.2016.06.013)
 
