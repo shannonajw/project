@@ -15,7 +15,7 @@ output:
 # <span style="color:#436396">Publications</span>
 
 ### Research Articles
-- **Ang, Shannon** and Tuo-Yu Chen. Forthcoming. "Going online to stay connected: Online social participation buffers the relationship between pain and depression" *Journals of Gerontology Series B: Psychological and Social Sciences.*
+- **Ang, Shannon** and Tuo-Yu Chen. Forthcoming. "Going online to stay connected: Online social participation buffers the relationship between pain and depression" *Journals of Gerontology Series B: Psychological and Social Sciences.* Advance online publication. [doi:10.1093/geronb/gby109](https://doi.org/10.1093/geronb/gby109)
 
 - **Ang, Shannon**. 2018. “Social participation and health over the adult life course: Does the association strengthen with age?” *Social Science and Medicine*. 206:51-59. [doi:10.1016/j.socscimed.2018.03.042](https://doi.org/10.1016/j.socscimed.2018.03.042)
 
