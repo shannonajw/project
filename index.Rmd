@@ -7,7 +7,7 @@ output:
         in_header: cover.html
 ---
 
-I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults in Singapore, a rapidly aging city-state in Southeast Asia. Findings from these studies have been published in notable academic journals such as *Social Science and Medicine*, *Journals of Gerontology Series B: Psychological and Social Sciences*, *Journal of Aging and Health*, and *Aging and Mental Health*, amongst others. I am actively seeking opportunities to engage in collaborative research projects. 
+I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults. Findings from these studies have been published in notable academic journals such as *Social Science and Medicine*, *Journals of Gerontology Series B: Psychological and Social Sciences*, *Journal of Aging and Health*, and *Aging and Mental Health*, amongst others. I am actively seeking opportunities to engage in collaborative research projects. 
 
 <br/>
 
