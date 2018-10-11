@@ -40,6 +40,9 @@ output:
 # <span style="color:#436396">Media</span>
 My work has been featured in both Singapore and foreign media. I am happy to take queries about issues pertaining to my areas of study.
 
-- [This article](http://www.straitstimes.com/singapore/support-the-elderly-socially-but-let-them-control-their-lives) in The Straits Times (5 March 2016) was based on [this study](https://doi.org/10.1016/j.socscimed.2016.02.019) published in *Social Science and Medicine*, which found that providing older adults with excessive social support may lead to a reduction in personal mastery.
+- [This article](https://www.reuters.com/article/us-health-seniors-social-media/social-media-may-reduce-depression-risk-for-older-people-with-pain-idUSKCN1MK2LN) in Reuters Health (10 October 2018) was based on [this study](https://doi.org/10.1093/geronb/gby109) published in *Journals of Gerontology Series B: Psychological and Social Sciences*, which finds that social media can help allieviate the effects of pain on depression.
 
 - [This article](http://www.straitstimes.com/singapore/rather-than-a-helping-hand-offer-caregivers-a-listening-ear) in The Straits Times (3 July 2017) was based on [this study](https://doi.org/10.1080/13607863.2017.1317329) published in *Aging and Mental Health* that highlighted how working caregivers benefit more from expressive social support, rather than instrumental social support.
+
+- [This article](http://www.straitstimes.com/singapore/support-the-elderly-socially-but-let-them-control-their-lives) in The Straits Times (5 March 2016) was based on [this study](https://doi.org/10.1016/j.socscimed.2016.02.019) published in *Social Science and Medicine*, which found that providing older adults with excessive social support may lead to a reduction in personal mastery.
+
