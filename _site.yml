@@ -4,17 +4,17 @@ navbar:
   title: Project
   type: inverse
   right:
-  - text: Research
-    icon: ion-person
+  - text: Page 1
+    icon: ion-happy
     href: research.html
-  - text: CV
-    icon: fa-file
+  - text: Page 2
+    icon: fa-addresscard
     href: cv.html
-  - text: Email
-    icon: ion-ios-email-outline
+  - text: Page 3
+    icon: fa-archive
     href: research.html
-  - text: Scholar
-    icon: fa-google
+  - text: Page 4
+    icon: fa-arrow-alt-circle-right
     href: cv.html
 output:
   html_document:
