@@ -1,6 +1,6 @@
 ---
-title: "Research"
-description: 'My Research'
+title: "Page 2"
+description: 'Page 2'
 output:
   html_document:    
       includes:

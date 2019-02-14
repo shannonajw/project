@@ -12,10 +12,10 @@ navbar:
     href: cv.html
   - text: Email
     icon: ion-ios-email-outline
-    href: mailto:shanang@umich.edu
+    href: 
   - text: Scholar
     icon: fa-google
-    href: https://scholar.google.com.sg/citations?user=Hi_N55UAAAAJ&hl=en
+    href: 
 output:
   html_document:
     theme: readable

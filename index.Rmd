@@ -1,24 +1,13 @@
 ---
-title: "About Shannon" 
-description: 'Shannon Ang'
+title: "Shannon's Project Page" 
+description: 'df'
 output:
   html_document:    
       includes:
         in_header: cover.html
 ---
 
-I am a PhD candidate in the Department of Sociology at the University of Michigan, with research interests in the health and social lives of older adults. My work so far has focused on the social support and social participation of older adults, and their implications for mental and physical health outcomes. Findings from these studies have been published in notable academic journals such as *Social Science and Medicine*, *Journals of Gerontology Series B: Psychological and Social Sciences*, *Journal of Aging and Health*, and *Aging and Mental Health*, amongst others. I am actively seeking opportunities to engage in collaborative research projects. 
-
-<br/>
-
-### <span style="color:#436396">Contact me</span>
-<p>
-Department of Sociology <br/>
-Room 3115 LSA Building <br/>
-500 S. State Street <br/>
-Ann Arbor, MI 48109-1382 <br/>
-shanang@umich.edu
-</p>
+# This is a test site
 
 ```{r echo=FALSE, eval=FALSE}
 rmarkdown::render_site(encoding = "UTF-8")
