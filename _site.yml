@@ -6,16 +6,16 @@ navbar:
   right:
   - text: Page 1
     icon: ion-happy
-    href: research.html
+    href: p1.html
   - text: Page 2
     icon: fa-addresscard
-    href: cv.html
+    href: p2.html
   - text: Page 3
     icon: fa-archive
-    href: research.html
+    href: p3.html
   - text: Page 4
     icon: fa-arrow-alt-circle-right
-    href: cv.html
+    href: p4.html
 output:
   html_document:
     theme: yeti
