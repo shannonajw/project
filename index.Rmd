@@ -9,6 +9,12 @@ output:
 
 # This is a test site
 
+```{r}
+rbinom(1,1,0.5)
+```
+
+
+
 ```{r echo=FALSE, eval=FALSE}
 rmarkdown::render_site(encoding = "UTF-8")
 ```

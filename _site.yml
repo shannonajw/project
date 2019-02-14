@@ -18,7 +18,7 @@ navbar:
     href: cv.html
 output:
   html_document:
-    theme: readable
+    theme: yeti
     highlight: textmate
     lib_dir: site_libs
     self_contained: no

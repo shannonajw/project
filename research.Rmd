@@ -1,48 +1,6 @@
 ---
 title: "Page 2"
 description: 'Page 2'
-output:
-  html_document:    
-      includes:
-        in_header: analytics.html
 ---
-<style>
-  p {line-height: 1.5em;}
-</style>
 
-<br/>
-
-# <span style="color:#436396">Publications</span>
-
-### Research Articles
-- **Ang, Shannon** and Tuo-Yu Chen. Forthcoming. "Going online to stay connected: Online social participation buffers the relationship between pain and depression" *Journals of Gerontology Series B: Psychological and Social Sciences.* Advance online publication. [doi:10.1093/geronb/gby109](https://doi.org/10.1093/geronb/gby109)
-
-- **Ang, Shannon**. 2018. “Social participation and health over the adult life course: Does the association strengthen with age?” *Social Science and Medicine*. 206:51-59. [doi:10.1016/j.socscimed.2018.03.042](https://doi.org/10.1016/j.socscimed.2018.03.042)
-
-- **Ang, Shannon**. Forthcoming. “How social participation benefits the chronically ill: Self-management as a mediating pathway” *Journal of Aging and Health*. Advance online publication. [doi:10.1177/0898264318761909](https://doi.org/10.1177/0898264318761909)
-
-- Verbrugge, Lois and **Shannon Ang**. 2018. “Family Reciprocity of Older Singaporeans” *European Journal of Ageing*. 15:287-299. [doi:10.1007/s10433-017-0452-1](https://doi.org/10.1007/s10433-017-0452-1)
-
-- **Ang, Shannon** and Rahul Malhotra. 2018. “Expressive social support buffers the impact of care-related work interruptions on caregivers’ depressive symptoms” *Aging and Mental Health*. 22(6):755-763. [doi:10.1080/13607863.2017.1317329](https://doi.org/10.1080/13607863.2017.1317329)
-
-- **Ang, Shannon**. Forthcoming. “Social participation and mortality among older adults in Singapore: Does ethnicity explain gender differences?” *Journals of Gerontology Series B: Psychological and Social Sciences.* Advance online publication. [doi:10.1093/geronb/gbw078](https://doi.org/10.1093/geronb/gbw078)
-
-- Malhotra, Rahul, **Shannon Ang**, John Carson Allen, Ngiap Chuan Tan, Truls Ostbye, Yasuhiko Saito, Angelique Chan. 2016. “Normative values of hand grip strength for elderly Singaporeans aged 60 to 89 years: A cross-sectional study” *Journal of the American Medical Directors Association*.  17(9):864.e1-864.e7. [doi:10.1016/j.jamda.2016.06.013](https://doi.org/10.1016/j.jamda.2016.06.013)
-
-- **Ang, Shannon** and Rahul Malhotra. 2016. “Association of Received Social Support with Depressive Symptoms among Older Males and Females in Singapore: Is Personal Mastery an Inconsistent Mediator?” *Social Science and Medicine*. 153:165-173. [doi:10.1016/j.socscimed.2016.02.019](https://doi.org/10.1016/j.socscimed.2016.02.019)
-</br></br>
-
-### Invited Contributions
-- Malhotra, Rahul and **Shannon Ang**. 2016. “Social Support for Older Adults – A Bane or a Boon for their Health?” *Annals of the Academy of Medicine, Singapore*. 45(5):172-3. [PMID: 27383715](http://www.annals.edu.sg/pdf/45VolNo5May2016/V45N5p172.pdf)
-
-</br></br>
-
-# <span style="color:#436396">Media</span>
-My work has been featured in both Singapore and foreign media. I am happy to take queries about issues pertaining to my areas of study.
-
-- [This article](https://www.reuters.com/article/us-health-seniors-social-media/social-media-may-reduce-depression-risk-for-older-people-with-pain-idUSKCN1MK2LN) in Reuters Health (10 October 2018) was based on [this study](https://doi.org/10.1093/geronb/gby109) published in *Journals of Gerontology Series B: Psychological and Social Sciences*, which finds that social media can help allieviate the effects of pain on depression.
-
-- [This article](http://www.straitstimes.com/singapore/rather-than-a-helping-hand-offer-caregivers-a-listening-ear) in The Straits Times (3 July 2017) was based on [this study](https://doi.org/10.1080/13607863.2017.1317329) published in *Aging and Mental Health* that highlighted how working caregivers benefit more from expressive social support, rather than instrumental social support.
-
-- [This article](http://www.straitstimes.com/singapore/support-the-elderly-socially-but-let-them-control-their-lives) in The Straits Times (5 March 2016) was based on [this study](https://doi.org/10.1016/j.socscimed.2016.02.019) published in *Social Science and Medicine*, which found that providing older adults with excessive social support may lead to a reduction in personal mastery.
 
