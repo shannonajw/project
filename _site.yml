@@ -1,7 +1,7 @@
 name: Shannon's Project Page
 output_dir: '.'
 navbar:
-  title: shannon ang
+  title: Project
   type: inverse
   right:
   - text: Research
@@ -12,10 +12,10 @@ navbar:
     href: cv.html
   - text: Email
     icon: ion-ios-email-outline
-    href: 
+    href: research.html
   - text: Scholar
     icon: fa-google
-    href: 
+    href: cv.html
 output:
   html_document:
     theme: readable
