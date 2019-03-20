@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
+classoption: openany
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
@@ -13,7 +14,7 @@ description: "This is a minimal example of using the bookdown package to write a
 ---
 
 ```{r eval=FALSE, echo=FALSE}
-bookdown::render_book("foo.Rmd", "bookdown::gitbook")
+bookdown::render_book("index.Rmd", "all")
 ```
 
 
