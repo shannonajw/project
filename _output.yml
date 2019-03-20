@@ -1,8 +1,9 @@
 bookdown::gitbook:
   css: style.css
+  split_by: section
   config:
     toc:
-      collapse: subsection
+      collapse: section
       scroll_highlight: yes
       before: |
         <li><a href="./">Book Title</a></li>
