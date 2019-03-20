@@ -2,7 +2,7 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
-      collapse: section
+      collapse: subsection
       scroll_highlight: yes
       before: |
         <li><a href="./">Book Title</a></li>
