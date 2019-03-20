@@ -1,21 +1,17 @@
 ---
-title: "Shannon's Project Page" 
-description: 'df'
+title: "A Book"
+author: "Frida Gomam"
+site: bookdown::bookdown_site
+documentclass: book
 output:
-  html_document:    
-      includes:
-        in_header: #cover.html
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
 ---
 
-# This is a test site
+# Hello World
 
-```{r}
-rbinom(1,1,0.5)
-```
+Hi.
 
+Bye.
 
-
-```{r echo=FALSE, eval=FALSE}
-rmarkdown::render_site(encoding = "UTF-8")
-```
-
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
