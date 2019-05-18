@@ -1,7 +1,7 @@
 --- 
-title: "A Not so Minimal Book Example"
-author: "Yihui Xie"
-date: "`r Sys.Date()`"
+title: "Singapore in Data"
+author: "Shannon Ang"
+date: "Last updated: `r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -10,7 +10,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "This is a page containing quantitative social science examples on Singapore."
 ---
 
 ```{r eval=FALSE, echo=FALSE}
