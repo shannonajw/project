@@ -1,7 +1,7 @@
 --- 
 title: "Singapore Society in Numbers"
-author: "Shannon Ang"
-date: "Last updated: `r format(Sys.Date(), '%d %B %Y')`"
+author: "Edited by Shannon Ang"
+date: "Last updated `r format(Sys.Date(), '%d %B %Y')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -38,6 +38,10 @@ Little write-up about myself
 ## The purpose of this book {-}
 
 Little write-up about why this 'book' was written
+
+## Acknowledgements {-}
+
+Contributors
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
