@@ -45,6 +45,8 @@ Instructions on how to list a dataset, contribute a case study, or write a think
 
 ## Acknowledgements {-}
 
+This book is being written through the **bookdown** package [@R-bookdown], which was built on top of R Markdown and **knitr** [@xie2015].
+
 Contributors
 
 ```{r include=FALSE}
