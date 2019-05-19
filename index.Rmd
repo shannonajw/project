@@ -30,7 +30,7 @@ This online book is a compilation of resources aimed at advancing quantitative s
 
 ## About me {-}
 
-## Why I set this up {-}
+## The purpose of this book {-}
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
