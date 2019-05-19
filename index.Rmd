@@ -28,8 +28,6 @@ This online book is a compilation of resources to advance quantitative social sc
 
 3. Occasional think pieces by researchers on best practices and on how to improve quantitative social science in Singapore.
 
-# Introduction {-}
-
 ## About me
 
 ## Why I set this up
