@@ -1,6 +1,6 @@
 # (PART) Think Pieces {-}
 
-# Think {#think}
+# Thinking about Numbers {#think}
 
 Think pieces section
 
