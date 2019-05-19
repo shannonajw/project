@@ -39,6 +39,10 @@ Little write-up about myself
 
 Little write-up about why this 'book' was written
 
+## How to contribute {-}
+
+Instructions on how to list a dataset, contribute a case study, or write a think piece for this page.
+
 ## Acknowledgements {-}
 
 Contributors
