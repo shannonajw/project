@@ -1,0 +1,7 @@
+# Class / SES {#class}
+
+Class section.
+
+## Example one
+
+## Example two

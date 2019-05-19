@@ -146,17 +146,19 @@
 \chapter*{Preface}\label{preface}
 \addcontentsline{toc}{chapter}{Preface}
 
-This online book is a compilation of resources to advance quantitative
-social science in Singapore. It is in progress, and as far as possible,
-will constantly be updated. The main goal is to promote interest and
-rigour in quantitative social science on Singapore. It does so by:
+This online book is a compilation of resources aimed at advancing
+quantitative social science in Singapore. It is meant to be a `living
+document', so it will be updated as frequently as possible. The main
+goal is to promote interest and rigour in quantitative social science on
+Singapore. It does so by:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   Providing information on \emph{Singapore-relevant datasets} that are
-  currently used to answer research and policy questions. This includes:
+  currently used to answer research and policy questions (Chapter
+  \ref{data}). This includes:
 \end{enumerate}
 
 \begin{itemize}
@@ -181,28 +183,33 @@ rigour in quantitative social science on Singapore. It does so by:
 \item
   Maintaining a repository of \emph{replicable} case studies (with
   annotated code, where possible) on Singapore society which can be used
-  for illustrations in any quantitatively oriented college-level class.
-  These may be short summaries (blog-length) of published work, or side
-  analyses that may not be appropriate for an academic journal but are
-  useful for Singapore social science nonetheless.
+  for illustrations in any quantitatively oriented college-level class
+  (Chapter \ref{race} to Chapter \ref{lifecourse}). These may be short
+  summaries (blog-length) of published work, or side analyses that may
+  not be appropriate for an academic journal but are useful for
+  Singapore social science nonetheless.
 \item
   Occasional think pieces by researchers on best practices and on how to
-  improve quantitative social science in Singapore.
+  improve quantitative social science in Singapore (\ref{think}).
 \end{enumerate}
 
-\section{About me}\label{about-me}
+\section*{About me}\label{about-me}
+\addcontentsline{toc}{section}{About me}
 
-\section{Why I set this up}\label{why-i-set-this-up}
+\section*{Why I set this up}\label{why-i-set-this-up}
+\addcontentsline{toc}{section}{Why I set this up}
 
 \chapter{Datasets}\label{data}
 
-You can label chapter and section titles using \texttt{\{\#label\}}
-after them, e.g., we can reference Chapter \ref{intro}. If you do not
-manually label them, there will be automatic labels anyway, e.g.,
-Chapter \ref{methods}.
+\section{Public Datasets}\label{public-datasets}
 
-Figures and tables with captions will be placed in \texttt{figure} and
-\texttt{table} environments, respectively.
+\section{Restricted Datasets}\label{restricted-datasets}
+
+\chapter{Race}\label{race}
+
+\section{Witty title for Case 1}\label{witty-title-for-case-1}
+
+This is an example of in-line code annotation and output.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -273,27 +280,29 @@ You can write citations, too. For example, we are using the
 \textbf{bookdown} package \citep{R-bookdown} in this sample book, which
 was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
-\section{Section Two of intro}\label{section-two-of-intro}
+\chapter{Gender}\label{gender}
 
-\chapter{Literature}\label{literature}
-
-Here is a review of existing methods.
-
-\chapter{Methods}\label{methods}
-
-We describe our methods in this chapter.
-
-\chapter{Applications}\label{applications}
-
-Some \emph{significant} applications are demonstrated in this chapter.
+Gender sections
 
 \section{Example one}\label{example-one}
 
 \section{Example two}\label{example-two}
 
-\chapter{Final Words}\label{final-words}
+\chapter{Class / SES}\label{class}
 
-We have finished a nice book.
+Class section.
+
+\section{Example one}\label{example-one-1}
+
+\section{Example two}\label{example-two-1}
+
+\chapter{Life Course}\label{lifecourse}
+
+Life course sections
+
+\chapter{Think Pieces}\label{think}
+
+Think pieces section
 
 \bibliography{book.bib,packages.bib}
 
