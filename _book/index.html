@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Quantifying Singapore Society</title>
+  <title>Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Quantifying Singapore Society" />
+  <meta property="og:title" content="Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Quantifying Singapore Society" />
+  <meta name="twitter:title" content="Singapore Society in Numbers" />
   
   <meta name="twitter:description" content="Understanding Singapore through quantitative social science" />
   
@@ -32,7 +32,7 @@
   
   
 
-<link rel="next" href="intro.html">
+<link rel="next" href="introduction.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -100,11 +100,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Quantifying Singapore Society</a></li>
+<li><a href="./">Singapore Society in Numbers</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i><b>0.1</b> About me</a></li>
+<li class="chapter" data-level="0.2" data-path="why-i-set-this-up.html"><a href="why-i-set-this-up.html"><i class="fa fa-check"></i><b>0.2</b> Why I set this up</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>1</b> Datasets</a><ul>
 <li class="chapter" data-level="1.1" data-path="section-two-of-intro.html"><a href="section-two-of-intro.html"><i class="fa fa-check"></i><b>1.1</b> Section Two of intro</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>2</b> Literature</a></li>
@@ -127,7 +131,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantifying Singapore Society</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Singapore Society in Numbers</a>
           </h1>
         </div>
 
@@ -136,14 +140,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Quantifying Singapore Society</h1>
+<h1 class="title">Singapore Society in Numbers</h1>
 <p class="author"><em>Shannon Ang</em></p>
 <p class="date"><em>Last updated: 2019-05-18</em></p>
 </div>
 <div id="preface" class="section level1 unnumbered">
 <h1>Preface</h1>
-<p>This online book is a compilation of resources to advance quantitative social science in Singapore. It is in progress, and as far as possible, will constantly be updated. The main goal is to promote interest and rigour in quantitative social science on Singapore. It does so by: 1. Providing information on Singapore-relevant datasets that are currently used to answer research and policy questions. This includes + Descriptions of <em>publicly available</em> datasets and how to access them. This overview of the ‘data landscape’ will be helpful for social scientists to get started with research on Singapore, and prevent wasteful overlap in primary data collection across institutions. + A list of <em>non-publicly available</em> or <em>restricted</em> datasets that could be used to answer important research or policy questions if access was granted. If available, details on the dataset and reasons for data restriction will also be listed. It is hoped that this list will promote greater transparency in data sharing across research teams. 2. Maintaining a repository of <em>replicable</em> case studies (with annotated code) on different aspects of Singapore society that can be used for illustrations in any quantitatively oriented college-level class. These may be short summaries (blog-length) of published work, or side analysis that may not be appropriate for an academic journal but are useful for Singapore social science nonetheless 3. Occasional think pieces by researchers on how to improve quantitative social science in Singapore.</p>
-
+<p>This online book is a compilation of resources to advance quantitative social science in Singapore. It is in progress, and as far as possible, will constantly be updated. The main goal is to promote interest and rigour in quantitative social science on Singapore. It does so by:</p>
+<ol style="list-style-type: decimal">
+<li>Providing information on Singapore-relevant datasets that are currently used to answer research and policy questions. This includes:</li>
+</ol>
+<ul>
+<li>Descriptions of <em>publicly available</em> datasets and how to access them. This overview of the ‘data landscape’ will be helpful for social scientists to get started with research on Singapore, and prevent wasteful overlap in primary data collection across institutions.</li>
+<li>A list of <em>non-publicly available</em> or <em>restricted</em> datasets that could be used to answer important research or policy questions if access was granted. If available, details on the dataset and reasons for data restriction will also be listed. It is hoped that this list will promote greater transparency in data sharing across research teams.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Maintaining a repository of <em>replicable</em> case studies (with annotated code, where possible) on Singapore society which can be used for illustrations in any quantitatively oriented college-level class. These may be short summaries (blog-length) of published work, or side analyses that may not be appropriate for an academic journal but are useful for Singapore social science nonetheless.</p></li>
+<li><p>Occasional think pieces by researchers on best practices and on how to improve quantitative social science in Singapore.</p></li>
+</ol>
 </div>
             </section>
 
@@ -151,7 +165,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </div>
       </div>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
