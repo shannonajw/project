@@ -26,7 +26,7 @@ This online book is a compilation of resources aimed at advancing quantitative s
   
 2. Maintaining a repository of _replicable_ case studies (with annotated code, where possible) on Singapore society which can be used for illustrations in any quantitatively oriented college-level class (Chapter \@ref(race) to Chapter \@ref(lifecourse)). These may be short summaries (blog-length) of published work, or side analyses that may not be appropriate for an academic journal but are useful for Singapore social science nonetheless.
 
-3. Occasional think pieces by researchers on best practices and on how to improve quantitative social science in Singapore (\@ref(think)).
+3. Occasional think pieces by researchers on best practices and on how to improve quantitative social science in Singapore (Chapter \@ref(think)).
 
 ## About me {-}
 
