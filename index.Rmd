@@ -22,7 +22,7 @@ bookdown::render_book("index.Rmd", "all")
 knitr::include_graphics("images/test.png")
 ```
 
-This online book is a compilation of resources aimed at advancing quantitative social science in Singapore. It is meant to be a 'living document', so it will be updated as frequently as possible. The main goal is to promote interest and rigour in quantitative social science on Singapore. It does so by: 
+This online book is a compilation of resources aimed at advancing quantitative social science in Singapore. It is meant to be a 'living document', so it will be updated as frequently as possible. The main goal is to promote interest, rigour, and transparency in trying to understand Singapore society quantitatively. It does so by: 
 
 1. **Providing information on Singapore-relevant datasets** that are currently used to answer research and policy questions (Chapter \@ref(publicdata) and Chapter \@ref(restricteddata)). This includes: 
     + Descriptions of *publicly available* datasets and how to access them. This overview of the 'data landscape' will be helpful for social scientists to get started with research on Singapore, and prevent wasteful overlap in primary data collection across institutions.
