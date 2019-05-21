@@ -1,10 +1,8 @@
-# (PART) Case Studies {-}
+# Case study 2 {#case2}
 
-# Race {#races}
+This is another case study
 
-This is a section on race
-
-## Witty title for Case 1
+## Witty title for Case 2
 
 - Contributor:
 - Dataset:
