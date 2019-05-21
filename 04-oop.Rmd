@@ -1,5 +1,5 @@
 # (PART) Case Studies {-}
 
-# Out of proportion {#oop}
+# Out of Proportion {#oop}
 
 - Contributor: Shannon Ang

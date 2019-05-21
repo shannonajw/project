@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  20 MAY 2019 21:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  20 MAY 2019 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,22 +1023,22 @@ Chapter 4.
 ]
 Chapter 5.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 324.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 323.
 File: bookdown_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown_files/figure-latex/nice-fig-1.pdf>
 (./bookdown.bbl [12
 
 ] [13])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
 [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
 (./bookdown.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 389.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 388.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
 Package rerunfilecheck Info: File `bookdown.out' has not changed.
-(rerunfilecheck)             Checksum: AFE2659DF68EDDC6C43565B12EA92754.
+(rerunfilecheck)             Checksum: 2018A68EF9A7659D97FEEA3E610A2C37.
 
 LaTeX Warning: There were undefined references.
 
