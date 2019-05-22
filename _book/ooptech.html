@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Blown out of proportion | Singapore Society in Numbers</title>
+  <title>4.3 Technical Appendix | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
   <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Blown out of proportion | Singapore Society in Numbers" />
+  <meta property="og:title" content="4.3 Technical Appendix | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Blown out of proportion | Singapore Society in Numbers" />
+  <meta name="twitter:title" content="4.3 Technical Appendix | Singapore Society in Numbers" />
   
   <meta name="twitter:description" content="Understanding Singapore through quantitative social science" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="think-piece-1.html">
-<link rel="next" href="watain.html">
+<link rel="prev" href="websavvy.html">
+<link rel="next" href="conclusions.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -146,18 +146,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="oop" class="section level1">
-<h1><span class="header-section-number">4</span> Blown out of proportion</h1>
-<ul>
-<li>Contributor: Shannon Ang</li>
-</ul>
-<p>Proportions (sometimes expressed in percentages) are commonly used in popular media to reflect public opinion. For instance, a news article may state that “nearly 46 per cent of those aged 18 to 25 would allow extremist views that deem all other religions as enemies to be published”<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>, or that “59 per cent of Chinese find a Malay president acceptable”<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>. While these proportions are easy for the general public to understand, they can be misleading if not read carefully. This case study looks at two different news articles, showing how some claims can be exaggerated by careless use of numbers.</p> 
+<div id="ooptech" class="section level2">
+<h2><span class="header-section-number">4.3</span> Technical Appendix</h2>
+<p>Before we go into a more technical explanation of what went wrong in these two cases, let us first move from proportions to probabilities. The difference between a proportion and a probability is important here. Note that when Minister Shanmugam said that the REACH poll provided evidence that the Government’s “assessment of public sentiment turned out to be correct”, he was not suggesting that 680 Singaporeans form the whole Singapore public. The underlying assumption was that since most survey respondents (who were aware) supported the ban, it is likely that most Singaporeans (who are aware) will also support the ban. That is, he was using the <em>proportion</em> of supportive survey respondents (a description of the sample), to infer the <em>probability</em> of any one Singaporean supporting the ban.</p>
+<p>The difference between a probability and a proportion may be simplified using a coin flip example. If I flip a fair coin 4 times, the proportion of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair coin, the probability of getting a heads is by definition 0.5. So the proportion may or may not equal the probability. What we know is that the more times I flip the coin, the more likely the proportion of heads. will reflect the probability of getting a heads. It is thus common to hear people say that the probability is the long-run proportion of an event. Below is some code (in R) for you to try out the coin flip example.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Set the number of trials to 4, you may change this number</span>
+n &lt;-<span class="st"> </span><span class="dv">4</span> 
+<span class="co"># Calculate the proportion of heads, based on flipping a fair coin</span>
+<span class="kw">sum</span>(<span class="kw">rbinom</span>(n, <span class="dv">1</span>, <span class="dt">prob=</span><span class="fl">0.5</span>))<span class="op">/</span>n </code></pre></div>
+<p>Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember probability rules from secondary (primary?) school<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:</p>
+<p><span class="math display">\[
+\Pr(\text{Aware of Ban}) = 0.63 \\
+\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
+\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\]</span></p>
+<p><span class="math inline">\(\Pr(\text{Support Ban } | \text{ Aware of Ban})\)</span> is a conditional probability, but the quantity that is being asserted in the article is <span class="math inline">\(\Pr(\text{Support Ban})\)</span> - the total probability. Using the law of total probability, we know that:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Pr(\text{Support Ban}) &amp;= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
+&amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban})
+\end{aligned}
+\]</span></p>
+<p>Putting in the numbers that we have,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37
+\end{aligned}
+\]</span></p>
+<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero. Similarly, in the Web-savvy Seniors example,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Pr(\text{Use Internet Daily}) &amp;= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
+&amp; \quad + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot \Pr(\text{Don&#39;t Use Internet}) \\
+&amp;= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot 0.63
+\end{aligned}
+\]</span> where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are quite different from the conditional probabilities.</p>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="6">
-<li id="fn6"><p><a href="https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows" class="uri">https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows</a><a href="oop.html#fnref6">↩</a></p></li>
-<li id="fn7"><p><a href="https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own" class="uri">https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own</a><a href="oop.html#fnref7">↩</a></p></li>
+<ol start="12">
+<li id="fn12"><p>Or that we can Google it if not<a href="ooptech.html#fnref12">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -165,8 +193,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </div>
         </div>
       </div>
-<a href="think-piece-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="watain.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="websavvy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

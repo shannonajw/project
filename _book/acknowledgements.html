@@ -116,7 +116,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.1" data-path="think-piece-1.html"><a href="think-piece-1.html"><i class="fa fa-check"></i><b>3.1</b> Think piece 1</a></li>
 </ul></li>
 <li class="part"><span><b>III Case Studies</b></span></li>
-<li class="chapter" data-level="4" data-path="oop.html"><a href="oop.html"><i class="fa fa-check"></i><b>4</b> Out of Proportion</a></li>
+<li class="chapter" data-level="4" data-path="oop.html"><a href="oop.html"><i class="fa fa-check"></i><b>4</b> Blown out of proportion</a><ul>
+<li class="chapter" data-level="4.1" data-path="watain.html"><a href="watain.html"><i class="fa fa-check"></i><b>4.1</b> Media claim 1: Support for the Watain ban</a></li>
+<li class="chapter" data-level="4.2" data-path="websavvy.html"><a href="websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Media claim 2: Web-savvy Seniors</a></li>
+<li class="chapter" data-level="4.3" data-path="ooptech.html"><a href="ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical Appendix</a></li>
+<li class="chapter" data-level="4.4" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>4.4</b> Conclusions</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="case2.html"><a href="case2.html"><i class="fa fa-check"></i><b>5</b> Case study 2</a><ul>
 <li class="chapter" data-level="5.1" data-path="witty-title-for-case-2.html"><a href="witty-title-for-case-2.html"><i class="fa fa-check"></i><b>5.1</b> Witty title for Case 2</a></li>
 </ul></li>
@@ -198,6 +203,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
