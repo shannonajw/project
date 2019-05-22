@@ -146,7 +146,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="ooptech" class="section level2">
 <h2><span class="header-section-number">4.3</span> Technical Appendix</h2>
-<p>Before we go into a more technical explanation of what went wrong in these two cases, let us first move from proportions to probabilities. The difference between a proportion and a probability is important here. Note that when Minister Shanmugam said that the REACH poll provided evidence that the Government’s “assessment of public sentiment turned out to be correct”, he was not suggesting that 680 Singaporeans form the whole Singapore public. The underlying assumption was that since most survey respondents (who were aware) supported the ban, it is likely that most Singaporeans (who are aware) will also support the ban. That is, he was using the <em>proportion</em> of supportive survey respondents (a description of the sample), to infer the <em>probability</em> (a hypothetical quantity) of any one Singaporean supporting the ban.</p>
+<p>Before we go into a more technical explanation of what went wrong in these two cases, let us first move from proportions to probabilities. The difference between a proportion and a probability is important here. Note that when Minister Shanmugam asserted the REACH poll provided evidence that the Government’s “assessment of public sentiment turned out to be correct”, he was not suggesting that 680 Singaporeans form the whole Singapore public. The underlying assumption was that since most survey respondents (who were aware) supported the ban, it is likely that most Singaporeans (who are aware) will also support the ban. That is, he was using the <em>proportion</em> of supportive survey respondents (a description of the sample), to infer the <em>probability</em> (a hypothetical quantity) of any one Singaporean supporting the ban.</p>
 <p>The difference between a probability and a proportion may be simplified using a coin flip example. If I flip a fair coin 4 times, the proportion of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair coin, the probability of getting a heads is, by definition, 0.5. So the proportion may or may not equal the probability. What we know is that the more times I flip the coin, the more likely the proportion of heads will reflect the true probability of getting a heads. It is thus common to hear people say that the probability is the “long-run proportion of an event”. Below is some code (in R) for you to try out the coin flip example.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Set the number of trials to 4. </span>
 <span class="co"># You may change the number to see what happens.</span>
@@ -175,7 +175,7 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 \Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
 \]</span> <br></p>
-<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero. Similarly, for the Web-savvy Seniors example,</p>
+<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals <span class="math inline">\(0.64\)</span>. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero. Similarly, for the Web-savvy Seniors example,</p>
 <p><br> <span class="math display">\[
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &amp;= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
@@ -183,7 +183,7 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 &amp;= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot 0.63 \\
 \end{aligned}
 \]</span> <br></p>
-<p>where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are substantially different from the conditional probabilities.</p>
+<p>where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are substantially different from the conditional probabilities, and there is no reason to believe they would be the same.</p>
 </div>
 <div class="footnotes">
 <hr />
