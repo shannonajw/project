@@ -57,7 +57,7 @@ Within the article, the reporter states:
 
 <br>
 
-I was skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States^[For instance, see https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/] gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can [check for ourselves](https://www.consumerbarometer.com/en/trending/?countryCode=SG&category=TRN-AGE-55-PLUS). Of interest here is the figure for 2014, which is when the news article was published. Note that the percent of Singaporeans aged 55 and above who use the internet daily in 2014 **is 29%, not 78% as the article suggests.** 
+I was skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States^[For instance, see https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/] gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can [check for ourselves](https://www.consumerbarometer.com/en/trending/?countryCode=SG&category=TRN-AGE-55-PLUS). Of interest in Figure \@ref(cb-seniorsinternet) are numbers reflecting year 2014 internet use, which is when the news article was published. Note that the percent of Singaporeans aged 55 and above who use the internet daily in 2014 **is 29%, not 78% as the article suggests.** 
 
 <br>
 ```{r cb-seniorsinternet, fig.cap='Screenshot of Consumer Barometer findings across time. Retrieved May 21, 2019.', out.width='100%', fig.align='center', echo=F}
