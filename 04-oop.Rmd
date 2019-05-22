@@ -84,9 +84,11 @@ Before we go into a more technical explanation of what went wrong in these two c
 The difference between a probability and a proportion may be simplified using a coin flip example. If I flip a fair coin 4 times, the proportion of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair coin, the probability of getting a heads is, by definition, 0.5. So the proportion may or may not equal the probability. What we know is that the more times I flip the coin, the more likely the proportion of heads will reflect the true probability of getting a heads. It is thus common to hear people say that the probability is the "long-run proportion of an event". Below is some code (in R) for you to try out the coin flip example.
 
 ```{r eval=F}
-# Set the number of trials to 4. You may change the number to see what happens.
+# Set the number of trials to 4. 
+# You may change the number to see what happens.
 n <- 4 
-# Calculate the proportion of heads, based on flipping a fair coin. Try this a few times.
+# Get the proportion of heads after flipping a fair coin n times. 
+# Try this a few times.
 sum(rbinom(n, 1, prob=0.5))/n 
 ```
 
