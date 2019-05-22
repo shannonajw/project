@@ -12,9 +12,12 @@ Proportions (sometimes expressed in percentages) are commonly used in popular me
 ## Media claim 1: Support for the Watain ban {#watain}
 Swedish black metal band Watain was supposed to perform in Singapore on 7 March 2019. However, the gig was cancelled just hours before it was scheduled to begin, with the government citing concerns from the Christian community^[See https://www.channelnewsasia.com/news/singapore/watain-concert-cancelled-christian-community-reaction-shanmugam-11399434]. To evaluate public sentiment towards this incident, REACH^[The Singapore Government's feedback unit] conducted a poll with 680 Singaporeans aged 15 and above. Of interest here is how results from this poll was represented in public discourse.
 
+<br>
 > Our assessment of public sentiment turned out to be correct, because a subsequent REACH survey showed that, first of all, that 60% were aware of the cancellation. **Of those who were aware**, 86% of Christians agreed with the cancellation. That I think will be natural. But 64% **of all who had heard about the cancellation**, Christian and non-Christian, also agreed with the cancellation. Twenty-eight percent thought that it should not have been cancelled. 
 >
 > Minister for Home Affairs K Shanmugam, 1 April 2019, *emphasis mine*
+
+<br>
 
 The quote above is [taken directly from the Hansard](https://sprs.parl.gov.sg/search/sprs3topic?reportid=ministerial-statement-1170), and is consistent with the results shown in REACH's [press release](https://www.reach.gov.sg/~/media/2019/press-release/findings-of-poll-on-watain-concert--1-april-2019.pdf). Note the phrases that I bolded for our purposes, which I will call "qualifiers".
 
@@ -25,12 +28,13 @@ knitr::include_graphics("images/STwatain.png")
 <br>
 
 The next day, national newspaper The Straits Times ran [a story](https://www.straitstimes.com/politics/singapolitics/parliament-two-out-of-three-singaporeans-back-governments-move-to-cancel) headlined "Parliament: Two in three back move to ban Watain gig". Within the text of the article, it reads:
+
 <br>
 > The Government decided to cancel the permit for Watain's concert last month when it received reports that mainstream Christians were very concerned and offended by the band, Home Affairs Minister K. Shanmugam said yesterday. And a survey of Singaporeans by government feedback unit Reach found that two in three supported the move, he noted. Among Christians, 86 per cent were supportive of the move to disallow the concert, the Reach poll found.
 
 <br>
 
-Note the qualifier "among those who were aware" is neither in the headline (Figure \@ref(st-watain)) nor the body of the article^[CNA ran a similar headline, but included the qualifier within the article. See https://www.channelnewsasia.com/news/singapore/2-in-3-singaporeans-in-reach-poll-supported-government-s-11401066]. 
+Note the qualifier "among those who were aware" is neither in the headline (Figure \@ref(fig:st-watain)) nor the body of the article^[CNA ran a similar headline, but included the qualifier within the article. See https://www.channelnewsasia.com/news/singapore/2-in-3-singaporeans-in-reach-poll-supported-government-s-11401066]. 
 
 *Why is this important?* [Results from REACH](https://www.reach.gov.sg/~/media/2019/press-release/findings-of-poll-on-watain-concert--1-april-2019.pdf) show that 63% of respondents were aware, and out of these respondents, 64% supported the government's ban. This means that out of *all* respondents to the survey, only about 40% reported supporting the ban. This means that the qualifying phrase "among those who were aware" meaningfully changes the interpretation of the results - we shouldn't be able to say that **the majority of Singaporeans** supported the ban when in fact only 40% of the survey respondents did so.
 
