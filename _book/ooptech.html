@@ -154,7 +154,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 n &lt;-<span class="st"> </span><span class="dv">4</span> 
 <span class="co"># Calculate the proportion of heads, based on flipping a fair coin</span>
 <span class="kw">sum</span>(<span class="kw">rbinom</span>(n, <span class="dv">1</span>, <span class="dt">prob=</span><span class="fl">0.5</span>))<span class="op">/</span>n </code></pre></div>
-<p>Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember probability rules from secondary (primary?) school<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:</p>
+<p>Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:</p>
 <p><span class="math display">\[
 \Pr(\text{Aware of Ban}) = 0.63 \\
 \Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
@@ -167,13 +167,14 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 &amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban})
 \end{aligned}
 \]</span></p>
-<p>Putting in the numbers that we have,</p>
+<p>Plugging in the numbers that we have,</p>
 <p><span class="math display">\[
 \begin{aligned}
 \Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37
 \end{aligned}
 \]</span></p>
-<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero. Similarly, in the Web-savvy Seniors example,</p>
+<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero.</p>
+<p>Similarly, in the Web-savvy Seniors example,</p>
 <p><span class="math display">\[
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &amp;= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\

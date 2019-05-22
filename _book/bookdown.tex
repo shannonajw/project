@@ -319,7 +319,7 @@ by careless use of numbers.
 Swedish black metal band Watain was supposed to perform in Singapore on
 7 March 2019. However, the gig was cancelled just hours before it was
 scheduled to begin, with the government citing concerns from the
-Christian community\footnote{see
+Christian community\footnote{See
   \url{https://www.channelnewsasia.com/news/singapore/watain-concert-cancelled-christian-community-reaction-shanmugam-11399434}}.
 To evaluate public sentiment towards this incident, REACH\footnote{The
   Singapore Government's feedback unit} conducted a poll with 680
@@ -333,8 +333,10 @@ of the cancellation. \textbf{Of those who were aware}, 86\% of
 Christians agreed with the cancellation. That I think will be natural.
 But 64\% \textbf{of all who had heard about the cancellation}, Christian
 and non-Christian, also agreed with the cancellation. Twenty-eight
-percent thought that it should not have been cancelled. - Minister for
-Home Affairs K Shanmugam, 1 April 2019, \emph{emphasis mine}
+percent thought that it should not have been cancelled.
+
+Minister for Home Affairs K Shanmugam, 1 April 2019, \emph{emphasis
+mine}
 \end{quote}
 
 The quote above is
@@ -342,17 +344,12 @@ The quote above is
 directly from the Hansard}, and is consistent with the results shown in
 REACH's
 \href{https://www.reach.gov.sg/~/media/2019/press-release/findings-of-poll-on-watain-concert--1-april-2019.pdf}{press
-release}. Note the qualifiers that I bolded for our purposes.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\StringTok{"images/STwatain.png"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+release}. Note the phrases that I bolded for our purposes, which I will
+call ``qualifiers''.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/STwatain} 
+{\centering \includegraphics[width=0.8\linewidth]{images/STwatain} 
 
 }
 
@@ -384,9 +381,9 @@ headline nor the body of the article\footnote{CNA ran a similar
 from REACH} show that 63\% of respondents were aware, and out of these
 respondents, 64\% supported the government's ban. This means that out of
 \emph{all} respondents to the survey, only about 40\% reported
-supporting the ban. This means that the qualifier ``among those who were
-aware'' meaningfully changes the interpretation of the results - we
-shouldn't be able to say that \textbf{the majority of Singaporeans}
+supporting the ban. This means that the qualifying phrase ``among those
+who were aware'' meaningfully changes the interpretation of the results
+- we shouldn't be able to say that \textbf{the majority of Singaporeans}
 supported the ban when in fact only 40\% of the survey respondents did
 so.
 
@@ -411,15 +408,9 @@ lives of older adults \citep[see][]{ang_going_2018}. I was interested in
 what this looked like in Singapore, and googled something like
 ``internet use seniors''. An 2014 article in the Straits Times came up.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\StringTok{"images/STwebsavvyseniors.png"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/STwebsavvyseniors} 
+{\centering \includegraphics[width=0.8\linewidth]{images/STwebsavvyseniors} 
 
 }
 
@@ -437,7 +428,7 @@ seniors.
 
 I was immediately blown away. Over and above my anecdotal experience
 with Singapore older adults, past research in the United
-States\footnote{For instance,
+States\footnote{For instance, see
   \url{https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/}}
 gave me reason to expect that the proportion of older people even using
 the Internet (everyday or not) should be much lower. Some results from
@@ -447,12 +438,6 @@ for ourselves}. Of interest here is the figure for 2014, which is when
 the article was written. Note that the percent of Singaporeans aged 55
 and above who use the internet daily \textbf{is 29\%, not 78\% as the
 article suggests.}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\StringTok{"images/CBseniorsinternet.png"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{figure}
 
@@ -468,27 +453,22 @@ statistics for 2014 doesn't seem available online anymore, a little
 investigation using 2017 figures shows how the reporter arrived at the
 higher number.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\StringTok{"images/CBsinglequestion.png"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/CBsinglequestion} 
+{\centering \includegraphics[width=0.9\linewidth]{images/CBsinglequestion} 
 
 }
 
 \caption{Screenshot of Consumer Barometer results on 2017 internet use. Retrieved May 21, 2019.}\label{fig:cb-single}
 \end{figure}
 
-The crucial part of Figure @ref\{fig:cb-single\} is the footnote that
-says ``base''. This tells us that in 2017, 82\% \textbf{of those who use
-the internet} use it daily. We can get this 82\% using the numbers in
-Figure @ref\{fig:cb-seniorsinternet\} - simply by noting that 43\% is
-approximately 82\% of 53\%. That is, \(\frac{43}{53} \approx 0.82\). We
-can use the same strategy to recover the reporter's figure for 2014 -
+The crucial part of Figure \ref{fig:cb-single} is the footnote that says
+``base'', which tells us that the 82\% figure for daily Internet usage
+in 2017 are \textbf{among those who use the internet}. We can easily
+calculate this 82\% ourselves by using the numbers in Figure
+\ref{fig:cb-seniorsinternet} - note that 43\% is approximately 82\% of
+53\%. That is, \(\frac{43}{53} \approx 0.82\). Using the same strategy,
+we can recover the reporter's figure for 2014:
 \(\frac{29}{37} \approx 0.78\).
 
 \emph{What does this mean?} This means that just like the reporter in
@@ -541,7 +521,7 @@ about Singaporeans in general - that is, if we were to randomly pick a
 Singaporean from those who are aware of the ban), the probability of
 this person supporting the ban is about 0.64 (or 64\%). The problem at
 hand then reduces to a trivial probability question, assuming that we
-all remember probability rules from secondary (primary?)
+all remember basic probability rules from secondary (primary?)
 school\footnote{Or that we can Google it if not}. If the REACH poll is
 indeed representative of all Singaporeans, then we have the following
 quantities:
@@ -564,7 +544,7 @@ total probability, we know that:
 \end{aligned}
 \]
 
-Putting in the numbers that we have,
+Plugging in the numbers that we have,
 
 \[
 \begin{aligned}
@@ -575,8 +555,9 @@ Putting in the numbers that we have,
 we see that \(\Pr(\text{Support Ban}) = 0.64\) if and only if
 \(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\) also equals
 0.64. That said, \(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)
-is logically impossible, and should equal zero. Similarly, in the
-Web-savvy Seniors example,
+is logically impossible, and should equal zero.
+
+Similarly, in the Web-savvy Seniors example,
 
 \[
 \begin{aligned}
