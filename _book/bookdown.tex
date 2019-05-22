@@ -256,8 +256,8 @@ think carefully about pertinent issues surrounding such work.
 \section*{How to contribute}\label{how-to-contribute}
 \addcontentsline{toc}{section}{How to contribute}
 
-Instructions on how to list a dataset, contribute a case study, or write
-a think piece for this page.
+Instructions (tbc) on how to list a dataset, contribute a case study, or
+write a think piece for this page.
 
 \section*{Acknowledgements}\label{acknowledgements}
 \addcontentsline{toc}{section}{Acknowledgements}
@@ -271,7 +271,7 @@ Contributors include:
 \section*{About me}\label{about-me}
 \addcontentsline{toc}{section}{About me}
 
-Little write-up about myself
+Little write-up about myself, which i will insert\ldots{}
 
 \part{Datasets for Social
 Science}\label{part-datasets-for-social-science}
@@ -406,9 +406,9 @@ false conclusions pretty quickly. Let us look at another example.
 
 Part of my research involves looking at how Internet use can improve the
 lives of older adults \citep[see][]{ang_going_2018}. I was interested in
-what this looked like in Singapore, and googled something like
-``internet use seniors''. One 2014 article in the Straits Times caught
-my eye (see Figure \ref{fig:st-websavvyseniors}).
+what the overall situation was like in Singapore, and googled something
+like ``internet use seniors''. One 2014 article in the Straits Times
+immediately caught my eye (see Figure \ref{fig:st-websavvyseniors}).
 
 \begin{figure}
 
@@ -428,9 +428,9 @@ putting Singapore fifth in the world for having the most Internet-savvy
 seniors.
 \end{quote}
 
-I was immediately skeptical. Over and above my anecdotal experience with
-Singapore older adults, past research in the United States\footnote{For
-  instance, see
+I was skeptical. Over and above my anecdotal experience with Singapore
+older adults, past research in the United States\footnote{For instance,
+  see
   \url{https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/}}
 gave me reason to expect that the proportion of older people even using
 the Internet (everyday or not) should be much lower. Some results from
@@ -494,8 +494,8 @@ the whole Singapore public. The underlying assumption was that since
 most survey respondents (who were aware) supported the ban, it is likely
 that most Singaporeans (who are aware) will also support the ban. That
 is, he was using the \emph{proportion} of supportive survey respondents
-(a description of the sample), to infer the \emph{probability} of any
-one Singaporean supporting the ban.
+(a description of the sample), to infer the \emph{probability} (a
+hypothetical quantity) of any one Singaporean supporting the ban.
 
 The difference between a probability and a proportion may be simplified
 using a coin flip example. If I flip a fair coin 4 times, the proportion
@@ -540,8 +540,8 @@ Singaporeans, then we have the following quantities:
 
 \(\Pr(\text{Support Ban } | \text{ Aware of Ban})\) is a conditional
 probability, but the quantity that is being asserted in the news article
-is \(\Pr(\text{Support Ban})\) - the total probability. Using the law of
-total probability, we know that:
+is \(\Pr(\text{Support Ban})\), which is the total probability. Using
+the law of total probability, we know that:
 
  \[
 \begin{aligned}
@@ -574,7 +574,7 @@ Web-savvy Seniors example,
 
 where \(\Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\)
 is impossible and should be zero. In both cases, total probabilites are
-quite different from the conditional probabilities.
+substantially different from the conditional probabilities.
 
 \section{Conclusion}\label{conclusion}
 
@@ -584,23 +584,18 @@ blown out of proportion. It is not wise to completely rely on assertions
 made by news articles (or other kinds of reports), even from supposedly
 credible agencies like the Straits Times. As we have seen, social
 scientists should be comfortable with interpreting data from its
-source\footnote{this, however, first requires data to be made available
+source\footnote{This, however, first requires data to be made available
   for replication purposes.} in order to evaluate claims that are being
 made in public discourse today.
 
 \chapter{Case study 2}\label{case2}
 
-This is another case study
+\begin{verbatim}
+Contributor:
+Date:
+\end{verbatim}
 
-\section{Witty title for Case 2}\label{witty-title-for-case-2}
-
-\begin{itemize}
-\tightlist
-\item
-  Contributor:
-\item
-  Dataset:
-\end{itemize}
+Another case study goes here. Do you wish to contribute?
 
 This is an example of in-line code annotation and output.
 
@@ -627,7 +622,7 @@ Similarly, you can reference tables generated from
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
+  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{5}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
   \DataTypeTok{booktabs =} \OtherTok{TRUE}
 \NormalTok{)}
 \end{Highlighting}
@@ -646,24 +641,6 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 4.7 & 3.2 & 1.3 & 0.2 & setosa\\
 4.6 & 3.1 & 1.5 & 0.2 & setosa\\
 5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
 \bottomrule
 \end{tabular}
 \end{table}

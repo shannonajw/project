@@ -48,7 +48,7 @@ __*For Singapore social science.*__
 
 ## How to contribute {-}
 
-Instructions on how to list a dataset, contribute a case study, or write a think piece for this page.
+Instructions (tbc) on how to list a dataset, contribute a case study, or write a think piece for this page.
 
 ## Acknowledgements {-}
 
@@ -58,7 +58,7 @@ Contributors include:
 
 ## About me {-}
 
-Little write-up about myself
+Little write-up about myself, which i will insert...
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

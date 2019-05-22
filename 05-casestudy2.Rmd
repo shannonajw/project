@@ -1,11 +1,11 @@
 # Case study 2 {#case2}
 
-This is another case study
+```
+Contributor:
+Date:
+```
 
-## Witty title for Case 2
-
-- Contributor:
-- Dataset:
+Another case study goes here. Do you wish to contribute? 
 
 This is an example of in-line code annotation and output. 
 
@@ -18,7 +18,7 @@ Figures can be referenced, e.g., see Figure \@ref(fig:nice-fig). Similarly, you 
 
 ```{r nice-tab, tidy=FALSE}
 knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
+  head(iris, 5), caption = 'Here is a nice table!',
   booktabs = TRUE
 )
 ```
