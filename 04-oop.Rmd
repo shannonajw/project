@@ -43,7 +43,7 @@ In effect, the Straits Times article is invoking a strong assumption here (see \
 
 ## Media claim 2: Web-savvy Seniors {#websavvy}
 
-Part of my research involves looking at how Internet use can improve the lives of older adults [see @ang_going_2018]. I was interested in what this looked like in Singapore, and googled something like "internet use seniors". One 2014 article in the Straits Times caught my eye (see \@ref(fig:st-websavvyseniors)).
+Part of my research involves looking at how Internet use can improve the lives of older adults [see @ang_going_2018]. I was interested in what this looked like in Singapore, and googled something like "internet use seniors". One 2014 article in the Straits Times caught my eye (see Figure \@ref(fig:st-websavvyseniors)).
 
 <br>
 ```{r st-websavvyseniors, fig.cap='Screenshot of online article on web-savvy seniors. Retrieved May 21, 2019.', out.width='80%', fig.align='center', echo=F}
