@@ -296,11 +296,10 @@ Think pieces section
 
 \chapter{Blown out of proportion}\label{oop}
 
-\begin{itemize}
-\tightlist
-\item
-  Contributor: Shannon Ang
-\end{itemize}
+\begin{verbatim}
+Contributor: Shannon Ang
+Date: 21 May 2019
+\end{verbatim}
 
 Proportions (sometimes expressed in percentages) are commonly used in
 popular media to reflect public opinion. For instance, a news article
@@ -372,8 +371,9 @@ concert, the Reach poll found.
 \end{quote}
 
 Note the qualifier ``among those who were aware'' is neither in the
-headline nor the body of the article\footnote{CNA ran a similar
-  headline, but included the qualifier within the article. See
+headline (Figure \ref{st-watain}) nor the body of the article\footnote{CNA
+  ran a similar headline, but included the qualifier within the article.
+  See
   \url{https://www.channelnewsasia.com/news/singapore/2-in-3-singaporeans-in-reach-poll-supported-government-s-11401066}}.
 
 \emph{Why is this important?}
@@ -426,9 +426,9 @@ putting Singapore fifth in the world for having the most Internet-savvy
 seniors.
 \end{quote}
 
-I was immediately blown away. Over and above my anecdotal experience
-with Singapore older adults, past research in the United
-States\footnote{For instance, see
+I was immediately skeptical. Over and above my anecdotal experience with
+Singapore older adults, past research in the United States\footnote{For
+  instance, see
   \url{https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/}}
 gave me reason to expect that the proportion of older people even using
 the Internet (everyday or not) should be much lower. Some results from
@@ -462,10 +462,10 @@ higher number.
 \caption{Screenshot of Consumer Barometer results on 2017 internet use. Retrieved May 21, 2019.}\label{fig:cb-single}
 \end{figure}
 
-The crucial part of Figure \ref{fig:cb-single} is the footnote that says
-``base'', which tells us that the 82\% figure for daily Internet usage
-in 2017 are \textbf{among those who use the internet}. We can easily
-calculate this 82\% ourselves by using the numbers in Figure
+Looking at Figure \ref{fig:cb-single}, the crucial part is the footnote
+that says ``base'', which tells us that the 82\% figure for daily
+Internet usage in 2017 are \textbf{among those who use the internet}. We
+can easily calculate this 82\% ourselves by using the numbers in Figure
 \ref{fig:cb-seniorsinternet} - note that 43\% is approximately 82\% of
 53\%. That is, \(\frac{43}{53} \approx 0.82\). Using the same strategy,
 we can recover the reporter's figure for 2014:
@@ -526,11 +526,11 @@ school\footnote{Or that we can Google it if not}. If the REACH poll is
 indeed representative of all Singaporeans, then we have the following
 quantities:
 
-\[
+ \[
 \begin{aligned}
 &\Pr(\text{Aware of Ban}) = 0.63 \\
 &\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
-&\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+&\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 
 \end{aligned}
 \]
 
@@ -539,16 +539,16 @@ probability, but the quantity that is being asserted in the article is
 \(\Pr(\text{Support Ban})\) - the total probability. Using the law of
 total probability, we know that:
 
-\[
+ \[
 \begin{aligned}
 \Pr(\text{Support Ban}) &= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
-& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) \\
+& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) 
 \end{aligned}
 \]
 
 Plugging in the numbers that we have,
 
-\[
+ \[
 \begin{aligned}
 \Pr(\text{Support Ban}) &= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
@@ -557,22 +557,22 @@ Plugging in the numbers that we have,
 we see that \(\Pr(\text{Support Ban}) = 0.64\) if and only if
 \(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\) also equals
 0.64. That said, \(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)
-is logically impossible, and should equal zero.
+is logically impossible, and should equal zero. Similarly, for the
+Web-savvy Seniors example,
 
-Similarly, in the Web-savvy Seniors example,
-
-\[
+ \[
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
 & \quad + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot \Pr(\text{Don't Use Internet}) \\
 &= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot 0.63 \\
 \end{aligned}
-\] where
-\(\Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\) is
-impossible and should be zero. In both cases, total probabilites are
+\]
+
+where \(\Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\)
+is impossible and should be zero. In both cases, total probabilites are
 quite different from the conditional probabilities.
 
-\section{Conclusions}\label{conclusions}
+\section{Conclusion}\label{conclusion}
 
 By now, it should be clear that qualifiers attached to proportions (and
 percentages) are critical. Without them, results from studies can be

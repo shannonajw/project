@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="websavvy.html">
-<link rel="next" href="conclusions.html">
+<link rel="next" href="conclusion.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -120,7 +120,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.1" data-path="watain.html"><a href="watain.html"><i class="fa fa-check"></i><b>4.1</b> Media claim 1: Support for the Watain ban</a></li>
 <li class="chapter" data-level="4.2" data-path="websavvy.html"><a href="websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Media claim 2: Web-savvy Seniors</a></li>
 <li class="chapter" data-level="4.3" data-path="ooptech.html"><a href="ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical Appendix</a></li>
-<li class="chapter" data-level="4.4" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>4.4</b> Conclusions</a></li>
+<li class="chapter" data-level="4.4" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="case2.html"><a href="case2.html"><i class="fa fa-check"></i><b>5</b> Case study 2</a><ul>
 <li class="chapter" data-level="5.1" data-path="witty-title-for-case-2.html"><a href="witty-title-for-case-2.html"><i class="fa fa-check"></i><b>5.1</b> Witty title for Case 2</a></li>
@@ -155,35 +155,35 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 <span class="co"># Calculate the proportion of heads, based on flipping a fair coin</span>
 <span class="kw">sum</span>(<span class="kw">rbinom</span>(n, <span class="dv">1</span>, <span class="dt">prob=</span><span class="fl">0.5</span>))<span class="op">/</span>n </code></pre></div>
 <p>Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:</p>
-<p><span class="math display">\[
+<p><br> <span class="math display">\[
 \begin{aligned}
 &amp;\Pr(\text{Aware of Ban}) = 0.63 \\
 &amp;\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
-&amp;\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+&amp;\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 
 \end{aligned}
-\]</span></p>
+\]</span> <br></p>
 <p><span class="math inline">\(\Pr(\text{Support Ban } | \text{ Aware of Ban})\)</span> is a conditional probability, but the quantity that is being asserted in the article is <span class="math inline">\(\Pr(\text{Support Ban})\)</span> - the total probability. Using the law of total probability, we know that:</p>
-<p><span class="math display">\[
+<p><br> <span class="math display">\[
 \begin{aligned}
 \Pr(\text{Support Ban}) &amp;= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
-&amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) \\
+&amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) 
 \end{aligned}
-\]</span></p>
+\]</span> <br></p>
 <p>Plugging in the numbers that we have,</p>
-<p><span class="math display">\[
+<p><br> <span class="math display">\[
 \begin{aligned}
 \Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
-\]</span></p>
-<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero.</p>
-<p>Similarly, in the Web-savvy Seniors example,</p>
-<p><span class="math display">\[
+\]</span> <br></p>
+<p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero. Similarly, for the Web-savvy Seniors example,</p>
+<p><br> <span class="math display">\[
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &amp;= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
 &amp; \quad + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot \Pr(\text{Don&#39;t Use Internet}) \\
 &amp;= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot 0.63 \\
 \end{aligned}
-\]</span> where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are quite different from the conditional probabilities.</p>
+\]</span> <br></p>
+<p>where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are quite different from the conditional probabilities.</p>
 </div>
 <div class="footnotes">
 <hr />
@@ -197,7 +197,7 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
         </div>
       </div>
 <a href="websavvy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="conclusions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
