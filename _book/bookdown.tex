@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{Last updated 21 May 2019}
+    \date{Last updated 22 May 2019}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -387,18 +387,19 @@ who were aware'' meaningfully changes the interpretation of the results
 supported the ban when in fact only 40\% of the survey respondents did
 so.
 
-In effect, the Straits Times article is invoking a strong (but unspoken)
-assumption here (see \ref{ooptech} for a more technical explanation) -
-that \emph{if} those who were unaware were in fact able to express their
+In effect, the Straits Times article is invoking a strong assumption
+here (see \ref{ooptech} for a more technical explanation) - that
+\emph{if} those who were unaware were in fact able to express their
 support for the ban, the same proportion of respondents (among those who
 were aware, 64\%) would also support the ban. But being aware of the ban
 is a \emph{prerequisite} for support of the ban, which makes this
-assumption unreasonable. Even assuming this hypothetical scenario were
-possible, the actual figure could be higher or lower. Those who were not
-aware may be less likely to care about black metal music (or simply too
-busy to keep up with current affairs) and simply base their support of
-the ban on their general sentiment toward government policies. This
-seemingly small technical error (of omitting the qualifier) can lead to
+assumption rather unreasonable. Even assuming this hypothetical scenario
+were possible, the actual figure could be higher or lower - it depends
+on how similar (or different) the unaware are to the aware. Those who
+were not aware may be less likely to care about black metal music (or
+simply too busy to keep up with current affairs) and simply base their
+support of the ban on their general sentiment toward government
+policies. This seemingly minor omission of the qualifier can lead to
 false conclusions pretty quickly. Let us look at another example.
 
 \section{Media claim 2: Web-savvy Seniors}\label{websavvy}
@@ -406,7 +407,8 @@ false conclusions pretty quickly. Let us look at another example.
 Part of my research involves looking at how Internet use can improve the
 lives of older adults \citep[see][]{ang_going_2018}. I was interested in
 what this looked like in Singapore, and googled something like
-``internet use seniors''. An 2014 article in the Straits Times came up.
+``internet use seniors''. One 2014 article in the Straits Times caught
+my eye (see \ref{fig:st-websavvyseniors}).
 
 \begin{figure}
 
@@ -435,13 +437,13 @@ the Internet (everyday or not) should be much lower. Some results from
 Consumer Barometer are available online, so we can
 \href{https://www.consumerbarometer.com/en/trending/?countryCode=SG\&category=TRN-AGE-55-PLUS}{check
 for ourselves}. Of interest here is the figure for 2014, which is when
-the article was written. Note that the percent of Singaporeans aged 55
-and above who use the internet daily \textbf{is 29\%, not 78\% as the
-article suggests.}
+the news article was published. Note that the percent of Singaporeans
+aged 55 and above who use the internet daily in 2014 \textbf{is 29\%,
+not 78\% as the article suggests.}
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/CBseniorsinternet} 
+{\centering \includegraphics[width=1\linewidth]{images/CBseniorsinternet} 
 
 }
 
@@ -450,8 +452,8 @@ article suggests.}
 
 How then, did the reporter get things so wrong? While detailed
 statistics for 2014 doesn't seem available online anymore, a little
-investigation using 2017 figures shows how the reporter arrived at the
-higher number.
+investigation using 2017 figures shows how the reporter arrived at a
+number as high as 78\%.
 
 \begin{figure}
 
@@ -498,33 +500,33 @@ one Singaporean supporting the ban.
 The difference between a probability and a proportion may be simplified
 using a coin flip example. If I flip a fair coin 4 times, the proportion
 of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair
-coin, the probability of getting a heads is by definition 0.5. So the
+coin, the probability of getting a heads is, by definition, 0.5. So the
 proportion may or may not equal the probability. What we know is that
-the more times I flip the coin, the more likely the proportion of heads.
-will reflect the probability of getting a heads. It is thus common to
-hear people say that the probability is the long-run proportion of an
-event. Below is some code (in R) for you to try out the coin flip
+the more times I flip the coin, the more likely the proportion of heads
+will reflect the true probability of getting a heads. It is thus common
+to hear people say that the probability is the ``long-run proportion of
+an event''. Below is some code (in R) for you to try out the coin flip
 example.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# Set the number of trials to 4, you may change this number}
+\CommentTok{# Set the number of trials to 4. You may change the number to see what happens.}
 \NormalTok{n <-}\StringTok{ }\DecValTok{4} 
-\CommentTok{# Calculate the proportion of heads, based on flipping a fair coin}
+\CommentTok{# Calculate the proportion of heads, based on flipping a fair coin. Try this a few times.}
 \KeywordTok{sum}\NormalTok{(}\KeywordTok{rbinom}\NormalTok{(n, }\DecValTok{1}\NormalTok{, }\DataTypeTok{prob=}\FloatTok{0.5}\NormalTok{))}\OperatorTok{/}\NormalTok{n }
 \end{Highlighting}
 \end{Shaded}
 
-Now that we have established the only reason why we are interested in
-proportions from a REACH poll is that they purport to tell us something
-about Singaporeans in general - that is, if we were to randomly pick a
-Singaporean from those who are aware of the ban), the probability of
-this person supporting the ban is about 0.64 (or 64\%). The problem at
-hand then reduces to a trivial probability question, assuming that we
-all remember basic probability rules from secondary (primary?)
-school\footnote{Or that we can Google it if not}. If the REACH poll is
-indeed representative of all Singaporeans, then we have the following
-quantities:
+We have now established that the main reason why we are interested in
+proportions from a REACH poll is because they purport to tell us
+something about Singaporeans in general. That is, the REACH poll
+suggests that if we were to randomly pick a Singaporean from those who
+are aware of the ban), the probability of this person supporting the ban
+is about 0.64 (or 64\%). The problem at hand then reduces to a trivial
+probability question, assuming that we all remember basic probability
+rules from secondary (primary?) school\footnote{Or that we can Google it
+  if not}. If the REACH poll is indeed representative of all
+Singaporeans, then we have the following quantities:
 
  \[
 \begin{aligned}
@@ -535,8 +537,8 @@ quantities:
 \]
 
 \(\Pr(\text{Support Ban } | \text{ Aware of Ban})\) is a conditional
-probability, but the quantity that is being asserted in the article is
-\(\Pr(\text{Support Ban})\) - the total probability. Using the law of
+probability, but the quantity that is being asserted in the news article
+is \(\Pr(\text{Support Ban})\) - the total probability. Using the law of
 total probability, we know that:
 
  \[

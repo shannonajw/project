@@ -39,11 +39,11 @@ Note the qualifier "among those who were aware" is neither in the headline (Figu
 
 *Why is this important?* [Results from REACH](https://www.reach.gov.sg/~/media/2019/press-release/findings-of-poll-on-watain-concert--1-april-2019.pdf) show that 63% of respondents were aware, and out of these respondents, 64% supported the government's ban. This means that out of *all* respondents to the survey, only about 40% reported supporting the ban. This means that the qualifying phrase "among those who were aware" meaningfully changes the interpretation of the results - we shouldn't be able to say that **the majority of Singaporeans** supported the ban when in fact only 40% of the survey respondents did so.
 
-In effect, the Straits Times article is invoking a strong (but unspoken) assumption here (see \@ref(ooptech) for a more technical explanation) - that *if* those who were unaware were in fact able to express their support for the ban, the same proportion of respondents (among those who were aware, 64%) would also support the ban. But being aware of the ban is a *prerequisite* for support of the ban, which makes this assumption unreasonable. Even assuming this hypothetical scenario were possible, the actual figure could be higher or lower. Those who were not aware may be less likely to care about black metal music (or simply too busy to keep up with current affairs) and simply base their support of the ban on their general sentiment toward government policies. This seemingly small technical error (of omitting the qualifier) can lead to false conclusions pretty quickly. Let us look at another example.
+In effect, the Straits Times article is invoking a strong assumption here (see \@ref(ooptech) for a more technical explanation) - that *if* those who were unaware were in fact able to express their support for the ban, the same proportion of respondents (among those who were aware, 64%) would also support the ban. But being aware of the ban is a *prerequisite* for support of the ban, which makes this assumption rather unreasonable. Even assuming this hypothetical scenario were possible, the actual figure could be higher or lower - it depends on how similar (or different) the unaware are to the aware. Those who were not aware may be less likely to care about black metal music (or simply too busy to keep up with current affairs) and simply base their support of the ban on their general sentiment toward government policies. This seemingly minor omission of the qualifier can lead to false conclusions pretty quickly. Let us look at another example.
 
 ## Media claim 2: Web-savvy Seniors {#websavvy}
 
-Part of my research involves looking at how Internet use can improve the lives of older adults [see @ang_going_2018]. I was interested in what this looked like in Singapore, and googled something like "internet use seniors". An 2014 article in the Straits Times came up.
+Part of my research involves looking at how Internet use can improve the lives of older adults [see @ang_going_2018]. I was interested in what this looked like in Singapore, and googled something like "internet use seniors". One 2014 article in the Straits Times caught my eye (see \@ref(fig:st-websavvyseniors)).
 
 <br>
 ```{r st-websavvyseniors, fig.cap='Screenshot of online article on web-savvy seniors. Retrieved May 21, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -57,15 +57,15 @@ Within the article, the reporter states:
 
 <br>
 
-I was immediately skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States^[For instance, see https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/] gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can [check for ourselves](https://www.consumerbarometer.com/en/trending/?countryCode=SG&category=TRN-AGE-55-PLUS). Of interest here is the figure for 2014, which is when the article was written. Note that the percent of Singaporeans aged 55 and above who use the internet daily **is 29%, not 78% as the article suggests.** 
+I was immediately skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States^[For instance, see https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/] gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can [check for ourselves](https://www.consumerbarometer.com/en/trending/?countryCode=SG&category=TRN-AGE-55-PLUS). Of interest here is the figure for 2014, which is when the news article was published. Note that the percent of Singaporeans aged 55 and above who use the internet daily in 2014 **is 29%, not 78% as the article suggests.** 
 
 <br>
-```{r cb-seniorsinternet, fig.cap='Screenshot of Consumer Barometer findings across time. Retrieved May 21, 2019.', out.width='80%', fig.align='center', echo=F}
+```{r cb-seniorsinternet, fig.cap='Screenshot of Consumer Barometer findings across time. Retrieved May 21, 2019.', out.width='100%', fig.align='center', echo=F}
 knitr::include_graphics("images/CBseniorsinternet.png")
 ```
 <br>
 
-How then, did the reporter get things so wrong? While detailed statistics for 2014 doesn't seem available online anymore, a little investigation using 2017 figures shows how the reporter arrived at the higher number.
+How then, did the reporter get things so wrong? While detailed statistics for 2014 doesn't seem available online anymore, a little investigation using 2017 figures shows how the reporter arrived at a number as high as 78%.
 
 <br>
 ```{r cb-single, fig.cap='Screenshot of Consumer Barometer results on 2017 internet use. Retrieved May 21, 2019.', out.width='90%', fig.align='center', echo=F}
@@ -81,16 +81,16 @@ Looking at Figure \@ref(fig:cb-single), the crucial part is the footnote that sa
 
 Before we go into a more technical explanation of what went wrong in these two cases, let us first move from proportions to probabilities. The difference between a proportion and a probability is important here. Note that when Minister Shanmugam said that the REACH poll provided evidence that the Government's "assessment of public sentiment turned out to be correct", he was not suggesting that 680 Singaporeans form the whole Singapore public. The underlying assumption was that since most survey respondents (who were aware) supported the ban, it is likely that most Singaporeans (who are aware) will also support the ban. That is, he was using the *proportion* of supportive survey respondents (a description of the sample), to infer the *probability* of any one Singaporean supporting the ban. 
 
-The difference between a probability and a proportion may be simplified using a coin flip example. If I flip a fair coin 4 times, the proportion of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair coin, the probability of getting a heads is by definition 0.5. So the proportion may or may not equal the probability. What we know is that the more times I flip the coin, the more likely the proportion of heads. will reflect the probability of getting a heads. It is thus common to hear people say that the probability is the long-run proportion of an event. Below is some code (in R) for you to try out the coin flip example.
+The difference between a probability and a proportion may be simplified using a coin flip example. If I flip a fair coin 4 times, the proportion of heads may be 0, 0.25, 0.5, 0.75, or 1. However, since it is a fair coin, the probability of getting a heads is, by definition, 0.5. So the proportion may or may not equal the probability. What we know is that the more times I flip the coin, the more likely the proportion of heads will reflect the true probability of getting a heads. It is thus common to hear people say that the probability is the "long-run proportion of an event". Below is some code (in R) for you to try out the coin flip example.
 
 ```{r eval=F}
-# Set the number of trials to 4, you may change this number
+# Set the number of trials to 4. You may change the number to see what happens.
 n <- 4 
-# Calculate the proportion of heads, based on flipping a fair coin
+# Calculate the proportion of heads, based on flipping a fair coin. Try this a few times.
 sum(rbinom(n, 1, prob=0.5))/n 
 ```
 
-Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school^[Or that we can Google it if not]. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:
+We have now established that the main reason why we are interested in proportions from a REACH poll is because they purport to tell us something about Singaporeans in general. That is, the REACH poll suggests that if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school^[Or that we can Google it if not]. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:
 
 <br>
 $$
@@ -102,7 +102,7 @@ $$
 $$
 <br>
 
-$\Pr(\text{Support Ban } | \text{ Aware of Ban})$ is a conditional probability, but the quantity that is being asserted in the article is $\Pr(\text{Support Ban})$ - the total probability. Using the law of total probability, we know that:
+$\Pr(\text{Support Ban } | \text{ Aware of Ban})$ is a conditional probability, but the quantity that is being asserted in the news article is $\Pr(\text{Support Ban})$ - the total probability. Using the law of total probability, we know that:
 
 <br>
 $$
