@@ -527,9 +527,11 @@ indeed representative of all Singaporeans, then we have the following
 quantities:
 
 \[
-\Pr(\text{Aware of Ban}) = 0.63 \\
-\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
-\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\begin{aligned}
+&\Pr(\text{Aware of Ban}) = 0.63 \\
+&\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
+&\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\end{aligned}
 \]
 
 \(\Pr(\text{Support Ban } | \text{ Aware of Ban})\) is a conditional
@@ -540,7 +542,7 @@ total probability, we know that:
 \[
 \begin{aligned}
 \Pr(\text{Support Ban}) &= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
-& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban})
+& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) \\
 \end{aligned}
 \]
 
@@ -548,7 +550,7 @@ Plugging in the numbers that we have,
 
 \[
 \begin{aligned}
-\Pr(\text{Support Ban}) &= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37
+\Pr(\text{Support Ban}) &= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
 \]
 
@@ -563,7 +565,7 @@ Similarly, in the Web-savvy Seniors example,
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
 & \quad + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot \Pr(\text{Don't Use Internet}) \\
-&= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot 0.63
+&= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot 0.63 \\
 \end{aligned}
 \] where
 \(\Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\) is

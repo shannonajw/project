@@ -73,9 +73,11 @@ sum(rbinom(n, 1, prob=0.5))/n
 Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school^[Or that we can Google it if not]. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:
 
 $$
-\Pr(\text{Aware of Ban}) = 0.63 \\
-\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
-\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\begin{aligned}
+&\Pr(\text{Aware of Ban}) = 0.63 \\
+&\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
+&\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\end{aligned}
 $$
 
 $\Pr(\text{Support Ban } | \text{ Aware of Ban})$ is a conditional probability, but the quantity that is being asserted in the article is $\Pr(\text{Support Ban})$ - the total probability. Using the law of total probability, we know that:
@@ -83,7 +85,7 @@ $\Pr(\text{Support Ban } | \text{ Aware of Ban})$ is a conditional probability, 
 $$
 \begin{aligned}
 \Pr(\text{Support Ban}) &= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
-& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban})
+& \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) \\
 \end{aligned}
 $$
 
@@ -92,7 +94,7 @@ Plugging in the numbers that we have,
 
 $$
 \begin{aligned}
-\Pr(\text{Support Ban}) &= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37
+\Pr(\text{Support Ban}) &= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
 $$
 
@@ -104,7 +106,7 @@ $$
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
 & \quad + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot \Pr(\text{Don't Use Internet}) \\
-&= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot 0.63
+&= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})\cdot 0.63 \\
 \end{aligned}
 $$
 where $\Pr(\text{Use Internet Daily } | \text{ Don't Use Internet})$ is impossible and should be zero. In both cases, total probabilites are quite different from the conditional probabilities.

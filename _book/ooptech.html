@@ -156,21 +156,23 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 <span class="kw">sum</span>(<span class="kw">rbinom</span>(n, <span class="dv">1</span>, <span class="dt">prob=</span><span class="fl">0.5</span>))<span class="op">/</span>n </code></pre></div>
 <p>Now that we have established the only reason why we are interested in proportions from a REACH poll is that they purport to tell us something about Singaporeans in general - that is, if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:</p>
 <p><span class="math display">\[
-\Pr(\text{Aware of Ban}) = 0.63 \\
-\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
-\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\begin{aligned}
+&amp;\Pr(\text{Aware of Ban}) = 0.63 \\
+&amp;\Pr(\text{Not Aware of Ban}) = 1 - \Pr(\text{Aware of Ban}) = 0.37 \\
+&amp;\Pr(\text{Support Ban } | \text{ Aware of Ban}) = 0.64 \\
+\end{aligned}
 \]</span></p>
 <p><span class="math inline">\(\Pr(\text{Support Ban } | \text{ Aware of Ban})\)</span> is a conditional probability, but the quantity that is being asserted in the article is <span class="math inline">\(\Pr(\text{Support Ban})\)</span> - the total probability. Using the law of total probability, we know that:</p>
 <p><span class="math display">\[
 \begin{aligned}
 \Pr(\text{Support Ban}) &amp;= \Pr(\text{Support Ban } | \text{ Aware of Ban})\cdot \Pr(\text{Aware of Ban}) \\
-&amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban})
+&amp; \quad + \Pr(\text{Support Ban } | \text{ Not Aware of Ban})\cdot \Pr(\text{Not Aware of Ban}) \\
 \end{aligned}
 \]</span></p>
 <p>Plugging in the numbers that we have,</p>
 <p><span class="math display">\[
 \begin{aligned}
-\Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37
+\Pr(\text{Support Ban}) &amp;= 0.64 \cdot 0.63 + \Pr(\text{Support Ban } | \text{ Not Aware of Ban}) \cdot 0.37 \\
 \end{aligned}
 \]</span></p>
 <p>we see that <span class="math inline">\(\Pr(\text{Support Ban}) = 0.64\)</span> if and only if <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> also equals 0.64. That said, <span class="math inline">\(\Pr(\text{Support Ban } | \text{ Not Aware of Ban})\)</span> is logically impossible, and should equal zero.</p>
@@ -179,7 +181,7 @@ n &lt;-<span class="st"> </span><span class="dv">4</span>
 \begin{aligned}
 \Pr(\text{Use Internet Daily}) &amp;= \Pr(\text{Use Internet Daily } | \text{ Use Internet})\cdot \Pr(\text{Use Internet}) \\
 &amp; \quad + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot \Pr(\text{Don&#39;t Use Internet}) \\
-&amp;= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot 0.63
+&amp;= 0.78 \cdot 0.37 + \Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\cdot 0.63 \\
 \end{aligned}
 \]</span> where <span class="math inline">\(\Pr(\text{Use Internet Daily } | \text{ Don&#39;t Use Internet})\)</span> is impossible and should be zero. In both cases, total probabilites are quite different from the conditional probabilities.</p>
 </div>
