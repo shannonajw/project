@@ -2,4 +2,14 @@
 
 # Public Data {#publicdata}
 
-List of public data
+This section contains a list of public datasets available for social scientists to analyze. Datasets should be in disaggregated form that is useful for academic work and social research. For each one, a brief description of the dataset, the investigators, and details for access will be included. It is expected that this list will continue to grow. 
+
+Aggregated administrative data, like those that can be found on <https://data.gov.sg> or from government reports, are not the focus here. However, information on data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics) are much welcomed. 
+
+Send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
+
+## World Values Survey (WVS) {#wvs}
+
+The World Values Survey is a study to help social scientists understand changes in the beliefs, values and motivations of people throughout the world. To date, there have been 7 waves of data collection (repeated cross-section, not panel). The survey includes questions on societal trust, religion, work, security, and politics. Singapore participated in Wave 4 (2002, N=1512) and Wave 6 (2012, N=1972). Principal Investigators for these studies are Associate Professor [Tan Ern Ser](http://profile.nus.edu.sg/fass/soctanes/) at NUS, and Associate Professor [Vincent CH Chua](https://www.suss.edu.sg/about-suss/faculty-and-staff/detail/vincent-chua) at SUSS (2012).
+
+Data can be accessed [here](http://www.worldvaluessurvey.org).
