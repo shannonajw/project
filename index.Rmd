@@ -25,6 +25,8 @@ bookdown::render_book("index.Rmd", "all")
 This book is in Open Review. I want your feedback to make the book better for you and other readers. To add your annotation, <span style="background-color: #3297FD; color: white">select some text</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. To see the annotations of others, click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>
 </div>
 
+<br>
+
 This online book is a compilation of resources aimed at advancing quantitative social science in Singapore. It is meant to be a 'living document', so it will be updated as frequently as possible. The main goal is to promote interest, rigour, and transparency in trying to understand Singapore society through quantitative lenses. It does so by: 
 
 1. **Providing information on Singapore-relevant datasets** that are currently used to answer research and policy questions (Chapter \@ref(publicdata) and Chapter \@ref(restricteddata)). This includes: 
