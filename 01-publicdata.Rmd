@@ -2,9 +2,9 @@
 
 # Public Data {#publicdata}
 
-This section contains a list of public datasets available for social scientists to analyze. Datasets should be in disaggregated form that is useful for academic work and social research. For each one, a brief description of the dataset, the investigators, and details for access will be included. It is expected that this list will continue to grow. 
+This section contains a list of public datasets available for social scientists to analyze. Datasets should be in disaggregated form in a way that is useful for academic work^[In essence, academics should be able to publish from it.] and social research. For each one, a brief description of the dataset, the investigators, and details for access will be included. It is expected that this list will continue to grow. 
 
-Aggregated administrative data, like those that can be found on <https://data.gov.sg> or from government reports, are not the focus here. However, information on data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics) are much welcomed. 
+Aggregated administrative data, like those that can be found on <https://data.gov.sg> or from government reports, are not really the focus here. However, information on data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics) to improve analyses are welcomed. 
 
 Send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
