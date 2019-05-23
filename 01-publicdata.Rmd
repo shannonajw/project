@@ -8,8 +8,19 @@ Aggregated administrative data, like those that can be found on <https://data.go
 
 Send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
+## Panel on Health and Ageing of Singaporean Elderly (PHASE) {#phase}
+
+The Panel on Health and Ageing of Singaporean Elderly is a longitudinal panel study that tracks changes in the physical, social and mental health of Singapore residents. Respondents are aged 60 years and above in 2009, and three waves of data collection have been conducted so far. Wave 1 was conducted in 2009 (N=4990), Wave 2 in 2011 (N=3103), and Wave 3 in 2015 (N=1572).
+
+PHASE includes data on physical health, mental health, social engagement (e.g., loneliness, social participation, social networks), income, employment, and housing. Anthropometric and performance measurements, including blood pressure, sitting and standing height, waist circumference, body weight and hand grip strength, were also conducted.
+
+Principal Investigators for PHASE are Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200), Professor [David Matchar](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/31920), and Assistant Professor [Rahul Malhotra](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/30743) at Duke-NUS Medical School.
+
+Instructions for data access can be found [here](https://www.duke-nus.edu.sg/care/research/dataset-codebook).
+
 ## World Values Survey (WVS) {#wvs}
 
-The World Values Survey is a global study to help social scientists understand changes in the beliefs, values and motivations of people across multiple countries. To date, there have been 7 waves of data collection (repeated cross-section, not panel) from almost 100 countries. The survey includes questions on societal trust, religion, work, security, and politics. Singapore participated in Wave 4 (2002, N=1512) and Wave 6 (2012, N=1972). Principal Investigators for these studies are Associate Professor [Tan Ern Ser](http://profile.nus.edu.sg/fass/soctanes/) at NUS (2002), and Associate Professor [Vincent CH Chua](https://www.suss.edu.sg/about-suss/faculty-and-staff/detail/vincent-chua) at SUSS (2012).
+The World Values Survey is a global study to help social scientists understand changes in the beliefs, values and motivations of people across multiple countries. To date, there have been 7 waves of data collection (repeated cross-section, not panel) from almost 100 countries. The survey includes questions on societal trust, religion, work, security, and politics. Singapore participated in Wave 4 (2002, N=1512) and Wave 6 (2012, N=1972). Principal Investigators for are Associate Professor [Tan Ern Ser](http://profile.nus.edu.sg/fass/soctanes/) at NUS (2002), and Associate Professor [Vincent CH Chua](https://www.suss.edu.sg/about-suss/faculty-and-staff/detail/vincent-chua) at SUSS (2012).
 
 Data can be accessed [here](http://www.worldvaluessurvey.org).
+
