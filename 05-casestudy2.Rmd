@@ -5,7 +5,7 @@ Contributor:
 Date:
 ```
 
-Another case study goes here. Do you wish to contribute? 
+Another case study goes here. Do you wish to contribute? Send me an email at <shannon.ang@ntu.edu.sg>
 
 This is an example of in-line code annotation and output. 
 
