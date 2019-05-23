@@ -6,7 +6,7 @@ This section contains a list of public datasets available for social scientists 
 
 Aggregated administrative data, like those that can be found on <https://data.gov.sg> or from government reports, are not really the focus here. *However*, information about data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics, or other forms of contextual data) to improve analyses are welcomed.
 
-Send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
+Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
 ## Panel on Health and Ageing of Singaporean Elderly (PHASE) {#phase}
 
