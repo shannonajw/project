@@ -2,6 +2,5 @@
 
 # Thinking about Numbers {#think}
 
-Think pieces section
+Think pieces section. Empty for now, but would you like to contribute? Email me at <shannon.ang@ntu.edu.sg>.
 
-## Think piece 1
