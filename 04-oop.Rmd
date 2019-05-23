@@ -51,7 +51,7 @@ knitr::include_graphics("images/STwebsavvyseniors.png")
 
 Within the article, the reporter states:
 
-> Also, 78 per cent of those aged 55 and older here access the Internet every day either via the traditional Web browser or smartphone apps, putting Singapore fifth in the world for having the most Internet-savvy seniors.
+> Also, **78 per cent of those aged 55 and older here access the Internet every day** either via the traditional Web browser or smartphone apps, putting Singapore fifth in the world for having the most Internet-savvy seniors.
 
 <br>
 
