@@ -19,6 +19,12 @@ bookdown::render_book("index.Rmd", "all")
 
 # Preface {-}
 
+> **Note to Readers**
+>
+> <div>
+This book is in Open Review. I want your feedback to make the book better for you and other readers. To add your annotation, <span style="background-color: #3297FD; color: white">select some text</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. To see the annotations of others, click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>
+</div>
+
 This online book is a compilation of resources aimed at advancing quantitative social science in Singapore. It is meant to be a 'living document', so it will be updated as frequently as possible. The main goal is to promote interest, rigour, and transparency in trying to understand Singapore society through quantitative lenses. It does so by: 
 
 1. **Providing information on Singapore-relevant datasets** that are currently used to answer research and policy questions (Chapter \@ref(publicdata) and Chapter \@ref(restricteddata)). This includes: 
@@ -29,6 +35,9 @@ This online book is a compilation of resources aimed at advancing quantitative s
 3. **Maintaining a repository of replicable case studies on Singapore society** (with annotated code, where possible) which can be used for illustrations in any quantitatively oriented college-level class (Chapter \@ref(oop) onwards). These may be short summaries (blog-length) of published work, or side analyses that may not be appropriate for an academic journal but are useful for Singapore social science nonetheless.
 
 Readers with ideas on how to improve this resource (or who may wish to help me maintain it) may email me at <shannon.ang@ntu.edu.sg>.
+
+![Creative Commons License](images/cc.png)  
+This book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Why I started this project {-}
 

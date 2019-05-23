@@ -1,6 +1,6 @@
 bookdown::gitbook:
   includes:
-    in_header: [ganalytics.html]
+    in_header: [hypothesis.html, ganalytics.html]
   css: style.css
   split_by: section
   config:
