@@ -71,7 +71,9 @@ knitr::include_graphics("images/CBsinglequestion.png")
 ```
 <br>
 
-Looking at Figure \@ref(fig:cb-single), the crucial part is the footnote that says "base", which tells us that the 82% figure for daily Internet usage in 2017 are **among those who use the internet**. We can easily calculate this 82% ourselves by using the numbers in Figure \@ref(fig:cb-seniorsinternet) - note that 43% is approximately 82% of 53%. That is, $\frac{43}{53} \approx 0.82$. Using the same strategy, we can recover the reporter's figure for 2014: $\frac{29}{37} \approx 0.78$. 
+Looking at Figure \@ref(fig:cb-single), the crucial part is the footnote that says "base", which tells us that the 82% figure for daily Internet usage in 2017 are **among those who use the internet**. We can easily calculate this 82% with the numbers in Figure \@ref(fig:cb-seniorsinternet) - note that 43^[The percent of Singapore residents aged 55+ using the internet in 2017, from \@ref(fig:cb-seniorsinternet)] is approximately 82% of 53^[The percent of Singapore residents aged 55+ using the internet *daily* in 2017, from \@ref(fig:cb-seniorsinternet)]. That is, $\frac{43}{53} \approx 0.82$. This recovers the 82% figure that we see in Figure \@ref(fig:cb-single).
+
+Using the same strategy, we can recover the reporter's figure for 2014: $\frac{29}{37} \approx 0.78$. 
 
 *What does this mean?* This means that just like the reporter in the Watain example (\@ref(watain)), this reporter left out an important qualifier - only 29% of all older adults in Singapore use the internet daily, but 78% **of those who use the internet** use it daily. This vast discrepancy is highly consequential - the statement that "78 per cent of those aged 55 and older here access the Internet every day" is false, and the headline that "Majority of Singapore seniors are Web savvy" is misleading at best.
 
