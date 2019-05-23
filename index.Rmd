@@ -61,13 +61,34 @@ __*For Singapore social science.*__
 
 ## How to contribute {-}
 
-Instructions (tbc) on how to list a dataset, contribute a case study, or write a think piece for this page.
+**To list a dataset**
+
+I will list any Singapore-related dataset that I know of, but my knowledge is far from exhaustive. To help me out, you can simply alert me to an unlisted dataset and let me know where to find information on it (and I will write it up). However, if you could do the following and send it to me, it would make my task much easier:
+
+Write a short paragraph on the dataset which includes (but is not limited to) the following information:
+* Basic details about the dataset (name, how was data collected, how many observations etc.)
+* Name(s) of the Principal Investigator(s) (and links to their webpage/profiles, if possible)
+* How to access the dataset (e.g., a website that allows a direct download or lists instructions to obtain the data)
+
+*Publicly available* datasets are basically datasets that can be downloaded freely or for which access can obtained through a simple procedure (e.g., signing up for on online account, sending a form with a research topic). *Restricted* or *Non-publicly available* datasets are those that require more extensive clearance (e.g., a background check, use of a data enclave) to access. Data for which there is no information on access also fall under this criteria. Email me at <shannon.ang@ntu.edu.sg> to list a dataset.
+
+<br>
+
+**To write a think piece**
+
+Think pieces can be of any length (suggested length is 500-2000 words) and on any topic related to quantitative social science. For instance, pieces may comment on the state of quantitative social science in Singapore (e.g., what is lacking, how we can do better) and/or provide tips for social scientists seeking to study Singapore (e.g., how to write grant applications, where to find data). Email me at <shannon.ang@ntu.edu.sg> to contribute a think piece.
+
+<br>
+
+**To contribute a case study**
+
+Case studies are meant to illustrate a point about Singapore as a society or quantitative methods in general. These may include blog-length summaries of published research, or smaller side analyses that are useful for Singapore social science. I am hoping that these case studies will be replicable (i.e., anyone familiar with some code^[Code can be in any language - R, Stata, Python, SAS, Mplus etc.] can reproduce results), but researchers unable to share code (and data) should not disqualify themselves from contributing. Further, this online book is written using the Rmarkdown language, so it would be helpful if contributors are familiar with it - but this is not a prerequisite. Email me at <shannon.ang@ntu.edu.sg> to contribute a case study.
 
 ## Acknowledgements {-}
 
 This book is being written through the **bookdown** package [@R-bookdown], which was built on top of R Markdown and **knitr** [@xie2015].
 
-Contributors include:
+Contributors other than me include:
 
 ## About me {-}
 

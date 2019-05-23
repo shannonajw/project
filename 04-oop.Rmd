@@ -92,7 +92,7 @@ n <- 4
 sum(rbinom(n, 1, prob=0.5))/n 
 ```
 
-We have now established that the main reason why we are interested in proportions from a REACH poll is because they purport to tell us something about Singaporeans in general. That is, the REACH poll suggests that if we were to randomly pick a Singaporean from those who are aware of the ban), the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school^[Or that we can Google it if not]. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:
+We have now established that the main reason why we are interested in proportions from a REACH poll is because they purport to tell us something about Singaporeans in general. That is, the REACH poll suggests that if we were to randomly pick a Singaporean from those who are aware of the ban, the probability of this person supporting the ban is about 0.64 (or 64%). The problem at hand then reduces to a trivial probability question, assuming that we all remember basic probability rules from secondary (primary?) school^[Or that we can Google it if not]. If the REACH poll is indeed representative of all Singaporeans, then we have the following quantities:
 
 <br>
 $$
