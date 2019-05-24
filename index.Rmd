@@ -22,7 +22,7 @@ bookdown::render_book("index.Rmd", "all")
 > **Note to Readers**
 >
 > <div>
-This book is in Open Review. I want your feedback to make the book better for you and other readers. To add your annotation, <span style="background-color: #3297FD; color: white">select some text</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. To see the annotations of others, click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>
+This book is in Open Review. I want your feedback to make the book better for you and other readers. To add your annotation, <span style="background-color: #3297FD; color: white">select some text</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. To see the annotations of others, click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>.
 </div>
 
 <br>
@@ -63,7 +63,7 @@ __*For Singapore social science.*__
 
 **To list a dataset**
 
-I will list any Singapore-related dataset that I know of, but my knowledge is far from exhaustive. To help me out, you can simply alert me to an unlisted dataset and let me know where to find information on it (and I will write it up). However, if you could do the following and send it to me, it would make my task much easier:
+I will progressively list any Singapore-related dataset that I know of, but my knowledge is far from exhaustive. To help me out, you can simply alert me to an unlisted dataset and let me know where to find information on it (and I will write it up). However, if you could do the following and send it to me, it would make my task much easier:
 
 Write a short paragraph on the dataset which includes (but is not limited to) the following information:
 

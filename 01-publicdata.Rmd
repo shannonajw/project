@@ -10,11 +10,11 @@ Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu
 
 ## Asian Barometer Survey (ABS) {#abs}
 
-The Asian Barometer Survey is a cross-country study of public opinion in about 21 countries. It assesses opinions on issues such as political values, democracy, governance, human security, and economic reform. Singapore has participated in 3 out of 4 waves of data collection - 2006, 2010, and 2014.
+The Asian Barometer Survey is a cross-country, longitudinal study (repeated cross-section) of public opinion in about 21 countries. It assesses opinions on issues such as political values, democracy, governance, human security, and economic reform. Singapore has participated in 3 out of 4 waves of data collection - 2006, 2010, and 2014.
 
 ABS is coordinated by the [Hu Fu Center for East Asia Democratic Studies](http://www.asianbarometer.org/structure) at the National Taiwan University. 
 
-Instructions for data access can be found at <http://www.asianbarometer.org/data/data-release>
+Instructions for data access can be found at <http://www.asianbarometer.org/data/data-release>.
 
 ## Panel on Health and Ageing of Singaporean Elderly (PHASE) {#phase}
 
