@@ -71,7 +71,7 @@ Write a short paragraph on the dataset which includes (but is not limited to) th
 * Name(s) of the Principal Investigator(s) (and links to their webpage/profiles, if possible)
 * How to access the dataset (e.g., a website that allows a direct download or lists instructions to obtain the data)
 
-*Publicly available* datasets are basically datasets that can be downloaded freely or for which access can obtained through a simple procedure (e.g., signing up for on online account, sending a form with a research topic). *Restricted* or *Non-publicly available* datasets are those that require more extensive clearance (e.g., a background check, use of a data enclave) to access. Data for which there is no information on access also fall under this criteria. Email me at <shannon.ang@ntu.edu.sg> to list a dataset.
+*Publicly available* datasets are basically datasets that can be downloaded freely or for which access can obtained through a simple procedure (e.g., signing up for an online account, sending a form with a simple research topic). *Restricted* or *Non-publicly available* datasets are those that require more extensive clearance (e.g., a background check, use of a data enclave) to access. Data for which there is no information on access also fall under this criteria. Email me at <shannon.ang@ntu.edu.sg> to list a dataset.
 
 <br>
 
