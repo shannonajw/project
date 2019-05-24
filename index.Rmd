@@ -36,7 +36,7 @@ This online book is a compilation of resources aimed at advancing quantitative s
 2. **Occasional think pieces by researchers** on best practices and on how to improve quantitative social science in Singapore (Chapter \@ref(think)).
 3. **Maintaining a repository of replicable case studies on Singapore society** (with annotated code, where possible) which can be used for illustrations in any quantitatively oriented college-level class (Chapter \@ref(oop) onwards). These may be short summaries (blog-length) of published work, or side analyses that may not be appropriate for an academic journal but are useful for Singapore social science nonetheless.
 
-Readers with ideas on how to improve this resource (or who may wish to help me maintain it) may use the in-built annotation feature, or email me at <shannon.ang@ntu.edu.sg>.
+**I am actively looking for contributors** (go [here](https://sg-numbers.netlify.com/how-to-contribute.html) to see how). Readers with ideas on how to improve this resource (or who may wish to help me maintain it) may use the in-built annotation feature, or email me at <shannon.ang@ntu.edu.sg>.
 
 <br>
 
@@ -59,7 +59,7 @@ I started this book with the view to use it primarily *as a teaching tool*^[For 
 
 __*For Singapore social science.*__
 
-## How to contribute {-}
+## How to contribute {-} 
 
 **To list a dataset**
 
