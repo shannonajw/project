@@ -1,11 +1,18 @@
 # Restricted Data {#restricteddata}
 
-This section contains a list of datasets that are potentially useful for social scientists to analyze, but for which access is restricted. Other than a description of the data (as far as possible), this will also include information on how restrictions may be lifted (i.e., how to gain access). It is hoped that listing them here will promote transparency in data sharing across research teams, and eventually prevent wasteful overlap in primary data collection across institutions.
+This section contains a list of datasets that are potentially useful for social scientists to analyze, but for which access is restricted. Other than a description of the data (as far as possible), this will also include information on how restrictions may be lifted (i.e., how to gain access). It is hoped that listing them here will promote transparency in data sharing across research teams, and eventually prevent wasteful overlap in primary data collection across institutions. As in the public data section, disaggregated data that can be used for research is the focus here.
 
 Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
 ## Retirement and Health Study (RHS) {#rhs}
 
-The RHS is a longitudinal survey of Singapore residents’ retirement and healthcare needs and how they change over time. It is conducted by the Central Provident Fund Board (CPF). This is a panel study of individuals aged 45 to 85 in 2014, with the same individuals being interviewed once every two years (for ten years, beginning in 2014). The survey includes information on household expenses, employment, health, and financial status. This is a large study with potentially many uses - RHS purports to have reached out to more than 23,000 participants in the first two rounds of interviews^[https://www.cpf.gov.sg/Assets/members/Documents/RHS_FAQ_Booklet.pdf].
+The RHS is a longitudinal survey of Singapore residents’ retirement and healthcare needs and how they change over time. It is conducted by the Central Provident Fund Board (CPF). This is a panel study of individuals aged 45 to 85 in 2014, with the same individuals being interviewed once every two years (for ten years, beginning in 2014). The survey includes information on household expenses, employment, health, and financial status. This is a large study with potentially many uses - RHS purports to have reached out to more than 23,000 participants in the first two rounds of interviews^[https://www.cpf.gov.sg/Assets/members/Documents/RHS_FAQ_Booklet.pdf]. 
 
-More information is available at <https://www.cpf.gov.sg/Members/Others/member-pages/retirement-and-health-study-(rhs)>. The RHS website does not list any plans to make the dataset publicly available. The RHS study team can be reached at <cpf_rhs@cpf.gov.sg>. 
+More information is available at <https://www.cpf.gov.sg/Members/Others/member-pages/retirement-and-health-study-(rhs)>. The RHS website does not list any plans to make the dataset publicly available, and is accessible only to government agencies or researchers working with/for government agencies. The RHS study team can be reached at <cpf_rhs@cpf.gov.sg>.
+
+## Singapore Panel Study on Social Dynamics (SPSSD)
+
+The Singapore Panel Study on Social Dynamics was started in 2014 to track changes in the people's lives over time. It is a longitudinal panel study, starting with 5002 heads of households interviewed in 2014. Its purpose is to measure family dynamics, societal values and attitudes relevant to national identity and social mobility over time. Waves 1 to 4 of data collection have been completed, with Wave 5 beginning in 2019. The key strength of this study is its panel data - few Singapore datasets with rich data on family dynamics have this many waves collected from the same individuals over time.
+
+The Principal Investigator for this study is Dr [Leong Chan Hoong](http://lkyspp.nus.edu.sg/our-people/faculty/leong-chan-hoong) at the Institute of Policy Studies, NUS. The SPSSD does not list any plans to make the dataset publicly available, probably because of restrictions imposed by government funders. The SPSSD study team can be reached at <ips.soclab@nus.edu.sg>.
+
