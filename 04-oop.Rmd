@@ -7,7 +7,7 @@ Contributor: Shannon Ang
 Date: 21 May 2019
 ```
 
-Proportions (sometimes expressed in percentages) are commonly used in popular media to reflect public opinion. For instance, a news article may state that "nearly 46 per cent of those aged 18 to 25 would allow extremist views that deem all other religions as enemies to be published"^[https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows], or that "59 per cent of Chinese find a Malay president acceptable"^[https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own]. While these proportions are easy for the general public to understand, they can be misleading if not read carefully. This case study looks at two different news articles, showing how some claims can be exaggerated by careless use of numbers.
+Proportions (sometimes expressed in percentages) are commonly used in popular media to reflect public opinion. In fact, it is often the only type of statistic we get^[Reports such as those released in the form of IPS working papers, sometimes include multivariable analysis, but often after many pages of crosstabulations] to evaluate as "evidence". For instance, a news article may state that "nearly 46 per cent of those aged 18 to 25 would allow extremist views that deem all other religions as enemies to be published"^[https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows], or that "59 per cent of Chinese find a Malay president acceptable"^[https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own]. While these proportions are easy for the general public to understand, they can be misleading if not read carefully. This case study looks at two different news articles, showing how some claims can be exaggerated by careless use of numbers.
 
 ## Media claim 1: Support for the Watain ban {#watain}
 Swedish black metal band Watain was supposed to perform in Singapore on 7 March 2019. However, the gig was cancelled just hours before it was scheduled to begin, with the government citing concerns from the Christian community^[See https://www.channelnewsasia.com/news/singapore/watain-concert-cancelled-christian-community-reaction-shanmugam-11399434]. To evaluate public sentiment towards this incident, REACH^[The Singapore Government's feedback unit] conducted a poll with 680 Singaporeans aged 15 and above. Of interest here is how results from this poll was represented in public discourse.
@@ -24,7 +24,7 @@ The quote above is [taken directly from the Hansard](https://sprs.parl.gov.sg/se
 
 <br>
 ```{r st-watain, fig.cap='Screenshot of online article on results from REACH poll. Retrieved May 21, 2019.', out.width='80%', fig.align='center', echo=F}
-knitr::include_graphics("images/STwatain.png")
+knitr::include_graphics("images/proportion/STwatain.png")
 ```
 <br>
 
@@ -45,7 +45,7 @@ Part of my research involves looking at how Internet use can improve the lives o
 
 <br>
 ```{r st-websavvyseniors, fig.cap='Screenshot of online article on web-savvy seniors. Retrieved May 21, 2019.', out.width='80%', fig.align='center', echo=F}
-knitr::include_graphics("images/STwebsavvyseniors.png")
+knitr::include_graphics("images/proportion/STwebsavvyseniors.png")
 ```
 <br>
 
@@ -59,7 +59,7 @@ I was skeptical. Over and above my anecdotal experience with Singapore older adu
 
 <br>
 ```{r cb-seniorsinternet, fig.cap='Screenshot of Consumer Barometer findings across time. Retrieved May 21, 2019.', out.width='100%', fig.align='center', echo=F}
-knitr::include_graphics("images/CBseniorsinternet.png")
+knitr::include_graphics("images/proportion/CBseniorsinternet.png")
 ```
 <br>
 
@@ -67,7 +67,7 @@ How then, did the reporter get things so wrong? While detailed statistics for 20
 
 <br>
 ```{r cb-single, fig.cap='Screenshot of Consumer Barometer results on 2017 internet use. Retrieved May 21, 2019.', out.width='90%', fig.align='center', echo=F}
-knitr::include_graphics("images/CBsinglequestion.png")
+knitr::include_graphics("images/proportion/CBsinglequestion.png")
 ```
 <br>
 

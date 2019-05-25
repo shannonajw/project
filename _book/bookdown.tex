@@ -538,10 +538,13 @@ Date: 21 May 2019
 \end{verbatim}
 
 Proportions (sometimes expressed in percentages) are commonly used in
-popular media to reflect public opinion. For instance, a news article
-may state that ``nearly 46 per cent of those aged 18 to 25 would allow
-extremist views that deem all other religions as enemies to be
-published''\footnote{\url{https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows}},
+popular media to reflect public opinion. In fact, it is often the only
+type of statistic we get\footnote{Reports such as those released in the
+  form of IPS working papers, sometimes include multivariable analysis,
+  but often after many pages of crosstabulations} to evaluate as
+``evidence''. For instance, a news article may state that ``nearly 46
+per cent of those aged 18 to 25 would allow extremist views that deem
+all other religions as enemies to be published''\footnote{\url{https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows}},
 or that ``59 per cent of Chinese find a Malay president
 acceptable''\footnote{\url{https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own}}.
 While these proportions are easy for the general public to understand,
@@ -583,7 +586,7 @@ call ``qualifiers''.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/STwatain} 
+{\centering \includegraphics[width=0.8\linewidth]{images/proportion/STwatain} 
 
 }
 
@@ -645,7 +648,7 @@ immediately caught my eye (see Figure \ref{fig:st-websavvyseniors}).
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/STwebsavvyseniors} 
+{\centering \includegraphics[width=0.8\linewidth]{images/proportion/STwebsavvyseniors} 
 
 }
 
@@ -677,7 +680,7 @@ the article suggests.}
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{images/CBseniorsinternet} 
+{\centering \includegraphics[width=1\linewidth]{images/proportion/CBseniorsinternet} 
 
 }
 
@@ -691,7 +694,7 @@ number as high as 78\%.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.9\linewidth]{images/CBsinglequestion} 
+{\centering \includegraphics[width=0.9\linewidth]{images/proportion/CBsinglequestion} 
 
 }
 
@@ -830,11 +833,318 @@ source\footnote{This, however, first requires data to be made available
   for replication purposes.} in order to evaluate claims that are being
 made in public discourse today.
 
-\chapter{Case study 2}\label{case2}
+\chapter{Are we lonely?}\label{lonely}
 
 \begin{verbatim}
-Contributor:
-Date:
+Contributor: Shannon Ang
+Date: 25 May 2019
+\end{verbatim}
+
+In population health research, there are a number of commonly used
+scales to measure psychosocial well-being. For instance, the
+\href{https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/depression-scale}{Center
+for Epidemiologic Studies Depression Scale} (CES-D) is widely used to
+measure depression, and the
+\href{https://euroqol.org/eq-5d-instruments/}{EQ-5D}\footnote{There's no
+  `full' name for this, its just referred as the EQ-5D.} to measure
+quality of life. These scales seldom have a intuitive interpretation -
+who knows what 10 points on the CES-D scale actually means in `real
+life', versus 12 points? To address this, social scientists often choose
+a ``cut-off'' point to simplify the measure into two categories (e.g.,
+either you are depressed, or you are not). Some of these cut-off points
+are well researched (such the cut-off point for mild cognitive
+impairment), while others are more arbitrary.
+
+This case study looks at the prevalence of loneliness in Singapore older
+adults, and how these cut-offs can shape the way we think about it. The
+focus here is \emph{not} to criticize researchers' choices of cut-off
+points. Instead, this case study seeks to provide a way to evaluate
+claims that based on these cut-offs, so that we understand how to
+compare claims across studies and/or reports.
+
+\section{The lonely dichotomy}\label{the-lonely-dichotomy}
+
+Loneliness is a real issue for many people today, and it has been shown
+to have deleterious effects on health
+\citep{rico-uribe_association_2018}. More of us are beginning to realize
+this. The Straits Times carried an
+\href{https://www.straitstimes.com/singapore/living-with-family-but-still-feeling-lonely}{article}
+in 2018, with the headline ``Senior citizens living with family, but
+still feeling lonely''.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/loneliness/livingarr} 
+
+}
+
+\caption{Screenshot of online article on lonely seniors. Retrieved May 25, 2019.}\label{fig:st-lonely}
+\end{figure}
+
+But what does \textbf{feeling lonely} really mean? There seems to be a
+dichotomy being drawn here - either you feel lonely, or you don't feel
+lonely. There is little room for nuance like ``I am lonely when I ride
+the bus by myself''. Of course, some level of simplification is needed
+to compare across groups - and this simplification is what we need to
+examine.
+
+The news article highlights studies on loneliness done by two different
+groups - a team at the National Healthcare Group (NHG), and a team at
+the Centre for Ageing Research and Education (CARE) in Duke-NUS Medical
+School\footnote{Led by Associate Professor
+  \href{https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200}{Angelique
+  Chan}}. As we will see, this dichotomy is drawn by reseachers as well,
+but sometimes \textbf{in completely different ways}. Let us take a
+closer look.
+
+\section{Lonely by whose standard}\label{lonely-by-whose-standard}
+
+The studies of interest\footnote{All these studies are open-access
+  articles, anyone can access them even without a library subscription.}
+here are \citet{wee_loneliness_2019}, \citet{ge_social_2017},
+\citet{lim_association_2017}, and \citet{chan_loneliness_2015}. All of
+these studies use a variant of the 3-item UCLA Loneliness Scale
+\citep{hughes_short_2004}. The 3-item UCLA loneliness scale consists of
+three questions, which all these studies use:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How often do you feel you lack companionship?
+\item
+  How often do you feel left out?
+\item
+  How often do you feel isolated from others?
+\end{enumerate}
+
+For each of the questions listed above, respondents were given a range
+of responses to chose from. These are listed in Figure
+\ref{fig:st-lonely-graph}. As you might notice, they were different
+across the studies. \citet{wee_loneliness_2019} and
+\citet{ge_social_2017} had only 3 response categories (the right
+column), while \citet{lim_association_2017} and
+\citet{chan_loneliness_2015} had 5 different response categories (the
+left column). I put the point values for each response in parentheses.
+In all of these studies, researchers added up these points across the 3
+questions, and came up with their own `cut-off' point to determine who
+was ``lonely''.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/loneliness/lonely_graph} 
+
+}
+
+\caption{Summary of response categories}\label{fig:st-lonely-graph}
+\end{figure}
+
+The \textbf{blue arrows} in Figure \ref{fig:st-lonely-graph} are added
+by me to show how the 5 category option can be mapped to the 3 category
+option (but not vice versa). We don't really know what kind of bias this
+will introduce\footnote{For instance, one might argue that respondents
+  might choose differently when given more gradational categories.}, but
+at face value I think this looks pretty reasonable. Why am I doing this?
+This ``matching'' allows us to do a little experiment with publicly
+available data\footnote{So you can try it yourself} to answer the
+following question: \textbf{How does changing the criteria change our
+view of loneliness in Singapore?} The next section compares these
+different coding schemes.
+
+\section{Same data, different
+results}\label{same-data-different-results}
+
+For this simple analysis, I use data from Wave 2 of the Panel on Health
+and Ageing of Singaporean Elderly (PHASE) (see \ref{phase}), conducted
+in 2011. This is a nationally representative study of older adults aged
+60 and above. It is essentially the same dataset used in
+\citet{lim_association_2017} and \citet{chan_loneliness_2015}. Code
+provided is in R. For the sake of brevity, I leave out observations with
+any missing values on any of the loneliness items. A key concern of the
+news article in Figure \ref{fig:st-lonely} is that even older adults
+living with family members may be lonely, so we will look at a
+cross-tabulation of living arrangements with ``loneliness''.
+
+\textbf{Coding scheme 1: Lots of loneliness}
+
+I first follow the coding scheme in \citet{lim_association_2017} and
+\citet{chan_loneliness_2015}. I sum the items up (giving me a score that
+ranges from 0-12), and then dichotomize the group into people who are
+``not lonely'' (score of 0), and those who are ``lonely'' (score of
+1-12)\footnote{Note that \citet{chan_loneliness_2015} further splits the
+  ``lonely'' group into ``sometimes lonely'' and ``mostly lonely''.
+  \citet{lim_association_2017}, however, does not make this distinction.
+  I have grouped them together since this is the way that it has usually
+  been represented in public discourse (e.g., those who are lonely have
+  a higher risk of mortality compared to those not lonely. See
+  \url{https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone})}.
+This cut-off point seems to have arisen from a ``common-sense'' approach
+rather than any kind of formal testing - that is, group the people who
+never experience loneliness in one group, and then put the rest who have
+had some experience of loneliness in another.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Load required libraries}
+\KeywordTok{library}\NormalTok{(dplyr)}
+
+\CommentTok{# Note: You first need to read in the data}
+\CommentTok{# The data already contains a pre-coded version }
+\CommentTok{#     made according to Lim and Chan (2017)}
+\NormalTok{lonely1_cat <-}\StringTok{ }\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_loneliness_yesno}
+
+\CommentTok{# Make a table (proportions are weighted to account for survey design)}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
+\NormalTok{  GDAtools}\OperatorTok{::}\KeywordTok{prop.wtable}\NormalTok{(livingarr, lonely1_cat, }
+                      \DataTypeTok{dir=}\DecValTok{1}\NormalTok{, }\DataTypeTok{digits=}\DecValTok{3}\NormalTok{, }\DataTypeTok{w=}\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_weights, }\DataTypeTok{na=}\NormalTok{F, }\DataTypeTok{mar=}\NormalTok{F), }
+  \DataTypeTok{caption =} \KeywordTok{paste0}\NormalTok{(}\StringTok{'Crosstabulation using criteria in Lim and Chan (2017)'}\NormalTok{,}
+                   \StringTok{'and Chan et al (2015). Note that these are row percentages.'}\NormalTok{),}
+  \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}[t]
+
+\caption{\label{tab:table-lonely1}Crosstabulation using criteria in Lim and Chan (2017)and Chan et al (2015). Note that these are row percentages.}
+\centering
+\begin{tabular}{lrr}
+\toprule
+  & 0 & 1\\
+\midrule
+Living alone & 40.811 & 59.189\\
+Living with spouse only & 67.844 & 32.156\\
+Living with child only & 49.871 & 50.129\\
+Living with spouse and child & 71.712 & 28.288\\
+Living with others only & 44.918 & 55.082\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:table-lonely1} gives me a similar proportion as suggested
+in the news article - that is,
+
+\begin{quote}
+``{[}Associate Professor Chan's study{]} found that half of Singaporeans
+over 60 felt lonely some or most of the time. But those who lived with
+spouses, or with spouses and children, did not.''
+\end{quote}
+
+ These numbers are indeed worrying. Older adults living alone are
+understandly lonely, but those who live with their children (but without
+their spouse) are not that far behind (50.1\%!). Even 28\% of those who
+live with their spouse and child feel lonely, like the news article
+(Figure \ref{fig:st-lonely}) suggests.
+
+\textbf{Coding scheme 2: Not that much loneliness}
+
+We then arrive that the coding scheme used by
+\citet{wee_loneliness_2019} and \citet{ge_social_2017}. Summing the
+items gives me a score that ranges from 3-9, and I then dichotomize the
+group into people who are ``not lonely'' (score of 3-5), and those who
+are ``lonely'' (score of 6-9). Note that these cut-points are probably
+arbitrary - while the researchers cite a paper each to justify their use
+of the cut-point, the cited papers do not really provide evidence in
+support of the cut-point. The closest support for the cut-point in the
+cited papers that I could discern is in \citet{steptoe_social_2013},
+which states that they used the top quintile\footnote{In their sample,
+  not the Singapore one.} to define loneliness. No reason was given as
+to why the top quintile was chosen. Table \ref{tab:table-lonely2} shows
+the distribution of ``loneliness'' according to these criteria.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Recode and sum the loneliness scores}
+\NormalTok{lonely2 <-}\StringTok{ }\NormalTok{phase }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1) }\OperatorTok{%>%}\StringTok{  }
+\StringTok{  }\KeywordTok{mutate_all}\NormalTok{(}\KeywordTok{funs}\NormalTok{(}\KeywordTok{recode}\NormalTok{(.,}\StringTok{`}\DataTypeTok{0}\StringTok{`}\NormalTok{ =}\StringTok{ }\DecValTok{1}\NormalTok{, }\StringTok{`}\DataTypeTok{1}\StringTok{`}\NormalTok{ =}\StringTok{ }\DecValTok{1}\NormalTok{, }\StringTok{`}\DataTypeTok{2}\StringTok{`}\NormalTok{ =}\StringTok{ }\DecValTok{2}\NormalTok{, }\StringTok{`}\DataTypeTok{3}\StringTok{`}\NormalTok{ =}\StringTok{ }\DecValTok{3}\NormalTok{, }\StringTok{`}\DataTypeTok{4}\StringTok{`}\NormalTok{ =}\StringTok{ }\DecValTok{3}\NormalTok{))) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{rowSums}\NormalTok{()}
+
+\CommentTok{# Categorize according to cut-off point}
+\NormalTok{lonely2_cat <-}\StringTok{ }\KeywordTok{if_else}\NormalTok{(lonely2 }\OperatorTok{<}\StringTok{ }\DecValTok{6}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{factor}\NormalTok{(}\DataTypeTok{labels=}\KeywordTok{c}\NormalTok{(}\StringTok{"Not lonely"}\NormalTok{, }\StringTok{"Lonely"}\NormalTok{))}
+
+\CommentTok{# Show table}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
+\NormalTok{  GDAtools}\OperatorTok{::}\KeywordTok{prop.wtable}\NormalTok{(livingarr, lonely2_cat, }
+                      \DataTypeTok{dir=}\DecValTok{1}\NormalTok{, }\DataTypeTok{digits=}\DecValTok{3}\NormalTok{, }\DataTypeTok{w=}\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_weights, }\DataTypeTok{na=}\NormalTok{F, }\DataTypeTok{mar=}\NormalTok{F), }
+  \DataTypeTok{caption =} \KeywordTok{paste0}\NormalTok{(}\StringTok{'Crosstabulation using criteria in Wee et al (2019)'}\NormalTok{,}
+            \StringTok{'and Ge et al (2017). Note that these are row percentages.'}\NormalTok{),}
+  \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}[t]
+
+\caption{\label{tab:table-lonely2}Crosstabulation using criteria in Wee et al (2019)and Ge et al (2017). Note that these are row percentages.}
+\centering
+\begin{tabular}{lrr}
+\toprule
+  & Not lonely & Lonely\\
+\midrule
+Living alone & 84.419 & 15.581\\
+Living with spouse only & 96.555 & 3.445\\
+Living with child only & 92.184 & 7.816\\
+Living with spouse and child & 97.863 & 2.137\\
+Living with others only & 93.046 & 6.954\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+What you will immediately realize is that these numbers are way lower
+than those when using coding scheme 1 (that is, the coding scheme of
+\citet{lim_association_2017} and \citet{chan_loneliness_2015}). These
+numbers are more consistent with the figures shown in
+\citet{ge_social_2017}\footnote{Note that the sample in
+  \citet{ge_social_2017} is of all adults aged 21 and older, not just
+  older adults, so the lower number is expected. Note also that in the
+  paper, the authors show column percentages instead of row percentages.
+  Since we are comparing across living arrangementsm however, row
+  percentages are more appropriate.}. Further, the difference in the
+proportion of those living alone and those living with their child (but
+without their spouse) is similar in absolute terms, but much smaller in
+relative terms (see \ref{tab:table-lonely3}). While the proportion of
+those lonely among those who live alone is 2 times that of those living
+with only their children according to coding scheme 1, this ratio
+reduces to 1.2 when using coding scheme 2. Overall, based on these
+results, it seems that the loneliness situation is much less dire than
+before.
+
+\begin{table}[t]
+
+\caption{\label{tab:table-lonely3}Comparison of absolute and relative differences}
+\centering
+\begin{tabular}{lrr}
+\toprule
+  & Coding scheme 1 & Coding scheme 2\\
+\midrule
+(1) Living alone & 15.6 & 59.2\\
+(2) Living with child only & 7.8 & 50.1\\
+Difference [(1) - (2)] & 7.8 & 9.1\\
+Ratio [(1)/(2)] & 2.0 & 1.2\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}\label{conclusion-1}
+
+So which way of conceptualizing loneliness is ``right''? As I mentioned
+at the start of this case study, that is not the goal here. The process
+of figuring out a useful cut-off point is a long and tedious one that
+requires researchers to engage with each other\footnote{And Singapore
+  social science can use more of this.}. Rather, the goal here has been
+to highlight that decisions like cut-off points may seem small, but are
+critical. In this case study, these cut-off points essentially define
+who is considered lonely. \textbf{If these cut-off points are vastly
+different, we are probably not even talking about the same people}. This
+means that when comparing or drawing conclusions from the findings of
+different studies, it is crucial that we understand how they were
+arrived at.
+
+\chapter{Case study 3}\label{case3}
+
+\begin{verbatim}
+Contributor: 
+Date: 
 \end{verbatim}
 
 Another case study goes here. Do you wish to contribute? Send me an
@@ -889,7 +1199,7 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \end{tabular}
 \end{table}
 
-\bibliography{book.bib,packages.bib,zotero.bib}
+\bibliography{book.bib,packages.bib,rest.bib}
 
 
 \end{document}
