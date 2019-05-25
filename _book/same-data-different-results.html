@@ -171,15 +171,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>For this simple analysis, I use data from Wave 2 of the Panel on Health and Ageing of Singaporean Elderly (PHASE) (see <a href="phase.html#phase">1.2</a>), conducted in 2011. This is a nationally representative study of older adults aged 60 and above. It is essentially the same dataset used in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. Code provided is in R. For the sake of brevity, I leave out observations with any missing values on any of the loneliness items. A key concern of the news article in Figure <a href="the-lonely-dichotomy.html#fig:st-lonely">5.1</a> is that even older adults living with family members may be lonely, so we will look at a cross-tabulation of living arrangements with “loneliness”.</p>
 <p><br></p>
 <p><strong>Coding scheme 1: Lots of loneliness</strong></p>
-<p>I first follow the coding scheme in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize the group into people who are “not lonely” (score of 0), and those who are “lonely” (score of 1-12)<a href="#fn25" class="footnoteRef" id="fnref25"><sup>25</sup></a>. This cut-off point seems to have arisen from a “common-sense” approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.</p>
+<p>I first follow the coding scheme in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize respondents into people who are “not lonely” (score of 0), and those who are “lonely” (score of 1-12)<a href="#fn25" class="footnoteRef" id="fnref25"><sup>25</sup></a>. This cut-off point seems to have arisen from a “common-sense” approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load required libraries</span>
 <span class="kw">library</span>(dplyr)
 
 <span class="co"># Note: You first need to read in the data</span>
-<span class="co"># The data already contains a pre-coded version </span>
-<span class="co">#     made according to Lim and Chan (2017)</span>
-lonely1_cat &lt;-<span class="st"> </span>phase<span class="op">$</span>w2_loneliness_yesno
-
+<span class="co"># The data already contains a pre-coded version according to these criteria</span>
+lonely1_cat &lt;-<span class="st"> </span>phase<span class="op">$</span>w2_loneliness_yesno <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
 <span class="co"># Make a table (proportions are weighted to account for survey design)</span>
 knitr<span class="op">::</span><span class="kw">kable</span>(
   GDAtools<span class="op">::</span><span class="kw">prop.wtable</span>(livingarr, lonely1_cat, 
@@ -192,8 +191,8 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 <thead>
 <tr class="header">
 <th></th>
-<th align="right">0</th>
-<th align="right">1</th>
+<th align="right">Not lonely</th>
+<th align="right">Lonely</th>
 </tr>
 </thead>
 <tbody>
@@ -346,7 +345,7 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 <div class="footnotes">
 <hr />
 <ol start="25">
-<li id="fn25"><p>Note that <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span> further splits the “lonely” group into “sometimes lonely” and “mostly lonely”. <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span>, however, does not make this distinction. I have grouped them together since this is the way that it has usually been represented in public discourse (e.g., those who are lonely have a higher risk of mortality compared to those not lonely. See <a href="https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone" class="uri">https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone</a>)<a href="same-data-different-results.html#fnref25">↩</a></p></li>
+<li id="fn25"><p>Note that <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span> further splits the “lonely” group into “sometimes lonely” and “mostly lonely”. <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span>, however, does not make this distinction. I have grouped them together since this is the way that it has usually been represented in public discourse (e.g., the claim that those who are lonely have a higher risk of mortality compared to those not lonely. See, for instance, <a href="https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone" class="uri">https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone</a>)<a href="same-data-different-results.html#fnref25">↩</a></p></li>
 <li id="fn26"><p>In their sample, not the Singapore one.<a href="same-data-different-results.html#fnref26">↩</a></p></li>
 <li id="fn27"><p>Note that the sample in <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span> is of all adults aged 21 and older, not just older adults, so the lower number is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangementsm however, row percentages are more appropriate.<a href="same-data-different-results.html#fnref27">↩</a></p></li>
 </ol>

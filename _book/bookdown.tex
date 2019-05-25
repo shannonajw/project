@@ -846,7 +846,7 @@ scales to measure psychosocial well-being. For instance, the
 for Epidemiologic Studies Depression Scale} (CES-D) is widely used to
 measure depression, and the
 \href{https://euroqol.org/eq-5d-instruments/}{EQ-5D}\footnote{There's no
-  `full' name for this, its just referred as the EQ-5D.} to measure
+  `full' name for this, its just referred to as the EQ-5D.} to measure
 quality of life. These scales seldom have a intuitive interpretation -
 who knows what 10 points on the CES-D scale actually means in `real
 life', versus 12 points? To address this, social scientists often choose
@@ -905,7 +905,7 @@ here are \citet{wee_loneliness_2019}, \citet{ge_social_2017},
 \citet{lim_association_2017}, and \citet{chan_loneliness_2015}. All of
 these studies use a variant of the 3-item UCLA Loneliness Scale
 \citep{hughes_short_2004}. The 3-item UCLA loneliness scale consists of
-three questions, which all these studies use:
+three questions, which all of these studies use:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -919,7 +919,7 @@ three questions, which all these studies use:
 \end{enumerate}
 
 For each of the questions listed above, respondents were given a range
-of responses to chose from. These are listed in Figure
+of responses to choose from. These are listed in Figure
 \ref{fig:st-lonely-graph}. As you might notice, they were different
 across the studies. \citet{wee_loneliness_2019} and
 \citet{ge_social_2017} had only 3 response categories (the right
@@ -969,14 +969,15 @@ cross-tabulation of living arrangements with ``loneliness''.
 
 I first follow the coding scheme in \citet{lim_association_2017} and
 \citet{chan_loneliness_2015}. I sum the items up (giving me a score that
-ranges from 0-12), and then dichotomize the group into people who are
+ranges from 0-12), and then dichotomize respondents into people who are
 ``not lonely'' (score of 0), and those who are ``lonely'' (score of
 1-12)\footnote{Note that \citet{chan_loneliness_2015} further splits the
   ``lonely'' group into ``sometimes lonely'' and ``mostly lonely''.
   \citet{lim_association_2017}, however, does not make this distinction.
   I have grouped them together since this is the way that it has usually
-  been represented in public discourse (e.g., those who are lonely have
-  a higher risk of mortality compared to those not lonely. See
+  been represented in public discourse (e.g., the claim that those who
+  are lonely have a higher risk of mortality compared to those not
+  lonely. See, for instance,
   \url{https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone})}.
 This cut-off point seems to have arisen from a ``common-sense'' approach
 rather than any kind of formal testing - that is, group the people who
@@ -989,10 +990,9 @@ had some experience of loneliness in another.
 \KeywordTok{library}\NormalTok{(dplyr)}
 
 \CommentTok{# Note: You first need to read in the data}
-\CommentTok{# The data already contains a pre-coded version }
-\CommentTok{#     made according to Lim and Chan (2017)}
-\NormalTok{lonely1_cat <-}\StringTok{ }\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_loneliness_yesno}
-
+\CommentTok{# The data already contains a pre-coded version according to these criteria}
+\NormalTok{lonely1_cat <-}\StringTok{ }\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_loneliness_yesno }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{factor}\NormalTok{(}\DataTypeTok{labels=}\KeywordTok{c}\NormalTok{(}\StringTok{"Not lonely"}\NormalTok{, }\StringTok{"Lonely"}\NormalTok{))}
 \CommentTok{# Make a table (proportions are weighted to account for survey design)}
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
 \NormalTok{  GDAtools}\OperatorTok{::}\KeywordTok{prop.wtable}\NormalTok{(livingarr, lonely1_cat, }
@@ -1009,7 +1009,7 @@ had some experience of loneliness in another.
 \centering
 \begin{tabular}{lrr}
 \toprule
-  & 0 & 1\\
+  & Not lonely & Lonely\\
 \midrule
 Living alone & 40.811 & 59.189\\
 Living with spouse only & 67.844 & 32.156\\
