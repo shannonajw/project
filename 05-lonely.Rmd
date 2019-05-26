@@ -25,7 +25,7 @@ The news article highlights studies on loneliness done by two different groups -
 
 ## Lonely by whose standard
 
-The studies of interest^[All these studies are open-access articles, anyone can access them even without a library subscription.] here are @wee_loneliness_2019, @ge_social_2017, @lim_association_2017, and @chan_loneliness_2015. All of these studies use a variant of the 3-item UCLA Loneliness Scale [@hughes_short_2004]. The 3-item UCLA loneliness scale consists of three questions, which all of these studies use:
+The studies of interest^[All these studies are open-access articles, anyone can access them even without a library subscription.] here are @wee_loneliness_2019, @ge_social_2017, @lim_association_2017, and @chan_loneliness_2015. All of these studies use a variant of the 3-item UCLA^[University of California, Los Angeles] Loneliness Scale [@hughes_short_2004]. The 3-item UCLA Loneliness Scale consists of three questions, which all of these studies use:
 
 1. How often do you feel you lack companionship? 
 2. How often do you feel left out? 
