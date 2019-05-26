@@ -993,7 +993,7 @@ had some experience of loneliness in another.
 \CommentTok{# Note: You first need to read in the data}
 \CommentTok{# The data already contains a pre-coded version according to these criteria}
 \NormalTok{lonely1_cat <-}\StringTok{ }\NormalTok{phase}\OperatorTok{$}\NormalTok{w2_loneliness_yesno }\OperatorTok{%>%}
-\StringTok{    }\KeywordTok{factor}\NormalTok{(}\DataTypeTok{labels=}\KeywordTok{c}\NormalTok{(}\StringTok{"Not lonely"}\NormalTok{, }\StringTok{"Lonely"}\NormalTok{))}
+\StringTok{  }\KeywordTok{factor}\NormalTok{(}\DataTypeTok{labels=}\KeywordTok{c}\NormalTok{(}\StringTok{"Not lonely"}\NormalTok{, }\StringTok{"Lonely"}\NormalTok{))}
 \CommentTok{# Make a table (proportions are weighted to account for survey design)}
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
 \NormalTok{  GDAtools}\OperatorTok{::}\KeywordTok{prop.wtable}\NormalTok{(livingarr, lonely1_cat, }
@@ -1012,11 +1012,11 @@ had some experience of loneliness in another.
 \toprule
   & Not lonely & Lonely\\
 \midrule
-Living alone & 40.811 & 59.189\\
+Living alone & 41.022 & 58.978\\
 Living with spouse only & 67.844 & 32.156\\
-Living with child only & 49.871 & 50.129\\
-Living with spouse and child & 71.712 & 28.288\\
-Living with others only & 44.918 & 55.082\\
+Living with child only & 49.910 & 50.090\\
+Living with spouse and child & 71.680 & 28.320\\
+Living with others only & 44.791 & 55.209\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1031,10 +1031,10 @@ spouses, or with spouses and children, did not.''
 \end{quote}
 
  These numbers are indeed worrying. Older adults living alone are
-understandly lonely, but those who live with their children (but without
-their spouse) are not that far behind (50.1\%!). Even 28\% of those who
-live with their spouse and child feel lonely, like the news article
-(Figure \ref{fig:st-lonely}) suggests.
+understandably lonely, but those who live with their children (but
+without their spouse) are not that far behind (50.1\%!). Even 28\% of
+those who live with their spouse and child feel lonely, like the
+headline in the news article (Figure \ref{fig:st-lonely}) suggests.
 
 \textbf{Coding scheme 2: Not that much loneliness}
 
@@ -1097,17 +1097,17 @@ than those when using coding scheme 1 (that is, the coding scheme of
 numbers are more consistent with the figures shown in
 \citet{ge_social_2017}\footnote{Note that the sample in
   \citet{ge_social_2017} is of all adults aged 21 and older, not just
-  older adults, so the lower number is expected. Note also that in the
-  paper, the authors show column percentages instead of row percentages.
-  Since we are comparing across living arrangementsm however, row
-  percentages are more appropriate.}. Further, the difference in the
-proportion of those living alone and those living with their child (but
-without their spouse) is similar in absolute terms, but much smaller in
-relative terms (see \ref{tab:table-lonely3}). While the proportion of
-those lonely among those who live alone is 2 times that of those living
-with only their children according to coding scheme 1, this ratio
-reduces to 1.2 when using coding scheme 2. Overall, based on these
-results, it seems that the loneliness situation is much less dire than
+  older adults, so the higher number seen here is expected. Note also
+  that in the paper, the authors show column percentages instead of row
+  percentages. Since we are comparing across living arrangements
+  however, row percentages are more appropriate.}. Further, the
+difference in the proportion of those living alone and those living with
+their child (but without their spouse) is similar in absolute terms, but
+much smaller in relative terms (see \ref{tab:table-lonely3}). While the
+proportion of those lonely among those who live alone is 2 times that of
+those living with only their children according to coding scheme 1, this
+ratio reduces to 1.2 when using coding scheme 2. Based on these results,
+it seems that the overall loneliness situation is much less dire than
 before.
 
 \begin{table}[t]
@@ -1118,9 +1118,9 @@ before.
 \toprule
   & Coding scheme 1 & Coding scheme 2\\
 \midrule
-(1) Living alone & 15.6 & 59.2\\
+(1) Living alone & 15.6 & 59.0\\
 (2) Living with child only & 7.8 & 50.1\\
-Difference [(1) - (2)] & 7.8 & 9.1\\
+Difference [(1) - (2)] & 7.8 & 8.9\\
 Ratio [(1)/(2)] & 2.0 & 1.2\\
 \bottomrule
 \end{tabular}
@@ -1128,18 +1128,20 @@ Ratio [(1)/(2)] & 2.0 & 1.2\\
 
 \section{Conclusion}\label{conclusion-1}
 
-So which way of conceptualizing loneliness is ``right''? As I mentioned
-at the start of this case study, that is not the goal here. The process
-of figuring out a useful cut-off point is a long and tedious one that
-requires researchers to engage with each other\footnote{And Singapore
-  social science can use more of this.}. Rather, the goal here has been
-to highlight that decisions like cut-off points may seem small, but are
-critical. In this case study, these cut-off points essentially define
-who is considered lonely. \textbf{If these cut-off points are vastly
-different, we are probably not even talking about the same people}. This
-means that when comparing or drawing conclusions from the findings of
-different studies, it is crucial that we understand how they were
-arrived at.
+You may be thinking, so which way of conceptualizing loneliness is
+``correct''? As I mentioned at the start of this case study, that is not
+the goal here. The process of figuring out a useful cut-off point is a
+long and tedious one that requires researchers to engage with each
+other\footnote{And indeed, Singapore social science can perhaps use more
+  of this.}. Rather, the goal here has been to highlight that decisions
+like cut-off points may seem small, but are critical in the way we
+interpret and talk about social phenomena. In this case study, these
+cut-off points essentially define who is considered lonely. \textbf{If
+these cut-off points are vastly different, we may not be even talking
+about the same people} when we talk about ``lonely persons''. This means
+that when comparing or drawing conclusions from the findings of
+different studies, it is crucial that we understand the decisions that
+produced the numbers.
 
 \chapter{Case study 3}\label{case3}
 

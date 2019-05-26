@@ -54,7 +54,8 @@ I first follow the coding scheme in @lim_association_2017 and @chan_loneliness_2
 
 ```{r include=FALSE}
 library(haven)
-phase <- read_dta("/Users/shannon/Dropbox/Datasets/PHASE123/LATEST_ PHASE_Wave 1_Wave 2_Wave 3_Data May 2017/PHASE_1_2_3 Stata/PHASE_1_2_3.dta") %>% zap_labels()
+library(tidyr)
+phase <- read_dta("/Users/shannon/Dropbox/Datasets/PHASE123/LATEST_ PHASE_Wave 1_Wave 2_Wave 3_Data May 2017/PHASE_1_2_3 Stata/PHASE_1_2_3.dta") %>% zap_labels() %>% drop_na(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1)
 livingarr <- factor(phase$w2_livingarr2, 
                     labels=c("Living alone", "Living with spouse only",
                              "Living with child only", "Living with spouse and child",
@@ -68,7 +69,7 @@ library(dplyr)
 # Note: You first need to read in the data
 # The data already contains a pre-coded version according to these criteria
 lonely1_cat <- phase$w2_loneliness_yesno %>%
-    factor(labels=c("Not lonely", "Lonely"))
+  factor(labels=c("Not lonely", "Lonely"))
 # Make a table (proportions are weighted to account for survey design)
 knitr::kable(
   GDAtools::prop.wtable(livingarr, lonely1_cat, 
@@ -85,7 +86,7 @@ Table \@ref(tab:table-lonely1) gives me a similar proportion as suggested in the
 >"[Associate Professor Chan's study] found that half of Singaporeans over 60 felt lonely some or most of the time. But those who lived with spouses, or with spouses and children, did not."
 
 <br>
-These numbers are indeed worrying. Older adults living alone are understandly lonely, but those who live  with their children (but without their spouse) are not that far behind (50.1%!). Even 28% of those who live with their spouse and child feel lonely, like the news article (Figure \@ref(fig:st-lonely)) suggests.
+These numbers are indeed worrying. Older adults living alone are understandably lonely, but those who live  with their children (but without their spouse) are not that far behind (50.1%!). Even 28% of those who live with their spouse and child feel lonely, like the headline in the news article (Figure \@ref(fig:st-lonely)) suggests.
 
 <br>
 
@@ -116,12 +117,12 @@ knitr::kable(
 
 <br>
 
-What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of @lim_association_2017 and @chan_loneliness_2015). These numbers are more consistent with the figures shown in @ge_social_2017^[Note that the sample in @ge_social_2017 is of all adults aged 21 and older, not just older adults, so the lower number is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangementsm however, row percentages are more appropriate.]. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much smaller in relative terms (see \@ref(tab:table-lonely3)). While the proportion of those lonely among those who live alone is 2 times that of those living with only their children according to coding scheme 1, this ratio reduces to 1.2 when using coding scheme 2. Overall, based on these results, it seems that the loneliness situation is much less dire than before.
+What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of @lim_association_2017 and @chan_loneliness_2015). These numbers are more consistent with the figures shown in @ge_social_2017^[Note that the sample in @ge_social_2017 is of all adults aged 21 and older, not just older adults, so the higher number seen here is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangements however, row percentages are more appropriate.]. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much smaller in relative terms (see \@ref(tab:table-lonely3)). While the proportion of those lonely among those who live alone is 2 times that of those living with only their children according to coding scheme 1, this ratio reduces to 1.2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before.
 
 <br>
 ```{r table-lonely3, tidy=F, echo=F}
 codingone <- c(15.6, 7.8, 7.8, 15.6/7.8)
-codingtwo <- c(59.2, 50.1, 9.1, 59.2/50.1)
+codingtwo <- c(59.0, 50.1, 8.9, 59.0/50.1)
 data <- cbind(codingone, codingtwo)
 rownames(data) <- c("(1) Living alone", "(2) Living with child only", "Difference [(1) - (2)]", "Ratio [(1)/(2)]")
 colnames(data) <- c("Coding scheme 1", "Coding scheme 2")
@@ -136,7 +137,7 @@ knitr::kable(
 
 ## Conclusion
 
-So which way of conceptualizing loneliness is "right"? As I mentioned at the start of this case study, that is not the goal here. The process of figuring out a useful cut-off point is a long and tedious one that requires researchers to engage with each other^[And Singapore social science can use more of this.]. Rather, the goal here has been to highlight that decisions like cut-off points may seem small, but are critical. In this case study, these cut-off points essentially define who is considered lonely. **If these cut-off points are vastly different, we are probably not even talking about the same people**. This means that when comparing or drawing conclusions from the findings of different studies, it is crucial that we understand how they were arrived at.
+You may be thinking, so which way of conceptualizing loneliness is "correct"? As I mentioned at the start of this case study, that is not the goal here. The process of figuring out a useful cut-off point is a long and tedious one that requires researchers to engage with each other^[And indeed, Singapore social science can perhaps use more of this.]. Rather, the goal here has been to highlight that decisions like cut-off points may seem small, but are critical in the way we interpret and talk about social phenomena. In this case study, these cut-off points essentially define who is considered lonely. **If these cut-off points are vastly different, we may not be even talking about the same people** when we talk about "lonely persons". This means that when comparing or drawing conclusions from the findings of different studies, it is crucial that we understand the decisions that produced the numbers.
 
 
 
