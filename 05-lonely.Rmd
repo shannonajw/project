@@ -11,7 +11,7 @@ This case study looks at the prevalence of loneliness in Singapore older adults,
 
 ## The lonely dichotomy
 
-Loneliness is a real issue for many people today, and it has been shown to have deleterious effects on health [@rico-uribe_association_2018]. More of us are beginning to realize this. The Straits Times carried an [article](https://www.straitstimes.com/singapore/living-with-family-but-still-feeling-lonely) in 2018, with the headline "Senior citizens living with family, but still feeling lonely".
+Loneliness is a real issue for many people today, and it has been shown to have deleterious effects on health [@rico-uribe_association_2018]. More of us are beginning to realize that social connections are key, especially for older persons. The Straits Times carried an [article](https://www.straitstimes.com/singapore/living-with-family-but-still-feeling-lonely) in 2018, with the headline "Senior citizens living with family, but still feeling lonely".
 
 <br>
 ```{r st-lonely, fig.cap='Screenshot of online article on lonely seniors. Retrieved May 25, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -19,9 +19,9 @@ knitr::include_graphics("images/loneliness/livingarr.png")
 ```
 <br>
 
-But what does **feeling lonely** really mean? There seems to be a dichotomy being drawn here - either you feel lonely, or you don't feel lonely. There is little room for nuance like "I am lonely when I ride the bus by myself". Of course, some level of simplification is needed to compare across groups - and this simplification is what we need to examine.
+But what does **feeling lonely** really mean? There seems to be a dichotomy being drawn here - either you feel lonely, or you don't feel lonely. There is little room for nuance like "I feel lonely when I ride the bus by myself". Of course, some level of simplification is needed to compare across groups - and this simplification is what we need to examine.
 
-The news article highlights studies on loneliness done by two different groups - a team at the National Healthcare Group (NHG), and a team at the Centre for Ageing Research and Education (CARE) in Duke-NUS Medical School^[Led by Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200)]. As we will see, this dichotomy is drawn by reseachers as well, but sometimes **in completely different ways**. Let us take a closer look.
+The news article highlights studies on loneliness done by two different groups - a team at the National Healthcare Group (NHG), and a team at the Centre for Ageing Research and Education (CARE) in Duke-NUS Medical School^[Led by Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200)]. As we will see, this lonely/not lonely dichotomy is drawn by reseachers as well, but sometimes **in completely different ways**. Let us take a closer look.
 
 ## Lonely by whose standard
 
