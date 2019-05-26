@@ -7,7 +7,7 @@ Date: 25 May 2019
 
 In population health research, there are a number of commonly used scales to measure psychosocial well-being. For instance, the [Center for Epidemiologic Studies Depression Scale](https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/depression-scale) (CES-D) is widely used to measure depression, and the [EQ-5D](https://euroqol.org/eq-5d-instruments/)^[There's no 'full' name for this, its just referred to as the EQ-5D.] to measure quality of life. These scales seldom have a intuitive interpretation - who knows what 10 points on the CES-D scale actually means in 'real life', versus 12 points? To address this, social scientists often choose a "cut-off" point to simplify the measure into two categories (e.g., either you are depressed, or you are not). Some of these cut-off points are well researched (such the cut-off point for mild cognitive impairment), while others are more arbitrary.
 
-This case study looks at the prevalence of loneliness in Singapore older adults, and how these cut-offs can shape the way we think about it. The focus here is *not* to criticize researchers' choices of cut-off points. Instead, this case study seeks to provide a way to evaluate claims that based on these cut-offs, so that we understand how to compare claims across studies and/or reports. 
+This case study looks at the prevalence of loneliness in Singapore older adults, and how these cut-offs can shape the way we think about it. The focus here is *not* to criticize researchers' choices of cut-off points. Instead, this case study seeks to provide a way to evaluate claims that are based on these cut-offs, so that we understand how to compare claims across studies and/or reports. 
 
 ## The lonely dichotomy
 
