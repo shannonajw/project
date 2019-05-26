@@ -40,7 +40,7 @@ knitr::include_graphics("images/loneliness/lonely_graph.png")
 
 <br>
 
-The **blue arrows** in Figure \@ref(fig:st-lonely-graph) are added by me to show how the 5 category option can be mapped to the 3 category option (but not vice versa). We don't really know what kind of bias this will introduce^[For instance, one might argue that respondents might choose differently when given more gradational categories.], but at face value I think this looks pretty reasonable. Why am I doing this? This "matching" allows us to do a little experiment with publicly available data^[So you can try it yourself] to answer the following question: **How does changing the criteria change our view of loneliness in Singapore?** The next section compares these different coding schemes.
+I added the **blue arrows** in Figure \@ref(fig:st-lonely-graph) to show how the 5 category option can be mapped to the 3 category option (but not vice versa). We don't really know what kind of bias this will introduce^[For instance, one might argue that respondents might choose differently when given more gradational categories.], but at face value I think this looks pretty reasonable. Why am I doing this? This "matching" allows us to do a little experiment with publicly available data^[So you can try it yourself] to answer the following question: **How does changing the criteria change our view of loneliness in Singapore?** The next section compares these different coding schemes.
 
 ## Same data, different results
 
