@@ -4,6 +4,12 @@ This section contains a list of datasets that are potentially useful for social 
 
 Readers who believe I have wrongly listed a dataset here (i.e., they are not restricted), or have more accurate information than provided, can [contact me](shannon.ang@ntu.edu.sg). Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
+## National Youth Survey (NYS) {#nys}
+
+The NYS is a cross-sectional survey of youth in Singapore that is conducted every three to five years. Its goal is to understand the aspirations, challenges, and attitudes of young Singaporeans aged 15-34. The survey has been conducted five times thus far, in 2002, 2005, 2010, 2013 (N=2,843), and 2016 (N=3,531).
+
+NYS is administered by the National Youth Council (NYC)'s research team. More detail can be found at the NYC website - <https://www.nyc.gov.sg/en/initiatives/resources/national-youth-survey/> - which hosts illustrated PDF summaries of the survey findings from selected years. It does not list any plans to make the dataset publicly available.
+
 ## Retirement and Health Study (RHS) {#rhs}
 
 The RHS is a longitudinal survey of Singapore residents’ retirement and healthcare needs and how they change over time. It is conducted by the Central Provident Fund Board (CPF). This is a panel study of individuals aged 45 to 85 in 2014, with the same individuals being interviewed once every two years (for ten years, beginning in 2014). The survey includes information on household expenses, employment, health, and financial status. This is a large study with potentially many uses - RHS purports to have reached out to more than 23,000 participants in the first two rounds of interviews^[https://www.cpf.gov.sg/Assets/members/Documents/RHS_FAQ_Booklet.pdf]. 
@@ -21,4 +27,13 @@ The Singapore Life Panel is housed at the [Centre for Research on the Economics 
 The Singapore Panel Study on Social Dynamics was started in 2014 to understand challenges related to family cohesion and functioning. It is a longitudinal panel study, starting with 5002 heads of households interviewed in 2014. Its purpose is to measure family dynamics, societal values and attitudes relevant to national identity and social mobility over time. Waves 1 to 4 of data collection have been completed^[See some basic descriptives here: https://lkyspp.nus.edu.sg/docs/default-source/ips/2018-07-11_spssd-wave2_english.pdf], with Wave 5 beginning in 2019. A strength of this study is its panel data - few Singapore datasets with rich data on family dynamics have this many waves collected from the same individuals over time.
 
 The Principal Investigator for this study is Dr [Natalie Pang](https://lkyspp.nus.edu.sg/our-people/faculty/natalie-pang) at the Institute of Policy Studies, NUS. The SPSSD website does not list any plans to make the dataset publicly available, probably because of restrictions imposed by government funders. The SPSSD study team can be reached at <ips.soclab@nus.edu.sg>.
+
+## Youth Survey on Transitions and Evolving Pathways in Singapore (Youth STEPS)
+
+Youth STEPS is a six-year longitudinal survey of Singaporean youth aged 17 to 24 that began in 2017 (N=4,041). It covers a wide range of topics, including respondents' educational and career trajectories, family relationships, civic participation, and attitudes regarding social mobility, family, marriage, and more. The survey is in its third wave (as of 2019) and is scheduled to be completed in 2022.
+
+Youth STEPS is funded by the National Youth Council and administered by the Institute of Policy Studies (Social Lab), part of the Lee Kuan Yew School of Public Policy. The Principal Investigator is Dr [Leong Chan-Hoong](http://lkyspp.splashinteractive.sg/ips/about-us/staff-directory/leong-chan-hoong). The website does not list plans to make the data publicly available. Questions can be directed to <ips.soclab@nus.edu.sg>. 
+
+
+
 
