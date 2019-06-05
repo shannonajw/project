@@ -41,7 +41,7 @@ This online book is a compilation of resources aimed at advancing quantitative s
 <br>
 
 ![Creative Commons License](images/cc.png)  
-This book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+This book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/){target="_blank"}.
 
 ## Why I started this project {-}
 
@@ -49,7 +49,7 @@ This book is licensed under the [Creative Commons Attribution-NonCommercial-Shar
 knitr::include_graphics("images/fastest_growing.png")
 ```
 
-Quantitative research is not (and should not be) the only approach we take to understanding Singapore society, but constant appeals to "big data"^[See, for instance, https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge] or claims of "evidence-based policy"^[Government agencies such as the Ministry of Social and Family Development often [use such a phrase.](https://www.msf.gov.sg/about-MSF/our-people/Divisions-at-MSF/Family-Development-and-Support/Pages/default.aspx)] makes it ever more important for members of the public to **critically evaluate the use of numbers** in making arguments or in representations of social phenomena.
+Quantitative research is not (and should not be) the only approach we take to understanding Singapore society, but constant appeals to "big data"^[See, for instance, <https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge>{target="_blank"}] or claims of "evidence-based policy"^[Government agencies such as the Ministry of Social and Family Development often [use such a phrase.](https://www.msf.gov.sg/about-MSF/our-people/Divisions-at-MSF/Family-Development-and-Support/Pages/default.aspx){target="_blank"}] makes it ever more important for members of the public to **critically evaluate the use of numbers** in making arguments or in representations of social phenomena.
 
 Educational institutions have an important role to play in this "data-driven" world. Every year, undergraduates studying the social sciences in our local universities take several courses in research methods to fulfil the requirements of their degrees. Part of this research methods sequence typically involves training in introductory statistics or "quantitative reasoning". Quantitative courses in social science departments differ from those taught in the natural sciences because they are thought to be more applied - the focus is on the use of statistical methods to answer questions about society. Understanding and applying these methods **to the Singapore context** is crucial here - at this point, students learn about (and hopefully are inspired by) the kind of questions they can ask about the very society they live in, given the quantitative tools they are learning.
 

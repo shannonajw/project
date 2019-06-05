@@ -4,17 +4,17 @@
 
 This section contains a list of public datasets available for social scientists to analyze. Datasets should be in disaggregated form in a way that is useful for academic work^[In essence, academics should be able to publish from it.] and social research. For each one, a brief description of the dataset, the investigators, and details for access will be included. It is expected that this list will continue to grow. 
 
-Aggregated administrative data, like those that can be found on <https://data.gov.sg> or from government reports, are not really the focus here. *However*, information about data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics, or other forms of contextual data) to improve analyses are welcomed.
+Aggregated administrative data, like those that can be found on <https://data.gov.sg>{target="_blank"} or from government reports, are not really the focus here. *However*, information about data that can be linked to disaggregated datasets (e.g., data on neighbourhood characteristics, or other forms of contextual data) to improve analyses are welcomed.
 
-Readers who believe I have provided wrong information on any of these datasets can [contact me](shannon.ang@ntu.edu.sg), so that I can correct it. Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
+Readers who believe I have provided wrong information on any of these datasets can contact me, so that I can correct it. Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
 ## Asian Barometer Survey (ABS) {#abs}
 
 The Asian Barometer Survey is a cross-country, longitudinal study (repeated cross-section) of public opinion in about 21 countries. Data was collected through face-to-face interviews with adults aged 21 and above. The survey assesses opinions on issues such as political values, democracy, governance, human security, and economic reform. Singapore has participated in 3 out of 4 waves of data collection - 2006 (N=1012), 2010 (N=1000), and 2014 (N=1039).
 
-ABS is coordinated by the [Hu Fu Center for East Asia Democratic Studies](http://www.asianbarometer.org/structure) at the National Taiwan University. 
+ABS is coordinated by the [Hu Fu Center for East Asia Democratic Studies](http://www.asianbarometer.org/structure){target="_blank"} at the National Taiwan University. 
 
-Instructions for data access can be found at <http://www.asianbarometer.org/data/data-release>.
+Instructions for data access can be found at <http://www.asianbarometer.org/data/data-release>{target="_blank"}.
 
 ## IPS Public Data {#ips}
 
@@ -31,7 +31,7 @@ The IPS Public Data Sharing Platform is not a single dataset, but a repository t
 9) The Makan Index – A Survey of Hawker Food Prices
 10) Makan Index 2017: An indicator for Cost of Eating Out in Singapore
 
-More information on these datasets and instructions for data access can be found at <https://lkyspp.nus.edu.sg/ips/research/surveys/public-data-sharing-platform>.
+More information on these datasets and instructions for data access can be found at <https://lkyspp.nus.edu.sg/ips/research/surveys/public-data-sharing-platform>{target="_blank"}.
 
 ## Panel on Health and Ageing of Singaporean Elderly (PHASE) {#phase}
 
@@ -39,13 +39,13 @@ The Panel on Health and Ageing of Singaporean Elderly is a longitudinal panel st
 
 PHASE includes data on physical health, mental health, social engagement (e.g., loneliness, social participation, social networks), income, employment, and housing. Anthropometric and performance measurements, including blood pressure, sitting and standing height, waist circumference, body weight and hand grip strength, were also conducted.
 
-Principal Investigators for PHASE are Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200), Professor [David Matchar](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/31920), and Assistant Professor [Rahul Malhotra](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/30743) at Duke-NUS Medical School.
+Principal Investigators for PHASE are Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200){target="_blank"}, Professor [David Matchar](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/31920){target="_blank"}, and Assistant Professor [Rahul Malhotra](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/30743){target="_blank"} at Duke-NUS Medical School.
 
-Instructions for data access can be found at <https://www.duke-nus.edu.sg/care/research/dataset-codebook>.
+Instructions for data access can be found at <https://www.duke-nus.edu.sg/care/research/dataset-codebook>{target="_blank"}.
 
 ## World Values Survey (WVS) {#wvs}
 
-The World Values Survey is a global study to help social scientists understand changes in the beliefs, values and motivations of people across multiple countries. To date, there have been 7 waves of data collection (repeated cross-section, not panel) from almost 100 countries. The survey includes questions on societal trust, religion, work, security, and politics. Singapore participated in Wave 4 (2002, N=1512) and Wave 6 (2012, N=1972). Principal Investigators are Associate Professor [Tan Ern Ser](http://profile.nus.edu.sg/fass/soctanes/) at NUS (2002), and Associate Professor [Vincent CH Chua](https://www.suss.edu.sg/about-suss/faculty-and-staff/detail/vincent-chua) at SUSS (2012).
+The World Values Survey is a global study to help social scientists understand changes in the beliefs, values and motivations of people across multiple countries. To date, there have been 7 waves of data collection (repeated cross-section, not panel) from almost 100 countries. The survey includes questions on societal trust, religion, work, security, and politics. Singapore participated in Wave 4 (2002, N=1512) and Wave 6 (2012, N=1972). Principal Investigators are Associate Professor [Tan Ern Ser](http://profile.nus.edu.sg/fass/soctanes/){target="_blank"} at NUS (2002), and Associate Professor [Vincent CH Chua](https://www.suss.edu.sg/about-suss/faculty-and-staff/detail/vincent-chua){target="_blank"} at SUSS (2012).
 
-Data can be accessed at <http://www.worldvaluessurvey.org>.
+Data can be accessed at <http://www.worldvaluessurvey.org>{target="_blank"}.
 
