@@ -21,7 +21,7 @@ knitr::include_graphics("images/loneliness/livingarr.png")
 
 But what does **feeling lonely** really mean? There seems to be a dichotomy being drawn here - either you feel lonely, or you don't feel lonely. There is little room for nuance like "I feel lonely when I ride the bus by myself". Of course, some level of simplification is needed to compare across groups - and this simplification is what we need to examine.
 
-The news article highlights studies on loneliness done by two different groups - a team at the National Healthcare Group (NHG), and a team at the Centre for Ageing Research and Education (CARE) in Duke-NUS Medical School^[Led by Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200)]. As we will see, this lonely/not lonely dichotomy is drawn by reseachers as well, but sometimes **in completely different ways**. Let us take a closer look.
+The news article highlights studies on loneliness (in Singapore) done by two different groups - a team at the National Healthcare Group (NHG), and a team at the Centre for Ageing Research and Education (CARE) in Duke-NUS Medical School^[Led by Associate Professor [Angelique Chan](https://www.duke-nus.edu.sg/hssr/our-team/faculty/faculty-staff-details/Detail/13200)]. As we will see, this lonely/not lonely dichotomy is drawn by reseachers as well, but sometimes **in completely different ways**. Let us take a closer look.
 
 ## Lonely by whose standard
 

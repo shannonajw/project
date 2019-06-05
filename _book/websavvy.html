@@ -121,8 +121,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="part"><span><b>I Datasets for Social Science</b></span></li>
 <li class="chapter" data-level="1" data-path="publicdata.html"><a href="publicdata.html"><i class="fa fa-check"></i><b>1</b> Public Data</a><ul>
 <li class="chapter" data-level="1.1" data-path="abs.html"><a href="abs.html"><i class="fa fa-check"></i><b>1.1</b> Asian Barometer Survey (ABS)</a></li>
-<li class="chapter" data-level="1.2" data-path="phase.html"><a href="phase.html"><i class="fa fa-check"></i><b>1.2</b> Panel on Health and Ageing of Singaporean Elderly (PHASE)</a></li>
-<li class="chapter" data-level="1.3" data-path="wvs.html"><a href="wvs.html"><i class="fa fa-check"></i><b>1.3</b> World Values Survey (WVS)</a></li>
+<li class="chapter" data-level="1.2" data-path="ips.html"><a href="ips.html"><i class="fa fa-check"></i><b>1.2</b> IPS Public Data</a></li>
+<li class="chapter" data-level="1.3" data-path="phase.html"><a href="phase.html"><i class="fa fa-check"></i><b>1.3</b> Panel on Health and Ageing of Singaporean Elderly (PHASE)</a></li>
+<li class="chapter" data-level="1.4" data-path="wvs.html"><a href="wvs.html"><i class="fa fa-check"></i><b>1.4</b> World Values Survey (WVS)</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="restricteddata.html"><a href="restricteddata.html"><i class="fa fa-check"></i><b>2</b> Restricted Data</a><ul>
 <li class="chapter" data-level="2.1" data-path="rhs.html"><a href="rhs.html"><i class="fa fa-check"></i><b>2.1</b> Retirement and Health Study (RHS)</a></li>
@@ -182,7 +183,7 @@ Figure 4.2: Screenshot of online article on web-savvy seniors. Retrieved May 21,
 <p>Also, <strong>78 per cent of those aged 55 and older here access the Internet every day</strong> either via the traditional Web browser or smartphone apps, putting Singapore fifth in the world for having the most Internet-savvy seniors.</p>
 </blockquote>
 <p><br></p>
-<p>I was skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a> gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can <a href="https://www.consumerbarometer.com/en/trending/?countryCode=SG&amp;category=TRN-AGE-55-PLUS">check for ourselves</a>. Of interest in Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a> are numbers reflecting internet use in year 2014, which is when the news article was published. Note that the percent of Singaporeans aged 55 and above who use the internet daily in 2014 <strong>is 29%, not 78% as the article suggests.</strong></p>
+<p>I was skeptical. Over and above my anecdotal experience with Singapore older adults, past research in the United States<a href="#fn16" class="footnoteRef" id="fnref16"><sup>16</sup></a> gave me reason to expect that the proportion of older people even using the Internet (everyday or not) should be much lower. Some results from Consumer Barometer are available online, so we can <a href="https://www.consumerbarometer.com/en/trending/?countryCode=SG&amp;category=TRN-AGE-55-PLUS">check for ourselves</a>. Of interest in Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a> are numbers reflecting internet use in year 2014, which is when the news article was published. Note that the percent of Singaporeans aged 55 and above who use the internet daily in 2014 <strong>is 29%, not 78% as the article suggests.</strong></p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:cb-seniorsinternet"></span>
 <img src="images/proportion/CBseniorsinternet.png" alt="Screenshot of Consumer Barometer findings across time. Retrieved May 21, 2019." width="100%" />
@@ -200,7 +201,7 @@ Figure 4.4: Screenshot of Consumer Barometer results on 2017 internet use. Retri
 </p>
 </div>
 <p><br></p>
-<p>Looking at Figure <a href="websavvy.html#fig:cb-single">4.4</a>, the crucial part is the footnote that says “base”, which tells us that the 82% figure for daily Internet usage in 2017 are <strong>among those who use the internet</strong>. We can easily calculate this 82% with the numbers in Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a> - note that 43<a href="#fn16" class="footnoteRef" id="fnref16"><sup>16</sup></a> is approximately 82% of 53<a href="#fn17" class="footnoteRef" id="fnref17"><sup>17</sup></a>. That is, <span class="math inline">\(\frac{43}{53} \approx 0.82\)</span>. This recovers the 82% figure that we see in Figure <a href="websavvy.html#fig:cb-single">4.4</a>.</p>
+<p>Looking at Figure <a href="websavvy.html#fig:cb-single">4.4</a>, the crucial part is the footnote that says “base”, which tells us that the 82% figure for daily Internet usage in 2017 are <strong>among those who use the internet</strong>. We can easily calculate this 82% with the numbers in Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a> - note that 43<a href="#fn17" class="footnoteRef" id="fnref17"><sup>17</sup></a> is approximately 82% of 53<a href="#fn18" class="footnoteRef" id="fnref18"><sup>18</sup></a>. That is, <span class="math inline">\(\frac{43}{53} \approx 0.82\)</span>. This recovers the 82% figure that we see in Figure <a href="websavvy.html#fig:cb-single">4.4</a>.</p>
 <p>Using the same strategy, we can recover the reporter’s figure for 2014: <span class="math inline">\(\frac{29}{37} \approx 0.78\)</span>.</p>
 <p><em>What does this mean?</em> This means that just like the reporter in the Watain example (<a href="watain.html#watain">4.1</a>), this reporter left out an important qualifier - only 29% of all older adults in Singapore use the internet daily, but 78% <strong>of those who use the internet</strong> use it daily. This vast discrepancy is highly consequential - the statement that “78 per cent of those aged 55 and older here access the Internet every day” is false, and the headline that “Majority of Singapore seniors are Web savvy” is misleading at best.</p>
 </div>
@@ -212,10 +213,10 @@ Figure 4.4: Screenshot of Consumer Barometer results on 2017 internet use. Retri
 </div>
 <div class="footnotes">
 <hr />
-<ol start="15">
-<li id="fn15"><p>For instance, see <a href="https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/" class="uri">https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/</a><a href="websavvy.html#fnref15">↩</a></p></li>
-<li id="fn16"><p>The percent of Singapore residents aged 55+ using the internet in 2017, from Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a><a href="websavvy.html#fnref16">↩</a></p></li>
-<li id="fn17"><p>The percent of Singapore residents aged 55+ using the internet <em>daily</em> in 2017, from Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a><a href="websavvy.html#fnref17">↩</a></p></li>
+<ol start="16">
+<li id="fn16"><p>For instance, see <a href="https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/" class="uri">https://www.pewinternet.org/2012/06/06/older-adults-and-internet-use/</a><a href="websavvy.html#fnref16">↩</a></p></li>
+<li id="fn17"><p>The percent of Singapore residents aged 55+ using the internet in 2017, from Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a><a href="websavvy.html#fnref17">↩</a></p></li>
+<li id="fn18"><p>The percent of Singapore residents aged 55+ using the internet <em>daily</em> in 2017, from Figure <a href="websavvy.html#fig:cb-seniorsinternet">4.3</a><a href="websavvy.html#fnref18">↩</a></p></li>
 </ol>
 </div>
             </section>

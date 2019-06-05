@@ -16,6 +16,23 @@ ABS is coordinated by the [Hu Fu Center for East Asia Democratic Studies](http:/
 
 Instructions for data access can be found at <http://www.asianbarometer.org/data/data-release>.
 
+## IPS Public Data {#ips}
+
+The IPS Public Data Sharing Platform is not a single dataset, but a repository consisting data collected by the Institute of Policy Studies at the Lee Kuan Yew School of Public Policy (NUS). These data range from surveys on political information, perceptions of policies, and food prices. These datasets are listed below:
+
+1) Survey on Political Traits and Media Use
+2) Impact of New Media on General Election 2011
+3) POPS (6): Perceptions of Singles on Marriage and Having Children
+4) POPS (7): Perceptions of the Marriage & Parenthood Package (2013)
+5) IPS Study on Perceptions of Singapore’s history
+6) POPS (8): IPS Post-Election Survey 2015
+7) Perceptions of Governance Survey
+8) Internet and Media Use During GE2015
+9) The Makan Index – A Survey of Hawker Food Prices
+10) Makan Index 2017: An indicator for Cost of Eating Out in Singapore
+
+More information on these datasets and instructions for data access can be found at <https://lkyspp.nus.edu.sg/ips/research/surveys/public-data-sharing-platform>.
+
 ## Panel on Health and Ageing of Singaporean Elderly (PHASE) {#phase}
 
 The Panel on Health and Ageing of Singaporean Elderly is a longitudinal panel study that tracks changes in the physical, social and mental health of Singapore residents. Respondents are aged 60 years and above in 2009, and three waves of data collection have been conducted so far. Wave 1 was conducted in 2009 (N=4990), Wave 2 in 2011 (N=3103), and Wave 3 in 2015 (N=1572).
