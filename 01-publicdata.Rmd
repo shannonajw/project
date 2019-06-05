@@ -18,7 +18,7 @@ Instructions for data access can be found at <http://www.asianbarometer.org/data
 
 ## IPS Public Data {#ips}
 
-The IPS Public Data Sharing Platform is not a single dataset, but a repository consisting data collected by the Institute of Policy Studies at the Lee Kuan Yew School of Public Policy (NUS). These data range from surveys on political information, perceptions of policies, to food prices by neighbourhood. These datasets are listed below:
+The IPS Public Data Sharing Platform is not a single dataset, but a repository that houses data collected by the Institute of Policy Studies at the Lee Kuan Yew School of Public Policy (NUS). These data range from surveys on political information, perceptions of policies, to food prices by neighbourhood districts. The available datasets are listed below:
 
 1) Survey on Political Traits and Media Use
 2) Impact of New Media on General Election 2011
