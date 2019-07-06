@@ -140,6 +140,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.2" data-path="websavvy.html"><a href="websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Media claim 2: Web-savvy Seniors</a></li>
 <li class="chapter" data-level="4.3" data-path="ooptech.html"><a href="ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical Appendix</a></li>
 <li class="chapter" data-level="4.4" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+<li class="chapter" data-level="4.5" data-path="additional-reading.html"><a href="additional-reading.html"><i class="fa fa-check"></i><b>4.5</b> Additional reading</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="lonely.html"><a href="lonely.html"><i class="fa fa-check"></i><b>5</b> Are we lonely?</a><ul>
 <li class="chapter" data-level="5.1" data-path="the-lonely-dichotomy.html"><a href="the-lonely-dichotomy.html"><i class="fa fa-check"></i><b>5.1</b> The lonely dichotomy</a></li>
@@ -176,19 +177,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><strong>Coding scheme 1: Lots of loneliness</strong></p>
 <p>I first follow the coding scheme in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize respondents into people who are “not lonely” (score of 0), and those who are “lonely” (score of 1-12)<a href="#fn27" class="footnoteRef" id="fnref27"><sup>27</sup></a>. This cut-off point seems to have arisen from a “common-sense” approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load required libraries</span>
-<span class="kw">library</span>(dplyr)</code></pre></div>
-<pre><code>## Registered S3 method overwritten by &#39;dplyr&#39;:
-##   method           from
-##   print.rowwise_df</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Note: You first need to read in the data</span>
+<span class="kw">library</span>(dplyr)
+
+<span class="co"># Note: You first need to read in the data</span>
 <span class="co"># The data already contains a pre-coded version according to these criteria</span>
 lonely1_cat &lt;-<span class="st"> </span>phase<span class="op">$</span>w2_loneliness_yesno <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
@@ -250,17 +241,9 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 lonely2 &lt;-<span class="st"> </span>phase <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">select</span>(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1) <span class="op">%&gt;%</span><span class="st">  </span>
 <span class="st">  </span><span class="kw">mutate_all</span>(<span class="kw">funs</span>(<span class="kw">recode</span>(.,<span class="st">`</span><span class="dt">0</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> </span><span class="dv">2</span>, <span class="st">`</span><span class="dt">3</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>, <span class="st">`</span><span class="dt">4</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>))) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rowSums</span>()</code></pre></div>
-<pre><code>## Warning: funs() is soft deprecated as of dplyr 0.8.0
-## please use list() instead
-## 
-##   # Before:
-##   funs(name = f(.))
-## 
-##   # After: 
-##   list(name = ~ f(.))
-## This warning is displayed once per session.</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Categorize according to cut-off point</span>
+<span class="st">  </span><span class="kw">rowSums</span>()
+
+<span class="co"># Categorize according to cut-off point</span>
 lonely2_cat &lt;-<span class="st"> </span><span class="kw">if_else</span>(lonely2 <span class="op">&lt;</span><span class="st"> </span><span class="dv">6</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
 
