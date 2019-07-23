@@ -1359,14 +1359,14 @@ calculations work, without having to read the math\footnote{If you
   already understand what
   \(\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)\)
   means, you may skip ahead to the next section}. A simulation means
-determine what is the `truth' in a hypothetical population and then use
-the computer to draw samples from this population\footnote{The code here
-  utilizes the Monte Carlo method, which essentially is a computational
-  way to see how samples perform under realistic data conditions with a
-  known probability distribution.} to see how sampling (and sample
-sizes) work. Our quantity of interest is the proportion of people who
-like durian. We define the population such that 65\% of people (in our
-population) like durian (i.e.,
+that we can determine what is the `truth' in a hypothetical population,
+and then use the computer to draw samples from this population\footnote{The
+  code here utilizes the Monte Carlo method, which essentially is a
+  computational way to see how samples perform under realistic data
+  conditions with a known probability distribution.} to see how sampling
+(and sample sizes) work. Our quantity of interest is the proportion of
+people who like durian. We define the population such that 65\% of
+people (in our population) like durian (i.e.,
 \(\Pr(\text{Likes Durian}) = 0.65\))\footnote{Look at Chapter
   \ref{ooptech} for a short explanation of how we went from proportions
   to probabilites}.
@@ -1385,11 +1385,12 @@ population) like durian (i.e.,
 \end{Shaded}
 
 If you run the code above multiple times, you will realize the number
-produced is different each time you draw a new sample. Since we know the
-true value of \(\Pr(\text{Likes Durian})\), we also know how far off
-these sample estimates of \(\Pr(\text{Likes Durian})\) tend to be. The
-next step in this exercise is to draw a large number of samples of the
-same size to show how wide these estimates can vary.
+produced is different each time you draw a new sample. This makes sense,
+since samples are drawn randomly. Since we know the true value of
+\(\Pr(\text{Likes Durian})\), we also know how far off these sample
+estimates of \(\Pr(\text{Likes Durian})\) tend to be. The next step in
+this exercise is to draw a large number of samples of the same size to
+show how much these sample proportions can vary.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1485,14 +1486,22 @@ narrowed\footnote{If you calculate the mean of proportions again, you
 shows that with a bigger sample size, our uncertainty around the true
 estimate also shrinks.
 
-Our little simulation exercise has shown a number of things: 1. The
-basic intuition is correct - larger sample sizes in fact produce
-estimates that are less susceptible to sampling error (that is,
-estimates generally fall closer to the true value). 2. However, this
-basic intuition matters less than we often think. Even a relatively
-small sample size of 1000 (as asserted by the commentator in Chapter
-@\ref(sample-worklife)) produces estimates quite close to the true value
-(in this case, within 3 percentage points 95\% of the time).
+Our little simulation exercise has shown a number of things:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The basic intuition is correct - larger sample sizes in fact produce
+  estimates that are less susceptible to sampling error (that is,
+  estimates generally fall closer to the true value).
+\item
+  However, this basic intuition matters less than we often think. Even a
+  relatively small sample size of 1000 (as asserted by the commentator
+  in Chapter @\ref(sample-worklife)) produces estimates quite close to
+  the true value (in this case, within 3 percentage points 95\% of the
+  time).
+\end{enumerate}
 
 What is important here, however, is that these estimates can only be
 calculated in this manner if we have a probability sample - that is, if
@@ -1519,7 +1528,7 @@ what}\label{non-probability-sample-now-what}
 Probability samples are hard to come by, and while in theory they are
 the ``gold standard''\footnote{Apart from having information on the
   entire population, through a census or administrative government data.},
-there are a number of drawbacks when trying to implement them.
+there are a number of drawbacks when trying to implement them:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  23 JUL 2019 16:37
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  23 JUL 2019 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,7 +1085,7 @@ File: images/samples/st_samplesize.png Graphic file (type bmp)
 [33
 
 ] [34] [35]
-Overfull \vbox (0.69824pt too high) detected at line 1409
+Overfull \vbox (0.69824pt too high) detected at line 1410
  []
 
 [36]
@@ -1094,7 +1094,7 @@ File: bookdown_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use bookdown_files/figure-latex/unnamed-chunk-8-1.pdf>
 [37]
 
-LaTeX Warning: Reference `(' on page 38 undefined on input line 1494.
+LaTeX Warning: Reference `(' on page 38 undefined on input line 1501.
 
 [38]
 File: images/samples/today_classpercept.png Graphic file (type bmp)
@@ -1102,7 +1102,7 @@ File: images/samples/today_classpercept.png Graphic file (type bmp)
 File: images/samples/lkyspp_reportsample.png Graphic file (type bmp)
 <images/samples/lkyspp_reportsample.png>
 [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1659--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1668--1668
 [][][]\TU/lmr/m/n/8 See also []$[][][][][] [] [] [] [][][][][][][][][][][][] []
  [][][][] [] [][][][][][][][] [] [][][] [] [][][][] [] [][] [] [][] []
  []
@@ -1114,12 +1114,12 @@ Chapter 7.
 ] [44
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1705.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1714.
 [45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1705.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1714.
 (./bookdown.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1705.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1705.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1714.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1714.
 
 Package rerunfilecheck Info: File `bookdown.out' has not changed.
 (rerunfilecheck)             Checksum: 337C5A946A0B7E1896C0171C17B5E76A.

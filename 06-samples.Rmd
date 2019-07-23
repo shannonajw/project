@@ -39,7 +39,7 @@ It is true that size matters. However, people tend to paint some variant of this
 
 **But how certain can we be?** This question is key. First, we need the following information: what are the sampling probabilites for each respondent in the sample? In other words, how likely is each member to be selected into the sample? If they were selected at random^[Random here means that every person in the population has an equal (or known) chance of being selected. It does not mean I randomly approach someone on the street, since certain types of people are more likely to be selected with this method (e.g., people who live close to that street, people who are around at that time, etc.). Usually, in Singapore, researchers who want a random sample get a list of household addresses from the Department of Statistics. It is assumed that the Department of Statistics provides a random sample of all household addresses, but I am not privy to what happens exactly.], there are established methods to calculate uncertainty around our findings^[Via the Central Limit Theorem. If the quantity of interest is a proportion/probability, then the normal approximation property (and its assumptions) also needs to be invoked. The point here, however, is not to demonstrate the Central Limit Theorem, but to demonstrate how sample size matters. I will therefore avoid getting into the technicalities of the Central Limit Theorem.]. 
 
-Let's do a small simulation exercise here to demonstrate how these calculations work, without having to read the math^[If you already understand what $\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)$ means, you may skip ahead to the next section]. A simulation means determine what is the 'truth' in a hypothetical population and then use the computer to draw samples from this population^[The code here utilizes the Monte Carlo method, which essentially is a computational way to see how samples perform under realistic data conditions with a known probability distribution.] to see how sampling (and sample sizes) work. Our quantity of interest is the proportion of people who like durian. We define the population such that 65% of people (in our population) like durian (i.e., $\Pr(\text{Likes Durian}) = 0.65$)^[Look at Chapter \@ref(ooptech) for a short explanation of how we went from proportions to probabilites].
+Let's do a small simulation exercise here to demonstrate how these calculations work, without having to read the math^[If you already understand what $\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)$ means, you may skip ahead to the next section]. A simulation means that we can determine what is the 'truth' in a hypothetical population, and then use the computer to draw samples from this population^[The code here utilizes the Monte Carlo method, which essentially is a computational way to see how samples perform under realistic data conditions with a known probability distribution.] to see how sampling (and sample sizes) work. Our quantity of interest is the proportion of people who like durian. We define the population such that 65% of people (in our population) like durian (i.e., $\Pr(\text{Likes Durian}) = 0.65$)^[Look at Chapter \@ref(ooptech) for a short explanation of how we went from proportions to probabilites].
 
 ```{r results=F}
 # Determine the sample size 
@@ -52,7 +52,7 @@ sample <- rbinom(n, 1, p=0.65)
 sum(sample)/n
 ```
 
-If you run the code above multiple times, you will realize the number produced is different each time you draw a new sample. Since we know the true value of $\Pr(\text{Likes Durian})$, we also know how far off these sample estimates of $\Pr(\text{Likes Durian})$ tend to be. The next step in this exercise is to draw a large number of samples of the same size to show how wide these estimates can vary.
+If you run the code above multiple times, you will realize the number produced is different each time you draw a new sample. This makes sense, since samples are drawn randomly. Since we know the true value of $\Pr(\text{Likes Durian})$, we also know how far off these sample estimates of $\Pr(\text{Likes Durian})$ tend to be. The next step in this exercise is to draw a large number of samples of the same size to show how much these sample proportions can vary.
 
 ```{r include=F}
 set.seed(1234)
@@ -110,6 +110,7 @@ quantile(unlist(proportions), prob=c(0.05, 0.975))
 You will realize here that the interval for the quantile values have narrowed^[If you calculate the mean of proportions again, you will also realize also that it recovers the true value of 0.65]. This shows that with a bigger sample size, our uncertainty around the true estimate also shrinks. 
 
 Our little simulation exercise has shown a number of things:
+
 1. The basic intuition is correct - larger sample sizes in fact produce estimates that are less susceptible to sampling error (that is, estimates generally fall closer to the true value).
 2. However, this basic intuition matters less than we often think. Even a relatively small sample size of 1000 (as asserted by the commentator in Chapter @\ref(sample-worklife)) produces estimates quite close to the true value (in this case, within 3 percentage points 95% of the time).
 
@@ -119,7 +120,7 @@ This is not to say that there is no way to calculate a "margin of error" or boun
 
 ## Non-probability sample, now what
 
-Probability samples are hard to come by, and while in theory they are the "gold standard"^[Apart from having information on the entire population, through a census or administrative government data.], there are a number of drawbacks when trying to implement them.
+Probability samples are hard to come by, and while in theory they are the "gold standard"^[Apart from having information on the entire population, through a census or administrative government data.], there are a number of drawbacks when trying to implement them:
 
 1. Poor response rates. Not all respondents in your probability sample will agree to respond to your survey or participate in your study. While researchers have tried various methods (e.g., offering a monetary "token of appreciation") to increase response rates, low response rates threaten the validity of a probability sample, especially if those who refuse are systematically different from those who eventually participate.
 2. High cost. Partly because of strategies to increase response rates through "tokens of appreciation", the cost of implementing a high-quality survey (especially through traditional face-to-face interviews) with a probability sample have increased substantially.
@@ -170,9 +171,6 @@ We have discussed sampling - what probability samples and non-probability sample
 In many studies reported in the media, however, non-probability samples are used. Non-probability samples can be a good alternative to probability samples especially given that non-response rates are increasing. **However, we cannot use formulas meant for probability samples and apply them to non-probability samples as if they are the same.** Non-probability samples require different (and slighty more complex) methods to produce equally accurate estimates.
 
 What does this case study highlight? First, we need to be transparent^[And we need to demand transparency.] about how studies recruit members into their sample. **How the sample is recruited is usually much more important than how large the sample is**, but we are seldom given enough detail about it. Second, we need to be aware if appropriate methods are being used. Using a non-probability sample the more practical option, but we become overconfident and may end up with the wrong conclusions if we simply act as if it is a probability sample.
-
-
-
 
 
 
