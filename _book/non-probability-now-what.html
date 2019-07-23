@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6.3 Non-probability, now what | Singapore Society in Numbers</title>
+  <meta name="description" content="Understanding Singapore through quantitative social science" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6.3 Non-probability, now what | Singapore Society in Numbers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Understanding Singapore through quantitative social science" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6.3 Non-probability, now what | Singapore Society in Numbers" />
+  
+  <meta name="twitter:description" content="Understanding Singapore through quantitative social science" />
+  
+
+<meta name="author" content="Edited by Shannon Ang" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="size-matters-but-how-so.html">
+<link rel="next" href="conclusion-2.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="https://hypothes.is/embed.js" async></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117918858-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117918858-2');
+</script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Singapore Society in Numbers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="why-i-started-this-project.html"><a href="why-i-started-this-project.html"><i class="fa fa-check"></i>Why I started this project</a></li>
+<li class="chapter" data-level="" data-path="how-to-contribute.html"><a href="how-to-contribute.html"><i class="fa fa-check"></i>How to contribute</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+</ul></li>
+<li class="part"><span><b>I Datasets for Social Science</b></span></li>
+<li class="chapter" data-level="1" data-path="publicdata.html"><a href="publicdata.html"><i class="fa fa-check"></i><b>1</b> Public Data</a><ul>
+<li class="chapter" data-level="1.1" data-path="abs.html"><a href="abs.html"><i class="fa fa-check"></i><b>1.1</b> Asian Barometer Survey (ABS)</a></li>
+<li class="chapter" data-level="1.2" data-path="ips.html"><a href="ips.html"><i class="fa fa-check"></i><b>1.2</b> IPS Public Data</a></li>
+<li class="chapter" data-level="1.3" data-path="phase.html"><a href="phase.html"><i class="fa fa-check"></i><b>1.3</b> Panel on Health and Ageing of Singaporean Elderly (PHASE)</a></li>
+<li class="chapter" data-level="1.4" data-path="wvs.html"><a href="wvs.html"><i class="fa fa-check"></i><b>1.4</b> World Values Survey (WVS)</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="restricteddata.html"><a href="restricteddata.html"><i class="fa fa-check"></i><b>2</b> Restricted Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="nys.html"><a href="nys.html"><i class="fa fa-check"></i><b>2.1</b> National Youth Survey (NYS)</a></li>
+<li class="chapter" data-level="2.2" data-path="rhs.html"><a href="rhs.html"><i class="fa fa-check"></i><b>2.2</b> Retirement and Health Study (RHS)</a></li>
+<li class="chapter" data-level="2.3" data-path="slp.html"><a href="slp.html"><i class="fa fa-check"></i><b>2.3</b> Singapore Life Panel (SLP)</a></li>
+<li class="chapter" data-level="2.4" data-path="spssd.html"><a href="spssd.html"><i class="fa fa-check"></i><b>2.4</b> Singapore Panel Study on Social Dynamics (SPSSD)</a></li>
+<li class="chapter" data-level="2.5" data-path="youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><a href="youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><i class="fa fa-check"></i><b>2.5</b> Youth Survey on Transitions and Evolving Pathways in Singapore (Youth STEPS)</a></li>
+</ul></li>
+<li class="part"><span><b>II Think Pieces</b></span></li>
+<li class="chapter" data-level="3" data-path="think.html"><a href="think.html"><i class="fa fa-check"></i><b>3</b> Thinking about Numbers</a></li>
+<li class="part"><span><b>III Case Studies</b></span></li>
+<li class="chapter" data-level="4" data-path="oop.html"><a href="oop.html"><i class="fa fa-check"></i><b>4</b> Blown out of proportion</a><ul>
+<li class="chapter" data-level="4.1" data-path="watain.html"><a href="watain.html"><i class="fa fa-check"></i><b>4.1</b> Media claim 1: Support for the Watain ban</a></li>
+<li class="chapter" data-level="4.2" data-path="websavvy.html"><a href="websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Media claim 2: Web-savvy Seniors</a></li>
+<li class="chapter" data-level="4.3" data-path="ooptech.html"><a href="ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical Appendix</a></li>
+<li class="chapter" data-level="4.4" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+<li class="chapter" data-level="4.5" data-path="additional-reading.html"><a href="additional-reading.html"><i class="fa fa-check"></i><b>4.5</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="lonely.html"><a href="lonely.html"><i class="fa fa-check"></i><b>5</b> Are we lonely?</a><ul>
+<li class="chapter" data-level="5.1" data-path="the-lonely-dichotomy.html"><a href="the-lonely-dichotomy.html"><i class="fa fa-check"></i><b>5.1</b> The lonely dichotomy</a></li>
+<li class="chapter" data-level="5.2" data-path="lonely-by-whose-standard.html"><a href="lonely-by-whose-standard.html"><i class="fa fa-check"></i><b>5.2</b> Lonely by whose standard</a></li>
+<li class="chapter" data-level="5.3" data-path="same-data-different-results.html"><a href="same-data-different-results.html"><i class="fa fa-check"></i><b>5.3</b> Same data, different results</a></li>
+<li class="chapter" data-level="5.4" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="samples.html"><a href="samples.html"><i class="fa fa-check"></i><b>6</b> Size is not all that matters</a><ul>
+<li class="chapter" data-level="6.1" data-path="sample-worklife.html"><a href="sample-worklife.html"><i class="fa fa-check"></i><b>6.1</b> But it’s too small!</a></li>
+<li class="chapter" data-level="6.2" data-path="size-matters-but-how-so.html"><a href="size-matters-but-how-so.html"><i class="fa fa-check"></i><b>6.2</b> Size matters, but how so?</a></li>
+<li class="chapter" data-level="6.3" data-path="non-probability-now-what.html"><a href="non-probability-now-what.html"><i class="fa fa-check"></i><b>6.3</b> Non-probability, now what</a></li>
+<li class="chapter" data-level="6.4" data-path="conclusion-2.html"><a href="conclusion-2.html"><i class="fa fa-check"></i><b>6.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>7</b> Your case study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Singapore Society in Numbers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="non-probability-now-what" class="section level2">
+<h2><span class="header-section-number">6.3</span> Non-probability, now what</h2>
+<p>Probability samples are hard to come by, and while in theory they are the “gold standard”<a href="#fn41" class="footnoteRef" id="fnref41"><sup>41</sup></a>, there are a number of drawbacks when trying to implement them.</p>
+<ol style="list-style-type: decimal">
+<li>Poor response rates. Not all respondents in your probability sample will agree to respond to your survey or participate in your study. While researchers have tried various methods (e.g., offering a monetary “token of appreciation”) to increase response rates, low response rates threaten the validity of a probability sample, especially if those who refuse are systematically different from those who eventually participate.</li>
+<li>High cost. Partly because of strategies to increase response rates through “tokens of appreciation”, the cost of implementing a high-quality survey (especially through traditional face-to-face interviews) with a probability sample have increased substantially.</li>
+</ol>
+<p>Some researchers, therefore, have turned to online surveys (which are much cheaper to conduct). One recent study commissioned by the Lee Kuan Yew School of Public Policy on Singaporeans’ perception of class markers did this.</p>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:today-classmarkers"></span>
+<img src="images/samples/today_classpercept.png" alt="Screenshot of TODAYonline article on class perceptions. Retrieved July 16, 2019." width="50%" />
+<p class="caption">
+Figure 6.3: Screenshot of TODAYonline article on class perceptions. Retrieved July 16, 2019.
+</p>
+</div>
+<p><br></p>
+<p>The newspaper article reports the following: <br></p>
+<blockquote>
+<p>While Dr Dodgson acknowledged that the sample size was relatively low, with a 4.25 per cent margin of error, she told TODAY that the open-ended nature of the survey “gave greater nuance and accuracy” than multiple-choice questionnaires.</p>
+</blockquote>
+<p><br></p>
+<p><a href="https://lkyspp.nus.edu.sg/docs/default-source/gia-documents/cars_-condos-and-cai-png-survey-(high-res).pdf" target="_blank">The report</a> also contains the following ‘infographic’, which confirms what the news article reported.</p>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:today-reportsample"></span>
+<img src="images/samples/lkyspp_reportsample.png" alt="Screenshot of TODAYonline article on class perceptions. Retrieved July 16, 2019." width="60%" />
+<p class="caption">
+Figure 6.4: Screenshot of TODAYonline article on class perceptions. Retrieved July 16, 2019.
+</p>
+</div>
+<p><br></p>
+<p>As you may recognize, this “margin of error” is something we had talked about in the previous section. I simulated the results to show the basic reasoning behind sampling theory, but you can in fact easily find online calculators purporting to calculate this “margin of error” for you<a href="#fn42" class="footnoteRef" id="fnref42"><sup>42</sup></a>. Let’s use a <a href="http://www.raosoft.com/samplesize.html" target="_blank">random one I found</a>. Just change the margin of error to 4.25 and the population size to ~3.5 million (Singapore resident population size) and you get back a recommended sample size of ~530<a href="#fn43" class="footnoteRef" id="fnref43"><sup>43</sup></a>. But remember, <strong>these calculations are for a probability sample!</strong><a href="#fn44" class="footnoteRef" id="fnref44"><sup>44</sup></a></p>
+<p>Is the study in question conducted with a probability sample? The details provided are still vague<a href="#fn45" class="footnoteRef" id="fnref45"><sup>45</sup></a>, but my general sense is that they were not using a probability sample. The report states that:</p>
+<p><br></p>
+<blockquote>
+<p>Responses were solicited via social media and via a panel responses service. The goal with this was to attract a mixture of opinions, both from people with a pre-existing interest in the topic (whose opinions are generally weighted more heavily in political discussion, simply because they are more likely to assert them and eventually to take action on the same basis) and from those with no immediate interest (whose opinions are often discounted in political discussion, but which can have startling effects at the ballot box). Similarly, the demographics of the respondents were tracked with the aim of creating a sample that would be broadly representative of the general population.</p>
+</blockquote>
+<p><br></p>
+<p>In what seems like implicit acknowledgement that the study did not use a probability sample, some effort has been made to ensure adequate ‘representation’ through varied modes (social media and panel responses service), and through mimicking the country’s demographic composition (probably by ensuring sufficient numbers of minorities)<a href="#fn46" class="footnoteRef" id="fnref46"><sup>46</sup></a>. It is worth noting, however, that in no way does this make it equivalent to a probability sample of <em>all Singaporeans</em><a href="#fn47" class="footnoteRef" id="fnref47"><sup>47</sup></a>. <strong>It is therefore inappropriate to calculate and use a margin of error <em>as if</em> it were a probability sample of all Singaporeans.</strong></p>
+<p>This does not mean that there is no way to use a non-probability sample to produce accurate estimates. However, methods to derive estimates from non-probability samples are often context dependent (i.e., they have to be customized for each case, depending on the quantity of interest) and have different requirements beyond sample size. Because of the practical drawbacks of probability sample highlighted above, statistical innovation to draw inferences from non-probability samples (often done through post-sampling adjustments) is much needed in the world of research.</p>
+<p>‘Big data’ plays an important role here. (Matthew Salganik’s gives one of the best overviews on the characteristics of ‘big data’ <a href="https://www.bitbybitbook.com/en/1st-ed/observing-behavior/characteristics/" target="_blank">in his book <em>Bit by Bit</em></a>, which I highly recommend). Data that is collected constantly and from many people at once allows for timely and cost-effective results, if we use the right approach. <span class="citation">Wang et al. (<a href="#ref-wang_forecasting_2015">2015</a>)</span> (available <a href="http://www.stat.columbia.edu/~gelman/research/published/forecasting-with-nonrepresentative-polls.pdf" target="_blank">here</a>) use multilevel regression and poststratification (affectionately called “Mister P”) to show that accurate forecasts of the 2012 US presidential election could be obtained using data from Xbox<a href="#fn48" class="footnoteRef" id="fnref48"><sup>48</sup></a> users. Two points are of note here. First, the sample was large - 750,148 interviews were conducted through Xbox polls, with 345,858 unique respondents, and over 30,000 respondents completed five or more polls. Second, having strong covariates<a href="#fn49" class="footnoteRef" id="fnref49"><sup>49</sup></a> to adjust for non-response bias (<span class="citation">Gelman et al. (<a href="#ref-gelman_mythical_2016">2016</a>)</span>, available <a href="http://www.stat.columbia.edu/~gelman/research/published/swingers.pdf" target="_blank">here</a>) and subgroup level characteristics (if more granular subgroup level estimates are of interest) are crucial to good estimation<a href="#fn50" class="footnoteRef" id="fnref50"><sup>50</sup></a>. <strong>Neither of these was true in the study by the Lee Kuan Yew School of Public Policy discussed above.</strong></p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gelman_mythical_2016">
+<p>Gelman, Andrew, Sharad Goel, Douglas Rivers, and David Rothschild. 2016. “The Mythical Swing Voter.” <em>Quarterly Journal of Political Science</em> 11 (1): 103–30. doi:<a href="https://doi.org/10.1561/100.00015031">10.1561/100.00015031</a>.</p>
+</div>
+<div id="ref-wang_forecasting_2015">
+<p>Wang, Wei, David Rothschild, Sharad Goel, and Andrew Gelman. 2015. “Forecasting Elections with Non-Representative Polls.” <em>International Journal of Forecasting</em> 31 (3): 980–91. doi:<a href="https://doi.org/10.1016/j.ijforecast.2014.06.001">10.1016/j.ijforecast.2014.06.001</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="41">
+<li id="fn41"><p>Apart from having information on the entire population, through a census or administrative government data.<a href="non-probability-now-what.html#fnref41">↩</a></p></li>
+<li id="fn42"><p>These calculators use closed-form formulas to produce a ‘margin of error’, rather than through the more numerical/computational approach I used.<a href="non-probability-now-what.html#fnref42">↩</a></p></li>
+<li id="fn43"><p>The report itself does not state how they calculated the margin of error. It is my guess that this (or a variant of this calculation) is what they did. If you are aware that a different method was used, please write to me so I can correct it.<a href="non-probability-now-what.html#fnref43">↩</a></p></li>
+<li id="fn44"><p>More specifically, a simple random sample.<a href="non-probability-now-what.html#fnref44">↩</a></p></li>
+<li id="fn45"><p>For instance, how did the panel responses service recruit participants?<a href="non-probability-now-what.html#fnref45">↩</a></p></li>
+<li id="fn46"><p>This appears similar to quota sampling, which is a non-probability sampling method.<a href="non-probability-now-what.html#fnref46">↩</a></p></li>
+<li id="fn47"><p>If only it were that simple.<a href="non-probability-now-what.html#fnref47">↩</a></p></li>
+<li id="fn48"><p>A gaming platform<a href="non-probability-now-what.html#fnref48">↩</a></p></li>
+<li id="fn49"><p>Other characteristics of the sample, beyond basic demographic information.<a href="non-probability-now-what.html#fnref49">↩</a></p></li>
+<li id="fn50"><p>See also <a href="https://statmodeling.stat.columbia.edu/2013/10/09/mister-p-whats-its-secret-sauce/" class="uri" target="_blank">https://statmodeling.stat.columbia.edu/2013/10/09/mister-p-whats-its-secret-sauce/</a><a href="non-probability-now-what.html#fnref50">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="size-matters-but-how-so.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
