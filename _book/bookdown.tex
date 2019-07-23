@@ -1355,17 +1355,17 @@ methods to calculate uncertainty around our findings\footnote{Via the
   technicalities of the Central Limit Theorem.}.
 
 Let's do a small simulation exercise here to demonstrate how these
-calculations work, without having to read the math (if you understand
-what
-\(\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)\)
-means, you may skip ahead.). A simulation means determine what is the
-`truth' in a hypothetical population and then use the computer to draw
-samples from this population\footnote{The code here utilizes the Monte
-  Carlo method, which essentially is a computational way to see how
-  samples perform under realistic data conditions with a known
-  probability distribution.} to see how sampling (and sample sizes)
-work. Our quantity of interest is the proportion of people who like
-durian. We define the population such that 65\% of people (in our
+calculations work, without having to read the math\footnote{If you
+  already understand what
+  \(\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)\)
+  means, you may skip ahead to the next section}. A simulation means
+determine what is the `truth' in a hypothetical population and then use
+the computer to draw samples from this population\footnote{The code here
+  utilizes the Monte Carlo method, which essentially is a computational
+  way to see how samples perform under realistic data conditions with a
+  known probability distribution.} to see how sampling (and sample
+sizes) work. Our quantity of interest is the proportion of people who
+like durian. We define the population such that 65\% of people (in our
 population) like durian (i.e.,
 \(\Pr(\text{Likes Durian}) = 0.65\))\footnote{Look at Chapter
   \ref{ooptech} for a short explanation of how we went from proportions
@@ -1479,7 +1479,7 @@ the same code again, but increase the sample size to 1000.
 ## 0.625 0.679
 \end{verbatim}
 
-You will realize here that the interval between the quantile values have
+You will realize here that the interval for the quantile values have
 narrowed\footnote{If you calculate the mean of proportions again, you
   will also realize also that it recovers the true value of 0.65}. This
 shows that with a bigger sample size, our uncertainty around the true
