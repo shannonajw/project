@@ -52,14 +52,22 @@ For this simple analysis, I use data from Wave 2 of the Panel on Health and Agei
 
 I first follow the coding scheme in @lim_association_2017 and @chan_loneliness_2015. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize respondents into people who are "not lonely" (score of 0), and those who are "lonely" (score of 1-12)^[Note that @chan_loneliness_2015 further splits the "lonely" group into "sometimes lonely" and "mostly lonely". @lim_association_2017, however, does not make this distinction. I have grouped them together since this is the way that it has usually been represented in public discourse (e.g., the claim that those who are lonely have a higher risk of mortality compared to those not lonely. See, for instance, <https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone>{target="_blank"})]. This cut-off point seems to have arisen from a "common-sense" approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.
 
-```{r include=FALSE}
+```{r include=FALSE, eval=FALSE}
 library(haven)
 library(tidyr)
+library(dplyr)
 phase <- read_dta("/Users/shannon/Dropbox/Datasets/PHASE123/LATEST_ PHASE_Wave 1_Wave 2_Wave 3_Data May 2017/PHASE_1_2_3 Stata/PHASE_1_2_3.dta") %>% zap_labels() %>% drop_na(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1)
 livingarr <- factor(phase$w2_livingarr2, 
                     labels=c("Living alone", "Living with spouse only",
                              "Living with child only", "Living with spouse and child",
                              "Living with others only"))
+phase <- phase %>% select(w2_loneliness_yesno, livingarr, 
+                          w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1, w2_weights)
+save(phase, file = "files/phase_lonely.Rdata")
+```
+
+```{r include=FALSE}
+load(file = "files/phase_lonely.Rdata")
 ```
 
 ```{r table-lonely1, tidy=FALSE}
@@ -74,7 +82,7 @@ lonely1_cat <- phase$w2_loneliness_yesno %>%
 knitr::kable(
   GDAtools::prop.wtable(livingarr, lonely1_cat, 
                       dir=1, digits=3, w=phase$w2_weights, na=F, mar=F), 
-  caption = paste0('Crosstabulation using criteria in Lim and Chan (2017)',
+  caption = paste0('Crosstabulation using criteria in Lim and Chan (2017) ',
                    'and Chan et al (2015). Note that these are row percentages.'),
   booktabs = TRUE)
 ```
@@ -110,7 +118,7 @@ lonely2_cat <- if_else(lonely2 < 6, 0, 1) %>%
 knitr::kable(
   GDAtools::prop.wtable(livingarr, lonely2_cat, 
                       dir=1, digits=3, w=phase$w2_weights, na=F, mar=F), 
-  caption = paste0('Crosstabulation using criteria in Wee et al (2019)',
+  caption = paste0('Crosstabulation using criteria in Wee et al (2019) ',
             'and Ge et al (2017). Note that these are row percentages.'),
   booktabs = TRUE)
 ```
