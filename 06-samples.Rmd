@@ -19,7 +19,7 @@ knitr::include_graphics("images/samples/st_worklife.png")
 ```
 <br>
 
-Many people on social media spoke out against the findings (not unexpectedly), questioning how reliable these findings were. These commentators probably felt these findings could not possibly reflect reality, given their own experiences. Surely, they might believe, more people are unhappy with their work-life balance. To rationalize this incongruence, there will inadvertently be some attention drawn to the sample size.
+Many people on social media spoke out against the findings (not unexpectedly), questioning how reliable these findings were. These commentators probably felt such findings could not possibly reflect reality, given their own experiences. Surely, they might believe, more people are unhappy with their work-life balance. To rationalize this incongruence, there will inadvertently be some attention drawn to the sample size.
 
 <br>
 ```{r st-samplesize, fig.cap='Screenshot of comment on work-life balance article. Retrieved July 16, 2019.', out.width='60%', fig.align='center', echo=F}
@@ -86,7 +86,7 @@ round(mean(unlist(proportions)),2)
 quantile(unlist(proportions), prob=c(0.05, 0.975))
 ```
 
-**What do these numbers tell us?** If you realize, the mean of the distribution of sample proportions is, in fact, the true value of $\Pr(\text{Likes Durian})$. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.57 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)^[Other than the sample size, uncertainty also increases if the true value of $\Pr(\text{Likes Durian})$ is closer to 0.50.]. This is the fundamental basis of claim by researchers who claim that a survey has a certain "margin of error".
+**What do these numbers tell us?** If you realize, the mean of the distribution of sample proportions is, in fact, the true value of $\Pr(\text{Likes Durian})$. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.57 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)^[Other than the sample size, uncertainty also increases if the true value of $\Pr(\text{Likes Durian})$ is closer to 0.50.]. This is the fundamental basis of claims by researchers that a survey has a certain "margin of error".
 
 **So what happens when we increase the sample size?** Let us run the same code again, but increase the sample size to 1000.
 
@@ -112,7 +112,7 @@ You will realize here that the interval for the quantile values have narrowed^[I
 Our little simulation exercise has shown a number of things:
 
 1. The basic intuition is correct - larger sample sizes in fact produce estimates that are less susceptible to sampling error (that is, estimates generally fall closer to the true value).
-2. However, this basic intuition matters less than we often think. Even a relatively small sample size of 1000 (as asserted by the commentator in Chapter @\ref(sample-worklife)) produces estimates quite close to the true value (in this case, within 3 percentage points 95% of the time).
+2. However, this basic intuition matters less than we often think. Even a relatively small sample size of 1000 (as asserted by the commentator in Chapter \@ref(sample-worklife)) produces estimates quite close to the true value (in this case, within 3 percentage points 95% of the time).
 
 What is important here, however, is that these estimates can only be calculated in this manner if we have a probability sample - that is, if we know the sampling probabilites for each respondent in the sample^[The easiest way is to get a simple random sample (where everyone has an equal chance of selection), but there are also ways to adjust for more complex cases (e.g., multistage sampling)]. **If we do not know how respondents in a sample were recruited, there is no way to determine whether purported findings actually reflect the population, and how much uncertainty there is around them**.
 
