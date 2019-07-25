@@ -202,17 +202,17 @@ proportions &lt;-<span class="st"> </span><span class="kw">lapply</span>(samples
 <span class="kw">hist</span>(<span class="kw">unlist</span>(proportions), 
      <span class="dt">main=</span><span class="st">&quot;Distribution of Proportions&quot;</span>, 
      <span class="dt">xlab=</span><span class="st">&quot;Proportion&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>You can see that the distribution of proportions from these samples looks (somewhat) like a bell curve<a href="#fn38" class="footnoteRef" id="fnref38"><sup>38</sup></a>. Let’s now summarize this distribution with some numbers.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Get the mean of all proportions, </span>
 <span class="co">#  rounded to 2 decimal places</span>
 <span class="kw">round</span>(<span class="kw">mean</span>(<span class="kw">unlist</span>(proportions)),<span class="dv">2</span>)</code></pre></div>
 <pre><code>## [1] 0.65</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Get the 2.5th and 97.5th percentiles</span>
-<span class="kw">quantile</span>(<span class="kw">unlist</span>(proportions), <span class="dt">prob=</span><span class="kw">c</span>(<span class="fl">0.05</span>, <span class="fl">0.975</span>))</code></pre></div>
-<pre><code>##    5% 97.5% 
-##  0.57  0.74</code></pre>
-<p><strong>What do these numbers tell us?</strong> If you realize, the mean of the distribution of sample proportions is, in fact, the true value of <span class="math inline">\(\Pr(\text{Likes Durian})\)</span>. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.57 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)<a href="#fn39" class="footnoteRef" id="fnref39"><sup>39</sup></a>. This is the fundamental basis of claims by researchers that a survey has a certain “margin of error”.</p>
+<span class="kw">quantile</span>(<span class="kw">unlist</span>(proportions), <span class="dt">prob=</span><span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>))</code></pre></div>
+<pre><code>##  2.5% 97.5% 
+##  0.56  0.74</code></pre>
+<p><strong>What do these numbers tell us?</strong> If you realize, the mean of the distribution of sample proportions is, in fact, the true value of <span class="math inline">\(\Pr(\text{Likes Durian})\)</span>. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.56 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)<a href="#fn39" class="footnoteRef" id="fnref39"><sup>39</sup></a>. This is the fundamental basis of claims by researchers that a survey has a certain “margin of error”.</p>
 <p><strong>So what happens when we increase the sample size?</strong> Let us run the same code again, but increase the sample size to 1000.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Determine the sample size</span>
 n &lt;-<span class="st"> </span><span class="dv">1000</span>
@@ -223,9 +223,9 @@ samples &lt;-<span class="st"> </span><span class="kw">lapply</span>(sample_no, 
 proportions &lt;-<span class="st"> </span><span class="kw">lapply</span>(samples, <span class="cf">function</span>(x) <span class="kw">sum</span>(x)<span class="op">/</span>n)
 
 <span class="co"># Get the 2.5th and 97.5th percentiles</span>
-<span class="kw">quantile</span>(<span class="kw">unlist</span>(proportions), <span class="dt">prob=</span><span class="kw">c</span>(<span class="fl">0.05</span>, <span class="fl">0.975</span>))</code></pre></div>
-<pre><code>##    5% 97.5% 
-## 0.625 0.679</code></pre>
+<span class="kw">quantile</span>(<span class="kw">unlist</span>(proportions), <span class="dt">prob=</span><span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>))</code></pre></div>
+<pre><code>##  2.5% 97.5% 
+## 0.620 0.679</code></pre>
 <p>You will realize here that the interval for the quantile values have narrowed<a href="#fn40" class="footnoteRef" id="fnref40"><sup>40</sup></a>. This shows that with a bigger sample size, our uncertainty around the true estimate also shrinks.</p>
 <p>Our little simulation exercise has shown a number of things:</p>
 <ol style="list-style-type: decimal">

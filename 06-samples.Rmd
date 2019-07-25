@@ -83,10 +83,10 @@ round(mean(unlist(proportions)),2)
 
 ```{r}
 # Get the 2.5th and 97.5th percentiles
-quantile(unlist(proportions), prob=c(0.05, 0.975))
+quantile(unlist(proportions), prob=c(0.025, 0.975))
 ```
 
-**What do these numbers tell us?** If you realize, the mean of the distribution of sample proportions is, in fact, the true value of $\Pr(\text{Likes Durian})$. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.57 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)^[Other than the sample size, uncertainty also increases if the true value of $\Pr(\text{Likes Durian})$ is closer to 0.50.]. This is the fundamental basis of claims by researchers that a survey has a certain "margin of error".
+**What do these numbers tell us?** If you realize, the mean of the distribution of sample proportions is, in fact, the true value of $\Pr(\text{Likes Durian})$. This demonstrates that even with relatively small samples, it is possible to recover the true population value through repeated sampling. The only difficulty is that we can seldom get so many samples, so the quantile values are of more help. The quantile values tell us that 95% of all the sample proportions will fall between 0.56 and 0.74. This gives us some measure of uncertainty. In other words - if I take a single sample of size 100, 95% of the time the proportion of those who like durian calculated from this sample will fall between 0.57 and 0.74 (given that the true value is 0.65)^[Other than the sample size, uncertainty also increases if the true value of $\Pr(\text{Likes Durian})$ is closer to 0.50.]. This is the fundamental basis of claims by researchers that a survey has a certain "margin of error".
 
 **So what happens when we increase the sample size?** Let us run the same code again, but increase the sample size to 1000.
 
@@ -104,7 +104,7 @@ samples <- lapply(sample_no, function(x) rbinom(n,1,p=0.65))
 proportions <- lapply(samples, function(x) sum(x)/n)
 
 # Get the 2.5th and 97.5th percentiles
-quantile(unlist(proportions), prob=c(0.05, 0.975))
+quantile(unlist(proportions), prob=c(0.025, 0.975))
 ```
 
 You will realize here that the interval for the quantile values have narrowed^[If you calculate the mean of proportions again, you will also realize also that it recovers the true value of 0.65]. This shows that with a bigger sample size, our uncertainty around the true estimate also shrinks. 

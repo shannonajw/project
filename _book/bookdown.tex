@@ -124,7 +124,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{Last updated 24 July 2019}
+    \date{Last updated 25 July 2019}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -1432,13 +1432,13 @@ distribution with some numbers.
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{# Get the 2.5th and 97.5th percentiles}
-\KeywordTok{quantile}\NormalTok{(}\KeywordTok{unlist}\NormalTok{(proportions), }\DataTypeTok{prob=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.05}\NormalTok{, }\FloatTok{0.975}\NormalTok{))}
+\KeywordTok{quantile}\NormalTok{(}\KeywordTok{unlist}\NormalTok{(proportions), }\DataTypeTok{prob=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.025}\NormalTok{, }\FloatTok{0.975}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##    5% 97.5% 
-##  0.57  0.74
+##  2.5% 97.5% 
+##  0.56  0.74
 \end{verbatim}
 
 \textbf{What do these numbers tell us?} If you realize, the mean of the
@@ -1448,7 +1448,7 @@ relatively small samples, it is possible to recover the true population
 value through repeated sampling. The only difficulty is that we can
 seldom get so many samples, so the quantile values are of more help. The
 quantile values tell us that 95\% of all the sample proportions will
-fall between 0.57 and 0.74. This gives us some measure of uncertainty.
+fall between 0.56 and 0.74. This gives us some measure of uncertainty.
 In other words - if I take a single sample of size 100, 95\% of the time
 the proportion of those who like durian calculated from this sample will
 fall between 0.57 and 0.74 (given that the true value is 0.65)\footnote{Other
@@ -1471,13 +1471,13 @@ the same code again, but increase the sample size to 1000.
 \NormalTok{proportions <-}\StringTok{ }\KeywordTok{lapply}\NormalTok{(samples, }\ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{sum}\NormalTok{(x)}\OperatorTok{/}\NormalTok{n)}
 
 \CommentTok{# Get the 2.5th and 97.5th percentiles}
-\KeywordTok{quantile}\NormalTok{(}\KeywordTok{unlist}\NormalTok{(proportions), }\DataTypeTok{prob=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.05}\NormalTok{, }\FloatTok{0.975}\NormalTok{))}
+\KeywordTok{quantile}\NormalTok{(}\KeywordTok{unlist}\NormalTok{(proportions), }\DataTypeTok{prob=}\KeywordTok{c}\NormalTok{(}\FloatTok{0.025}\NormalTok{, }\FloatTok{0.975}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##    5% 97.5% 
-## 0.625 0.679
+##  2.5% 97.5% 
+## 0.620 0.679
 \end{verbatim}
 
 You will realize here that the interval for the quantile values have
