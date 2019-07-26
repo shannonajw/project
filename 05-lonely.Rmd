@@ -70,10 +70,12 @@ save(phase, file = "files/phase_lonely.Rdata")
 load(file = "files/phase_lonely.Rdata")
 ```
 
-```{r table-lonely1, tidy=FALSE}
+```{r eval=FALSE}
 # Load required libraries
 library(dplyr)
+```
 
+```{r table-lonely1, tidy=FALSE}
 # Note: You first need to read in the data
 # The data already contains a pre-coded version according to these criteria
 lonely1_cat <- phase$w2_loneliness_yesno %>%
