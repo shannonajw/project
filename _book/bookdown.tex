@@ -1362,15 +1362,15 @@ Let's do a small simulation exercise here to demonstrate how these
 calculations work, without having to read the math\footnote{If you
   already understand what
   \(\lim_{n \to \infty} \Pr\left[\frac{\sqrt{n}(S_n - \mu)}{\sigma} \leq x \right]= \Phi(x)\)
-  means, you may skip ahead to the next section}. A simulation means
-that we can determine what is the `truth' in a hypothetical population,
-and then use the computer to draw samples from this population\footnote{The
-  code here utilizes the Monte Carlo method, which essentially is a
-  computational way to see how samples perform under realistic data
-  conditions with a known probability distribution.} to see how sampling
-(and sample sizes) work. Our quantity of interest is the proportion of
-people who like durian. We define the population such that 65\% of
-people (in our population) like durian (i.e.,
+  means, you may skip ahead to the next section}. Code here is written
+in R. A simulation means that we can determine what is the `truth' in a
+hypothetical population, and then use the computer to draw samples from
+this population\footnote{The code here utilizes the Monte Carlo method,
+  which essentially is a computational way to see how samples perform
+  under realistic data conditions with a known probability distribution.}
+to see how sampling (and sample sizes) work. Our quantity of interest is
+the proportion of people who like durian. We define the population such
+that 65\% of people (in our population) like durian (i.e.,
 \(\Pr(\text{Likes Durian}) = 0.65\))\footnote{Look at Chapter
   \ref{ooptech} for a short explanation of how we went from proportions
   to probabilites}.
