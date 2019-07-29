@@ -68,6 +68,7 @@ save(phase, file = "files/phase_lonely.Rdata")
 
 ```{r include=FALSE}
 load(file = "files/phase_lonely.Rdata")
+library(dplyr)
 ```
 
 ```{r eval=FALSE}
