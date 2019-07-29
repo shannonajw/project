@@ -246,17 +246,9 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 lonely2 &lt;-<span class="st"> </span>phase <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">select</span>(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1) <span class="op">%&gt;%</span><span class="st">  </span>
 <span class="st">  </span><span class="kw">mutate_all</span>(<span class="kw">funs</span>(<span class="kw">recode</span>(.,<span class="st">`</span><span class="dt">0</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> </span><span class="dv">2</span>, <span class="st">`</span><span class="dt">3</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>, <span class="st">`</span><span class="dt">4</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>))) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rowSums</span>()</code></pre></div>
-<pre><code>## Warning: funs() is soft deprecated as of dplyr 0.8.0
-## please use list() instead
-## 
-##   # Before:
-##   funs(name = f(.))
-## 
-##   # After: 
-##   list(name = ~ f(.))
-## This warning is displayed once per session.</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Categorize according to cut-off point</span>
+<span class="st">  </span><span class="kw">rowSums</span>()
+
+<span class="co"># Categorize according to cut-off point</span>
 lonely2_cat &lt;-<span class="st"> </span><span class="kw">if_else</span>(lonely2 <span class="op">&lt;</span><span class="st"> </span><span class="dv">6</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
 
