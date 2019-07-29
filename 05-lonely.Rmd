@@ -128,12 +128,12 @@ knitr::kable(
 
 <br>
 
-What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of @lim_association_2017 and @chan_loneliness_2015). These numbers are more consistent with the figures shown in @ge_social_2017^[Note that the sample in @ge_social_2017 is of all adults aged 21 and older, not just older adults, so the higher number seen here is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangements however, row percentages are more appropriate.]. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much smaller in relative terms (see \@ref(tab:table-lonely3)). While the proportion of those lonely among those who live alone is 2 times that of those living with only their children according to coding scheme 1, this ratio reduces to 1.2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before.
+What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of @lim_association_2017 and @chan_loneliness_2015). These numbers are more consistent with the figures shown in @ge_social_2017^[Note that the sample in @ge_social_2017 is of all adults aged 21 and older, not just older adults, so the higher number seen here is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangements however, row percentages are more appropriate.]. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much larger in relative terms (see \@ref(tab:table-lonely3)). While the proportion of those lonely among those who live alone is 1.2 times that of those living with only their children according to coding scheme 1, this ratio increases to 2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before, and that those who live with children don't seem as isolated as those who live alone.
 
 <br>
 ```{r table-lonely3, tidy=F, echo=F}
-codingone <- c(15.6, 7.8, 7.8, 15.6/7.8)
-codingtwo <- c(59.0, 50.1, 8.9, 59.0/50.1)
+codingone <- c(59.0, 50.1, 8.9, 59.0/50.1)
+codingtwo <- c(15.6, 7.8, 7.8, 15.6/7.8)
 data <- cbind(codingone, codingtwo)
 rownames(data) <- c("(1) Living alone", "(2) Living with child only", "Difference [(1) - (2)]", "Ratio [(1)/(2)]")
 colnames(data) <- c("Coding scheme 1", "Coding scheme 2")

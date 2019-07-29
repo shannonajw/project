@@ -246,9 +246,17 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 lonely2 &lt;-<span class="st"> </span>phase <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">select</span>(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1) <span class="op">%&gt;%</span><span class="st">  </span>
 <span class="st">  </span><span class="kw">mutate_all</span>(<span class="kw">funs</span>(<span class="kw">recode</span>(.,<span class="st">`</span><span class="dt">0</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> </span><span class="dv">2</span>, <span class="st">`</span><span class="dt">3</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>, <span class="st">`</span><span class="dt">4</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>))) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rowSums</span>()
-
-<span class="co"># Categorize according to cut-off point</span>
+<span class="st">  </span><span class="kw">rowSums</span>()</code></pre></div>
+<pre><code>## Warning: funs() is soft deprecated as of dplyr 0.8.0
+## please use list() instead
+## 
+##   # Before:
+##   funs(name = f(.))
+## 
+##   # After: 
+##   list(name = ~ f(.))
+## This warning is displayed once per session.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Categorize according to cut-off point</span>
 lonely2_cat &lt;-<span class="st"> </span><span class="kw">if_else</span>(lonely2 <span class="op">&lt;</span><span class="st"> </span><span class="dv">6</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
 
@@ -297,7 +305,7 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 </tbody>
 </table>
 <p><br></p>
-<p>What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>). These numbers are more consistent with the figures shown in <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span><a href="#fn29" class="footnoteRef" id="fnref29"><sup>29</sup></a>. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much smaller in relative terms (see <a href="same-data-different-results.html#tab:table-lonely3">5.3</a>). While the proportion of those lonely among those who live alone is 2 times that of those living with only their children according to coding scheme 1, this ratio reduces to 1.2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before.</p>
+<p>What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>). These numbers are more consistent with the figures shown in <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span><a href="#fn29" class="footnoteRef" id="fnref29"><sup>29</sup></a>. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much larger in relative terms (see <a href="same-data-different-results.html#tab:table-lonely3">5.3</a>). While the proportion of those lonely among those who live alone is 1.2 times that of those living with only their children according to coding scheme 1, this ratio increases to 2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before, and that those who live with children don’t seem as isolated as those who live alone.</p>
 <p><br></p>
 <table>
 <caption><span id="tab:table-lonely3">Table 5.3: </span>Comparison of absolute and relative differences</caption>
@@ -311,23 +319,23 @@ knitr<span class="op">::</span><span class="kw">kable</span>(
 <tbody>
 <tr class="odd">
 <td>(1) Living alone</td>
-<td align="right">15.6</td>
 <td align="right">59.0</td>
+<td align="right">15.6</td>
 </tr>
 <tr class="even">
 <td>(2) Living with child only</td>
-<td align="right">7.8</td>
 <td align="right">50.1</td>
+<td align="right">7.8</td>
 </tr>
 <tr class="odd">
 <td>Difference [(1) - (2)]</td>
-<td align="right">7.8</td>
 <td align="right">8.9</td>
+<td align="right">7.8</td>
 </tr>
 <tr class="even">
 <td>Ratio [(1)/(2)]</td>
-<td align="right">2.0</td>
 <td align="right">1.2</td>
+<td align="right">2.0</td>
 </tr>
 </tbody>
 </table>
