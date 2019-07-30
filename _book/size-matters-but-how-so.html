@@ -189,6 +189,7 @@ sample &lt;-<span class="st"> </span><span class="kw">rbinom</span>(n, <span cla
 
 <span class="co"># Calculate the proportion of people who report liking durian</span>
 <span class="kw">sum</span>(sample)<span class="op">/</span>n</code></pre></div>
+<pre><code>## [1] 0.61</code></pre>
 <p>The number produced above is 0.61, but if you run the code above multiple times, you will realize the number produced is different each time run it (i.e., each time you draw a new sample). This makes sense, since samples are drawn randomly. Since we know the true value of <span class="math inline">\(\Pr(\text{Likes Durian})\)</span>, we also know how far off these sample estimates of <span class="math inline">\(\Pr(\text{Likes Durian})\)</span> tend to be. The next step in this exercise is to draw a large number of samples of the same size to show how much these sample proportions can vary.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Determine the sample size</span>
 n &lt;-<span class="st"> </span><span class="dv">100</span>
@@ -202,7 +203,7 @@ proportions &lt;-<span class="st"> </span><span class="kw">lapply</span>(samples
 <span class="kw">hist</span>(<span class="kw">unlist</span>(proportions), 
      <span class="dt">main=</span><span class="st">&quot;Distribution of Proportions&quot;</span>, 
      <span class="dt">xlab=</span><span class="st">&quot;Proportion&quot;</span>)</code></pre></div>
-<p><img src="bookdown_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="bookdown_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>You can see that the distribution of proportions from these samples looks (somewhat) like a bell curve<a href="#fn38" class="footnoteRef" id="fnref38"><sup>38</sup></a>. Let’s now summarize this distribution with some numbers.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Get the mean of all proportions, </span>
 <span class="co">#  rounded to 2 decimal places</span>

@@ -45,7 +45,7 @@ Let's do a small simulation exercise here to demonstrate how these calculations 
 set.seed(12345)
 ```
 
-```{r results=F}
+```{r results=T}
 # Determine the sample size 
 n <- 100
 
