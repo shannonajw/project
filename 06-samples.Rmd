@@ -27,7 +27,7 @@ knitr::include_graphics("images/samples/st_samplesize.png")
 ```
 <br>
 
-The comment above (Figure \@ref(fig:st-samplesize)) shows how people often rationalize their feelings toward studies that don't reflect their own perception^[For studies that do agree with the layperson's perception, one probable response would be that it is "common sense" and that there is "no need to do a study to know this".]. How can 1328 survey respondents represent an entire population of approximiately 5.9 million individuals?
+The comment above (Figure \@ref(fig:st-samplesize)) shows how people often rationalize their feelings toward studies that don't reflect their own perception^[For studies that do agree with the layperson's perception, one probable response would be that it is "common sense" and that there is "no need to do a study to know this".]. How can 1328 survey respondents represent an entire population of approximately 5.9 million individuals?
 
 The frustrating thing about the [report by Michael Page](https://www.michaelpage.com.sg/advice/career-advice/work-life-balance/singapore-happy-work){target="_blank"} is that it is **not transparent about its methodology**. Without this information, we cannot know for sure about how generalizable these findings are to the whole population. They likely cannot say much about *all Singaporeans* - the results may be limited to Singaporeans who took the survey, who may be a very different group of Singaporeans compared to those who did not take the survey.
 
