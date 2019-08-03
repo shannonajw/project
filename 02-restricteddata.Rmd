@@ -6,6 +6,20 @@ Other than a description of the data (as far as possible), this section will als
 
 Readers who believe I have wrongly listed a dataset here (i.e., they are not restricted), or have more accurate information than provided, can contact me. Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
+## Department of Statistics Microdata {#dos}
+
+The Department of Statistics regularly conducts a number of surveys that, if access to disaggregated data were provided, could advance Singapore social science greatly. These include the Household Expenditure Survey, the General Household Survey, as well as records from the Registry of Marriages to track marriage and divorce trends in Singapore. Disaggregated data (i.e., microdata) allow for deeper analysis than what is presented in the public domain - for instance, social scientists may examine age-period-cohort trends in marriage and divorce rather than be confined solely to period statistics (which can be misleading), or to decompose within- and between- group variance in household income/expenditures for a better understanding of inequality in Singapore.
+
+When asked, the chatbot on the DOS website states:
+
+<br>
+
+> The Department of Statistics (DOS) is unable to provide access to raw data or anonymised microdata in the public domain. You may wish to refer to our publications on the surveys conducted for the latest survey data. If the required aggregated data is not available in the reports, you could provide us with the table formats. Please send them to info@singstat.gov.sg. We will assess the availability of the data and, if customised and aggregated data generation is required, we will let you know the applicable cost-recovery fees.
+
+<br>
+
+Further, under section 7 of the [Statistics Act](https://sso.agc.gov.sg/Act/SA1973){target="_blank"}, "anonymised microdata" (i.e., disaggregated data) obtained using the powers of the Act (i.e., where individuals are legally compelled to provide information) can only be shared with other public agencies, or "any consultant commissioned by a public agency". This means that social scientists outside of the government can only access these data by being appointed as a consultant by a public agency, unless the Statistics Act is amended to include other classes of persons^[According to Section 7(2)(b)(ii), such classes may be specified in the Third Schedule.].
+
 ## National Youth Survey (NYS) {#nys}
 
 The NYS is a cross-sectional survey of youth in Singapore that is conducted every three to five years. Its goal is to understand the aspirations, challenges, and attitudes of young Singaporeans aged 15-34. The survey has been conducted five times thus far, in 2002, 2005, 2010, 2013 (N=2,843), and 2016 (N=3,531).
