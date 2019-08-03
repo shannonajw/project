@@ -14,8 +14,6 @@ Unfortunately, the DOS does not share disaggregated data with researchers. When 
 
 > The Department of Statistics (DOS) is unable to provide access to raw data or anonymised microdata in the public domain. You may wish to refer to our publications on the surveys conducted for the latest survey data. If the required aggregated data is not available in the reports, you could provide us with the table formats. Please send them to info@singstat.gov.sg. We will assess the availability of the data and, if customised and aggregated data generation is required, we will let you know the applicable cost-recovery fees.
 
-<br>
-
 Further, under section 7 of the [Statistics Act](https://sso.agc.gov.sg/Act/SA1973){target="_blank"}, "anonymised microdata" (i.e., disaggregated data) obtained using the powers of the Act (i.e., where individuals are legally compelled to provide information) can only be shared with other public agencies, or "any consultant commissioned by a public agency". This means that social scientists outside of the government can only access these data by being appointed as a consultant by a public agency, unless the Statistics Act is amended to include other classes of persons^[According to Section 7(2)(b)(ii), such classes may be specified in the Third Schedule.].
 
 ## National Youth Survey (NYS) {#nys}
