@@ -6,13 +6,11 @@ Other than a description of the data (as far as possible), this section will als
 
 Readers who believe I have wrongly listed a dataset here (i.e., they are not restricted), or have more accurate information than provided, can contact me. Use the in-built annotation feature, or send me an email at <shannon.ang@ntu.edu.sg> if you know about a dataset that should be featured in this list but is not included here.
 
-## Department of Statistics Microdata {#dos}
+## Department of Statistics (DOS) Microdata {#dos}
 
-The Department of Statistics regularly conducts a number of surveys that, if access to disaggregated data were provided, could advance Singapore social science greatly. These include the Household Expenditure Survey, the General Household Survey, as well as records from the Registry of Marriages to track marriage and divorce trends in Singapore. Disaggregated data (i.e., microdata) allow for deeper analysis than what is presented in the public domain - for instance, social scientists may examine age-period-cohort trends in marriage and divorce rather than be confined solely to period statistics (which can be misleading), or to decompose within- and between- group variance in household income/expenditures for a better understanding of inequality in Singapore.
+The Singapore [Department of Statistics (DOS)](https://www.singstat.gov.sg){target="_blank"} regularly conducts a number of surveys that, if access to disaggregated data were provided, could advance Singapore social science greatly. These include the Household Expenditure Survey, the General Household Survey, as well as records from the Registry of Marriages to track marriage and divorce trends in Singapore. Disaggregated data (i.e., microdata) allow for deeper analysis than what is presented in the public domain - for instance, social scientists may examine age-period-cohort trends in marriage and divorce rather than be confined solely to period statistics (which may be misleading), or to decompose within- and between- group variance in household income/expenditures for a better understanding of inequality in Singapore.
 
-When asked, the chatbot on the DOS website states:
-
-<br>
+Unfortunately, the DOS does not share disaggregated data with researchers. When asked, the chatbot on the DOS website states:
 
 > The Department of Statistics (DOS) is unable to provide access to raw data or anonymised microdata in the public domain. You may wish to refer to our publications on the surveys conducted for the latest survey data. If the required aggregated data is not available in the reports, you could provide us with the table formats. Please send them to info@singstat.gov.sg. We will assess the availability of the data and, if customised and aggregated data generation is required, we will let you know the applicable cost-recovery fees.
 
