@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6.3 Non-probability sample, now what | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6.3 Non-probability sample, now what | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="size-matters-but-how-so.html">
-<link rel="next" href="conclusion-2.html">
+<link rel="prev" href="size-matters-but-how-so.html"/>
+<link rel="next" href="conclusion-2.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -155,7 +155,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.3" data-path="non-probability-sample-now-what.html"><a href="non-probability-sample-now-what.html"><i class="fa fa-check"></i><b>6.3</b> Non-probability sample, now what</a></li>
 <li class="chapter" data-level="6.4" data-path="conclusion-2.html"><a href="conclusion-2.html"><i class="fa fa-check"></i><b>6.4</b> Conclusion</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>7</b> Your case study</a></li>
+<li class="chapter" data-level="7" data-path="apc.html"><a href="apc.html"><i class="fa fa-check"></i><b>7</b> What kind of societal change?</a><ul>
+<li class="chapter" data-level="7.1" data-path="three-ways-to-understand-change.html"><a href="three-ways-to-understand-change.html"><i class="fa fa-check"></i><b>7.1</b> Three ways to understand change</a></li>
+<li class="chapter" data-level="7.2" data-path="marriage-decline.html"><a href="marriage-decline.html"><i class="fa fa-check"></i><b>7.2</b> Declines in marriage and divorce</a></li>
+<li class="chapter" data-level="7.3" data-path="living-longer-than-you-expect.html"><a href="living-longer-than-you-expect.html"><i class="fa fa-check"></i><b>7.3</b> Living longer than you expect</a></li>
+<li class="chapter" data-level="7.4" data-path="conclusion-3.html"><a href="conclusion-3.html"><i class="fa fa-check"></i><b>7.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>8</b> Your case study</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -292,8 +298,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

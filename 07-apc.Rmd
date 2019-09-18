@@ -1,0 +1,179 @@
+# What kind of societal change? {#apc}
+
+```
+Contributor: Shannon Ang
+Date: 17 September 2019
+```
+
+We hear various statistics that imply social change all the time. For instance, we hear that [suicides are rising in Singapore](https://www.channelnewsasia.com/news/singapore/suicides-number-2018-teenagers-boys-highest-11761480){target="_blank"}, or that [Singaporeans are living longer](https://www.todayonline.com/singapore/singaporeans-living-longer-spending-greater-proportion-time-ill-health-study){target="_blank"}, or that the [number of babies born is declining](https://www.channelnewsasia.com/news/singapore/number-of-babies-born-in-singapore-falls-to-lowest-in-8-years-11743722){target="_blank"}. 
+
+As always, people have many comments and theories about reasons behind what is happening. But before we can evaluate these comments, we need to first understand - what do these numbers really mean, and what kind of change is it really capturing? This case study looks at several ways we talk about societal change in public, and provides a better understanding of these commonly used numbers for higher quality discourse.
+
+## Three ways to understand change
+Before we go evaluate real examples, it will be helpful to understand different kinds of societal change. Let us work with a toy example. Suppose the newspaper (your favourite one) headlines tomorrow states: "Average walking speed of Singaporeans slower than last year". There are three possible explanations for this (maybe more, this is not a perfect analogy).
+
+1. Older people walk slower, and Singapore is an ageing society (average age is rising), so its average walking speed will fall as there are more older people in society.
+
+2. Those born later (e.g., Millenials, Gen Z) are walking slower than those born earlier (e.g., Baby Boomers), bringing down our average walking speed.
+
+3. There was an alien invasion this year and many aliens suddenly came to live among us. This suddenly caused overpopulation, since our system can [is only prepared for 6.9 million](https://www.strategygroup.gov.sg/media-centre/population-white-paper-a-sustainable-population-for-a-dynamic-singapore){target="_blank"}. People in Singapore thus have to lower their walking speed this year because it has become very crowded compared to last year.
+
+The last one is slightly facetious, but as you can see, the three explanations point to three **quite different** reasons for change. We will look at each one, in order.
+
+1. Change with **age**: Age effects refer to changes over the life course that apply to all individuals as they grow older. This is best demonstrated in terms of physical and biological changes that occur as we age (e.g., our metabolism slows down, we get wrinkles etc.) - such changes tend to be common to all of us, regardless of when we were born, or what era we live in.
+
+2. Change with **period**: Period effects are changes due to contextual factors that affect all living persons at a particular point in time. For instance, significant events such as wars, epidemics, or natural disasters affect everyone who is exposed to it regardless of age.
+
+3. Change with **cohort**: Cohort effects are probably best thought of as *generational* change (i.e., change with *birth* cohorts), even though more generally they refer to a group of individuals that have gone through shared experiences. When you hear remarks like "young people nowadays are [such strawberries / so spoilt / have no manners]", this is usually the kind of change people they are suggesting has happened. 
+
+Social scientists have long recognized the need to think clearly about these three distinct ways of understanding social change^[Although there is an equally long-running debate about how to estimate these effects, given linear dependence between the terms, i.e. $Cohort = Period - Age$. See @fosse_analyzing_2019 for a great discussion.]. Popular discourse, however, tends to ignore the meaningful differences between these concepts - a common error is making conclusions about cohort change based off period data. We will examine two instances of this.
+
+## Declines in marriage and divorce {#marriage-decline}
+
+Marriage has been a key pre-occupation of Singapore society for many reasons (e.g., getting housing, increasing fertility rates). Trends in marriage/divorce/fertility are thus often closely watched. On July 31, 2019, the Straits Times published this article on marriage/divorce rates in 2018 (the year before).
+
+<br>
+```{r st-apcmarriage, fig.cap='Screenshot of online article on marriage rates. Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/apc_marriage.png")
+```
+<br>
+
+The article is based on [a report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} on Marriages and Divorces by the Department of Statistics^[We will focus on discussing non-Muslim marriages here, but the same principles can be applied to Muslim marriages as well.]. Among other things, it states that: 
+
+> A total of 27,007 marriages were registered last year - the lowest in five years and 4.3 per cent fewer than the 28,212 marriages registered in 2017.
+>
+> Meanwhile, 7,344 marriages ended in a divorce or annulment last year, a 3.1 per cent drop from the 7,578 marital dissolutions in 2017.
+>
+>... Given the volatile economy, observers said financial considerations could have contributed to the falling number of marriages and divorces last year.
+
+<br>
+
+Now, given we've talked about age, cohort, and period changes, the thing that should come to mind is: *what kind of measure is this?* Quite obviously, this is a period measure - it records the number of marriages in a certain year. Unnamed 'observers' cited by the article seem to understand this. They point out that the economy last year may have had a part to play, which is a plausible reason for period changes that suits the nature of the measure^[The general marriage rate, which is adjusted for population size of unmarried residents aged 15-49, also seems to tell this story.]. All is good. We then move on to the following paragraph on changes in median age at first marriage.
+
+<br>
+
+> The median age at first marriage for grooms rose from 29.8 years in 2008 to 30.2 years last year, while for brides, it went up from 27.3 years in 2008 to 28.5 years last year.
+>
+> This is because more people spend a longer time getting an education and building up their careers before they settle down, said National University of Singapore sociologist Tan Ern Ser.
+  
+<br>
+
+Note here that median age at marriage is also a *period measure* - of all people who got married that year, half of them got married before age 28.5. NUS Professor Tan Ern Ser says that the median age at first marriage is rising because "people" spend more time in education and early-career building before they "settle down" (i.e., get married). Who are these "people"? There is an implicit reference here to younger cohorts (or, in layman terms, "people nowadays"), since most members of older cohorts do not usually go back into education and early-career building^[Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.]. 
+
+How reasonable is it to adopt *cohort* explanations for changes in *period* measures of marriage? Frustratingly, marriage statistics by cohort are not available from the government. The reason why period measures are used is often a matter of practicality (as we will discuss in the next section), but in other countries, academics use longitudinal panel survey data to estimate and project what might happen in younger cohorts. In Singapore, such survey data is scant and/or tend not to be shared with researchers outside of the government.
+
+But we will work with what we have. For a start, let us try to get rid of one alternate explanation - that changes in period measures are due to the changing population age structure (less young people in general to get married, so rising median age reflects ageing population). Age-specific marriage rates are adjusted for the size of age groups, and therefore are helpful here. Let's look back to [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} on Marriages and Divorces by the Department of Statistics, where we find the figure below. 
+
+<br>
+```{r apc-reportsingstat, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/report_fig.png")
+```
+<br>
+
+As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, looking at a mix of period-based and age-based measures provides some indication that the cohort explanation being offered remains a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]. Perhaps people are waiting longer to get married because of education and career building. But even this might be misleading, as we will see next.
+
+Let us now move on to another comment. The news article states:
+
+> ...Singapore Management University professor of sociology (practice) Paulin Straughan said they also seem to be spending a longer time looking for the right partner. She said: "People believe that marriage is forever and unless they are very sure they have found a life partner, they wouldn't marry."
+
+<br>
+
+SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here, it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] (i.e. a cohort effect)?
+
+Regardless of what you think it may be, a natural follow-up question would be - does this also explain the reason why divorce rates are falling? If this explanation holds weight, it should follow that since people have become more careful to marry, marriages may also be less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]. People "waiting longer" would then be a simple explanation for both falling marriage and divorce rates! Suppose we adopt this explanation for falling divorce rates.
+
+Remember, once again, that the divorces mentioned in the news article are a *period* measure^[You may also ask, since we're dealing with absolute numbers, isn't it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.]. Once again, we look at age-specific rates to determine if the explanation is plausible. 
+
+<br>
+```{r apc-reportsingstat2nd, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/report_fig3.png")
+```
+<br>
+
+Indeed, it seems like people are getting divorced at older ages compared to 2008. The rates thus do not seem to be driven by changes in population age composition. This is the same situation as before - perhaps we can use a mix of period-based and age-based measures to support a cohort interpretation. But how well does this explanation really cohere with true *cohort* trends?
+
+Data on birth cohort trends for divorce are, once again, not available from the government. Weirdly enough, however, there seems to be some information on "marriage cohorts" (where each cohort is defined by the year they got married - i.e., if you got married in the same year as I did, you are in my marriage cohort) in a report by the Ministry of Social and Family Development (found [here](https://www.msf.gov.sg/research-and-data/Research-and-Data-Series/Pages/default.aspx){target="_blank"}). What kind of change marriage cohort trends really capture is quite hard to say, but for heuristic purposes we will assume they roughly approximate^[Think about who gets married in a certain year. What kind of people are they composed of? What characteristics do they share? It is hard to say. Other than sharing the same year of marriage, diversity within marriage cohorts is likely to be huge. We can only assume that younger birth cohorts will dominate most of the marriages in later years, but it remains to be seen whether this is accurate.] birth cohort trends. The graph below shows us the proportion of divorces (y-axis) that happen before the couples' xth anniversary (shown on the x-axis), by marriage cohort (indicated by the color and shape of the lines).
+
+<br>
+```{r apc-reportmsf, fig.cap='Screenshot from Ministry of Social and Family Developent report titled "Dissolutions of Marriages Among Marriage Cohorts, 1987-2015". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/report_fig2.png")
+```
+<br>
+
+What can be observed here is that **younger (marriage) cohorts seem to be getting divorced earlier**^[It remains to be seen if lifetime divorce rates will be higher, since we cannot yet observe the full trajectory of union dissolutions for the younger cohorts (or even for older ones).]. For instance, you may notice that a higher proportion of those married in 2011 (light pink line) dissolve their unions before their 5th anniversary compared to those married in 2001 (dark pink line) or earlier^[Note that this does not really line up with the 2018 and 2008 measures we were comparing before, but there really is no easy way to do this.]. The picture painted here seems more bleak^[Assuming divorce is always a bad thing, which may not always be the case. A rise in divorce rates may possibly reflect changes in power dynamics within couples, with women becoming more independent and more willing to leave abusive situations.] compared to what we expected from period trends (and the news article), which suggested that divorce rates were falling^[Note that the Department of Statistics [report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} also has age-specific divorce rates, which seems to tell a similar story as the period trends - that divorce rates are falling among those who are younger (but rising at older ages). This may however simply be a function of delayed marriages in general leading to delayed divorces].
+
+This suggests that **while period measures and cohort measures can sometimes tell similar stories about societal change, there are many times when they do not.** When we say "marriages and divorces are falling", we need to be clear what the data allows us to say, and what kinds of explanation we give. In the next section, we will look at the example of life expectancy - a highly misunderstood measure.
+
+## Living longer than you expect 
+
+We've heard this so many times - "life expectancy is increasing". "Singapore has one of the highest life expectancies in the world." **But what does the term "life expectancy" mean?** 
+
+<br>
+```{r apc-lifeexp, fig.cap='Screenshot of online article on life expectancy. Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/apc_lifeexpectancy.png")
+```
+<br>
+
+A typical article (such as [this one](https://www.healthxchange.sg/seniors/healthy-ageing/why-singaporeans-living-longer){target="_blank"} written by a physician) will use estimates of life expectancy to say, for instance, "Singaporean residents can expect to live up to 83.2 years (*the figure for 2017*)". This reading of life expectancy is quite common.
+
+The obvious question here is - Who can expect to live up to 83.2 years? My grandma? Me? My child? Do all Singaporeans now expect to live to the same age^[If this is true, then if life expectancy increases faster than one year annually, does this mean we can all expect to be immortal? You can see how ludicrous this sounds.]?
+
+The figure most often cited in the media is life expectancy *at birth*. A more precise way to interpret the life expectancy in 2017 is "Singaporean residents **who are born in 2017** can expect to live to 83.2". [This other news article in the Straits Times](https://www.straitstimes.com/singapore/health/singapore-tops-in-life-expectancy-at-848-years){target="_blank"} rightly refers to the life expectancy estimate as "expected lifespan at birth".
+
+But this still does not fully capture how life expectancy is calculated. To do this, we need to go back to our understanding of age, period, and cohort measures. Life expectancy, as it is reported yearly, is a **period measure**. 
+
+Without going into full detail (interested readers can refer to resources such as [this](https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/multiple-decrement-life-tables/lesson-3){target="_blank"}), I will explain briefly how this is calculated. A typical life table from the Department of Statistics (taken from [this report](https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf){target="_blank"}) looks like this:
+
+<br>
+```{r apc-lifetable, fig.cap='Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/apc_lifetable.png")
+```
+<br>
+
+1. Age-specific mortality rate (not in picture, but often referred to as $m_x$) for a specific year are obtained from the mortality database and turned into^[Some assumptions are made here about a quantity called $a_x$, which captures when most deaths in a certain age-interval happen within the time period, but usually this is straightforward.] the probability of dying in a specific age-interval ($q_x$). 
+
+2. You start with a hypothetical base population, usually 100,000 ($l_x$), and you put them through the mortality rates of each age until there are no more survivors (in other words, $q_x = 1$ at some point [usually 100+] since no one is immortal).
+
+3. From there, you calculate a number of other things (e.g., $d_x$, $L_x$, $T_x$, which are basically simple math). These numbers then help you derive the life expectancy (i.e., $e_x = \frac{T_x}{l_X}$).
+
+You may not yet fully understand what is happening here, but note one key thing - the key quantities here that affect everything else in the whole process are the age-specific mortality rates ($m_x$). Age-specific mortality rates used to calculate life expectancy are a **period** measure, which captures what is happening that particular year.
+
+To understand what this means for how we interpret life expectancy, we return to our previous interpretation - that "Singaporean residents **who are born in 2017** can expect to live to 83.2". Let's make it more precise and say that "Singaporean residents **who are born in 2017 and who are exposed to mortality rates of 2017 throughout their lives** can expect to live to 83.2". This sounds highly awkward, I know. You would have to imagine some kind of time machine allowing you to stay stuck in 2017, continuing to experience its mortality rates even as you grow older. But it is in fact how the measure is calculated. **Life expectancy, as often cited in the media, is a period measure that is constructed by stitching together the experiences of multiple cohorts** (often called a *synthetic cohort*).
+
+A more intuitive measure of life expectancy is called *cohort life expectancy*. Cohort life expectancy follows every person who was born in a certain year (e.g., 1965), and is calculated using the observed/projected rates of all persons in that cohort. With cohort life expectancy, we can truly say that "Singaporean residents born in year XXXX live XX.X years on average". So why don't we do this? The answer is simple - to obtain observed rates, we need to observe these deaths! We would therefore need to wait for all (or most^[Using a mixture of observed and projected rates is possible.]) of the cohort to pass away before we can calculate such numbers.
+
+Period life expectancy is therefore most practical, but we must acknowledge its limitations. To demonstrate how volatile period rates of life expectancy may be, we can simply look at older rates of life expectancy. If you look back at Figure \@ref(fig:apc-lifetable), one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 $\neq$ Life expectancy at birth - 40). Knowing this, we can then compare life expectancy estimates.
+
+First, I will look for life expectancy at birth in 1965. From the Department of Statistics Table Builder (go [here](https://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=13276){target="_blank"}), it seems life expectancy at birth for Singapore residents is 64.5. It might seem that we can expect those born in 1965 to live up to 64.5 years old.
+
+In 2017, those born in 1965 are now 52 years old. If those numbers in 1965 are correct, it follows that we might expect life expectancy at 52 to be $64.5 - 52 = 12.3$ years. Let's go back to the [Complete Life Tables](https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf){target="_blank"} we were looking at before to see how long more those born in 1965 can expect to live.
+
+<br>
+```{r apc-lifetabletwo, fig.cap='Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/apc_lifetable2.png")
+```
+<br>
+
+Looking at the row in the red box, we see that those who are 52 in 2017 can in fact expect to live 32.5 more years. That means they are expected to live up to $52 + 32.5 = 84.5$ years old! That seems way different from the 64.5 years projected by mortality statistics in 1965. Why is this so? This is because period life expectancy does not account for overall improvements in mortality driven by better healthcare, hygiene, health behaviors etc. Period life expectancy is therefore often an *underestimate* of the true cohort life expectancy. The discrepancy we see between the 1965 life table and the 2017 life table is likely due to great improvements in mortality rates since independence.
+
+Having studied how life expectancy 'works', let us conclude by evaluating this paragraph from an article on the [Dollars and Sense website](https://dollarsandsense.sg/retirement-planning-singapore-live-beyond-average-life-expectancy/){target="_blank"}, aimed at helping Singaporeans plan their retirement:
+
+<br>
+
+> The next step of the retirement planning equation is to understand how long we can expect to spend in retirement. The longer we spend in retirement, the more we need to sustain ourselves.
+>
+> **How Long Do We Spend In Retirement?**
+The simplest way to derive this figure is to use the average life expectancy of Singaporeans – which stands at  83.1 years today. This figure is only going to go up as the latest report from the World Health Organisation (WHO) revealed that people here can expect to live up to 85.4 years by 2040.
+>
+> What this tells us is that if we retire at the moment we are able to receive our CPF LIFE payouts – at 65 – and live to the average life expectancy in Singapore – to 83.1 – we will have close to 18 years of retirement.
+
+<br>
+
+**What are the glaring misinterpretations of life expectancy you can now identify?** First, the writer talks about average life expectancy as if it is for everyone. As we discussed, however, the number he uses likely reflects the life expectancy *at birth*. Is he really expecting newborns to plan for retirement? A better approach would be to go to the [Complete Life Tables](https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf){target="_blank"} published by the Department of Statistics and refer to life expectancy at 50 (or some other reference age that his target audience can identify with). Second, he is correct that life expectancy will probably continue to rise, but the 18 years (obtained supposedly using $83.1 - 65 \approx 18$) is likely an underestimate of how long "retirement" will be (apart from the error already made in the first point). Plan harder, people.
+
+## Conclusion
+
+Age, period, and cohort effects are important ways to understand changes in society over time. People most commonly mix up period and cohort effects, such as offering cohort explanations for changes in period measures, or mistaking one kind of change for the other. In many cases, period and cohort rates tell the same overall story. Where they tend to diverge is when there are large societal changes within short periods of time (as in Singapore's case), as we have seen in the case of life expectancy. Under such circumstances, period measures are usually bad estimates of cohort change. 
+
+People often assume that experts and social scientists quoted in newspapers are making statements about societal change based off empirical evidence and research that they have done. But sometimes experts may just be speculating about something there is no real data to show for (e.g., no cohort data, and no research done to project cohort trends). In such a case (and with the application of some common sense), anyone's speculation may be as good as theirs. Where these speculations happily coincide with reality they may be of some use, but readers should carefully evaluate whether it is suitable for certain numbers to be used to make certain points.
+
