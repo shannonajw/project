@@ -30,7 +30,7 @@ Social scientists have long recognized the need to think clearly about these thr
 
 ## Declines in marriage and divorce {#marriage-decline}
 
-Marriage has been a key pre-occupation of Singapore society for many reasons (e.g., getting housing, increasing fertility rates). Trends in marriage/divorce/fertility are thus often closely watched. The Straits Times recently published this article on marriage/divorce rates in 2018.
+Marriage has been a key preoccupation of Singapore society for many reasons (e.g., getting housing, increasing fertility rates). Trends in marriage/divorce/fertility are thus often closely watched. The Straits Times recently published this article on marriage/divorce rates in 2018.
 
 <br>
 ```{r st-apcmarriage, fig.cap='Screenshot of online article on marriage rates. Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -56,7 +56,7 @@ Now, given that we've talked about age, cohort, and period changes, one question
   
 <br>
 
-Note here that median age at marriage is also a *period measure* - of all people who got married that year, half of them got married before age 28.5. NUS Sociologist Tan Ern Ser says that the median age at first marriage is rising because "people" spend more time in education and early-career building before they "settle down" (i.e., get married). Who are these "people", exactly? Since most members of older cohorts do not usually go back into education and early-career building, there seems to be an implicit reference to younger cohorts (or, in layman terms, *"people nowadays"*)^[Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.]. 
+Note here that median age at marriage is also a *period measure* - of all people who got married that year, half of them got married before age 28.5. NUS sociologist Tan Ern Ser says that the median age at first marriage is rising because "people" spend more time in education and early-career building before they "settle down" (i.e., get married). Who are these "people", exactly? Since most members of older cohorts do not usually go back into education and early-career building, there seems to be an implicit reference to younger cohorts (or, in layman terms, *"people nowadays"*)^[Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.]. 
 
 **How reasonable is it to adopt *cohort* explanations for changes in *period* measures of marriage?** Frustratingly, marriage statistics by cohort are not available from the government. The reason why period measures are used is often a matter of practicality (as we will discuss in the next section), but in other countries, academics use longitudinal panel survey data to estimate and project what might happen in younger cohorts. In Singapore, such survey data is scant and/or tend not to be shared with researchers outside of the government. This makes cohort change especially difficult to study.
 
@@ -68,7 +68,7 @@ knitr::include_graphics("images/apc/report_fig.png")
 ```
 <br>
 
-As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, looking at a mix of period-based and age-based measures may provide some indication as to whether the cohort explanation being offered remains a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]. Perhaps younger cohorts *are* delaying marriage in view of education and career building. But even this might be misleading, as we will see shortly.
+As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, maybe looking at a mix of period-based and age-based measures provides us some indication as to whether the cohort explanation being offered remains a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]? Perhaps younger cohorts *are* delaying marriage in view of education and career building. But even using a mix of period-based and age-based measures to infer cohort change might be misleading, as we will see shortly.
 
 Let us now move on to another comment that was made. The news article states:
 
@@ -76,7 +76,7 @@ Let us now move on to another comment that was made. The news article states:
 
 <br>
 
-SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here, it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] (i.e. a cohort effect)?
+SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] (i.e. a cohort effect)?
 
 Regardless of what you think it may be, a natural follow-up question would be - does this also explain the reason why divorce rates are falling? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]. People "waiting longer" would then be a simple explanation for both falling marriage and divorce rates! Suppose we adopt this explanation for falling divorce rates.
 
