@@ -68,7 +68,7 @@ knitr::include_graphics("images/apc/report_fig.png")
 ```
 <br>
 
-As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, maybe looking at a mix of period-based and age-based measures provides us some indication as to whether the cohort explanation being offered remains a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]? Perhaps younger cohorts *are* delaying marriage in view of education and career building. But even using a mix of period-based and age-based measures to infer cohort change might be misleading, as we will see shortly.
+As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, maybe looking at a mix of period-based and age-based measures provides us some indication as to whether the cohort explanation being offered is a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]? Perhaps younger cohorts *are* delaying marriage in view of education and career building. But even using a mix of period-based and age-based measures might lead to misleading conclusions about cohort change, as we will see shortly.
 
 Let us now move on to another comment that was made. The news article states:
 
@@ -80,7 +80,7 @@ SMU Professor (Practice) Paulin Straughan surmises that median age at first marr
 
 Regardless of what you think it may be, a natural follow-up question would be - does this also explain the reason why divorce rates are falling? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]. People "waiting longer" would then be a simple explanation for both falling marriage and divorce rates! Suppose we adopt this explanation for falling divorce rates.
 
-Remember, once again, that the divorce numbers mentioned in the news article are a **period** measure^[You may also ask, since we're dealing with absolute numbers, isn't it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.]. Once again, we look at age-specific rates to determine if the explanation is plausible. 
+Remember that the divorce numbers mentioned in the news article are a **period** measure^[You may also ask, since we're dealing with absolute numbers, isn't it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.]. Once again, we look at age-specific rates to determine if the explanation is plausible. 
 
 <br>
 ```{r apc-reportsingstat2nd, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -161,8 +161,6 @@ knitr::include_graphics("images/apc/apc_lifetable2.png")
 Wait. We see now that those who aged 52 in 2017 can in fact expect to live 32.5 more years. That means they are expected to live up to $52 + 32.5 = 84.5$ years old! That seems way different from the 64.5 years projected by mortality statistics in 1965. Why is this so? This is because period life expectancy does not account for future improvements in mortality driven by better healthcare, hygiene, health behaviors etc. Period life expectancy is therefore often an *underestimate* of the true cohort life expectancy^[Unless mortality rates spike due to events such as wars, famines etc.]. The discrepancy we see between the 1965 life table and the 2017 life table is likely due to great improvements in mortality rates since independence.
 
 Having studied how life expectancy 'works', let us conclude by evaluating this paragraph from an article on the [Dollars and Sense website](https://dollarsandsense.sg/retirement-planning-singapore-live-beyond-average-life-expectancy/){target="_blank"}, aimed at helping Singaporeans plan their retirement:
-
-<br>
 
 > The next step of the retirement planning equation is to understand how long we can expect to spend in retirement. The longer we spend in retirement, the more we need to sustain ourselves.
 >
