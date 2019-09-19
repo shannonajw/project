@@ -190,7 +190,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="figure" style="text-align: center"><span id="fig:apc-lifeexp"></span>
 <img src="images/apc/apc_lifeexpectancy.png" alt="Screenshot of online article on life expectancy. Retrieved September 17, 2019." width="80%" />
 <p class="caption">
-Figure 7.5: Screenshot of online article on life expectancy. Retrieved September 17, 2019.
+Figure 7.6: Screenshot of online article on life expectancy. Retrieved September 17, 2019.
 </p>
 </div>
 <p><br></p>
@@ -198,12 +198,12 @@ Figure 7.5: Screenshot of online article on life expectancy. Retrieved September
 <p>The obvious question here is - Who can expect to live up to 83.2 years? My grandma? Me? My child? Do all Singaporeans now expect to live to the same age<a href="#fn68" class="footnoteRef" id="fnref68"><sup>68</sup></a>?</p>
 <p>The figure most often cited in the media is life expectancy <em>at birth</em>. A more precise way to interpret the life expectancy in 2017 is “Singaporean residents <strong>who are born in 2017</strong> can expect to live to 83.2”. <a href="https://www.straitstimes.com/singapore/health/singapore-tops-in-life-expectancy-at-848-years" target="_blank">This other news article in the Straits Times</a> rightly refers to the life expectancy estimate as “expected lifespan at birth”.</p>
 <p>But this still does not fully capture how life expectancy is calculated. To do this, we need to go back to our understanding of age, period, and cohort measures. Life expectancy, as it is reported yearly, is a <strong>period measure</strong>.</p>
-<p>Without going into full detail (interested readers can refer to resources such as <a href="https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/multiple-decrement-life-tables/lesson-3" target="_blank">this</a>), I will explain briefly how this is calculated. A typical life table from the Department of Statistics (taken from <a href="https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf" target="_blank">this report</a>) looks like Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.6</a> (it shows just the top part, the entire table is a few pages long).</p>
+<p>Without going into full detail (interested readers can refer to resources such as <a href="https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/multiple-decrement-life-tables/lesson-3" target="_blank">this</a>), I will explain briefly how this is calculated. A typical life table from the Department of Statistics (taken from <a href="https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf" target="_blank">this report</a>) looks like Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.7</a> (it shows just the top part, the entire table is a few pages long).</p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:apc-lifetable"></span>
 <img src="images/apc/apc_lifetable.png" alt="Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019." width="80%" />
 <p class="caption">
-Figure 7.6: Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.
+Figure 7.7: Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.
 </p>
 </div>
 <p><br></p>
@@ -218,14 +218,14 @@ Figure 7.6: Screenshot of Complete Life Table from the Department of Statistics.
 <p>This sounds highly awkward, I know. You would have to imagine some kind of time machine allowing you to stay stuck in 2017, continuing to experience its mortality rates even as you grow older. But it is in fact how the measure is calculated. <strong>Life expectancy, as often cited in the media, is a period measure that is constructed by stitching together the experiences of multiple cohorts</strong> (often called a <em>synthetic cohort</em>).</p>
 <p>A more intuitive measure of life expectancy is called <strong>cohort life expectancy</strong>. Cohort life expectancy follows every person who was born in a certain year (e.g., 1965), and is calculated using the observed/projected rates of all persons in that cohort. With cohort life expectancy, we can truly say that “Singaporean residents born in year XXXX live XX.X years on average”. So why don’t we do this? The answer is simple - to obtain observed rates, we need to observe these deaths for each cohort! We would therefore need to wait for all (or most<a href="#fn70" class="footnoteRef" id="fnref70"><sup>70</sup></a>) of each cohort to pass away before we can calculate such numbers.</p>
 <p>Period life expectancy is therefore practical to use as a measure of how well our health system is doing from year to year, but we must acknowledge its limitations. In order to examine how volatile period rates of life expectancy can be, we can simply look at older rates of life expectancy.</p>
-<p>First, a small excursus - if you look back at Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.6</a>, one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 <span class="math inline">\(\neq\)</span> Life expectancy at birth - 40). Knowing this, we can now do a little thought experiment with life expectancy estimates.</p>
+<p>First, a small excursus - if you look back at Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.7</a>, one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 <span class="math inline">\(\neq\)</span> Life expectancy at birth - 40). Knowing this, we can now do a little thought experiment with life expectancy estimates.</p>
 <p>Let us look at life expectancy at birth in the year 1965. Using the Department of Statistics Table Builder (go <a href="https://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=13276" target="_blank">here</a>) to retrieve the data, it seems life expectancy at birth for Singapore residents back in 1965 was 64.5. Using the common way of interpreting these data, we might say, “we can expect those born in 1965 to live up to 64.5 years old.”</p>
-<p>Fast forward to 2017, and those born in 1965 are now 52 years old. If those numbers in 1965 are correct, it follows that we might expect life expectancy at 52 to be <span class="math inline">\(64.5 - 52 = 12.3\)</span> years. Let’s go back to the <a href="https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf" target="_blank">Complete Life Tables</a> we were looking at before to see how long more those born in 1965 can expect to live (Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetabletwo">7.7</a>).</p>
+<p>Fast forward to 2017, and those born in 1965 are now 52 years old. If those numbers in 1965 are correct, it follows that we might expect life expectancy at 52 to be <span class="math inline">\(64.5 - 52 = 12.3\)</span> years. Let’s go back to the <a href="https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf" target="_blank">Complete Life Tables</a> we were looking at before to see how long more those born in 1965 can expect to live (Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetabletwo">7.8</a>).</p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:apc-lifetabletwo"></span>
 <img src="images/apc/apc_lifetable2.png" alt="Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019." width="80%" />
 <p class="caption">
-Figure 7.7: Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.
+Figure 7.8: Screenshot of Complete Life Table from the Department of Statistics. Retrieved September 17, 2019.
 </p>
 </div>
 <p><br></p>

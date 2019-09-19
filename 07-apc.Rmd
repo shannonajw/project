@@ -68,7 +68,19 @@ knitr::include_graphics("images/apc/report_fig.png")
 ```
 <br>
 
-As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). While we don't have cohort measures, maybe looking at a mix of period-based and age-based measures provides us some indication as to whether the cohort explanation being offered is a plausible one^[These are not enough, however, to confirm what kind of cohort changes have been occuring.]? Perhaps younger cohorts *are* delaying marriage in view of education and career building. But even using a mix of period-based and age-based measures might lead to misleading conclusions about cohort change, as we will see shortly.
+As highlighted by the report, it does seem like people are getting married at later ages (generally, you can see that the mountain-like shape in the figure is moving to the right). Maybe younger cohorts *are* delaying marriage in view of education and career building.
+
+Let us do one more check. While we don't have cohort measures on marriage, we can check if the "longer in education" explanation makes sense using cohort data (Primary 1 cohorts, which tend to approximate birth cohorts) on education from the Ministry of Education (Figure \@ref(fig:apc-reportmoe)).
+
+<br>
+```{r apc-reportmoe, fig.cap='Screenshot from Data.gov.sg on "Percentage of P1 Cohort that Progressed to Post-Secondary Education". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+knitr::include_graphics("images/apc/apc_moe.png")
+```
+<br>
+
+The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall. More evidence is needed to confirm whether this (and "early-career building") is in fact the cause of delayed marriages, but the explanation does seem to hold up in the face of this very preliminary check. 
+
+You may ask - so perhaps looking at a mix of period-based and age-based measures provides us some indication of cohort change? The answer is that it depends^[On many factors, such as how they were calculated, what their interpretations are, whether they are population or sample data, and more.]. In this case, it seems like the period measures and cohort explanation are telling the same story, but there are times when they will not, as we will see shortly. 
 
 Let us now move on to another comment that was made. The news article states:
 
@@ -100,7 +112,7 @@ knitr::include_graphics("images/apc/report_fig2.png")
 
 What can be observed here is that **younger (marriage) cohorts seem to be getting divorced earlier**^[It remains to be seen if lifetime divorce rates will be higher, since we cannot yet observe the full trajectory of union dissolutions for the younger cohorts (or even for older cohorts, since not all of them have disolved their union or passed away).]. For instance, you may notice that a higher proportion of those married in 2011 (light pink line) dissolve their unions before their 5th anniversary compared to those married in 2001 (dark pink line) or earlier^[Note that this does not really line up with the 2018 and 2008 measures we were comparing before, but there really is no easy way to do this.]. The picture painted here seems more bleak^[Assuming divorce is always a bad thing, which may not always be the case. A rise in divorce rates may possibly reflect changes in power dynamics within couples, with women becoming more independent and more willing to leave abusive situations.] compared to what we expected from period trends (and the news article), which suggested that divorce rates were falling^[Note that the Department of Statistics [report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} also has age-specific divorce rates, which seems to tell a similar story as the period trends - that divorce rates are falling among those who are younger (but rising at older ages). This may however simply be a function of delayed marriages in general leading to delayed divorces], or that marriages were becoming more stable as a result of more careful partner selection.
 
-This suggests that **while period measures and cohort measures can sometimes tell similar stories about societal change, there are many times when they do not.** When we say "marriages and divorces are falling", we need to be clear what the data allows us to say, and what kinds of explanation we give. In the next section, we will look at life expectancy - a highly misunderstood measure in popular discourse.
+This suggests that **while period measures and cohort measures can sometimes tell similar stories about societal change, there are times when they do not.** When we say "marriages and divorces are falling", we need to be clear what the data allows us to say, and what kinds of explanation we give. In the next section, we will look at life expectancy - a highly misunderstood measure in popular discourse.
 
 ## Living longer than you expect 
 
