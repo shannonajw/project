@@ -73,7 +73,7 @@ As highlighted by the report, it does seem like people are getting married at la
 Let us do one more check. While we don't have cohort measures on marriage, we can check if the "longer in education" explanation makes sense using cohort data (Primary 1 cohorts, which tend to approximate birth cohorts) on education from the Ministry of Education (Figure \@ref(fig:apc-reportmoe)).
 
 <br>
-```{r apc-reportmoe, fig.cap='Screenshot from Data.gov.sg on "Percentage of P1 Cohort that Progressed to Post-Secondary Education". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
+```{r apc-reportmoe, fig.cap='Screenshot from Data.gov.sg on "Percentage of P1 Cohort that Progressed to Post-Secondary Education". Retrieved September 17, 2019.', out.width='95%', fig.align='center', echo=F}
 knitr::include_graphics("images/apc/apc_moe.png")
 ```
 <br>
