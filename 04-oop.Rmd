@@ -9,7 +9,7 @@ Date: 21 May 2019
 
 Proportions (sometimes expressed in percentages) are commonly used in popular media to reflect public opinion. In fact, it is often the only type of statistic we get^[Reports such as those released in the form of IPS working papers, sometimes include multivariable analysis, but often after many pages of crosstabulations] to evaluate as "evidence". For instance, a news article may state that "nearly 46 per cent of those aged 18 to 25 would allow extremist views that deem all other religions as enemies to be published"^[<https://www.todayonline.com/singapore/nearly-1-2-young-sporeans-open-extremist-views-being-posted-online-survey-shows>{target="_blank"}], or that "59 per cent of Chinese find a Malay president acceptable"^[<https://www.straitstimes.com/singapore/majority-willing-to-accept-president-or-pm-of-another-race-but-prefer-one-of-their-own>{target="_blank"}]. While these proportions are easy for the general public to understand, they can be misleading if not read carefully. This case study looks at two different news articles, showing how some claims can be exaggerated by careless use of numbers.
 
-## Media claim 1: Support for the Watain ban {#watain}
+## Support for the Watain ban {#watain}
 Swedish black metal band Watain was supposed to perform in Singapore on 7 March 2019. However, the gig was cancelled just hours before it was scheduled to begin, with the government citing concerns from the Christian community^[See <https://www.channelnewsasia.com/news/singapore/watain-concert-cancelled-christian-community-reaction-shanmugam-11399434>{target="_blank"}]. To evaluate public sentiment towards this incident, REACH^[The Singapore Government's feedback unit] conducted a poll with 680 Singaporeans aged 15 and above. Of interest here is how results from this poll was represented in public discourse.
 
 <br>
@@ -39,7 +39,7 @@ Note the qualifier "among those who were aware" is neither in the headline (Figu
 
 In effect, the Straits Times article is invoking a strong assumption here (see \@ref(ooptech) for a more technical explanation) - that *if* those who were unaware were in fact able to express their support for the ban, the same proportion of respondents (among those who were aware, 64%) would also support the ban. But being aware of the ban is a *prerequisite* for support of the ban, which makes this assumption rather unreasonable. Even assuming this hypothetical scenario were possible, the actual figure could be higher or lower - it depends on how similar (or different) the unaware are to the aware. Those who were not aware may be less likely to care about black metal music (or simply too busy to keep up with current affairs) and simply base their support of the ban on their general sentiment toward government policies. This seemingly minor omission of the qualifier can lead to false conclusions pretty quickly. Let us look at another example.
 
-## Media claim 2: Web-savvy Seniors {#websavvy}
+## Web-savvy Seniors? {#websavvy}
 
 Part of my research involves looking at how Internet use can improve the lives of older adults [see @ang_going_2018]. I was interested in what the overall situation was like in Singapore, and googled something like "internet use seniors". One 2014 article in the Straits Times immediately caught my eye (see Figure \@ref(fig:st-websavvyseniors)).
 
