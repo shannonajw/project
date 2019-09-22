@@ -10,7 +10,7 @@ We hear various statistics that imply social change all the time. For instance, 
 As always, people have many comments and theories about reasons behind what is happening. But before we can evaluate these comments, we need to first understand - what do these numbers really mean, and what kind of change is it really capturing? This case study looks at several ways we talk about societal change in public, and provides a better understanding of these commonly used numbers for higher quality discourse.
 
 ## Three ways to understand change
-Before we go evaluate real examples, it will be helpful to understand different kinds of societal change. Let us work with a toy example. Suppose the newspaper (your favourite one) headline tomorrow states: "Average walking speed of Singaporeans slower than 10 years ago". There are three possible explanations for this (maybe more, this is not a perfect analogy).
+Before we evaluate real examples, it will be helpful to understand different kinds of societal change. Let us work with a toy example. Suppose the newspaper (your favourite one) headline tomorrow states: "Average walking speed of Singaporeans slower than 10 years ago". There are three possible explanations for this (maybe more, this is not a perfect analogy).
 
 1. Older people walk slower, and Singapore is an ageing society (average age is rising), so its average walking speed will fall as there are more older people in society.
 
@@ -50,11 +50,11 @@ The article is based on [a report](https://www.singstat.gov.sg/-/media/files/pub
 
 <br>
 
-Now, given that we've talked about age, cohort, and period changes, one question that should come to mind is: *what kind of measure is this?* Well, this is a period measure - it records the number of marriages in a certain year. Unnamed 'observers' cited by the article seem to understand this. They point out that the economy last year may have had a part to play, which is a plausible reason for period changes that suits the nature of the measure^[The general marriage rate, which is adjusted for population size of unmarried residents aged 15-49, also seems to tell this story.]. However, often times, people provide *cohort* explanations for changes in *period* measures.
+Now, given that we've talked about age, cohort, and period changes, one question that should come to mind is: *what kind of measure is this?* Well, this is a **period measure** - it records the number of marriages in a certain year. Unnamed 'observers' cited by the article seem to understand this. They point out that the economy last year may have had a part to play, which is a plausible reason for period changes that suits the nature of the measure^[The general marriage rate, which is adjusted for population size of unmarried residents aged 15-49, also seems to tell this story.]. However, often times, people provide *cohort* explanations for changes in *period* measures.
 
 The next two subsections will look at the question - **How reasonable is it to adopt *cohort* explanations for changes in *period* measures of marriage?**
 
-### Different measures, same story
+### Evaluating explanation 1
 
 We first take a look at the following paragraph on changes in median age at first marriage:
 
@@ -101,11 +101,20 @@ knitr::include_graphics("images/apc/apc_moe.png")
 ```
 <br>
 
-The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall (see the rising trend across years). More evidence is needed to confirm whether this (and "early-career building") is in fact the cause of delayed marriages, but it does seem like younger cohorts are spending more time in education. *The cohort explanation therefore seems reasonable.*
+The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall (see the rising trend across years). More evidence is needed to confirm whether this (and "early-career building") is in fact the cause of delayed marriages, but it does seem like younger cohorts are spending more time in education. *The cohort explanation therefore seems reasonable up to this point.* 
 
-You may now ask - so perhaps looking at a mix of period-based and age-based measures can provide us some indication of cohort change? The answer is that it depends^[It depends on many factors, such as how they were calculated, what their interpretations are, whether they are population or sample data, and more.]. In this case, it seems like the age and period measures do signal cohort trends, and the cohort explanation is viable (though it cannot be confirmed with the data we have seen). However, there are times when cohort and period trends will not cohere, as we will see shortly. 
+At the same time, however, [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics states the following on page 7:
+ 
+<br>
 
-### Different measures, different story
+> Between 2008 and 2018, the median age at first marriage among brides with secondary and below qualification rose considerably, narrowing the gap with graduate brides. For grooms, the differences in median age at first marriage across the educational groups also diminished over the same period.
+
+<br>
+
+This considerably undermines NUS sociologist Tan's explanation that younger cohorts are delaying marriage in view of education and early career building, since it seems that even though it is true that younger cohorts are getting more education, median age of marriage is rising **even among those without** post-secondary education (and at a faster rate than those more highly educated). We have not considered the "early career building" part yet, but this shows that this explanation requires more work.
+
+
+### Evaluating explanation 2
 
 Let us now look at another comment that was made about marriage rates. The news article states:
 
@@ -113,13 +122,21 @@ Let us now look at another comment that was made about marriage rates. The news 
 
 <br>
 
-SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] (i.e. a cohort effect)?
+SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry (i.e. a cohort effect)?
 
-Regardless of whether think it is a period or cohort explanation, a natural follow-up question would be - does this also explain the reason why divorce rates are falling? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]! People "waiting longer" also would then explain why divorce numbers are falling divorces. 
+Regardless of whether we think it is a period or cohort explanation, a natural follow-up question would be - does this also explain the reason why divorce rates are falling (as the news article headline states)? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]! People "waiting longer" also would then explain why divorce numbers are falling. 
 
 *Suppose we adopt the following explanation*: **Divorce numbers are falling because younger cohorts are more careful (and therefore taking longer) about choosing their partners.**
 
-Remember that the divorce numbers mentioned in the news article are a **period** measure^[You may also ask, since we're dealing with absolute numbers, isn't it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.]. *Also remember the steps outlined in the previous sub-section*:
+Remember that the divorce numbers mentioned in the news article are a **period** measure^[You may also ask, since we're dealing with absolute numbers, isn't it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.]. Just like median age of marriage, the median age at divorce is also rising, according to [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics, which states on page 15:
+
+<br>
+
+> With an ageing population and rising divorce rates for older persons, the proportion of divorcees aged 45 years & over rose from 32.7 per cent in 2008 to 44.0 per cent in 2018 for males, and from 21.7 per cent to 29.9 per cent for females (Figure 2.4). As a result, the median age at divorce rose over the last decade."
+
+<br>
+
+*Also remember the 2 steps outlined in the previous sub-section*:
 
 1. Figure out if trends observed reflect cohort change, rather than age or period change. 
 2. Figure out if the explanation given for cohort change is supported by evidence.
@@ -128,7 +145,7 @@ Remember that the divorce numbers mentioned in the news article are a **period**
 
 **Step 1**
 
-Once again, we can look at age-specific rates to determine if the explanation is plausible (Figure \@ref(fig:apc-reportsingstat2nd)). 
+The quote above already hints at trends being driven by age composition ("ageing population"), and period trends^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] ("rising divorce rates for older persons"). This already tells us the government believes a cohort trend is unlikely. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure \@ref(fig:apc-reportsingstat2nd)). 
 
 <br>
 ```{r apc-reportsingstat2nd, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -136,11 +153,9 @@ knitr::include_graphics("images/apc/report_fig3.png")
 ```
 <br>
 
-Once again we see in Figure \@ref(fig:apc-reportsingstat2nd) that in 2018, divorce rates among younger age groups (15-29) are lower and higher in older age groups (30+), compared to 2008. Divorce numbers thus do not seem to be driven by changes in population age composition. 
+Once again we see from Figure \@ref(fig:apc-reportsingstat2nd) that in 2018, divorce rates are lower among younger age groups (15-29) and higher in older age groups (30+), compared to 2008. This is the same situation as before (with marriage numbers), and there we concluded cohort change is possible. So why does the Department of Statistics say that these are not connected with cohort change?
 
-This is the same situation as before (with marriage numbers), so perhaps we can use a mix of period-based and age-based measures to support the existence of cohort change. But how well do these age and period numbers cohere with  *cohort* trends?
-
-Data on divorce trends by birth cohort are (again) not available from the government. But all is not lost. Weirdly enough, there exists some information on divorce by "marriage cohorts" (where each cohort is defined by the year they got married - i.e., if you got married in the same year as I did, you are in my marriage cohort) in a report by the Ministry of Social and Family Development (found [here](https://www.msf.gov.sg/research-and-data/Research-and-Data-Series/Pages/default.aspx){target="_blank"}). What kind of change marriage cohort trends really capture is quite hard to say, but for heuristic purposes we may assume they roughly approximate^[Think about who gets married in a certain year. What kind of people are they composed of? What characteristics do they share? It is hard to say. Other than sharing the same year of marriage, diversity within marriage cohorts is likely to be huge. We can only assume that younger birth cohorts will dominate most of the marriages in later years, but it remains to be seen whether this is accurate.] birth cohort trends. Figure \@ref(fig:apc-reportmsf) shows us the proportion of divorces (y-axis) that happen before the couples' $x^{th}$ anniversary (shown on the x-axis), by marriage cohort (indicated by the color and shape of the lines).
+Data on divorce trends by birth cohort are (again) not available, but all is not lost. Weirdly enough, there exists some information on divorce by "marriage cohorts" (where each cohort is defined by the year they got married - i.e., if you got married in the same year as I did, you are in my marriage cohort) in a report by the Ministry of Social and Family Development (found [here](https://www.msf.gov.sg/research-and-data/Research-and-Data-Series/Pages/default.aspx){target="_blank"}). What kind of change marriage cohort trends really capture is quite hard to say, but for heuristic purposes we may assume they roughly approximate^[Think about who gets married in a certain year. What kind of people are they composed of? What characteristics do they share? It is hard to say. Other than sharing the same year of marriage, diversity within marriage cohorts is likely to be huge. We can only assume that younger birth cohorts will dominate most of the marriages in later years, but it remains to be seen whether this is accurate.] birth cohort trends. Figure \@ref(fig:apc-reportmsf) shows us the proportion of divorces (y-axis) that happen before the couples' $x^{th}$ anniversary (shown on the x-axis), by marriage cohort (indicated by the color and shape of the lines).
 
 <br>
 ```{r apc-reportmsf, fig.cap='Screenshot from Ministry of Social and Family Developent report titled "Dissolutions of Marriages Among Marriage Cohorts, 1987-2015". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
@@ -158,9 +173,9 @@ The picture painted here seems more bleak^[Assuming divorce is always a bad thin
 
 The cohort explanation we adopted for this section was that "Divorce numbers are falling because younger cohorts are more careful about choosing their partners". We have already found, however, younger cohorts (albeit on marriage cohorts, not birth cohorts) are in fact getting divorced earlier. This directly contradicts the cohort-based explanation.
 
-What is key here is to note that **while period measures and cohort measures can sometimes tell similar stories about societal change, there are times when they do not.** When we say "marriages and divorces are falling", we need to be clear what the data allows us to say, and what kinds of explanations we give. If cohort trends are not the same as period trends, than providing cohort explanations for period change becomes meaningless.
+What is key here is to note that **while period measures and cohort measures can sometimes tell similar stories about societal change, there are many times when they do not.** When we say "marriages and divorces are falling", we need to be clear what the data allows us to say, and what kinds of explanations we give. If cohort trends are not the same as period trends, than providing cohort explanations for period change becomes meaningless.
 
-In the next section, we will look at life expectancy - a highly misunderstood measure in popular discourse.
+We must therefore be very careful how we make claims, and what data we use to back it up. In the next section, we will look at life expectancy - a highly misunderstood measure in popular discourse.
 
 ## Living longer than you expect 
 
@@ -172,13 +187,13 @@ knitr::include_graphics("images/apc/apc_lifeexpectancy.png")
 ```
 <br>
 
-A typical article (such as [this one](https://www.healthxchange.sg/seniors/healthy-ageing/why-singaporeans-living-longer){target="_blank"} written by a physician) will use estimates of life expectancy to say, for instance, "Singaporean residents can expect to live up to 83.2 years (*the figure for 2017*)". This reading of life expectancy is quite common.
+A typical article (such as [this one](https://www.healthxchange.sg/seniors/healthy-ageing/why-singaporeans-living-longer){target="_blank"} written by a physician) will use estimates of life expectancy to say, for instance, "Singaporean residents can expect to live up to 83.2 years^[The figure for the year 2017.]". This reading of life expectancy is quite common.
 
 The obvious question here is - Who can expect to live up to 83.2 years? My grandma? Me? My child? Do all Singaporeans now expect to live to the same age^[If this is true, then if life expectancy increases faster than one year annually, does this mean we can all expect to be immortal? You can see how ludicrous this sounds.]?
 
 The figure most often cited in the media is life expectancy *at birth*. A more precise way to interpret the life expectancy in 2017 is "Singaporean residents **who are born in 2017** can expect to live to 83.2". [This other news article in the Straits Times](https://www.straitstimes.com/singapore/health/singapore-tops-in-life-expectancy-at-848-years){target="_blank"} rightly refers to the life expectancy estimate as "expected lifespan at birth".
 
-But this still does not fully capture how life expectancy is calculated. To do this, we need to go back to our understanding of age, period, and cohort measures. Life expectancy, as it is reported yearly, is a **period measure**. 
+**But this still does not fully capture how life expectancy is calculated.** To do this, we need to go back to our understanding of age, period, and cohort measures. Life expectancy, as it is reported yearly, is a **period measure**. 
 
 Without going into full detail (interested readers can refer to resources such as [this](https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/multiple-decrement-life-tables/lesson-3){target="_blank"}), I will explain briefly how this is calculated. A typical life table from the Department of Statistics (taken from [this report](https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf){target="_blank"}) looks like Figure \@ref(fig:apc-lifetable) (it shows just the top part, the entire table is a few pages long).
 
@@ -198,7 +213,7 @@ You may not yet fully understand what is happening here, but just note one key t
 
 To understand what this means for how we interpret life expectancy, we return to our previous interpretation - that "Singaporean residents **who are born in 2017** can expect to live to 83.2". 
 
-Let's now make it more precise and say that "Singaporean residents **who are born in 2017 and who are exposed to mortality rates of 2017 throughout their lives** can expect to live to 83.2". 
+Let's now make it more precise and say that "Singaporean residents **who are born in 2017** _**and who are exposed to mortality rates of 2017 throughout their lives**_ can expect to live to 83.2". 
 
 This sounds highly awkward, I know. You would have to imagine some kind of time machine allowing you to stay stuck in 2017, continuing to experience its mortality rates even as you grow older. But it is in fact how the measure is calculated. **Life expectancy, as often cited in the media, is a period measure that is constructed by stitching together the experiences of multiple cohorts** (often called a *synthetic cohort*).
 
