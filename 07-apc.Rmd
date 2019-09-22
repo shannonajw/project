@@ -228,9 +228,9 @@ A more intuitive measure of life expectancy is called **cohort life expectancy**
 
 Period life expectancy is therefore practical to use as a measure of how well our health system is doing from year to year, but we must acknowledge its limitations. In order to examine how volatile period rates of life expectancy can be, we can simply look at older rates of life expectancy. 
 
-First, a small excursus - if you look back at Figure \@ref(fig:apc-lifetable), one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 $\neq$ Life expectancy at birth - 40). Knowing this, we can now do a little thought experiment with life expectancy estimates.
+*But first, a small excursus* - if you look back at Figure \@ref(fig:apc-lifetable), one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 $\neq$ Life expectancy at birth - 40). Knowing this, we can now do a little thought experiment with life expectancy estimates.
 
-Let us look at life expectancy at birth in the year 1965. Using the Department of Statistics Table Builder (go [here](https://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=13276){target="_blank"}) to retrieve the data, it seems life expectancy at birth for Singapore residents back in 1965 was 64.5. Using the common way of interpreting these data, we might say, "we can expect those born in 1965 to live up to 64.5 years old."
+Let us now look at life expectancy at birth in the year 1965. Using the Department of Statistics Table Builder (go [here](https://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=13276){target="_blank"}) to retrieve the data, it seems life expectancy at birth for Singapore residents back in 1965 was 64.5. Using the common way of interpreting these data, we might say, "we can expect those born in 1965 to live up to 64.5 years old."
 
 Fast forward to 2017, and those born in 1965 are now 52 years old. If those numbers in 1965 are correct, it follows that we might expect life expectancy at 52 to be $64.5 - 52 = 12.3$ years. Let's go back to the [Complete Life Tables](https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf){target="_blank"} we were looking at before to see how long more those born in 1965 can expect to live (Figure \@ref(fig:apc-lifetabletwo)).
 
@@ -243,6 +243,8 @@ knitr::include_graphics("images/apc/apc_lifetable2.png")
 Wait. We see now that those who aged 52 in 2017 can in fact expect to live 32.5 more years. That means they are expected to live up to $52 + 32.5 = 84.5$ years old! That seems way different from the 64.5 years projected by mortality statistics in 1965. Why is this so? This is because period life expectancy does not account for future improvements in mortality driven by better healthcare, hygiene, health behaviors etc. Period life expectancy is therefore often an *underestimate* of the true cohort life expectancy^[Unless mortality rates spike due to events such as wars, famines etc.]. The discrepancy we see between the 1965 life table and the 2017 life table is likely due to great improvements in mortality rates since independence.
 
 Having studied how life expectancy 'works', let us conclude by evaluating this paragraph from an article on the [Dollars and Sense website](https://dollarsandsense.sg/retirement-planning-singapore-live-beyond-average-life-expectancy/){target="_blank"}, aimed at helping Singaporeans plan their retirement:
+
+<br>
 
 > The next step of the retirement planning equation is to understand how long we can expect to spend in retirement. The longer we spend in retirement, the more we need to sustain ourselves.
 >
