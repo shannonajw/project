@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5.3 Same data, different results | Singapore Society in Numbers</title>
+  <meta name="description" content="Understanding Singapore through quantitative social science" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5.3 Same data, different results | Singapore Society in Numbers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Understanding Singapore through quantitative social science" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5.3 Same data, different results | Singapore Society in Numbers" />
+  
+  <meta name="twitter:description" content="Understanding Singapore through quantitative social science" />
+  
+
+<meta name="author" content="Edited by Shannon Ang" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="5-2-lonely-by-whose-standard.html"/>
+<link rel="next" href="5-4-conclusion-1.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="https://hypothes.is/embed.js" async></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117918858-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117918858-2');
+</script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Singapore Society in Numbers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="why-i-started-this-project.html"><a href="why-i-started-this-project.html"><i class="fa fa-check"></i>Why I started this project</a></li>
+<li class="chapter" data-level="" data-path="how-to-contribute.html"><a href="how-to-contribute.html"><i class="fa fa-check"></i>How to contribute</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+</ul></li>
+<li class="part"><span><b>I Datasets for Social Science</b></span></li>
+<li class="chapter" data-level="1" data-path="1-publicdata.html"><a href="1-publicdata.html"><i class="fa fa-check"></i><b>1</b> Public Data</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-1-abs.html"><a href="1-1-abs.html"><i class="fa fa-check"></i><b>1.1</b> Asian Barometer Survey (ABS)</a></li>
+<li class="chapter" data-level="1.2" data-path="1-2-ips.html"><a href="1-2-ips.html"><i class="fa fa-check"></i><b>1.2</b> IPS Public Data</a></li>
+<li class="chapter" data-level="1.3" data-path="1-3-phase.html"><a href="1-3-phase.html"><i class="fa fa-check"></i><b>1.3</b> Panel on Health and Ageing of Singaporean Elderly (PHASE)</a></li>
+<li class="chapter" data-level="1.4" data-path="1-4-wvs.html"><a href="1-4-wvs.html"><i class="fa fa-check"></i><b>1.4</b> World Values Survey (WVS)</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-restricteddata.html"><a href="2-restricteddata.html"><i class="fa fa-check"></i><b>2</b> Restricted Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-1-dos.html"><a href="2-1-dos.html"><i class="fa fa-check"></i><b>2.1</b> Department of Statistics (DOS) Microdata</a></li>
+<li class="chapter" data-level="2.2" data-path="2-2-nys.html"><a href="2-2-nys.html"><i class="fa fa-check"></i><b>2.2</b> National Youth Survey (NYS)</a></li>
+<li class="chapter" data-level="2.3" data-path="2-3-rhs.html"><a href="2-3-rhs.html"><i class="fa fa-check"></i><b>2.3</b> Retirement and Health Study (RHS)</a></li>
+<li class="chapter" data-level="2.4" data-path="2-4-slp.html"><a href="2-4-slp.html"><i class="fa fa-check"></i><b>2.4</b> Singapore Life Panel (SLP)</a></li>
+<li class="chapter" data-level="2.5" data-path="2-5-spssd.html"><a href="2-5-spssd.html"><i class="fa fa-check"></i><b>2.5</b> Singapore Panel Study on Social Dynamics (SPSSD)</a></li>
+<li class="chapter" data-level="2.6" data-path="2-6-youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><a href="2-6-youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><i class="fa fa-check"></i><b>2.6</b> Youth Survey on Transitions and Evolving Pathways in Singapore (Youth STEPS)</a></li>
+</ul></li>
+<li class="part"><span><b>II Think Pieces</b></span></li>
+<li class="chapter" data-level="3" data-path="3-think.html"><a href="3-think.html"><i class="fa fa-check"></i><b>3</b> Thinking about Numbers</a></li>
+<li class="part"><span><b>III Case Studies</b></span></li>
+<li class="chapter" data-level="4" data-path="4-oop.html"><a href="4-oop.html"><i class="fa fa-check"></i><b>4</b> Blown out of proportion</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-1-watain.html"><a href="4-1-watain.html"><i class="fa fa-check"></i><b>4.1</b> Support for the Watain ban</a></li>
+<li class="chapter" data-level="4.2" data-path="4-2-websavvy.html"><a href="4-2-websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Web-savvy Seniors?</a></li>
+<li class="chapter" data-level="4.3" data-path="4-3-ooptech.html"><a href="4-3-ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical excursus</a></li>
+<li class="chapter" data-level="4.4" data-path="4-4-conclusion.html"><a href="4-4-conclusion.html"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+<li class="chapter" data-level="4.5" data-path="4-5-additional-reading.html"><a href="4-5-additional-reading.html"><i class="fa fa-check"></i><b>4.5</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-lonely.html"><a href="5-lonely.html"><i class="fa fa-check"></i><b>5</b> Are we lonely?</a><ul>
+<li class="chapter" data-level="5.1" data-path="5-1-the-lonely-dichotomy.html"><a href="5-1-the-lonely-dichotomy.html"><i class="fa fa-check"></i><b>5.1</b> The lonely dichotomy</a></li>
+<li class="chapter" data-level="5.2" data-path="5-2-lonely-by-whose-standard.html"><a href="5-2-lonely-by-whose-standard.html"><i class="fa fa-check"></i><b>5.2</b> Lonely by whose standard</a></li>
+<li class="chapter" data-level="5.3" data-path="5-3-same-data-different-results.html"><a href="5-3-same-data-different-results.html"><i class="fa fa-check"></i><b>5.3</b> Same data, different results</a></li>
+<li class="chapter" data-level="5.4" data-path="5-4-conclusion-1.html"><a href="5-4-conclusion-1.html"><i class="fa fa-check"></i><b>5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-samples.html"><a href="6-samples.html"><i class="fa fa-check"></i><b>6</b> Size is not all that matters</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-1-sample-worklife.html"><a href="6-1-sample-worklife.html"><i class="fa fa-check"></i><b>6.1</b> But it’s too small!</a></li>
+<li class="chapter" data-level="6.2" data-path="6-2-size-matters-but-how-so.html"><a href="6-2-size-matters-but-how-so.html"><i class="fa fa-check"></i><b>6.2</b> Size matters, but how so?</a></li>
+<li class="chapter" data-level="6.3" data-path="6-3-non-probability-sample-now-what.html"><a href="6-3-non-probability-sample-now-what.html"><i class="fa fa-check"></i><b>6.3</b> Non-probability sample, now what</a></li>
+<li class="chapter" data-level="6.4" data-path="6-4-conclusion-2.html"><a href="6-4-conclusion-2.html"><i class="fa fa-check"></i><b>6.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-apc.html"><a href="7-apc.html"><i class="fa fa-check"></i><b>7</b> Measuring societal change</a><ul>
+<li class="chapter" data-level="7.1" data-path="7-1-three-ways-to-understand-change.html"><a href="7-1-three-ways-to-understand-change.html"><i class="fa fa-check"></i><b>7.1</b> Three ways to understand change</a></li>
+<li class="chapter" data-level="7.2" data-path="7-2-marriage-decline.html"><a href="7-2-marriage-decline.html"><i class="fa fa-check"></i><b>7.2</b> Declines in marriage and divorce</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="7-2-marriage-decline.html"><a href="7-2-marriage-decline.html#different-measures-same-story"><i class="fa fa-check"></i><b>7.2.1</b> Different measures, same story</a></li>
+<li class="chapter" data-level="7.2.2" data-path="7-2-marriage-decline.html"><a href="7-2-marriage-decline.html#different-measures-different-story"><i class="fa fa-check"></i><b>7.2.2</b> Different measures, different story</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="7-3-living-longer-than-you-expect.html"><a href="7-3-living-longer-than-you-expect.html"><i class="fa fa-check"></i><b>7.3</b> Living longer than you expect</a></li>
+<li class="chapter" data-level="7.4" data-path="7-4-conclusion-3.html"><a href="7-4-conclusion-3.html"><i class="fa fa-check"></i><b>7.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="8-case3.html"><a href="8-case3.html"><i class="fa fa-check"></i><b>8</b> Your case study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Singapore Society in Numbers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="same-data-different-results" class="section level2">
+<h2><span class="header-section-number">5.3</span> Same data, different results</h2>
+<p>For this simple analysis, I use data from Wave 2 of the Panel on Health and Ageing of Singaporean Elderly (PHASE) (see <a href="1-3-phase.html#phase">1.3</a>), conducted in 2011. This is a nationally representative study of older adults aged 60 and above. It is essentially the same dataset used in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. Code provided is in R. For the sake of brevity, I leave out observations with any missing values on any of the loneliness items. A key concern of the news article in Figure <a href="5-1-the-lonely-dichotomy.html#fig:st-lonely">5.1</a> is that even older adults living with family members may be lonely, so we will look at a cross-tabulation of living arrangements with “loneliness”.</p>
+<p><br></p>
+<p><strong>Coding scheme 1: Lots of loneliness</strong></p>
+<p>I first follow the coding scheme in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize respondents into people who are “not lonely” (score of 0), and those who are “lonely” (score of 1-12)<a href="#fn28" class="footnoteRef" id="fnref28"><sup>28</sup></a>. This cut-off point seems to have arisen from a “common-sense” approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load required libraries</span>
+<span class="kw">library</span>(dplyr)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Note: You first need to read in the data</span>
+<span class="co"># The data already contains a pre-coded version according to these criteria</span>
+lonely1_cat &lt;-<span class="st"> </span>phase<span class="op">$</span>w2_loneliness_yesno <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
+<span class="co"># Make a table (proportions are weighted to account for survey design)</span>
+knitr<span class="op">::</span><span class="kw">kable</span>(
+  GDAtools<span class="op">::</span><span class="kw">prop.wtable</span>(livingarr, lonely1_cat, 
+                      <span class="dt">dir=</span><span class="dv">1</span>, <span class="dt">digits=</span><span class="dv">3</span>, <span class="dt">w=</span>phase<span class="op">$</span>w2_weights, <span class="dt">na=</span>F, <span class="dt">mar=</span>F), 
+  <span class="dt">caption =</span> <span class="kw">paste0</span>(<span class="st">&#39;Crosstabulation using criteria in Lim and Chan (2017) &#39;</span>,
+                   <span class="st">&#39;and Chan et al (2015). Note that these are row percentages.&#39;</span>),
+  <span class="dt">booktabs =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<table>
+<caption><span id="tab:table-lonely1">Table 5.1: </span>Crosstabulation using criteria in Lim and Chan (2017) and Chan et al (2015). Note that these are row percentages.</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Not lonely</th>
+<th align="right">Lonely</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Living alone</td>
+<td align="right">41.022</td>
+<td align="right">58.978</td>
+</tr>
+<tr class="even">
+<td>Living with spouse only</td>
+<td align="right">67.844</td>
+<td align="right">32.156</td>
+</tr>
+<tr class="odd">
+<td>Living with child only</td>
+<td align="right">49.910</td>
+<td align="right">50.090</td>
+</tr>
+<tr class="even">
+<td>Living with spouse and child</td>
+<td align="right">71.680</td>
+<td align="right">28.320</td>
+</tr>
+<tr class="odd">
+<td>Living with others only</td>
+<td align="right">44.791</td>
+<td align="right">55.209</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Table <a href="5-3-same-data-different-results.html#tab:table-lonely1">5.1</a> gives me a similar proportion as suggested in the news article - that is,</p>
+<blockquote>
+<p>“[Associate Professor Chan’s study] found that half of Singaporeans over 60 felt lonely some or most of the time. But those who lived with spouses, or with spouses and children, did not.”</p>
+</blockquote>
+<p><br> These numbers are indeed worrying. Older adults living alone are understandably lonely, but those who live with their children (but without their spouse) are not that far behind (50.1%!). Even 28% of those who live with their spouse and child feel lonely, like the headline in the news article (Figure <a href="5-1-the-lonely-dichotomy.html#fig:st-lonely">5.1</a>) suggests.</p>
+<p><br></p>
+<p><strong>Coding scheme 2: Not that much loneliness</strong></p>
+<p>We then arrive at the coding scheme used by <span class="citation">Wee et al. (<a href="#ref-wee_loneliness_2019">2019</a>)</span> and <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span>. Summing the items gives me a score that ranges from 3-9, and I then dichotomize the group into people who are “not lonely” (score of 3-5), and those who are “lonely” (score of 6-9). Note that these cut-points are probably arbitrary - while the researchers cite a paper each to justify their use of the cut-point, the cited papers do not really provide evidence in support of the cut-point. The closest support for the cut-point in the cited papers that I could discern is in <span class="citation">Steptoe et al. (<a href="#ref-steptoe_social_2013">2013</a>)</span>, which states that they used the top quintile<a href="#fn29" class="footnoteRef" id="fnref29"><sup>29</sup></a> to define loneliness. No reason was given as to why the top quintile was chosen. Table <a href="5-3-same-data-different-results.html#tab:table-lonely2">5.2</a> shows the distribution of “loneliness” according to these criteria.</p>
+<p><br></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Recode and sum the loneliness scores</span>
+lonely2 &lt;-<span class="st"> </span>phase <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(w2_Q10_1_GV1, w2_Q10_2_GV1, w2_Q10_3_GV1) <span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">  </span><span class="kw">mutate_all</span>(<span class="kw">funs</span>(<span class="kw">recode</span>(.,<span class="st">`</span><span class="dt">0</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> </span><span class="dv">1</span>, <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> </span><span class="dv">2</span>, <span class="st">`</span><span class="dt">3</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>, <span class="st">`</span><span class="dt">4</span><span class="st">`</span> =<span class="st"> </span><span class="dv">3</span>))) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">rowSums</span>()
+
+<span class="co"># Categorize according to cut-off point</span>
+lonely2_cat &lt;-<span class="st"> </span><span class="kw">if_else</span>(lonely2 <span class="op">&lt;</span><span class="st"> </span><span class="dv">6</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">factor</span>(<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Not lonely&quot;</span>, <span class="st">&quot;Lonely&quot;</span>))
+
+<span class="co"># Show table</span>
+knitr<span class="op">::</span><span class="kw">kable</span>(
+  GDAtools<span class="op">::</span><span class="kw">prop.wtable</span>(livingarr, lonely2_cat, 
+                      <span class="dt">dir=</span><span class="dv">1</span>, <span class="dt">digits=</span><span class="dv">3</span>, <span class="dt">w=</span>phase<span class="op">$</span>w2_weights, <span class="dt">na=</span>F, <span class="dt">mar=</span>F), 
+  <span class="dt">caption =</span> <span class="kw">paste0</span>(<span class="st">&#39;Crosstabulation using criteria in Wee et al (2019) &#39;</span>,
+            <span class="st">&#39;and Ge et al (2017). Note that these are row percentages.&#39;</span>),
+  <span class="dt">booktabs =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<table>
+<caption><span id="tab:table-lonely2">Table 5.2: </span>Crosstabulation using criteria in Wee et al (2019) and Ge et al (2017). Note that these are row percentages.</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Not lonely</th>
+<th align="right">Lonely</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Living alone</td>
+<td align="right">84.419</td>
+<td align="right">15.581</td>
+</tr>
+<tr class="even">
+<td>Living with spouse only</td>
+<td align="right">96.555</td>
+<td align="right">3.445</td>
+</tr>
+<tr class="odd">
+<td>Living with child only</td>
+<td align="right">92.184</td>
+<td align="right">7.816</td>
+</tr>
+<tr class="even">
+<td>Living with spouse and child</td>
+<td align="right">97.863</td>
+<td align="right">2.137</td>
+</tr>
+<tr class="odd">
+<td>Living with others only</td>
+<td align="right">93.046</td>
+<td align="right">6.954</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>What you will immediately realize is that these numbers are way lower than those when using coding scheme 1 (that is, the coding scheme of <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>). These numbers are more consistent with the figures shown in <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span><a href="#fn30" class="footnoteRef" id="fnref30"><sup>30</sup></a>. Further, the difference in the proportion of those living alone and those living with their child (but without their spouse) is similar in absolute terms, but much larger in relative terms (see Table <a href="5-3-same-data-different-results.html#tab:table-lonely3">5.3</a>). While the proportion of those lonely among those who live alone is 1.2 times that of those living with only their children according to coding scheme 1, this ratio increases to 2 when using coding scheme 2. Based on these results, it seems that the overall loneliness situation is much less dire than before, and those who live with children don’t seem as isolated as those who live alone after all.</p>
+<p><br></p>
+<table>
+<caption><span id="tab:table-lonely3">Table 5.3: </span>Comparison of absolute and relative differences</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Coding scheme 1</th>
+<th align="right">Coding scheme 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(1) Living alone</td>
+<td align="right">59.0</td>
+<td align="right">15.6</td>
+</tr>
+<tr class="even">
+<td>(2) Living with child only</td>
+<td align="right">50.1</td>
+<td align="right">7.8</td>
+</tr>
+<tr class="odd">
+<td>Difference [(1) - (2)]</td>
+<td align="right">8.9</td>
+<td align="right">7.8</td>
+</tr>
+<tr class="even">
+<td>Ratio [(1)/(2)]</td>
+<td align="right">1.2</td>
+<td align="right">2.0</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-chan_loneliness_2015">
+<p>Chan, Angelique, Prassanna Raman, Stefan Ma, and Rahul Malhotra. 2015. “Loneliness and All-Cause Mortality in Community-Dwelling Elderly Singaporeans.” <em>Demographic Research</em> S15 (49): 1361–82. <a href="https://www.demographic-research.org/special/15/49/" class="uri">https://www.demographic-research.org/special/15/49/</a>.</p>
+</div>
+<div id="ref-ge_social_2017">
+<p>Ge, Lixia, Chun Wei Yap, Reuben Ong, and Bee Hoon Heng. 2017. “Social Isolation, Loneliness and Their Relationships with Depressive Symptoms: A Population-Based Study.” <em>PLOS ONE</em> 12 (8): e0182145. doi:<a href="https://doi.org/10.1371/journal.pone.0182145">10.1371/journal.pone.0182145</a>.</p>
+</div>
+<div id="ref-lim_association_2017">
+<p>Lim, Ka Keat, and Angelique Chan. 2017. “Association of Loneliness and Healthcare Utilization Among Older Adults in Singapore.” <em>Geriatrics &amp; Gerontology International</em> 17 (11): 1789–98. doi:<a href="https://doi.org/10.1111/ggi.12962">10.1111/ggi.12962</a>.</p>
+</div>
+<div id="ref-steptoe_social_2013">
+<p>Steptoe, Andrew, Aparna Shankar, Panayotes Demakakos, and Jane Wardle. 2013. “Social Isolation, Loneliness, and All-Cause Mortality in Older Men and Women.” <em>Proceedings of the National Academy of Sciences</em> 110 (15): 5797. doi:<a href="https://doi.org/10.1073/pnas.1219686110">10.1073/pnas.1219686110</a>.</p>
+</div>
+<div id="ref-wee_loneliness_2019">
+<p>Wee, E. Liang, Y. Tammy Tsang, Huso Yi, A. Sue Toh, L. Geok Lee, Jaime Yee, Shannon Lee, Kellynn Oen, and C. Gerald Koh. 2019. “Loneliness Amongst Low-Socioeconomic Status Elderly Singaporeans and Its Association with Perceptions of the Neighbourhood Environment.” <em>International Journal of Environmental Research and Public Health</em> 16 (6). doi:<a href="https://doi.org/10.3390/ijerph16060967">10.3390/ijerph16060967</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="28">
+<li id="fn28"><p>Note that <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span> further splits the “lonely” group into “sometimes lonely” and “mostly lonely”. <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span>, however, does not make this distinction. I have grouped them together since this is the way that it has usually been represented in public discourse (e.g., the claim that those who are lonely have a higher risk of mortality compared to those not lonely. See, for instance, <a href="https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone" class="uri" target="_blank">https://www.straitstimes.com/singapore/those-who-feel-lonely-more-prone</a>)<a href="5-3-same-data-different-results.html#fnref28">↩</a></p></li>
+<li id="fn29"><p>In their sample, not the Singapore one.<a href="5-3-same-data-different-results.html#fnref29">↩</a></p></li>
+<li id="fn30"><p>Note that the sample in <span class="citation">Ge et al. (<a href="#ref-ge_social_2017">2017</a>)</span> is of all adults aged 21 and older, not just older adults, so the higher number seen here is expected. Note also that in the paper, the authors show column percentages instead of row percentages. Since we are comparing across living arrangements however, row percentages are more appropriate.<a href="5-3-same-data-different-results.html#fnref30">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="5-2-lonely-by-whose-standard.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="5-4-conclusion-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toc_depth": 3,
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

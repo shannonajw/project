@@ -75,6 +75,8 @@ NUS sociologist Tan Ern Ser says that the median age at first marriage is rising
 
 Frustratingly, marriage statistics by cohort are not available from the government, so we cannot directly assess whether trends are really due to cohort change. The reason why period measures are used is often a matter of practicality (as we will discuss in the next section), but in other countries, academics use longitudinal panel survey data to estimate and project what might happen in younger cohorts. In Singapore, such survey data is scant and/or tend not to be shared with researchers outside of the government. This makes cohort change especially difficult to study. **But we will work with what available data we can find.** 
 
+<br>
+
 **Step 1**
 
 For a start, let us try to do Step 1 and make sure that changes in period measures are *not* due to the changing population age structure (i.e. age effects). Age-specific marriage rates are adjusted for the size of age groups and give us a picture of period change that is not driven by changes in age composition. They are thus very helpful here, and have been provided in [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} on Marriages and Divorces by the Department of Statistics, where we find Figure \@ref(fig:apc-reportsingstat).
@@ -86,6 +88,8 @@ knitr::include_graphics("images/apc/report_fig.png")
 <br>
 
 You can see that the mountain-like shape in Figure \@ref(fig:apc-reportsingstat) is moving to the right, telling us that in 2018, the marriage rate is lower among younger age groups (15-29) and higher among older age group (30+), compared to 2008. **The figure thus suggests that people are getting married at later ages, and this is not just because our population as a whole is getting older**. The combination of age and period data suggest that the presence cohort change remains plausible (Step 1).
+
+<br>
 
 **Step 2**
 
@@ -120,6 +124,8 @@ Remember that the divorce numbers mentioned in the news article are a **period**
 1. Figure out if trends observed reflect cohort change, rather than age or period change. 
 2. Figure out if the explanation given for cohort change is supported by evidence.
 
+<br>
+
 **Step 1**
 
 Once again, we can look at age-specific rates to determine if the explanation is plausible (Figure \@ref(fig:apc-reportsingstat2nd)). 
@@ -145,6 +151,8 @@ knitr::include_graphics("images/apc/report_fig2.png")
 What can be observed here is that **younger (marriage) cohorts seem to be getting divorced earlier**^[It remains to be seen if lifetime divorce rates will be higher, since we cannot yet observe the full trajectory of union dissolutions for the younger cohorts (or even for older cohorts, since not all of them have disolved their union or passed away).]. For instance, you may notice that a higher proportion of those married in 2011 (light pink line) dissolve their unions before their 5th anniversary compared to those married in 2001 (dark pink line) or earlier^[Note that this does not really line up with the 2018 and 2008 measures we were comparing before, but there really is no easy way to do this.]. 
 
 The picture painted here seems more bleak^[Assuming divorce is always a bad thing, which may not always be the case. A rise in divorce rates may possibly reflect changes in power dynamics within couples, with women becoming more independent and more willing to leave abusive situations.] compared to what we expected from period trends (and the news article). **While period trends suggested that divorce rates were falling overall**^[Note that the Department of Statistics [report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} also has age-specific divorce rates, which seems to tell a similar story as the period trends - that divorce rates are falling among those who are younger (but rising at older ages). This may however simply be a function of delayed marriages in general leading to delayed divorces.]**, cohort trends seem to be telling the opposite story - younger cohorts seem to be getting divorced earlier into their marriages!**
+
+<br>
 
 **Step 2**
 
