@@ -54,9 +54,13 @@ Now, given that we've talked about age, cohort, and period changes, one question
 
 The next two subsections will look at the question - **How reasonable is it to adopt *cohort* explanations for changes in *period* measures of marriage?**
 
+<br>
+
 ### Evaluating explanation 1
 
 We first take a look at the following paragraph on changes in median age at first marriage:
+
+<br>
 
 > The median age at first marriage for grooms rose from 29.8 years in 2008 to 30.2 years last year, while for brides, it went up from 27.3 years in 2008 to 28.5 years last year.
 >
@@ -64,7 +68,7 @@ We first take a look at the following paragraph on changes in median age at firs
   
 <br>
 
-Note here that median age at marriage is also a *period measure* - of all people who got married that year, half of them got married before age 28.5. 
+Note here that median age at marriage is, once again, a **period measure** - of all people who got married that year, half of them got married before age 28.5. 
 
 NUS sociologist Tan Ern Ser says that the median age at first marriage is rising because "people" spend more time in education and early-career building before they "settle down" (i.e., get married). But who are these "people", exactly? Since most members of older cohorts do not usually go back into education and early-career building, there seems to be an implicit reference to younger cohorts (or, in layman terms, *"people nowadays"*)^[Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.]. 
 
@@ -101,9 +105,9 @@ knitr::include_graphics("images/apc/apc_moe.png")
 ```
 <br>
 
-The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall (see the rising trend across years). More evidence is needed to confirm whether this (and "early-career building") is in fact the cause of delayed marriages, but it does seem like younger cohorts are spending more time in education. *The cohort explanation therefore seems reasonable up to this point.* 
+The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall (see the rising trend across years). It does seem like younger cohorts are spending more time in education, so the cohort explanation therefore seems reasonable *up to this point.* 
 
-At the same time, however, [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics states the following on page 7:
+At the same time, however, note that [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics states the following on page 7:
  
 <br>
 
@@ -111,12 +115,15 @@ At the same time, however, [the report](https://www.singstat.gov.sg/-/media/file
 
 <br>
 
-This considerably undermines NUS sociologist Tan's explanation that younger cohorts are delaying marriage in view of education and early career building, since it seems that even though it is true that younger cohorts are getting more education, median age of marriage is rising **even among those without** post-secondary education (and at a faster rate than those more highly educated). We have not considered the "early career building" part yet, but this shows that this explanation requires more work.
+This considerably undermines NUS sociologist Tan's explanation that younger cohorts are delaying marriage in view of education and early career building, since it seems that even though younger cohorts *are* getting more education, median age of marriage is rising **even among those without** post-secondary education (and at a faster rate than those more highly educated). We have not considered the "early career building" part yet, but this shows that this explanation requires more work to validate.
 
+<br>
 
 ### Evaluating explanation 2
 
 Let us now look at another comment that was made about marriage rates. The news article states:
+
+<br>
 
 > ...Singapore Management University professor of sociology (practice) Paulin Straughan said they also seem to be spending a longer time looking for the right partner. She said: "People believe that marriage is forever and unless they are very sure they have found a life partner, they wouldn't marry."
 
