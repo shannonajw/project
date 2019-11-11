@@ -22,7 +22,7 @@ The last one is slightly facetious, but as you can see, the three explanations p
 
 1. Change with **age**: Age effects refer to changes over the life course that apply to all individuals as they grow older. This is best demonstrated in terms of physical and biological changes that occur as we age (e.g., our metabolism slows down, we get wrinkles etc.) - such changes tend to be common to all of us, regardless of when we were born, or what era we live in.
 
-2. Change with **cohort**: Cohort effects are probably easiest to think about as *generational* change (i.e., change with *birth* cohorts), even though more generally they are used refer to a group of individuals that have gone through shared experiences (e.g., school cohorts). When you hear remarks like "*young people nowadays* are [such strawberries / so spoilt / have no manners]", this is usually the kind of change people they are suggesting has happened.
+2. Change with **cohort**: Cohort effects are probably easiest to think about as *generational* change (i.e., change with *birth* cohorts), even though more generally they are used refer to a group of individuals that have gone through shared experiences (e.g., school cohorts). When you hear remarks from people such as "*young people nowadays* are [such strawberries / so spoilt / have no manners]", this is usually the kind of change they are suggesting has happened.
 
 3. Change with **period**: Period effects are changes due to contextual factors that affect all living persons at a particular point in time. For instance, significant events such as wars, epidemics, or natural disasters affect everyone who is exposed to it regardless of age.
 
@@ -91,7 +91,7 @@ knitr::include_graphics("images/apc/report_fig.png")
 ```
 <br>
 
-You can see that the mountain-like shape in Figure \@ref(fig:apc-reportsingstat) is moving to the right, telling us that in 2018, the marriage rate is lower among younger age groups (15-29) and higher among older age group (30+), compared to 2008. **The figure thus suggests that people are getting married at later ages, and this is not just because our population as a whole is getting older**. The combination of age and period data suggest that the presence cohort change remains plausible (Step 1).
+You can see that the mountain-like shape in Figure \@ref(fig:apc-reportsingstat) is moving to the right, telling us that in 2018, the marriage rate is lower among younger age groups (15-29) and higher among older age group (30+), compared to 2008. **The figure thus suggests that people are getting married at later ages, and this is not just because our population as a whole is getting older**. The combination of age and period data suggest that the presence of cohort change remains plausible (Step 1).
 
 <br>
 
