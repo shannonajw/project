@@ -16,11 +16,17 @@ Unfortunately, the DOS does not share disaggregated data with researchers. When 
 
 Further, under section 7 of the [Statistics Act](https://sso.agc.gov.sg/Act/SA1973){target="_blank"}, "anonymised microdata" (i.e., disaggregated data) obtained using the powers of the Act (i.e., where individuals are legally compelled to provide information) can only be shared with other public agencies, or "any consultant commissioned by a public agency". This means that social scientists outside of the government can only access these data by being appointed as a consultant by a public agency, unless the Statistics Act is amended to include other classes of persons^[According to Section 7(2)(b)(ii), such classes may be specified in the Third Schedule.].
 
+## NVPC Individual/Corporate Giving Study {#nvpc-igs}
+
+The NVPC Individual/Corporate Giving Study is a biennial, repeated cross-section survey that has been conducted since 2000. Therefore, 10 waves of data from 2000-2018 are potentially available. Its key aim is to study trends in volunteerism and philantrophic giving over time. 
+
+The study is administered by the National Volunteer and Philanthropy Centre (NVPC). Some details on the latest wave can be found at the NVPC website - <https://www.nvpc.org.sg/index.php?p=resources/individual-giving-study-2018-findings>. Melissa Kwee, the Chief Executive Officer of NVPC, has [publicly stated](https://www.todayonline.com/commentary/keeping-passion-alive-trying-change-world){target="_blank"} her desire for open data sharing, but it is unclear how to access data from the NVPC Individual/Corporate Giving Study, or how to contact the research team. There are no indications of plans to make the dataset publicly available.
+
 ## National Youth Survey (NYS) {#nys}
 
 The NYS is a cross-sectional survey of youth in Singapore that is conducted every three to five years. Its goal is to understand the aspirations, challenges, and attitudes of young Singaporeans aged 15-34. The survey has been conducted five times thus far, in 2002, 2005, 2010, 2013 (N=2,843), and 2016 (N=3,531).
 
-NYS is administered by the National Youth Council (NYC)'s research team. More detail can be found at the NYC website - <https://www.nyc.gov.sg/en/initiatives/resources/national-youth-survey/>{target="_blank"} - which hosts illustrated PDF summaries of the survey findings from selected years. It does not list any plans to make the dataset publicly available.
+NYS is administered by the National Youth Council (NYC)'s research team. Details can be found at the NYC website - <https://www.nyc.gov.sg/en/initiatives/resources/national-youth-survey/>{target="_blank"} - which hosts illustrated PDF summaries of the survey findings from selected years. It does not list any plans to make the dataset publicly available.
 
 ## Retirement and Health Study (RHS) {#rhs}
 
