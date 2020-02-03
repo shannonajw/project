@@ -18,7 +18,7 @@ Further, under section 7 of the [Statistics Act](https://sso.agc.gov.sg/Act/SA19
 
 ## NVPC Individual/Corporate Giving Study {#nvpc-igs}
 
-The NVPC Individual/Corporate Giving Study is a biennial, repeated cross-section survey that has been conducted since 2000. Therefore, 10 waves of data from 2000-2018 are potentially available. Its key aim is to study trends in volunteerism and philantrophic giving over time. 
+The NVPC Individual/Corporate Giving Study is a biennial, repeated cross-section survey that has been conducted since the year 2000. Therefore, 10 waves of data from 2000-2018 are potentially available. Its key aim is to study trends in volunteerism and philantrophic giving over time. 
 
 The study is administered by the National Volunteer and Philanthropy Centre (NVPC). Some details on the latest wave can be found at the NVPC website - <https://www.nvpc.org.sg/index.php?p=resources/individual-giving-study-2018-findings>. Melissa Kwee, the Chief Executive Officer of NVPC, has [publicly stated](https://www.todayonline.com/commentary/keeping-passion-alive-trying-change-world){target="_blank"} her desire for open data sharing, but it is unclear how to access data from the NVPC Individual/Corporate Giving Study, or how to contact the research team. There are no indications of plans to make the dataset publicly available.
 

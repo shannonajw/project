@@ -107,7 +107,7 @@ knitr::include_graphics("images/apc/apc_moe.png")
 
 The chart above shows that younger cohorts are indeed spending longer in education, since a larger percentage of them end up in post-secondary courses overall (see the rising trend across years). It does seem like younger cohorts are spending more time in education, so the cohort explanation therefore seems reasonable *up to this point.* 
 
-At the same time, however, note that [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics states the following on page 7:
+**However**, note that [the report](https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf){target="_blank"} by the Department of Statistics states the following on page 7:
  
 <br>
 
@@ -131,7 +131,7 @@ Let us now look at another comment that was made about marriage rates. The news 
 
 SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because "people" wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past^[Think about what this really means though. How possible is it to observe this?] (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry (i.e. a cohort effect)?
 
-Regardless of whether we think it is a period or cohort explanation, a natural follow-up question would be - does this also explain the reason why divorce rates are falling (as the news article headline states)? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]! People "waiting longer" also would then explain why divorce numbers are falling. 
+Regardless, a natural follow-up question would be - does this also explain the reason why divorce rates are falling (as the news article headline states)? If the 'waiting to be very sure' explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce^[It could also be that *even though* people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.]! People "waiting longer" also would then explain why divorce numbers are falling. 
 
 *Suppose we adopt the following explanation*: **Divorce numbers are falling because younger cohorts are more careful (and therefore taking longer) about choosing their partners**^[This is not what SMU Professor (Practice) Paulin Straughan explicitly said, but something that we have inferred for heuristic purposes, after making several assumptions about carefulness in partner choice and stability of marriages.].
 
@@ -152,7 +152,7 @@ Remember that the divorce numbers mentioned in the news article are a **period**
 
 **Step 1**
 
-The quote above already hints at trends being driven by age composition ("ageing population"), and period trends^[For those more technically oriented, @martin_comment:_2009 has an intriguing discussion about age*period interactions masquerading as cohort effects.] ("rising divorce rates for older persons"). This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure \@ref(fig:apc-reportsingstat2nd)). 
+The quote above already hints at trends being driven by age composition ("ageing population")^[For those more technically oriented, @martin_comment:_2009 and @luo_age-period-cohort-interaction_2020 have intriguing discussions about age*period interactions as cohort effects.] ("rising divorce rates for older persons"). This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure \@ref(fig:apc-reportsingstat2nd)). 
 
 <br>
 ```{r apc-reportsingstat2nd, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
