@@ -60,24 +60,24 @@ p1 <- ggplot(data, aes(x=year)) +
   geom_vline(xintercept=2016, linetype="dotted", col='red4') +
     annotate("text", x = 2016.2, y = 15, label = "Recession?", 
            hjust=0, col='red4', size=3) +
-  annotate(geom="rect", xmin=2008, xmax=2009, ymin=0, ymax=Inf, alpha=0.4, fill="red4") +
+  annotate(geom="rect", xmin=2008, xmax=2009, ymin=-Inf, ymax=Inf, alpha=0.4, fill="red4") +
   annotate("text", x = 2008, y = 14, label = "Great Recession \n(2008-09) ", 
            hjust=1, col='red4', size=3) +
-  annotate(geom="rect", xmin=2001, xmax=2002, ymin=0, ymax=Inf, alpha=0.4, fill="red4") +
+  annotate(geom="rect", xmin=2001, xmax=2002, ymin=-Inf, ymax=Inf, alpha=0.4, fill="red4") +
   annotate("text", x = 2002.1, y = 14, label = "Recession \nin Singapore \n(2001) ", 
            hjust=0, col='red4', size=3) +
-  annotate(geom="rect", xmin=-Inf, xmax=1998, ymin=0, ymax=Inf, alpha=0.4, fill="red4") +
+  annotate(geom="rect", xmin=-Inf, xmax=1998, ymin=-Inf, ymax=Inf, alpha=0.4, fill="red4") +
   annotate("text", x = 1998.1, y = 14, label = "Asian financial \ncrisis (1997-98)", 
            hjust=0, col='red4', size=3) +
-  annotate(geom="rect", xmin=2015, xmax=Inf, ymin=0, ymax=13, alpha=0.3) +
+  annotate(geom="rect", xmin=2015, xmax=Inf, ymin=-Inf, ymax=13, alpha=0.3) +
   annotate("text", x = 2015.2, y = 12, label = "Period covered \nby MOM", hjust=0, col='black', size=3.5) +
-  annotate(geom="rect", xmin=2010, xmax=Inf, ymin=0, ymax=14, alpha=0.18) +
+  annotate(geom="rect", xmin=2010, xmax=Inf, ymin=-Inf, ymax=14, alpha=0.18) +
   annotate("text", x = 2010.2, y = 13.5, label = "Period covered by SDP", hjust=0, col='black', size=3.5) 
 p1
 ```
 <br>
 
-As we can see from both graphs, there are vastly different trends depending on where you want to start from and how long of a trend you want to track. I have highlighted (in grey and dark grey) the portions that were used by SDP and MOM respectively. If you look across the whole figure, you will naturally find that in some parts of the graph the trend is increasing, and in other parts the trend are decreasing^[You can also find that as the Factually article states, the proportion of local PMET retrenchments among all PMET retrenchments is decreasing.]. But does this mean that choosing a starting point from *anywhere* is arbitrary? Based on my reading of his judgement, Justice Ang Cheng Hock seems to suggest this:
+As we can see from the figure, there are vastly different trends depending on where you want to start from and how long of a trend you want to track. I have highlighted (in grey and dark grey) the portions that were used by SDP and MOM respectively. If you look across the whole figure, you will naturally find that in some parts of the graph the trend is increasing, and in other parts the trend are decreasing^[You can also find that as the Factually article states, the proportion of local PMET retrenchments among all PMET retrenchments is decreasing.]. But does this mean that choosing a starting point from *anywhere* is arbitrary? Based on my reading of his judgement, Justice Ang Cheng Hock seems to suggest this:
 
 <br>
 
