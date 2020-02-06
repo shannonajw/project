@@ -165,7 +165,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.3" data-path="living-longer-than-you-expect.html"><a href="living-longer-than-you-expect.html"><i class="fa fa-check"></i><b>7.3</b> Living longer than you expect</a></li>
 <li class="chapter" data-level="7.4" data-path="conclusion-3.html"><a href="conclusion-3.html"><i class="fa fa-check"></i><b>7.4</b> Conclusion</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>8</b> Your case study</a></li>
+<li class="chapter" data-level="8" data-path="yousayisay.html"><a href="yousayisay.html"><i class="fa fa-check"></i><b>8</b> You say; I say; Who confirm?</a><ul>
+<li class="chapter" data-level="8.1" data-path="pofmasdp.html"><a href="pofmasdp.html"><i class="fa fa-check"></i><b>8.1</b> SDP vs. MOM</a></li>
+<li class="chapter" data-level="8.2" data-path="golfing.html"><a href="golfing.html"><i class="fa fa-check"></i><b>8.2</b> Really (just) golfing</a></li>
+<li class="chapter" data-level="8.3" data-path="conclusion-4.html"><a href="conclusion-4.html"><i class="fa fa-check"></i><b>8.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>9</b> Your case study</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -193,8 +198,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><br></p>
 <p><strong>Coding scheme 1: Lots of loneliness</strong></p>
 <p>I first follow the coding scheme in <span class="citation">Lim and Chan (<a href="#ref-lim_association_2017">2017</a>)</span> and <span class="citation">Chan et al. (<a href="#ref-chan_loneliness_2015">2015</a>)</span>. I sum the items up (giving me a score that ranges from 0-12), and then dichotomize respondents into people who are “not lonely” (score of 0), and those who are “lonely” (score of 1-12)<a href="#fn28" class="footnoteRef" id="fnref28"><sup>28</sup></a>. This cut-off point seems to have arisen from a “common-sense” approach rather than any kind of formal testing - that is, group the people who never experience loneliness in one group, and then put the rest who have had some experience of loneliness in another.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load required libraries</span>
-<span class="kw">library</span>(dplyr)</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Note: You first need to read in the data</span>
 <span class="co"># The data already contains a pre-coded version according to these criteria</span>
 lonely1_cat &lt;-<span class="st"> </span>phase<span class="op">$</span>w2_loneliness_yesno <span class="op">%&gt;%</span>

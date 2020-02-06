@@ -71,11 +71,6 @@ load(file = "files/phase_lonely.Rdata")
 library(dplyr)
 ```
 
-```{r eval=FALSE}
-# Load required libraries
-library(dplyr)
-```
-
 ```{r table-lonely1, tidy=FALSE}
 # Note: You first need to read in the data
 # The data already contains a pre-coded version according to these criteria

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>8.2 Really (just) golfing | Singapore Society in Numbers</title>
+  <meta name="description" content="Understanding Singapore through quantitative social science" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="8.2 Really (just) golfing | Singapore Society in Numbers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Understanding Singapore through quantitative social science" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="8.2 Really (just) golfing | Singapore Society in Numbers" />
+  
+  <meta name="twitter:description" content="Understanding Singapore through quantitative social science" />
+  
+
+<meta name="author" content="Edited by Shannon Ang" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pofmasdp.html"/>
+<link rel="next" href="conclusion-4.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="https://hypothes.is/embed.js" async></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117918858-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117918858-2');
+</script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Singapore Society in Numbers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="why-i-started-this-project.html"><a href="why-i-started-this-project.html"><i class="fa fa-check"></i>Why I started this project</a></li>
+<li class="chapter" data-level="" data-path="how-to-contribute.html"><a href="how-to-contribute.html"><i class="fa fa-check"></i>How to contribute</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+</ul></li>
+<li class="part"><span><b>I Datasets for Social Science</b></span></li>
+<li class="chapter" data-level="1" data-path="publicdata.html"><a href="publicdata.html"><i class="fa fa-check"></i><b>1</b> Public Data</a><ul>
+<li class="chapter" data-level="1.1" data-path="abs.html"><a href="abs.html"><i class="fa fa-check"></i><b>1.1</b> Asian Barometer Survey (ABS)</a></li>
+<li class="chapter" data-level="1.2" data-path="ips.html"><a href="ips.html"><i class="fa fa-check"></i><b>1.2</b> IPS Public Data</a></li>
+<li class="chapter" data-level="1.3" data-path="phase.html"><a href="phase.html"><i class="fa fa-check"></i><b>1.3</b> Panel on Health and Ageing of Singaporean Elderly (PHASE)</a></li>
+<li class="chapter" data-level="1.4" data-path="wvs.html"><a href="wvs.html"><i class="fa fa-check"></i><b>1.4</b> World Values Survey (WVS)</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="restricteddata.html"><a href="restricteddata.html"><i class="fa fa-check"></i><b>2</b> Restricted Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="dos.html"><a href="dos.html"><i class="fa fa-check"></i><b>2.1</b> Department of Statistics (DOS) Microdata</a></li>
+<li class="chapter" data-level="2.2" data-path="nvpc-igs.html"><a href="nvpc-igs.html"><i class="fa fa-check"></i><b>2.2</b> NVPC Individual/Corporate Giving Study</a></li>
+<li class="chapter" data-level="2.3" data-path="nys.html"><a href="nys.html"><i class="fa fa-check"></i><b>2.3</b> National Youth Survey (NYS)</a></li>
+<li class="chapter" data-level="2.4" data-path="rhs.html"><a href="rhs.html"><i class="fa fa-check"></i><b>2.4</b> Retirement and Health Study (RHS)</a></li>
+<li class="chapter" data-level="2.5" data-path="slp.html"><a href="slp.html"><i class="fa fa-check"></i><b>2.5</b> Singapore Life Panel (SLP)</a></li>
+<li class="chapter" data-level="2.6" data-path="spssd.html"><a href="spssd.html"><i class="fa fa-check"></i><b>2.6</b> Singapore Panel Study on Social Dynamics (SPSSD)</a></li>
+<li class="chapter" data-level="2.7" data-path="youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><a href="youth-survey-on-transitions-and-evolving-pathways-in-singapore-youth-steps.html"><i class="fa fa-check"></i><b>2.7</b> Youth Survey on Transitions and Evolving Pathways in Singapore (Youth STEPS)</a></li>
+</ul></li>
+<li class="part"><span><b>II Think Pieces</b></span></li>
+<li class="chapter" data-level="3" data-path="think.html"><a href="think.html"><i class="fa fa-check"></i><b>3</b> Thinking about Numbers</a></li>
+<li class="part"><span><b>III Case Studies</b></span></li>
+<li class="chapter" data-level="4" data-path="oop.html"><a href="oop.html"><i class="fa fa-check"></i><b>4</b> Blown out of proportion</a><ul>
+<li class="chapter" data-level="4.1" data-path="watain.html"><a href="watain.html"><i class="fa fa-check"></i><b>4.1</b> Support for the Watain ban</a></li>
+<li class="chapter" data-level="4.2" data-path="websavvy.html"><a href="websavvy.html"><i class="fa fa-check"></i><b>4.2</b> Web-savvy Seniors?</a></li>
+<li class="chapter" data-level="4.3" data-path="ooptech.html"><a href="ooptech.html"><i class="fa fa-check"></i><b>4.3</b> Technical excursus</a></li>
+<li class="chapter" data-level="4.4" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+<li class="chapter" data-level="4.5" data-path="additional-reading.html"><a href="additional-reading.html"><i class="fa fa-check"></i><b>4.5</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="lonely.html"><a href="lonely.html"><i class="fa fa-check"></i><b>5</b> Are we lonely?</a><ul>
+<li class="chapter" data-level="5.1" data-path="the-lonely-dichotomy.html"><a href="the-lonely-dichotomy.html"><i class="fa fa-check"></i><b>5.1</b> The lonely dichotomy</a></li>
+<li class="chapter" data-level="5.2" data-path="lonely-by-whose-standard.html"><a href="lonely-by-whose-standard.html"><i class="fa fa-check"></i><b>5.2</b> Lonely by whose standard</a></li>
+<li class="chapter" data-level="5.3" data-path="same-data-different-results.html"><a href="same-data-different-results.html"><i class="fa fa-check"></i><b>5.3</b> Same data, different results</a></li>
+<li class="chapter" data-level="5.4" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="samples.html"><a href="samples.html"><i class="fa fa-check"></i><b>6</b> Size is not all that matters</a><ul>
+<li class="chapter" data-level="6.1" data-path="sample-worklife.html"><a href="sample-worklife.html"><i class="fa fa-check"></i><b>6.1</b> But it’s too small!</a></li>
+<li class="chapter" data-level="6.2" data-path="size-matters-but-how-so.html"><a href="size-matters-but-how-so.html"><i class="fa fa-check"></i><b>6.2</b> Size matters, but how so?</a></li>
+<li class="chapter" data-level="6.3" data-path="non-probability-sample-now-what.html"><a href="non-probability-sample-now-what.html"><i class="fa fa-check"></i><b>6.3</b> Non-probability sample, now what</a></li>
+<li class="chapter" data-level="6.4" data-path="conclusion-2.html"><a href="conclusion-2.html"><i class="fa fa-check"></i><b>6.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="apc.html"><a href="apc.html"><i class="fa fa-check"></i><b>7</b> Measuring societal change</a><ul>
+<li class="chapter" data-level="7.1" data-path="three-ways-to-understand-change.html"><a href="three-ways-to-understand-change.html"><i class="fa fa-check"></i><b>7.1</b> Three ways to understand change</a></li>
+<li class="chapter" data-level="7.2" data-path="marriage-decline.html"><a href="marriage-decline.html"><i class="fa fa-check"></i><b>7.2</b> Declines in marriage and divorce</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="marriage-decline.html"><a href="marriage-decline.html#evaluating-explanation-1"><i class="fa fa-check"></i><b>7.2.1</b> Evaluating explanation 1</a></li>
+<li class="chapter" data-level="7.2.2" data-path="marriage-decline.html"><a href="marriage-decline.html#evaluating-explanation-2"><i class="fa fa-check"></i><b>7.2.2</b> Evaluating explanation 2</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="living-longer-than-you-expect.html"><a href="living-longer-than-you-expect.html"><i class="fa fa-check"></i><b>7.3</b> Living longer than you expect</a></li>
+<li class="chapter" data-level="7.4" data-path="conclusion-3.html"><a href="conclusion-3.html"><i class="fa fa-check"></i><b>7.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="yousayisay.html"><a href="yousayisay.html"><i class="fa fa-check"></i><b>8</b> You say; I say; Who confirm?</a><ul>
+<li class="chapter" data-level="8.1" data-path="pofmasdp.html"><a href="pofmasdp.html"><i class="fa fa-check"></i><b>8.1</b> SDP vs. MOM</a></li>
+<li class="chapter" data-level="8.2" data-path="golfing.html"><a href="golfing.html"><i class="fa fa-check"></i><b>8.2</b> Really (just) golfing</a></li>
+<li class="chapter" data-level="8.3" data-path="conclusion-4.html"><a href="conclusion-4.html"><i class="fa fa-check"></i><b>8.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="case3.html"><a href="case3.html"><i class="fa fa-check"></i><b>9</b> Your case study</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Singapore Society in Numbers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="golfing" class="section level2">
+<h2><span class="header-section-number">8.2</span> Really (just) golfing</h2>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:today-golf"></span>
+<img src="images/yousayisay/news2.png" alt="Screenshot of online article on golfing study. Retrieved February 6, 2020." width="90%" />
+<p class="caption">
+Figure 8.3: Screenshot of online article on golfing study. Retrieved February 6, 2020.
+</p>
+</div>
+<p><br></p>
+<p>In January, NUS researchers released a study to show the following:</p>
+<ol style="list-style-type: decimal">
+<li>After land sales announcements, some developers play golf with other developers more frequently.</li>
+<li>Developers who play golf tend to acquire land parcels at lower prices.</li>
+</ol>
+<p>While the <a href="https://bschool.nus.edu.sg/media/press-release-details/636/" target="_blank">press release</a> did not include the words “<em>insider trading</em>”, nor did a <a href="https://www.arx.cfa/-/media/regional/arx/post-pdf/2019/12/24/afbc-2019-golfing-for-information.ashx" target="_blank">later version of the manuscript</a> that I found dated 3 Dec 2019 (before the media report, which was released a month later), an <a href="https://editorialexpress.com/cgi-bin/conference/download.cgi?db_name=AFAPS2020&amp;paper_id=234" target="_blank">earlier version of the manuscript</a> dated 29 April 2019 did so. It seems that the earlier version of the manuscript was circulated to reporters, instead of the later version<a href="#fn78" class="footnoteRef" id="fnref78"><sup>78</sup></a>.</p>
+<p>The phrase “insider trading” triggered the Real Estate Developers’ Association of Singapore (REDAS), who came out strongly against what they saw as an attack against them (see <a href="https://www.redas.com/assets/files/press%20release/2019/REDAS_Response_NUS_Study_on_Link.pdf" target="_blank">here</a>). In it, we see quite a bit of inflammatory language without any real form of statistical justification. Let us examine the critique as it stands.</p>
+<p><br></p>
+<blockquote>
+<p>REDAS takes these allegations seriously. We question the validity of the methodology used and reserve the right to examine the findings to address the faulty assumptions in the paper.</p>
+<p><em>Real Estate Developers’ Association of Singapore</em> (REDAS) statement, dated 17 January 2020</p>
+</blockquote>
+<p><br></p>
+<p><strong>First</strong>, REDAS points out “faulty assumptions” and questions the “validity of the methodology”. We have then, to ask, <strong>what faulty assumptions</strong>? The paper details very clearly the methodology that the researchers used, which includes:</p>
+<ol style="list-style-type: decimal">
+<li>How they constructed the dataset through matching golf records and land bidding results etc.; and</li>
+<li>Their statistical model, which is a difference in difference (DID) regression.</li>
+</ol>
+<p>Briefly, a difference in difference regression is a commonly used method for causal inference. It basically compares the change in an outcome before and after an event (after - before; the first difference), and compares that change across groups (group A - group B; the second difference). Informally, the idea can be represented as such:</p>
+<p><span class="math display">\[
+\text{DID estimate} = (\text{After}_A-\text{Before}_A) - (\text{After}_B-\text{Before}_B) 
+\]</span> The full model allows for covariates to account for other factors, and can allow for effect to vary based on how long ago something happened. Now, we return to our question: <em>what faulty assumptions</em>? At the very least, we should go through each part of the methodology to see what assumptions have been made<a href="#fn79" class="footnoteRef" id="fnref79"><sup>79</sup></a>.</p>
+<p>With regard to their <strong>data</strong>, we could ask questions such as: Who is in the dataset and who is not? Is this representative of the people who bid for land parcels? Are there land sales records that are missing that would alter the finding substantially? These questions all get at <strong>selection bias</strong> - basically, whether the data captures information in a way that represents the people we want to study.</p>
+<p>We could also ask questions with regard to their <strong>method</strong> (i.e., DID). In addition to the usual assumptions for linear regression models, the DID regression model has a well known assumption that would make its findings questionable if violated - the “parallel trends assumption”. This means that the trends of groups being compared (e.g., A and B) should be parallel in the absence of the event under study (see <a href="https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation" target="_blank">this</a> for a fuller explanation). <strong>But this is an assumption that is explicitly checked within the study.</strong> The authors report that “[the] results show no violation of the parallel trend assumption.”</p>
+<p><strong>So what “faulty assumptions” is REDAS referring to?</strong> Without any kind of elaboration, the accusations here are rather jarring.</p>
+<p><br></p>
+<blockquote>
+<p>We are appalled by the lead researcher’s unsubstantiated assertion and the conclusions drawn by the authors are misleading.</p>
+<p><em>Real Estate Developers’ Association of Singapore (REDAS) statement</em>, dated 17 January 2020</p>
+</blockquote>
+<p><br></p>
+<p><strong>Second</strong>, REDAS says they are “appalled by the lead researcher’s unsubstantiated assertion and the conclusions drawn by the authors are misleading”. As above, we have to ask: <em>how so</em>? How are assertions “unsubstantiated” and conclusions drawn “misleading”? As we already discovered above, the authors are very clear on how they arrived at their conclusions. They quite robustly substantiate their findings with statistical evidence. What they find, in my view, is what I stated in the beginning:</p>
+<ol style="list-style-type: decimal">
+<li>After land sales announcements, some developers play golf with other developers more frequently.</li>
+<li>Developers who play golf tend to acquire land parcels at lower prices.</li>
+</ol>
+<p>These are rather straightforward findings. Perhaps there is a technical definition of “insider trading” that paints a misleading picture, but to a reader like me, whether or not the actual terms “insider trading” are used is besides the point. The finding, as the authors state, is that “social interactions enable developers to realize higher profits, while the government loses land sale revenues”. This means there may be a form of bias in the land bidding system that privileges people with important social connections (i.e., social capital). This is not really a contentious finding at all - researchers have found that social capital can lead to finding better jobs or health outcomes.</p>
+<p>My view is that REDAS looked at these findings and felt attacked because they believe the researchers are making a moral judgment on their professionalism. But even if things <em>look bad</em> on the surface, there may be legitimate reasons for them. For example, Minister for Trade and Industry Chan Chun Sing said recently that permanent residents (PRs) took up a disproportionate amount of new jobs created. He reasoned this was because they wouldn’t be taken in as PRs in the first place if they couldn’t get jobs (see <a href="https://www.todayonline.com/singapore/prs-took-about-17-net-new-jobs-created-spore-between-2015-and-2018-chan-chun-sing" target="_blank">this article</a>). The implication is that there is no malice and/or discrimination again locals, even though on the surface it looks like there is. REDAS should seek to understand the researchers’ findings better, and/or even work with them to figure out why we see this happening, and whether they can do anything to address it.</p>
+<p><br></p>
+<blockquote>
+<p>In the interest of the community and the nation at large, researchers should publish papers which provide objective and balanced perspective and contribute constructive comments to ensure a stable and sustainable property market.</p>
+<p><em>Real Estate Developers’ Association of Singapore (REDAS) statement</em>, dated 17 January 2020</p>
+</blockquote>
+<p><br></p>
+<p><strong>Finally</strong>, we examine the statement that “researchers should publish papers which provide objective and balanced perspective and contribute constructive comments <em>to ensure a stable and sustainable property market.</em>” As we have already discussed, there is no reason to reject the researchers findings as not “objective or balanced”. I have read the paper and found that by most standards, they present a good case (with regard to the findings I list above) and are transparent about their discussion. The onus is on REDAS to show how these standards are not met, <em>before</em> casting aspersions on their results. What is worrying is the final phrase that suggests perspective and comments should only be given “to ensure a stable and sustainable property market”. Surely research is not at service of the property market, contrary to what REDAS is trying to suggest. <strong>If a well-conducted study reveals a phenomenon that upsets the property market, in no way does this automatically mean that it is not balanced and objective. It is unreasonable to want statistics to always operate in your favour.</strong></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="78">
+<li id="fn78"><p><a href="https://www.todayonline.com/singapore/nus-researchers-drop-claim-insider-trading-among-real-estate-executives-golf-course" target="_blank">Media reports</a> seem to suggest that the paper was edited after REDAS lashed out at the researchers, but I don’t think this is correct - as I mentioned above, I had already found versions of the article without the claim of “insider trading” <em>before</em> REDAS said anything about it.<a href="golfing.html#fnref78">↩</a></p></li>
+<li id="fn79"><p>Sometimes, we can search for the word “assume” (or similar) within the manuscript to see what assumptions have been explicitly discussed.<a href="golfing.html#fnref79">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pofmasdp.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion-4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
