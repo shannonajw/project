@@ -196,7 +196,7 @@ With regard to their **data**, we could ask questions such as: Who is in the dat
 
 We could also ask questions with regard to their **method** (i.e., DID). In addition to the usual assumptions for linear regression models, the DID regression model has a well known assumption that would make its findings questionable if violated - the "parallel trends assumption". This means that the trends of groups being compared (e.g., A and B) should be parallel in the absence of the event under study (see [this](https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation){target="_blank"} for a fuller explanation). **But this is an assumption that is explicitly checked within the study.** The authors report that "[the] results show no violation of the parallel trend assumption."
 
-**So what "faulty assumptions" is REDAS referring to?** Without any kind of elaboration, the accusations here are rather jarring.
+**So what "faulty assumptions" is REDAS referring to?** Without any kind of elaboration, the accusations here fall flat.
 
 <br>
 
