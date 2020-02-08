@@ -220,7 +220,7 @@ Figure 8.3: Screenshot of online article on golfing study. Retrieved February 6,
 <li>How they constructed the dataset through matching golf records, land bidding results, etc.; and</li>
 <li>Their statistical model, which is a difference in difference (DID) regression.</li>
 </ol>
-<p>Briefly, a difference in difference regression is a commonly used method for causal inference. It basically compares the change in an outcome before and after an event (after - before; the first difference), and compares that change across groups (group A - group B; the second difference). Informally, the idea can be represented as such:</p>
+<p>Briefly, a difference in difference regression is a commonly used method for causal inference. It basically uses the change in an outcome before and after an event (after - before; the first difference), and compares that change across groups (group A - group B; the second difference). Informally, the idea can be represented as such:</p>
 <p><span class="math display">\[
 \text{DID estimate} = (\text{After}_A-\text{Before}_A) - (\text{After}_B-\text{Before}_B) 
 \]</span> The full model allows for covariates to account for other factors, and can allow the effect to vary based on how long ago something happened. Now, we return to our question: <em>what faulty assumptions</em>? At the very least, we should go through each part of the methodology to see what assumptions have been made<a href="#fn80" class="footnoteRef" id="fnref80"><sup>80</sup></a>.</p>
