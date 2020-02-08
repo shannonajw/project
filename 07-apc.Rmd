@@ -152,7 +152,7 @@ Remember that the divorce numbers mentioned in the news article are a **period**
 
 **Step 1**
 
-The quote above already hints at trends being driven by age composition ("ageing population")^[For those more technically oriented, @martin_comment:_2009 and @luo_age-period-cohort-interaction_2020 have intriguing discussions about age*period interactions as cohort effects.] ("rising divorce rates for older persons"). This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure \@ref(fig:apc-reportsingstat2nd)). 
+The quote above already hints at trends being driven by age composition ("ageing population")^[For those more technically oriented, @martin_comment:_2009 and @luo_age-period-cohort-interaction_2020 have intriguing discussions about age*period interactions as cohort effects.]. This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure \@ref(fig:apc-reportsingstat2nd)). 
 
 <br>
 ```{r apc-reportsingstat2nd, fig.cap='Screenshot from Department of Statistics report titled "Statistics on Marriages and Divorces,  2018". Retrieved September 17, 2019.', out.width='80%', fig.align='center', echo=F}
