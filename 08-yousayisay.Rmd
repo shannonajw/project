@@ -121,11 +121,11 @@ The question to ask is this - **how meaningful is it to interpret (whether as a 
 
 <br>
 
-I would respectfully disagree with Justice Ang here. **Using 2009 to illustrate the arbitrariness of using 2010 as a starting point is, in my view, not a fair comparison. This is because 2009 was the peak of the Great Recession in Singapore, and retrenchments are much more inclined to fall after a recession ends (somewhat of a "regression to the mean" phenomena).** To say that retrenchment has decreased since 2009 effectively means that "we have fewer retrenchments now compared to during the Great Recession", which is a little circular and doesn't really tell us much. To say that retrenchment has increased from 2010, however, would mean that "we have more retrenchents now compared to since we first recovered from the Great Recession". Various reasons could be given in both cases, but you should be able to see that there are *meaningful* (and not simply arbitrary) differences between starting from 2009 and 2010. This applies to other periods of recession as well. **How we account for these 'shocks', and what meaning we ascribe to them, is important here.**
+I would respectfully disagree with Justice Ang here. **Using 2009 to illustrate the arbitrariness of using 2010 as a starting point is, in my view, not a fair comparison. This is because 2009 was the peak of the Great Recession in Singapore, and retrenchments are much more inclined to fall after a recession ends (somewhat of a "regression to the mean" phenomena).** To say that retrenchment has decreased since 2009 effectively means that "we have fewer retrenchments now compared to during the Great Recession", which is a little circular and doesn't really tell us much. To say that retrenchment has increased from 2010, however, would mean that "we have more retrenchments now compared to since we first recovered from the Great Recession". Various reasons could be given in both cases, but you should be able to see that there are *meaningful* (and not simply arbitrary) differences between starting from 2009 and 2010. This applies to other periods of recession as well. **How we account for these 'shocks', and what meaning we ascribe to them, is important here.**
 
 <br>
 
-So those are my two points again: 
+So these are my two points again: 
 
 1. The length of trends matter.
 2. Not all start/end points are made equal. 
