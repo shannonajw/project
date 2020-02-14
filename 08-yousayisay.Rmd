@@ -41,8 +41,6 @@ In response, the SDP provided [their own take on the Ministry's figures](https:/
 <br>
 ```{r ysis-retrenchrate, fig.cap='Chart of retrenchment rate over time', out.width='100%', fig.align='center', echo=FALSE, fig.height=5, fig.width=8}
 library(ggplot2)
-library(grid)
-library(gridExtra)
 data <- read.csv("files/retrenchment_all.csv")
 p1 <- ggplot(data, aes(x=year)) + 
   geom_line(aes(y=number/1000, col="All")) +
