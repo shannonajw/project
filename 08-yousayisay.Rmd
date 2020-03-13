@@ -97,6 +97,12 @@ Long-term trends and short-term trends may move in different directions, but par
 
 One relevant example would be investing in the stock market. Many investors (or financial advisors) use this adage: "It's all about time in the market, not timing the market". Essentially, what this suggests is that in the short term, the value of products such as exchange traded funds (ETFs) will fluctuate up or down, but in the long term (5-10+ years) it will generally appreciate. Go [here](https://www2.sgx.com/indices/products/sti){target="_blank"} and play around with the interface to see how trends of the Straits Times Index (STI) change depending on the time frame you pick. Most Singaporeans who have some form of financial literacy will understand this, and naturally think long-term trends when ETFs are talked about.
 
+<br>
+```{r recession-tws, fig.cap='Source: https://thewokesalaryman.com', out.width='70%', fig.align='center', echo=F}
+knitr::include_graphics("images/yousayisay/recession.jpg")
+```
+<br>
+
 Another example is climate change. Scientists have pointed out [again](https://www.huffpost.com/entry/nate-silver-climate-change_b_1909482){target="_blank"} and [again](http://www.realclimate.org/index.php/archives/2008/01/uncertainty-noise-and-the-art-of-model-data-comparison/){target="_blank"} that tracking short-term trends in temperature *cannot* tell us much about long-term global climate change. In [one article](http://www.realclimate.org/index.php/archives/2008/01/uncertainty-noise-and-the-art-of-model-data-comparison/){target="_blank"}, the researchers note that we only start to see meaningful patterns when you look at 15-year averaged trends! Any argument made about climate change therefore needs to address long-term changes (e.g., how has the temperature changed in the past decade), not just short-term ones (e.g., how has the temperature changed from 2-3 years ago).
 
 **There are different benefits to thinking about long and short term trends.** Long term trends are less susceptible to fluctuations due to random variation, and can provide a clearer picture of trends that short-term trends cannot detect (e.g., climate change). On the other hand, short term trends can alert us if something unusual is happening, e.g., a spike in flu-like symptoms may signal a virus spreading, or an increase in rural-urban migration rates in China may signal it is time for Chinese New Year. 
