@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>References | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="References | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -59,41 +62,68 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -200,52 +230,52 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Agresti, Alan, and Babara Finlay. 2009. <em>Statistical Methods for the Social Sciences</em>. 4th ed. Pearson Education.</p>
 </div>
 <div>
-<p>Ang, Shannon, and Tuo-Yu Chen. 2018. “Going Online to Stay Connected: Online Social Participation Buffers the Relationship Between Pain and Depression.” <em>The Journals of Gerontology: Series B</em>, September. doi:<a href="https://doi.org/10.1093/geronb/gby109">10.1093/geronb/gby109</a>.</p>
+<p>Ang, Shannon, and Tuo-Yu Chen. 2018. “Going Online to Stay Connected: Online Social Participation Buffers the Relationship Between Pain and Depression.” <em>The Journals of Gerontology: Series B</em>, September. <a href="https://doi.org/10.1093/geronb/gby109">https://doi.org/10.1093/geronb/gby109</a>.</p>
 </div>
 <div>
-<p>Chan, Angelique, Prassanna Raman, Stefan Ma, and Rahul Malhotra. 2015. “Loneliness and All-Cause Mortality in Community-Dwelling Elderly Singaporeans.” <em>Demographic Research</em> S15 (49): 1361–82. <a href="https://www.demographic-research.org/special/15/49/" class="uri">https://www.demographic-research.org/special/15/49/</a>.</p>
+<p>Chan, Angelique, Prassanna Raman, Stefan Ma, and Rahul Malhotra. 2015. “Loneliness and All-Cause Mortality in Community-Dwelling Elderly Singaporeans.” <em>Demographic Research</em> S15 (49): 1361–82. <a href="https://www.demographic-research.org/special/15/49/">https://www.demographic-research.org/special/15/49/</a>.</p>
 </div>
 <div>
-<p>Fosse, Ethan, and Christopher Winship. 2019. “Analyzing Age-Period-Cohort Data: A Review and Critique.” <em>Annual Review of Sociology</em> 45 (1): 467–92. doi:<a href="https://doi.org/10.1146/annurev-soc-073018-022616">10.1146/annurev-soc-073018-022616</a>.</p>
+<p>Fosse, Ethan, and Christopher Winship. 2019. “Analyzing Age-Period-Cohort Data: A Review and Critique.” <em>Annual Review of Sociology</em> 45 (1): 467–92. <a href="https://doi.org/10.1146/annurev-soc-073018-022616">https://doi.org/10.1146/annurev-soc-073018-022616</a>.</p>
 </div>
 <div>
-<p>Ge, Lixia, Chun Wei Yap, Reuben Ong, and Bee Hoon Heng. 2017. “Social Isolation, Loneliness and Their Relationships with Depressive Symptoms: A Population-Based Study.” <em>PLOS ONE</em> 12 (8): e0182145. doi:<a href="https://doi.org/10.1371/journal.pone.0182145">10.1371/journal.pone.0182145</a>.</p>
+<p>Ge, Lixia, Chun Wei Yap, Reuben Ong, and Bee Hoon Heng. 2017. “Social Isolation, Loneliness and Their Relationships with Depressive Symptoms: A Population-Based Study.” <em>PLOS ONE</em> 12 (8): e0182145. <a href="https://doi.org/10.1371/journal.pone.0182145">https://doi.org/10.1371/journal.pone.0182145</a>.</p>
 </div>
 <div>
-<p>Gelman, Andrew, Sharad Goel, Douglas Rivers, and David Rothschild. 2016. “The Mythical Swing Voter.” <em>Quarterly Journal of Political Science</em> 11 (1): 103–30. doi:<a href="https://doi.org/10.1561/100.00015031">10.1561/100.00015031</a>.</p>
+<p>Gelman, Andrew, Sharad Goel, Douglas Rivers, and David Rothschild. 2016. “The Mythical Swing Voter.” <em>Quarterly Journal of Political Science</em> 11 (1): 103–30. <a href="https://doi.org/10.1561/100.00015031">https://doi.org/10.1561/100.00015031</a>.</p>
 </div>
 <div>
-<p>Hughes, Mary Elizabeth, Linda J. Waite, Louise C. Hawkley, and John T. Cacioppo. 2004. “A Short Scale for Measuring Loneliness in Large Surveys: Results from Two Population-Based Studies.” <em>Research on Aging</em> 26 (6): 655–72. doi:<a href="https://doi.org/10.1177/0164027504268574">10.1177/0164027504268574</a>.</p>
+<p>Hughes, Mary Elizabeth, Linda J. Waite, Louise C. Hawkley, and John T. Cacioppo. 2004. “A Short Scale for Measuring Loneliness in Large Surveys: Results from Two Population-Based Studies.” <em>Research on Aging</em> 26 (6): 655–72. <a href="https://doi.org/10.1177/0164027504268574">https://doi.org/10.1177/0164027504268574</a>.</p>
 </div>
 <div>
-<p>Lim, Ka Keat, and Angelique Chan. 2017. “Association of Loneliness and Healthcare Utilization Among Older Adults in Singapore.” <em>Geriatrics &amp; Gerontology International</em> 17 (11): 1789–98. doi:<a href="https://doi.org/10.1111/ggi.12962">10.1111/ggi.12962</a>.</p>
+<p>Lim, Ka Keat, and Angelique Chan. 2017. “Association of Loneliness and Healthcare Utilization Among Older Adults in Singapore.” <em>Geriatrics &amp; Gerontology International</em> 17 (11): 1789–98. <a href="https://doi.org/10.1111/ggi.12962">https://doi.org/10.1111/ggi.12962</a>.</p>
 </div>
 <div>
-<p>Luo, Liying, and James S. Hodges. 2020. “The Age-Period-Cohort-Interaction Model for Describing and Investigating Inter-Cohort Deviations and Intra-Cohort Life-Course Dynamics.” <em>Sociological Methods &amp; Research</em>, January, 0049124119882451. doi:<a href="https://doi.org/10.1177/0049124119882451">10.1177/0049124119882451</a>.</p>
+<p>Luo, Liying, and James S. Hodges. 2020. “The Age-Period-Cohort-Interaction Model for Describing and Investigating Inter-Cohort Deviations and Intra-Cohort Life-Course Dynamics.” <em>Sociological Methods &amp; Research</em>, January, 0049124119882451. <a href="https://doi.org/10.1177/0049124119882451">https://doi.org/10.1177/0049124119882451</a>.</p>
 </div>
 <div>
-<p>Martin, Steve. 2009. “Comment: Distinguishing Cohort Effects from Age Period Effects on Non-Marital Fertility.” <em>Social Forces</em> 87 (3): 1481–9. <a href="http://www.jstor.org/stable/40345168" class="uri">http://www.jstor.org/stable/40345168</a>.</p>
+<p>Martin, Steve. 2009. “Comment: Distinguishing Cohort Effects from Age Period Effects on Non-Marital Fertility.” <em>Social Forces</em> 87 (3): 1481–9. <a href="http://www.jstor.org/stable/40345168">http://www.jstor.org/stable/40345168</a>.</p>
 </div>
 <div>
-<p>Rico-Uribe, Laura Alejandra, Francisco Félix Caballero, Natalia Martín-María, María Cabello, José Luis Ayuso-Mateos, and Marta Miret. 2018. “Association of Loneliness with All-Cause Mortality: A Meta-Analysis.” <em>PLOS ONE</em> 13 (1): e0190033. doi:<a href="https://doi.org/10.1371/journal.pone.0190033">10.1371/journal.pone.0190033</a>.</p>
+<p>Rico-Uribe, Laura Alejandra, Francisco Félix Caballero, Natalia Martín-María, María Cabello, José Luis Ayuso-Mateos, and Marta Miret. 2018. “Association of Loneliness with All-Cause Mortality: A Meta-Analysis.” <em>PLOS ONE</em> 13 (1): e0190033. <a href="https://doi.org/10.1371/journal.pone.0190033">https://doi.org/10.1371/journal.pone.0190033</a>.</p>
 </div>
 <div>
-<p>Steptoe, Andrew, Aparna Shankar, Panayotes Demakakos, and Jane Wardle. 2013. “Social Isolation, Loneliness, and All-Cause Mortality in Older Men and Women.” <em>Proceedings of the National Academy of Sciences</em> 110 (15): 5797. doi:<a href="https://doi.org/10.1073/pnas.1219686110">10.1073/pnas.1219686110</a>.</p>
+<p>Steptoe, Andrew, Aparna Shankar, Panayotes Demakakos, and Jane Wardle. 2013. “Social Isolation, Loneliness, and All-Cause Mortality in Older Men and Women.” <em>Proceedings of the National Academy of Sciences</em> 110 (15): 5797. <a href="https://doi.org/10.1073/pnas.1219686110">https://doi.org/10.1073/pnas.1219686110</a>.</p>
 </div>
 <div>
 <p>Treiman, Donald. 2009. <em>Quantitative Data Analysis: Doing Social Research to Test Ideas</em>. Jossey-Bass.</p>
 </div>
 <div>
-<p>Wang, Wei, David Rothschild, Sharad Goel, and Andrew Gelman. 2015. “Forecasting Elections with Non-Representative Polls.” <em>International Journal of Forecasting</em> 31 (3): 980–91. doi:<a href="https://doi.org/10.1016/j.ijforecast.2014.06.001">10.1016/j.ijforecast.2014.06.001</a>.</p>
+<p>Wang, Wei, David Rothschild, Sharad Goel, and Andrew Gelman. 2015. “Forecasting Elections with Non-Representative Polls.” <em>International Journal of Forecasting</em> 31 (3): 980–91. <a href="https://doi.org/10.1016/j.ijforecast.2014.06.001">https://doi.org/10.1016/j.ijforecast.2014.06.001</a>.</p>
 </div>
 <div>
-<p>Wee, E. Liang, Y. Tammy Tsang, Huso Yi, A. Sue Toh, L. Geok Lee, Jaime Yee, Shannon Lee, Kellynn Oen, and C. Gerald Koh. 2019. “Loneliness Amongst Low-Socioeconomic Status Elderly Singaporeans and Its Association with Perceptions of the Neighbourhood Environment.” <em>International Journal of Environmental Research and Public Health</em> 16 (6). doi:<a href="https://doi.org/10.3390/ijerph16060967">10.3390/ijerph16060967</a>.</p>
+<p>Wee, E. Liang, Y. Tammy Tsang, Huso Yi, A. Sue Toh, L. Geok Lee, Jaime Yee, Shannon Lee, Kellynn Oen, and C. Gerald Koh. 2019. “Loneliness Amongst Low-Socioeconomic Status Elderly Singaporeans and Its Association with Perceptions of the Neighbourhood Environment.” <em>International Journal of Environmental Research and Public Health</em> 16 (6). <a href="https://doi.org/10.3390/ijerph16060967">https://doi.org/10.3390/ijerph16060967</a>.</p>
 </div>
 <div>
-<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/" class="uri">http://yihui.name/knitr/</a>.</p>
+<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.</p>
 </div>
 <div>
-<p>———. 2019. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown" class="uri">https://CRAN.R-project.org/package=bookdown</a>.</p>
+<p>———. 2020. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
 </div>
 </div>
 </div>
@@ -344,11 +374,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -360,6 +392,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -381,7 +417,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))

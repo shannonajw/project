@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8.1 SDP vs. MOM | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8.1 SDP vs. MOM | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -59,41 +62,68 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -194,7 +224,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="pofmasdp" class="section level2">
 <h2><span class="header-section-number">8.1</span> SDP vs. MOM</h2>
-<p>In an application of the Protection from Online Falsehoods and Manipulation Act (POFMA), sitting Minister for Manpower Josephine Teo issued three correction directions against the Singapore Democratic Party (SDP)<a href="#fn72" class="footnoteRef" id="fnref72"><sup>72</sup></a> for propagating online falsehoods. The SDP appealed against the order, and eventually lost in the High Court (see <a href="https://www.channelnewsasia.com/news/singapore/judge-dismisses-sdp-s-pofma-challenge-says-statements-were-false-12394932" target="_blank">related news article</a>).</p>
+<p>In an application of the Protection from Online Falsehoods and Manipulation Act (POFMA), sitting Minister for Manpower Josephine Teo issued three correction directions against the Singapore Democratic Party (SDP)<a href="#fn72" class="footnote-ref" id="fnref72"><sup>72</sup></a> for propagating online falsehoods. The SDP appealed against the order, and eventually lost in the High Court (see <a href="https://www.channelnewsasia.com/news/singapore/judge-dismisses-sdp-s-pofma-challenge-says-statements-were-false-12394932" target="_blank">related news article</a>).</p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:today-sdp"></span>
 <img src="images/yousayisay/news1.png" alt="Screenshot of online article on MOM's correction directive. Retrieved February 5, 2020." width="80%" />
@@ -203,11 +233,12 @@ Figure 8.1: Screenshot of online article on MOM’s correction directive. Retrie
 </p>
 </div>
 <p><br></p>
-<p>The point of this case study is not to say whose legal case was made out, which the court has already ruled on<a href="#fn73" class="footnoteRef" id="fnref73"><sup>73</sup></a>. Rather, I will focus on one specific portion of the case, and highlight how we can ask better questions and demand better arguments from people who use statistics.</p>
-<p>We will look at the first correction direction (CD-1), related to one of SDP’s earlier articles (found <a href="https://yoursdp.org/news/sdp_population_policy_hire_s_39_poreans_first_retrench_s_39_poreans_last" target="_blank">here</a>). The point we will examine here is aptly described in the <a href="https://www.gov.sg/article/factually-corrections-on-falsehoods-posted-by-sdp" target="_blank">government’s Factually article</a><a href="#fn74" class="footnoteRef" id="fnref74"><sup>74</sup></a>:</p>
+<p>The point of this case study is not to say whose legal case was made out, which the court has already ruled on<a href="#fn73" class="footnote-ref" id="fnref73"><sup>73</sup></a>. Rather, I will focus on one specific portion of the case, and highlight how we can ask better questions and demand better arguments from people who use statistics.</p>
+<p>We will look at the first correction direction (CD-1), related to one of SDP’s earlier articles (found <a href="https://yoursdp.org/news/sdp_population_policy_hire_s_39_poreans_first_retrench_s_39_poreans_last" target="_blank">here</a>). The point we will examine here is aptly described in the <a href="https://www.gov.sg/article/factually-corrections-on-falsehoods-posted-by-sdp" target="_blank">government’s Factually article</a><a href="#fn74" class="footnote-ref" id="fnref74"><sup>74</sup></a>:</p>
 <p><br></p>
 <blockquote>
-<p><strong>Falsehood #2 - The claim that Singaporean PMET retrenchment has been going up.</strong> The SDP website states that the party’s “proposal comes amidst a rising proportion of Singaporean PMETs getting retrenched”. This statement is false.</p>
+<p><strong>Falsehood #2 - The claim that Singaporean PMET retrenchment has been going up.</strong>
+The SDP website states that the party’s “proposal comes amidst a rising proportion of Singaporean PMETs getting retrenched”. This statement is false.</p>
 <p><strong>Fact #2a</strong>: There has been no rising trend of local retrenchments since 2015.</p>
 <p><strong>Fact #2b</strong>: There has been no rising trend of local PMET retrenchment since 2015. The number of retrenched local PMETs has declined from 6,460 in 2015 to 5,360 in 2018, the lowest since 2014.</p>
 </blockquote>
@@ -221,14 +252,14 @@ Figure 8.2: Chart of retrenchment rate over time
 </p>
 </div>
 <p><br></p>
-<p>As we can see from the figure, there are vastly different trends depending on where you want to start from and how long of a trend you want to track. I have highlighted (in grey and dark grey) the portions that were used by SDP and MOM respectively. If you look across the whole figure, you will naturally find that in some parts of the graph the trend is increasing, and in other parts the trend is decreasing<a href="#fn75" class="footnoteRef" id="fnref75"><sup>75</sup></a>. But does this mean that choosing a starting point from <em>anywhere</em> is arbitrary? Based on my reading of his judgement, Justice Ang Cheng Hock seems to suggest this:</p>
+<p>As we can see from the figure, there are vastly different trends depending on where you want to start from and how long of a trend you want to track. I have highlighted (in grey and dark grey) the portions that were used by SDP and MOM respectively. If you look across the whole figure, you will naturally find that in some parts of the graph the trend is increasing, and in other parts the trend is decreasing<a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a>. But does this mean that choosing a starting point from <em>anywhere</em> is arbitrary? Based on my reading of his judgement, Justice Ang Cheng Hock seems to suggest this:</p>
 <p><br></p>
 <blockquote>
 <p>Third, even if one takes the appellant’s [i.e., SDP] case at its highest and relies on the data from 2010 to 2018, it bears note that the appellant’s reference to 2010 as a starting point is somewhat arbitrary. <strong>Understandably, any timeframe may, to some extent, be criticised as being arbitrarily selected.</strong> However, the appellant’s own reasoning could warrant a starting point of 2009, or even 2008. <strong>Using 2009 as a starting point would show an overall decrease in unemployed local PMETs from 2009 to 2018, and this illustrates how using 2010 as a starting point is itself quite arbitrary.</strong></p>
 <p><em>Singapore Democratic Party v Attorney-General</em> [2020] SGHC 25 in [96], <em>emphasis mine</em></p>
 </blockquote>
 <p><br></p>
-<p>I would respectfully disagree with Justice Ang’s reasoning here<a href="#fn76" class="footnoteRef" id="fnref76"><sup>76</sup></a>, if he is implying that any kind of starting point can be criticized as being <em>equally</em> arbitrary. In my view, it is possible to discriminate between worse and better time frames/trends to look at. I provide <strong>two reasons</strong> how this is so:</p>
+<p>I would respectfully disagree with Justice Ang’s reasoning here<a href="#fn76" class="footnote-ref" id="fnref76"><sup>76</sup></a>, if he is implying that any kind of starting point can be criticized as being <em>equally</em> arbitrary. In my view, it is possible to discriminate between worse and better time frames/trends to look at. I provide <strong>two reasons</strong> how this is so:</p>
 <p><br></p>
 <ol style="list-style-type: decimal">
 <li><strong>The length of trends matter</strong></li>
@@ -250,7 +281,7 @@ Figure 8.3: Source: <a href="https://thewokesalaryman.com" class="uri">https://t
 <ol start="2" style="list-style-type: decimal">
 <li><strong>Not all start/end points are made equal</strong>:</li>
 </ol>
-<p>Just as there are arguments to be made for longer or shorter trends, there are also arguments to be made for what are good “starting points” to use. In Figure <a href="pofmasdp.html#fig:ysis-retrenchrate">8.2</a> above, I <strong>highlighted in red</strong> the times when Singapore was facing a recession. As one would naturally conclude from the figure, there are spikes in retrenchment when a recession occurs. A “spike” here simply means that there is a rapid increase, and then a rapid decrease in the numbers, usually due to a exogenous (or endogenous) shock to the usual course of affairs<a href="#fn77" class="footnoteRef" id="fnref77"><sup>77</sup></a>.</p>
+<p>Just as there are arguments to be made for longer or shorter trends, there are also arguments to be made for what are good “starting points” to use. In Figure <a href="pofmasdp.html#fig:ysis-retrenchrate">8.2</a> above, I <strong>highlighted in red</strong> the times when Singapore was facing a recession. As one would naturally conclude from the figure, there are spikes in retrenchment when a recession occurs. A “spike” here simply means that there is a rapid increase, and then a rapid decrease in the numbers, usually due to a exogenous (or endogenous) shock to the usual course of affairs<a href="#fn77" class="footnote-ref" id="fnref77"><sup>77</sup></a>.</p>
 <p>The question to ask is this - <strong>how meaningful is it to interpret (whether as a result of policy or not) the increase in retrenchments before a recession, or the decrease in retrenchments after a recession?</strong> I believe it would raise a red flag if someone decided to use data from 2007-2009 to show that retrenchments have increased, or to use data from 2009-2010 to show a decline. I requote from the judgement here:</p>
 <p><br></p>
 <blockquote>
@@ -288,12 +319,12 @@ Figure 8.3: Source: <a href="https://thewokesalaryman.com" class="uri">https://t
 <div class="footnotes">
 <hr />
 <ol start="72">
-<li id="fn72"><p>A local political opposition party.<a href="pofmasdp.html#fnref72">↩</a></p></li>
-<li id="fn73"><p>Note that Minister for Law Shanmugam said the following <a href="https://sprs.parl.gov.sg/search/fullreport?sittingdate=15-08-2016" target="_blank">in Parliament on 15 August 2016</a>: “Academics or media outlets publish commentaries on a judge’s decision, even where an appeal is pending. These are not prohibited. Commenting on a judge’s reasoning is unlikely to pose a real risk of prejudicing the appeal outcome. We have not changed the law. Such commentaries are allowed today. If the Bill gets passed, they will continue to be allowed under the Act.”<a href="pofmasdp.html#fnref73">↩</a></p></li>
-<li id="fn74"><p>Justice Ang Cheng Hock ultimately decided that the facts provided by Factually were not directly relevant to this proported falsehood, because it was not fair to interpret SDP’s statement on <em>proportions</em> as applying to <em>absolute numbers</em> (<em>Singapore Democratic Party v Attorney-General</em> [2020] SGHC 25 in [80] and [92]). He did, however, consider the arguments made on the grounds of absolute numbers, which we will also consider here.<a href="pofmasdp.html#fnref74">↩</a></p></li>
-<li id="fn75"><p>You can also find that as the Factually article states, the proportion of local PMET retrenchments among all PMET retrenchments is decreasing.<a href="pofmasdp.html#fnref75">↩</a></p></li>
-<li id="fn76"><p>Even though he qualifies these statements with “somewhat” and “to some extent”.<a href="pofmasdp.html#fnref76">↩</a></p></li>
-<li id="fn77"><p>Our Ministers have been very consistent in pointing out that Singapore’s economy is highly dependent on the global economy, so assuming recessions are usually exogenous may not be too far off the mark<a href="pofmasdp.html#fnref77">↩</a></p></li>
+<li id="fn72"><p>A local political opposition party.<a href="pofmasdp.html#fnref72" class="footnote-back">↩︎</a></p></li>
+<li id="fn73"><p>Note that Minister for Law Shanmugam said the following <a href="https://sprs.parl.gov.sg/search/fullreport?sittingdate=15-08-2016" target="_blank">in Parliament on 15 August 2016</a>: “Academics or media outlets publish commentaries on a judge’s decision, even where an appeal is pending. These are not prohibited. Commenting on a judge’s reasoning is unlikely to pose a real risk of prejudicing the appeal outcome. We have not changed the law. Such commentaries are allowed today. If the Bill gets passed, they will continue to be allowed under the Act.”<a href="pofmasdp.html#fnref73" class="footnote-back">↩︎</a></p></li>
+<li id="fn74"><p>Justice Ang Cheng Hock ultimately decided that the facts provided by Factually were not directly relevant to this proported falsehood, because it was not fair to interpret SDP’s statement on <em>proportions</em> as applying to <em>absolute numbers</em> (<em>Singapore Democratic Party v Attorney-General</em> [2020] SGHC 25 in [80] and [92]). He did, however, consider the arguments made on the grounds of absolute numbers, which we will also consider here.<a href="pofmasdp.html#fnref74" class="footnote-back">↩︎</a></p></li>
+<li id="fn75"><p>You can also find that as the Factually article states, the proportion of local PMET retrenchments among all PMET retrenchments is decreasing.<a href="pofmasdp.html#fnref75" class="footnote-back">↩︎</a></p></li>
+<li id="fn76"><p>Even though he qualifies these statements with “somewhat” and “to some extent”.<a href="pofmasdp.html#fnref76" class="footnote-back">↩︎</a></p></li>
+<li id="fn77"><p>Our Ministers have been very consistent in pointing out that Singapore’s economy is highly dependent on the global economy, so assuming recessions are usually exogenous may not be too far off the mark<a href="pofmasdp.html#fnref77" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -307,11 +338,13 @@ Figure 8.3: Source: <a href="https://thewokesalaryman.com" class="uri">https://t
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -323,6 +356,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -344,7 +381,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))

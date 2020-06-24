@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.2 Declines in marriage and divorce | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.2 Declines in marriage and divorce | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -59,41 +62,68 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -203,7 +233,7 @@ Figure 7.1: Screenshot of online article on marriage rates. Retrieved September 
 </p>
 </div>
 <p><br></p>
-<p>The article is based on <a href="https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf" target="_blank">a report</a> on Marriages and Divorces, produced by the Department of Statistics<a href="#fn55" class="footnoteRef" id="fnref55"><sup>55</sup></a>. Among other things, the article states:</p>
+<p>The article is based on <a href="https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf" target="_blank">a report</a> on Marriages and Divorces, produced by the Department of Statistics<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a>. Among other things, the article states:</p>
 <p><br></p>
 <blockquote>
 <p>A total of 27,007 marriages were registered last year - the lowest in five years and 4.3 per cent fewer than the 28,212 marriages registered in 2017.</p>
@@ -211,7 +241,7 @@ Figure 7.1: Screenshot of online article on marriage rates. Retrieved September 
 <p>… Given the volatile economy, observers said financial considerations could have contributed to the falling number of marriages and divorces last year.</p>
 </blockquote>
 <p><br></p>
-<p>Now, given that we’ve talked about age, cohort, and period changes, one question that should come to mind is: <em>what kind of measure is this?</em> Well, this is a <strong>period measure</strong> - it records the number of marriages in a certain year. Unnamed ‘observers’ cited by the article seem to understand this. They point out that the economy last year may have had a part to play, which is a plausible reason for period changes that suits the nature of the measure<a href="#fn56" class="footnoteRef" id="fnref56"><sup>56</sup></a>. However, often times, people provide <em>cohort</em> explanations for changes in <em>period</em> measures.</p>
+<p>Now, given that we’ve talked about age, cohort, and period changes, one question that should come to mind is: <em>what kind of measure is this?</em> Well, this is a <strong>period measure</strong> - it records the number of marriages in a certain year. Unnamed ‘observers’ cited by the article seem to understand this. They point out that the economy last year may have had a part to play, which is a plausible reason for period changes that suits the nature of the measure<a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a>. However, often times, people provide <em>cohort</em> explanations for changes in <em>period</em> measures.</p>
 <p>The next two subsections will look at the question - <strong>How reasonable is it to adopt <em>cohort</em> explanations for changes in <em>period</em> measures of marriage?</strong></p>
 <p><br></p>
 <div id="evaluating-explanation-1" class="section level3">
@@ -224,7 +254,7 @@ Figure 7.1: Screenshot of online article on marriage rates. Retrieved September 
 </blockquote>
 <p><br></p>
 <p>Note here that median age at marriage is, once again, a <strong>period measure</strong> - of all people who got married that year, half of them got married before age 28.5.</p>
-<p>NUS sociologist Tan Ern Ser says that the median age at first marriage is rising because “people” spend more time in education and early-career building before they “settle down” (i.e., get married). But who are these “people”, exactly? Since most members of older cohorts do not usually go back into education and early-career building, there seems to be an implicit reference to younger cohorts (or, in layman terms, <em>“people nowadays”</em>)<a href="#fn57" class="footnoteRef" id="fnref57"><sup>57</sup></a>.</p>
+<p>NUS sociologist Tan Ern Ser says that the median age at first marriage is rising because “people” spend more time in education and early-career building before they “settle down” (i.e., get married). But who are these “people”, exactly? Since most members of older cohorts do not usually go back into education and early-career building, there seems to be an implicit reference to younger cohorts (or, in layman terms, <em>“people nowadays”</em>)<a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a>.</p>
 <p><strong>How do we evaluate whether this explanation is reasonable?</strong> I advocate taking <strong>two steps</strong>:</p>
 <ol style="list-style-type: decimal">
 <li>Figure out if trends observed reflect cohort change, rather than age or period change.</li>
@@ -272,13 +302,13 @@ Figure 7.3: Screenshot from Data.gov.sg on “Percentage of P1 Cohort that Progr
 <p>…Singapore Management University professor of sociology (practice) Paulin Straughan said they also seem to be spending a longer time looking for the right partner. She said: “People believe that marriage is forever and unless they are very sure they have found a life partner, they wouldn’t marry.”</p>
 </blockquote>
 <p><br></p>
-<p>SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because “people” wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past<a href="#fn58" class="footnoteRef" id="fnref58"><sup>58</sup></a> (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry (i.e. a cohort effect)?</p>
-<p>Regardless, a natural follow-up question would be - does this also explain the reason why divorce rates are falling (as the news article headline states)? If the ‘waiting to be very sure’ explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce<a href="#fn59" class="footnoteRef" id="fnref59"><sup>59</sup></a>! People “waiting longer” also would then explain why divorce numbers are falling.</p>
-<p><em>Suppose we adopt the following explanation</em>: <strong>Divorce numbers are falling because younger cohorts are more careful (and therefore taking longer) about choosing their partners</strong><a href="#fn60" class="footnoteRef" id="fnref60"><sup>60</sup></a>.</p>
-<p>Remember that the divorce numbers mentioned in the news article are a <strong>period</strong> measure<a href="#fn61" class="footnoteRef" id="fnref61"><sup>61</sup></a>. Just like median age of marriage, the median age at divorce is also rising, according to <a href="https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf" target="_blank">the report</a> by the Department of Statistics, which states on page 15:</p>
+<p>SMU Professor (Practice) Paulin Straughan surmises that median age at first marriage is rising because “people” wait to be very sure of their partner. While there may be some kernel of truth here (although no data is provided to support her point), it is quite unclear what she really means by this. Is she saying that everyone is delaying marriage because Singaporean culture has changed over time and people across all generations are now more careful about who to marry compared to the past<a href="#fn58" class="footnote-ref" id="fnref58"><sup>58</sup></a> (i.e., a period effect)? Or is she saying that younger cohorts are now more careful about who to marry (i.e. a cohort effect)?</p>
+<p>Regardless, a natural follow-up question would be - does this also explain the reason why divorce rates are falling (as the news article headline states)? If the ‘waiting to be very sure’ explanation holds weight, it should follow that since people have become more careful to marry, marriages are probably less likely to end up in divorce<a href="#fn59" class="footnote-ref" id="fnref59"><sup>59</sup></a>! People “waiting longer” also would then explain why divorce numbers are falling.</p>
+<p><em>Suppose we adopt the following explanation</em>: <strong>Divorce numbers are falling because younger cohorts are more careful (and therefore taking longer) about choosing their partners</strong><a href="#fn60" class="footnote-ref" id="fnref60"><sup>60</sup></a>.</p>
+<p>Remember that the divorce numbers mentioned in the news article are a <strong>period</strong> measure<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a>. Just like median age of marriage, the median age at divorce is also rising, according to <a href="https://www.singstat.gov.sg/-/media/files/publications/population/smd2018.pdf" target="_blank">the report</a> by the Department of Statistics, which states on page 15:</p>
 <p><br></p>
 <blockquote>
-<p>With an ageing population and rising divorce rates for older persons, the proportion of divorcees aged 45 years &amp; over rose from 32.7 per cent in 2008 to 44.0 per cent in 2018 for males, and from 21.7 per cent to 29.9 per cent for females. As a result, the median age at divorce rose over the last decade.&quot;</p>
+<p>With an ageing population and rising divorce rates for older persons, the proportion of divorcees aged 45 years &amp; over rose from 32.7 per cent in 2008 to 44.0 per cent in 2018 for males, and from 21.7 per cent to 29.9 per cent for females. As a result, the median age at divorce rose over the last decade."</p>
 </blockquote>
 <p><br></p>
 <p><em>Also remember the 2 steps outlined in the previous sub-section</em>:</p>
@@ -288,7 +318,7 @@ Figure 7.3: Screenshot from Data.gov.sg on “Percentage of P1 Cohort that Progr
 </ol>
 <p><br></p>
 <p><strong>Step 1</strong></p>
-<p>The quote above already hints at trends being driven by age composition (“ageing population”)<a href="#fn62" class="footnoteRef" id="fnref62"><sup>62</sup></a>. This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure <a href="marriage-decline.html#fig:apc-reportsingstat2nd">7.4</a>).</p>
+<p>The quote above already hints at trends being driven by age composition (“ageing population”)<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a>. This already tells us the government believes the period trend is unlikely to be driven by cohort change. However, we still can look at age-specific rates to replicate what we did earlier with marriage figures (Figure <a href="marriage-decline.html#fig:apc-reportsingstat2nd">7.4</a>).</p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:apc-reportsingstat2nd"></span>
 <img src="images/apc/report_fig3.png" alt="Screenshot from Department of Statistics report titled &quot;Statistics on Marriages and Divorces,  2018&quot;. Retrieved September 17, 2019." width="80%" />
@@ -298,7 +328,7 @@ Figure 7.4: Screenshot from Department of Statistics report titled “Statistics
 </div>
 <p><br></p>
 <p>Once again we see from Figure <a href="marriage-decline.html#fig:apc-reportsingstat2nd">7.4</a> that in 2018, divorce rates are lower among younger age groups (20-34) and higher in older age groups (35+), compared to 2008. This is the same situation as before (with marriage numbers), and there we temporarily concluded cohort change is possible, though not certain. So why does the Department of Statistics not connect period trends with cohort change?</p>
-<p>Data on divorce trends by birth cohort are (again) not available, but all is not lost. Weirdly enough, there exists some information on divorce by “marriage cohorts” (where each cohort is defined by the year they got married - i.e., if you got married in the same year as I did, you are in my marriage cohort) in a report by the Ministry of Social and Family Development (found <a href="https://www.msf.gov.sg/research-and-data/Research-and-Data-Series/Pages/default.aspx" target="_blank">here</a>). What kind of change marriage cohort trends really capture is quite hard to say, but for heuristic purposes we may assume they (very) roughly approximate<a href="#fn63" class="footnoteRef" id="fnref63"><sup>63</sup></a> birth cohort trends. Figure <a href="marriage-decline.html#fig:apc-reportmsf">7.5</a> shows us the proportion of divorces (y-axis) that happen before the couples’ <span class="math inline">\(x^{th}\)</span> anniversary (shown on the x-axis), by marriage cohort (indicated by the color and shape of the lines).</p>
+<p>Data on divorce trends by birth cohort are (again) not available, but all is not lost. Weirdly enough, there exists some information on divorce by “marriage cohorts” (where each cohort is defined by the year they got married - i.e., if you got married in the same year as I did, you are in my marriage cohort) in a report by the Ministry of Social and Family Development (found <a href="https://www.msf.gov.sg/research-and-data/Research-and-Data-Series/Pages/default.aspx" target="_blank">here</a>). What kind of change marriage cohort trends really capture is quite hard to say, but for heuristic purposes we may assume they (very) roughly approximate<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a> birth cohort trends. Figure <a href="marriage-decline.html#fig:apc-reportmsf">7.5</a> shows us the proportion of divorces (y-axis) that happen before the couples’ <span class="math inline">\(x^{th}\)</span> anniversary (shown on the x-axis), by marriage cohort (indicated by the color and shape of the lines).</p>
 <br>
 <div class="figure" style="text-align: center"><span id="fig:apc-reportmsf"></span>
 <img src="images/apc/report_fig2.png" alt="Screenshot from Ministry of Social and Family Developent report titled &quot;Dissolutions of Marriages Among Marriage Cohorts, 1987-2015&quot;. Retrieved September 17, 2019." width="80%" />
@@ -307,8 +337,8 @@ Figure 7.5: Screenshot from Ministry of Social and Family Developent report titl
 </p>
 </div>
 <p><br></p>
-<p>What can be observed from Figure <a href="marriage-decline.html#fig:apc-reportmsf">7.5</a> is that <strong>younger (marriage) cohorts seem to be getting divorced earlier</strong><a href="#fn64" class="footnoteRef" id="fnref64"><sup>64</sup></a>. For instance, you may notice that a higher proportion of those married in 2011 (light pink line) dissolve their unions before their 5th anniversary compared to those married in 2001 (dark pink line) or earlier<a href="#fn65" class="footnoteRef" id="fnref65"><sup>65</sup></a>.</p>
-<p>The picture painted here seems more bleak<a href="#fn66" class="footnoteRef" id="fnref66"><sup>66</sup></a> compared to what we expected from period trends (and the news article). While period trends seemed to suggest that people were getting more careful with partner selection (since divorce rates were falling overall and median age of marriage and divorce has increased), <strong>cohort trends seem to be telling the opposite story</strong> - younger cohorts seem to be getting divorced earlier into their marriages!</p>
+<p>What can be observed from Figure <a href="marriage-decline.html#fig:apc-reportmsf">7.5</a> is that <strong>younger (marriage) cohorts seem to be getting divorced earlier</strong><a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a>. For instance, you may notice that a higher proportion of those married in 2011 (light pink line) dissolve their unions before their 5th anniversary compared to those married in 2001 (dark pink line) or earlier<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a>.</p>
+<p>The picture painted here seems more bleak<a href="#fn66" class="footnote-ref" id="fnref66"><sup>66</sup></a> compared to what we expected from period trends (and the news article). While period trends seemed to suggest that people were getting more careful with partner selection (since divorce rates were falling overall and median age of marriage and divorce has increased), <strong>cohort trends seem to be telling the opposite story</strong> - younger cohorts seem to be getting divorced earlier into their marriages!</p>
 <p><br></p>
 <p><strong>Step 2</strong></p>
 <p>The cohort explanation we adopted for this section was that “Divorce numbers are falling because younger cohorts are more careful about choosing their partners”. We have already found, however, younger cohorts (albeit marriage cohorts, not birth cohorts) are in fact getting divorced earlier. This directly contradicts the cohort-based explanation.</p>
@@ -319,18 +349,18 @@ Figure 7.5: Screenshot from Ministry of Social and Family Developent report titl
 <div class="footnotes">
 <hr />
 <ol start="55">
-<li id="fn55"><p>We will focus on discussing non-Muslim marriages here, but the same principles can be applied to Muslim marriages as well.<a href="marriage-decline.html#fnref55">↩</a></p></li>
-<li id="fn56"><p>The general marriage rate, which is adjusted for population size of unmarried residents aged 15-49, also seems to tell this story.<a href="marriage-decline.html#fnref56">↩</a></p></li>
-<li id="fn57"><p>Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.<a href="marriage-decline.html#fnref57">↩</a></p></li>
-<li id="fn58"><p>Think about what this really means though. How possible is it to observe this?<a href="marriage-decline.html#fnref58">↩</a></p></li>
-<li id="fn59"><p>It could also be that <em>even though</em> people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.<a href="marriage-decline.html#fnref59">↩</a></p></li>
-<li id="fn60"><p>This is not what SMU Professor (Practice) Paulin Straughan explicitly said, but something that we have inferred for heuristic purposes, after making several assumptions about carefulness in partner choice and stability of marriages.<a href="marriage-decline.html#fnref60">↩</a></p></li>
-<li id="fn61"><p>You may also ask, since we’re dealing with absolute numbers, isn’t it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.<a href="marriage-decline.html#fnref61">↩</a></p></li>
-<li id="fn62"><p>For those more technically oriented, <span class="citation">Martin (<a href="#ref-martin_comment:_2009">2009</a>)</span> and <span class="citation">Luo and Hodges (<a href="#ref-luo_age-period-cohort-interaction_2020">2020</a>)</span> have intriguing discussions about age*period interactions as cohort effects.<a href="marriage-decline.html#fnref62">↩</a></p></li>
-<li id="fn63"><p>Think about who gets married in a certain year. What kind of people are they composed of? What characteristics do they share? It is hard to say. Other than sharing the same year of marriage, diversity within marriage cohorts is likely to be huge. We can only assume that younger birth cohorts will dominate most of the marriages in later years, but it remains to be seen whether this is accurate.<a href="marriage-decline.html#fnref63">↩</a></p></li>
-<li id="fn64"><p>It remains to be seen if lifetime divorce rates will be higher, since we cannot yet observe the full trajectory of union dissolutions for the younger cohorts (or even for older cohorts, since not all of them have disolved their union or passed away).<a href="marriage-decline.html#fnref64">↩</a></p></li>
-<li id="fn65"><p>Note that this does not really line up with the 2018 and 2008 measures we were comparing before, but there really is no easy way to do this.<a href="marriage-decline.html#fnref65">↩</a></p></li>
-<li id="fn66"><p>Assuming divorce is always a bad thing, which may not always be the case. A rise in divorce rates may possibly reflect changes in power dynamics within couples, with women becoming more independent and more willing to leave abusive situations.<a href="marriage-decline.html#fnref66">↩</a></p></li>
+<li id="fn55"><p>We will focus on discussing non-Muslim marriages here, but the same principles can be applied to Muslim marriages as well.<a href="marriage-decline.html#fnref55" class="footnote-back">↩︎</a></p></li>
+<li id="fn56"><p>The general marriage rate, which is adjusted for population size of unmarried residents aged 15-49, also seems to tell this story.<a href="marriage-decline.html#fnref56" class="footnote-back">↩︎</a></p></li>
+<li id="fn57"><p>Of course, there is now a great drive towards lifelong learning and mid-career switches, but in the context I think it is reasonable to assume this is not the group of people being referred to.<a href="marriage-decline.html#fnref57" class="footnote-back">↩︎</a></p></li>
+<li id="fn58"><p>Think about what this really means though. How possible is it to observe this?<a href="marriage-decline.html#fnref58" class="footnote-back">↩︎</a></p></li>
+<li id="fn59"><p>It could also be that <em>even though</em> people are more careful, they still make choices that end up in divorce, but this is somewhat an awkward assumption to make given a plain reading of the comment.<a href="marriage-decline.html#fnref59" class="footnote-back">↩︎</a></p></li>
+<li id="fn60"><p>This is not what SMU Professor (Practice) Paulin Straughan explicitly said, but something that we have inferred for heuristic purposes, after making several assumptions about carefulness in partner choice and stability of marriages.<a href="marriage-decline.html#fnref60" class="footnote-back">↩︎</a></p></li>
+<li id="fn61"><p>You may also ask, since we’re dealing with absolute numbers, isn’t it obvious that if there are less marriages, then there would be less divorces too? This is why absolute numbers are seldom helpful when examining societal change. At a minimum, we should attempt to look for rates that are adjusted for the size of the group at risk.<a href="marriage-decline.html#fnref61" class="footnote-back">↩︎</a></p></li>
+<li id="fn62"><p>For those more technically oriented, <span class="citation">Martin (<a href="#ref-martin_comment:_2009" role="doc-biblioref">2009</a>)</span> and <span class="citation">Luo and Hodges (<a href="#ref-luo_age-period-cohort-interaction_2020" role="doc-biblioref">2020</a>)</span> have intriguing discussions about age*period interactions as cohort effects.<a href="marriage-decline.html#fnref62" class="footnote-back">↩︎</a></p></li>
+<li id="fn63"><p>Think about who gets married in a certain year. What kind of people are they composed of? What characteristics do they share? It is hard to say. Other than sharing the same year of marriage, diversity within marriage cohorts is likely to be huge. We can only assume that younger birth cohorts will dominate most of the marriages in later years, but it remains to be seen whether this is accurate.<a href="marriage-decline.html#fnref63" class="footnote-back">↩︎</a></p></li>
+<li id="fn64"><p>It remains to be seen if lifetime divorce rates will be higher, since we cannot yet observe the full trajectory of union dissolutions for the younger cohorts (or even for older cohorts, since not all of them have disolved their union or passed away).<a href="marriage-decline.html#fnref64" class="footnote-back">↩︎</a></p></li>
+<li id="fn65"><p>Note that this does not really line up with the 2018 and 2008 measures we were comparing before, but there really is no easy way to do this.<a href="marriage-decline.html#fnref65" class="footnote-back">↩︎</a></p></li>
+<li id="fn66"><p>Assuming divorce is always a bad thing, which may not always be the case. A rise in divorce rates may possibly reflect changes in power dynamics within couples, with women becoming more independent and more willing to leave abusive situations.<a href="marriage-decline.html#fnref66" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -344,11 +374,13 @@ Figure 7.5: Screenshot from Ministry of Social and Family Developent report titl
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -360,6 +392,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -381,7 +417,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))

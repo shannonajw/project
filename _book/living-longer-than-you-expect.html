@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.3 Living longer than you expect | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.3 Living longer than you expect | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -59,41 +62,68 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -203,8 +233,8 @@ Figure 7.6: Screenshot of online article on life expectancy. Retrieved September
 </p>
 </div>
 <p><br></p>
-<p>A typical article (such as <a href="https://www.healthxchange.sg/seniors/healthy-ageing/why-singaporeans-living-longer" target="_blank">this one</a> written by a physician) will use estimates of life expectancy to say, for instance, “Singaporean residents can expect to live up to 83.2 years<a href="#fn67" class="footnoteRef" id="fnref67"><sup>67</sup></a>”. This reading of life expectancy is quite common.</p>
-<p>The obvious question here is - Who can expect to live up to 83.2 years? My grandma? Me? My child? Do all Singaporeans now expect to live to the same age<a href="#fn68" class="footnoteRef" id="fnref68"><sup>68</sup></a>?</p>
+<p>A typical article (such as <a href="https://www.healthxchange.sg/seniors/healthy-ageing/why-singaporeans-living-longer" target="_blank">this one</a> written by a physician) will use estimates of life expectancy to say, for instance, “Singaporean residents can expect to live up to 83.2 years<a href="#fn67" class="footnote-ref" id="fnref67"><sup>67</sup></a>”. This reading of life expectancy is quite common.</p>
+<p>The obvious question here is - Who can expect to live up to 83.2 years? My grandma? Me? My child? Do all Singaporeans now expect to live to the same age<a href="#fn68" class="footnote-ref" id="fnref68"><sup>68</sup></a>?</p>
 <p>The figure most often cited in the media is life expectancy <em>at birth</em>. A more precise way to interpret the life expectancy in 2017 is “Singaporean residents <strong>who are born in 2017</strong> can expect to live to 83.2”. <a href="https://www.straitstimes.com/singapore/health/singapore-tops-in-life-expectancy-at-848-years" target="_blank">This other news article in the Straits Times</a> rightly refers to the life expectancy estimate as “expected lifespan at birth”.</p>
 <p><strong>But this still does not fully capture how life expectancy is calculated.</strong> To do this, we need to go back to our understanding of age, period, and cohort measures. Life expectancy, as it is reported yearly, is a <strong>period measure</strong>.</p>
 <p>Without going into full detail (interested readers can refer to resources such as <a href="https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/multiple-decrement-life-tables/lesson-3" target="_blank">this</a>), I will explain briefly how this is calculated. A typical life table from the Department of Statistics (taken from <a href="https://www.singstat.gov.sg/-/media/files/publications/population/lifetable17-18.pdf" target="_blank">this report</a>) looks like Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.7</a> (it shows just the top part, the entire table is a few pages long).</p>
@@ -217,7 +247,7 @@ Figure 7.7: Screenshot of Complete Life Table from the Department of Statistics.
 </div>
 <p><br></p>
 <ol style="list-style-type: decimal">
-<li><p>Age-specific mortality rates (not pictured, but often referred to as <span class="math inline">\(m_x\)</span>) for a specific year are obtained from the national mortality database and turned into<a href="#fn69" class="footnoteRef" id="fnref69"><sup>69</sup></a> the probability of dying in a specific age-interval (<span class="math inline">\(q_x\)</span>, pictured).</p></li>
+<li><p>Age-specific mortality rates (not pictured, but often referred to as <span class="math inline">\(m_x\)</span>) for a specific year are obtained from the national mortality database and turned into<a href="#fn69" class="footnote-ref" id="fnref69"><sup>69</sup></a> the probability of dying in a specific age-interval (<span class="math inline">\(q_x\)</span>, pictured).</p></li>
 <li><p>You start with a hypothetical base population, usually 100,000, and you put them through the mortality rates of each age until there are no more survivors (<span class="math inline">\(l_x\)</span>). In other words, the probability of dying at an age-interval becomes certain (<span class="math inline">\(q_x = 1\)</span>) at some point (usually 100+) since no one is immortal.</p></li>
 <li><p>From there, you calculate a number of other things (e.g., <span class="math inline">\(d_x\)</span>, <span class="math inline">\(L_x\)</span>, <span class="math inline">\(T_x\)</span>, using simple math formulas). These numbers then help you derive the life expectancy (basically, <span class="math inline">\(e_x = \frac{T_x}{l_X}\)</span>).</p></li>
 </ol>
@@ -225,7 +255,7 @@ Figure 7.7: Screenshot of Complete Life Table from the Department of Statistics.
 <p>To understand what this means for how we interpret life expectancy, we return to our previous interpretation - that “Singaporean residents <strong>who are born in 2017</strong> can expect to live to 83.2”.</p>
 <p>Let’s now make it more precise and say that “Singaporean residents <strong>who are born in 2017</strong> <em><strong>and who are exposed to mortality rates of 2017 throughout their lives</strong></em> can expect to live to 83.2”.</p>
 <p>This sounds highly awkward, I know. You would have to imagine some kind of time machine allowing you to stay stuck in 2017, continuing to experience its mortality rates even as you grow older. But it is in fact how the measure is calculated. <strong>Life expectancy, as often cited in the media, is a period measure that is constructed by stitching together the experiences of multiple cohorts</strong> (often called a <em>synthetic cohort</em>).</p>
-<p>A more intuitive measure of life expectancy is called <strong>cohort life expectancy</strong>. Cohort life expectancy follows every person who was born in a certain year (e.g., 1965), and is calculated using the observed/projected rates of all persons in that cohort. With cohort life expectancy, we can truly say that “Singaporean residents born in year XXXX live XX.X years on average”. So why don’t we do this? The answer is simple - to obtain observed rates, we need to observe these deaths for each cohort! We would therefore need to wait for all (or most<a href="#fn70" class="footnoteRef" id="fnref70"><sup>70</sup></a>) of each cohort to pass away before we can calculate such numbers.</p>
+<p>A more intuitive measure of life expectancy is called <strong>cohort life expectancy</strong>. Cohort life expectancy follows every person who was born in a certain year (e.g., 1965), and is calculated using the observed/projected rates of all persons in that cohort. With cohort life expectancy, we can truly say that “Singaporean residents born in year XXXX live XX.X years on average”. So why don’t we do this? The answer is simple - to obtain observed rates, we need to observe these deaths for each cohort! We would therefore need to wait for all (or most<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a>) of each cohort to pass away before we can calculate such numbers.</p>
 <p>Period life expectancy is therefore practical to use as a measure of how well our health system is doing from year to year, but we must acknowledge its limitations. In order to examine how volatile period rates of life expectancy can be, we can simply look at older rates of life expectancy.</p>
 <p><em>But first, a small excursus</em> - if you look back at Figure <a href="living-longer-than-you-expect.html#fig:apc-lifetable">7.7</a>, one thing you will realize is that there are life expectancy estimates for each age. Therefore, life expectancy at age 40 is not the same as life expectancy at birth, and they do not usually add up (i.e., Life expectancy at 40 <span class="math inline">\(\neq\)</span> Life expectancy at birth - 40). Knowing this, we can now do a little thought experiment with life expectancy estimates.</p>
 <p>Let us now look at life expectancy at birth in the year 1965. Using the Department of Statistics Table Builder (go <a href="https://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=13276" target="_blank">here</a>) to retrieve the data, it seems life expectancy at birth for Singapore residents back in 1965 was 64.5. Using the common way of interpreting these data, we might say, “we can expect those born in 1965 to live up to 64.5 years old.”</p>
@@ -238,12 +268,13 @@ Figure 7.8: Screenshot of Complete Life Table from the Department of Statistics.
 </p>
 </div>
 <p><br></p>
-<p>Wait. We see now that those who aged 52 in 2017 can in fact expect to live 32.5 more years. That means they are expected to live up to <span class="math inline">\(52 + 32.5 = 84.5\)</span> years old! That seems way different from the 64.5 years projected by mortality statistics in 1965. Why is this so? This is because period life expectancy does not account for future improvements in mortality driven by better healthcare, hygiene, health behaviors etc. Period life expectancy is therefore often an <em>underestimate</em> of the true cohort life expectancy<a href="#fn71" class="footnoteRef" id="fnref71"><sup>71</sup></a>. The discrepancy we see between the 1965 life table and the 2017 life table is likely due to great improvements in mortality rates since independence.</p>
+<p>Wait. We see now that those who aged 52 in 2017 can in fact expect to live 32.5 more years. That means they are expected to live up to <span class="math inline">\(52 + 32.5 = 84.5\)</span> years old! That seems way different from the 64.5 years projected by mortality statistics in 1965. Why is this so? This is because period life expectancy does not account for future improvements in mortality driven by better healthcare, hygiene, health behaviors etc. Period life expectancy is therefore often an <em>underestimate</em> of the true cohort life expectancy<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a>. The discrepancy we see between the 1965 life table and the 2017 life table is likely due to great improvements in mortality rates since independence.</p>
 <p>Having studied how life expectancy ‘works’, let us conclude by evaluating this paragraph from an article on the <a href="https://dollarsandsense.sg/retirement-planning-singapore-live-beyond-average-life-expectancy/" target="_blank">Dollars and Sense website</a>, aimed at helping Singaporeans plan their retirement:</p>
 <p><br></p>
 <blockquote>
 <p>The next step of the retirement planning equation is to understand how long we can expect to spend in retirement. The longer we spend in retirement, the more we need to sustain ourselves.</p>
-<p><strong>How Long Do We Spend In Retirement?</strong> The simplest way to derive this figure is to use the average life expectancy of Singaporeans – which stands at 83.1 years today. This figure is only going to go up as the latest report from the World Health Organisation (WHO) revealed that people here can expect to live up to 85.4 years by 2040.</p>
+<p><strong>How Long Do We Spend In Retirement?</strong>
+The simplest way to derive this figure is to use the average life expectancy of Singaporeans – which stands at 83.1 years today. This figure is only going to go up as the latest report from the World Health Organisation (WHO) revealed that people here can expect to live up to 85.4 years by 2040.</p>
 <p>What this tells us is that if we retire at the moment we are able to receive our CPF LIFE payouts – at 65 – and live to the average life expectancy in Singapore – to 83.1 – we will have close to 18 years of retirement.</p>
 </blockquote>
 <p><br></p>
@@ -252,11 +283,11 @@ Figure 7.8: Screenshot of Complete Life Table from the Department of Statistics.
 <div class="footnotes">
 <hr />
 <ol start="67">
-<li id="fn67"><p>The figure for the year 2017.<a href="living-longer-than-you-expect.html#fnref67">↩</a></p></li>
-<li id="fn68"><p>If this is true, then if life expectancy increases faster than one year annually, does this mean we can all expect to be immortal? You can see how ludicrous this sounds.<a href="living-longer-than-you-expect.html#fnref68">↩</a></p></li>
-<li id="fn69"><p>Some assumptions need to be made here about a quantity called <span class="math inline">\(a_x\)</span>, which captures when most deaths in a certain age-interval happen within the time period, but usually this calculation is straightforward.<a href="living-longer-than-you-expect.html#fnref69">↩</a></p></li>
-<li id="fn70"><p>Using a mixture of observed and projected rates is possible.<a href="living-longer-than-you-expect.html#fnref70">↩</a></p></li>
-<li id="fn71"><p>Unless mortality rates spike due to events such as wars, famines etc.<a href="living-longer-than-you-expect.html#fnref71">↩</a></p></li>
+<li id="fn67"><p>The figure for the year 2017.<a href="living-longer-than-you-expect.html#fnref67" class="footnote-back">↩︎</a></p></li>
+<li id="fn68"><p>If this is true, then if life expectancy increases faster than one year annually, does this mean we can all expect to be immortal? You can see how ludicrous this sounds.<a href="living-longer-than-you-expect.html#fnref68" class="footnote-back">↩︎</a></p></li>
+<li id="fn69"><p>Some assumptions need to be made here about a quantity called <span class="math inline">\(a_x\)</span>, which captures when most deaths in a certain age-interval happen within the time period, but usually this calculation is straightforward.<a href="living-longer-than-you-expect.html#fnref69" class="footnote-back">↩︎</a></p></li>
+<li id="fn70"><p>Using a mixture of observed and projected rates is possible.<a href="living-longer-than-you-expect.html#fnref70" class="footnote-back">↩︎</a></p></li>
+<li id="fn71"><p>Unless mortality rates spike due to events such as wars, famines etc.<a href="living-longer-than-you-expect.html#fnref71" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -270,11 +301,13 @@ Figure 7.8: Screenshot of Complete Life Table from the Department of Statistics.
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -286,6 +319,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -307,7 +344,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))

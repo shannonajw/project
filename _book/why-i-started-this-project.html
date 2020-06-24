@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Why I started this project | Singapore Society in Numbers</title>
   <meta name="description" content="Understanding Singapore through quantitative social science" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Why I started this project | Singapore Society in Numbers" />
   <meta property="og:type" content="book" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -59,41 +62,68 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -194,10 +224,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="why-i-started-this-project" class="section level2 unnumbered">
 <h2>Why I started this project</h2>
-<p>Quantitative research is not (and should not be) the only approach we take to understanding Singapore society, but constant appeals to “big data”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> or claims of “evidence-based policy”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> makes it ever more important for members of the public to <strong>critically evaluate the use of numbers</strong> in making arguments or in representations of social phenomena.</p>
+<p>Quantitative research is not (and should not be) the only approach we take to understanding Singapore society, but constant appeals to “big data”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> or claims of “evidence-based policy”<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> makes it ever more important for members of the public to <strong>critically evaluate the use of numbers</strong> in making arguments or in representations of social phenomena.</p>
 <p>Educational institutions have an important role to play in this “data-driven” world. Every year, undergraduates studying the social sciences in our local universities take several courses in research methods to fulfil the requirements of their degrees. Part of this research methods sequence typically involves training in introductory statistics or “quantitative reasoning”. Quantitative courses in social science departments differ from those taught in the natural sciences because they are thought to be more applied - the focus is on the use of statistical methods to answer questions about society. Understanding and applying these methods <strong>to the Singapore context</strong> is crucial here - at this point, students learn about (and hopefully are inspired by) the kind of questions they can ask about the very society they live in, given the quantitative tools they are learning.</p>
-<p>However, my first exposure to statistics as an undergraduate reading Sociology at NUS<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> was to textbooks containing examples from only Western societies <span class="citation">(e.g., Agresti and Finlay <a href="#ref-agresti_statistical_2009">2009</a>; Treiman <a href="#ref-treiman_quantitative_2009">2009</a>)</span>. While the use of these internationally-recognized textbooks may provide some assurance of quality education, sole reliance on foreign material often becomes a missed opportunity to inspire students to build on and improve Singapore social science. Without contextualization<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>, abstract statistical concepts (e.g., hypotheses testing, chi-squared tests) seem removed from everyday experience, and impede the ability to take these important concepts beyond the classroom and into public dialogue.</p>
-<p>I started this book with the view to use it primarily <em>as a teaching tool</em><a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>, but it can be used in many other ways. In the long term, I hope that resources in this book will encourage quantitative literacy and research in Singapore by making it easier for interested parties to browse, use, and understand Singapore-relevant data. Social science researchers may use the dataset listings as a springboard for collaboration, or contribute their own interesting case studies for the benefit of the Singapore public. Others (such as journalists, civil servants, or non-profit organizations) may find value in these material as a gateway to quantitative research on Singapore society, and how to think carefully about pertinent issues surrounding such work.</p>
+<p>However, my first exposure to statistics as an undergraduate reading Sociology at NUS<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> was to textbooks containing examples from only Western societies <span class="citation">(e.g., Agresti and Finlay <a href="#ref-agresti_statistical_2009" role="doc-biblioref">2009</a>; Treiman <a href="#ref-treiman_quantitative_2009" role="doc-biblioref">2009</a>)</span>. While the use of these internationally-recognized textbooks may provide some assurance of quality education, sole reliance on foreign material often becomes a missed opportunity to inspire students to build on and improve Singapore social science. Without contextualization<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, abstract statistical concepts (e.g., hypotheses testing, chi-squared tests) seem removed from everyday experience, and impede the ability to take these important concepts beyond the classroom and into public dialogue.</p>
+<p>I started this book with the view to use it primarily <em>as a teaching tool</em><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, but it can be used in many other ways. In the long term, I hope that resources in this book will encourage quantitative literacy and research in Singapore by making it easier for interested parties to browse, use, and understand Singapore-relevant data. Social science researchers may use the dataset listings as a springboard for collaboration, or contribute their own interesting case studies for the benefit of the Singapore public. Others (such as journalists, civil servants, or non-profit organizations) may find value in these material as a gateway to quantitative research on Singapore society, and how to think carefully about pertinent issues surrounding such work.</p>
 <p><strong><em>For Singapore social science.</em></strong></p>
 </div>
 <h3>References</h3>
@@ -212,11 +242,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>See, for instance, <a href="https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge" class="uri" target="_blank">https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge</a><a href="why-i-started-this-project.html#fnref1">↩</a></p></li>
-<li id="fn2"><p>Government agencies such as the Ministry of Social and Family Development often <a href="https://www.msf.gov.sg/about-MSF/our-people/Divisions-at-MSF/Family-Development-and-Support/Pages/default.aspx" target="_blank">use such a phrase.</a><a href="why-i-started-this-project.html#fnref2">↩</a></p></li>
-<li id="fn3"><p>(the) National University of Singapore<a href="why-i-started-this-project.html#fnref3">↩</a></p></li>
-<li id="fn4"><p>Notwithstanding the terribly unhelpful stereotype of social science students being “good at writing but bad at numbers”.<a href="why-i-started-this-project.html#fnref4">↩</a></p></li>
-<li id="fn5"><p>For instance, the public repository of Singapore-oriented examples and illustrations may be used to supplement courses based on textbooks written by international scholars.<a href="why-i-started-this-project.html#fnref5">↩</a></p></li>
+<li id="fn1"><p>See, for instance, <a href="https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge" target="_blank">https://www.todayonline.com/singapore/business-big-data-singapore-has-built-cutting-edge</a><a href="why-i-started-this-project.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Government agencies such as the Ministry of Social and Family Development often <a href="https://www.msf.gov.sg/about-MSF/our-people/Divisions-at-MSF/Family-Development-and-Support/Pages/default.aspx" target="_blank">use such a phrase.</a><a href="why-i-started-this-project.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>(the) National University of Singapore<a href="why-i-started-this-project.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Notwithstanding the terribly unhelpful stereotype of social science students being “good at writing but bad at numbers”.<a href="why-i-started-this-project.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>For instance, the public repository of Singapore-oriented examples and illustrations may be used to supplement courses based on textbooks written by international scholars.<a href="why-i-started-this-project.html#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -230,11 +260,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -246,6 +278,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -267,7 +303,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
