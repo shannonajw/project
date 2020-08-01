@@ -16,6 +16,12 @@ Unfortunately, the DOS does not share disaggregated data with researchers. When 
 
 Further, under section 7 of the [Statistics Act](https://sso.agc.gov.sg/Act/SA1973){target="_blank"}, "anonymised microdata" (i.e., disaggregated data) obtained using the powers of the Act (i.e., where individuals are legally compelled to provide information) can only be shared with other public agencies, or "any consultant commissioned by a public agency". This means that social scientists outside of the government can only access these data by being appointed as a consultant by a public agency, unless the Statistics Act is amended to include other classes of persons^[According to Section 7(2)(b)(ii), such classes may be specified in the Third Schedule.].
 
+## Marriage and Parenthood Survey {#mps}
+
+The 2016 Marriage and Parenthood (M&P) Survey is a study to understand public attitudes and perceptions toward marriage and parenthood. Similar surveys were conducted in 2004, 2007 and 2012, so potentially four waves of data are available. This is likely a repeated cross-section survey.
+
+The study is commissioned by the National Population and Talent Division (NPTD), Strategy Group, Prime Minister’s Office. Some results of the study are available [here](https://www.strategygroup.gov.sg/media-centre/press-releases/marriage-parenthood-study-2012){target="_blank"} and [here](https://www.strategygroup.gov.sg/media-centre/press-releases/article/details/key-findings-from-marriage-and-parenthood-survey-2016){target="_blank"}. NPTD has not listed any plans to make the data publicly available.
+
 ## NVPC Individual/Corporate Giving Study {#nvpc-igs}
 
 The NVPC Individual/Corporate Giving Study is a biennial, repeated cross-section survey that has been conducted since the year 2000. Therefore, 10 waves of data from 2000-2018 are potentially available. Its key aim is to study trends in volunteerism and philantrophic giving over time. 
