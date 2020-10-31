@@ -4,3 +4,8 @@
 
 Think pieces section. Empty for now, but would you like to contribute? Email me at <shannon.ang@ntu.edu.sg>.
 
+## Links to external articles
+
+["Let us have data for breakfast together"](https://www.academia.sg/academic-views/let-us-have-data-for-breakfast-together/){target="_blank"} on *academia.sg* is an appeal to government agencies to share data. By Shannon Ang.
+
+["Data availability — how does it affect our theories on development?"](https://aplannedcity.wordpress.com/2020/10/26/data-availability-how-does-it-affect-our-theories-on-development/) is a reflection on data availability in Singapore and how it affects economic research. By Su Ying.
